@@ -122,7 +122,7 @@ const PostDate = styled.div`
 	opacity: 0.66;
 `
 
-const Anchor = styled.a`
+const Anchor = styled(Link)`
 	display: block;
 	position: absolute;
 	cursor: pointer;
@@ -203,9 +203,7 @@ const PostCard = ({ data, content, excerpt=true, index, size }) => {
 						</PostContent>
 					</Inset>
 				</Padding>
-				<Link to={url}>
-					<Anchor href={url}/>
-				</Link>
+				<Anchor to={url}/>
 			</Wrapper>
 		</CardCell>
 	)
