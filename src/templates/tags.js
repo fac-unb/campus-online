@@ -27,17 +27,11 @@ class TagRoute extends React.Component {
 		return (
 			<section>
 				<Helmet title={`${tag} | ${title}`} />
-				<div>
-					<div>
-						<div>
-							<h3>{tagHeader}</h3>
-							<ul>{postLinks}</ul>
-							<p>
-								<Link to="/tags/">Browse all tags</Link>
-							</p>
-						</div>
-					</div>
-				</div>
+				<h3>{tagHeader}</h3>
+				<ul>{postLinks}</ul>
+				<p>
+					<Link to="/tags/">Browse all tags</Link>
+				</p>
 			</section>
 		)
 	}

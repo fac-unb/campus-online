@@ -16,58 +16,33 @@ export const ProductPageTemplate = ({
 	pricing,
 }) => (
 	<section>
+		<h2>{title}</h2>
 		<div>
-			<div>
-				<div>
-					<div>
-						<div>
-							<div>
-								<h2>{title}</h2>
-							</div>
-							<div>
-								<div>
-									<h3>{heading}</h3>
-									<p>{description}</p>
-								</div>
-							</div>
-							<Features gridItems={intro.blurbs} />
-							<div>
-								<div>
-									<h3>{main.heading}</h3>
-									<p>{main.description}</p>
-								</div>
-							</div>
-							<div>
-								<div>
-									<div>
-										<div>
-											<article>
-												<img src={main.image1.image} alt={main.image1.alt} />
-											</article>
-										</div>
-										<div>
-											<article>
-												<img src={main.image2.image} alt={main.image2.alt} />
-											</article>
-										</div>
-									</div>
-									<div>
-										<article>
-											<img src={main.image3.image} alt={main.image3.alt} />
-										</article>
-									</div>
-								</div>
-							</div>
-							<Testimonials testimonials={testimonials} />
-							<div />
-							<h2>{pricing.heading}</h2>
-							<p>{pricing.description}</p>
-							<Pricing data={pricing.plans} />
-						</div>
-					</div>
-				</div>
-			</div>
+			<h3>{heading}</h3>
+			<p>{description}</p>
 		</div>
+
+		<Features gridItems={intro.blurbs} />
+
+		<div>
+			<h3>{main.heading}</h3>
+			<p>{main.description}</p>
+		</div>
+
+		<article>
+			<img src={main.image1.image} alt={main.image1.alt} />
+		</article>
+		<article>
+			<img src={main.image2.image} alt={main.image2.alt} />
+		</article>
+		<article>
+			<img src={main.image3.image} alt={main.image3.alt} />
+		</article>
+
+		<Testimonials testimonials={testimonials} />
+		<h2>{pricing.heading}</h2>
+		<p>{pricing.description}</p>
+		<Pricing data={pricing.plans} />
 	</section>
 )
 
