@@ -44,7 +44,7 @@ const Links = styled.ul`
 	margin-right: -1rem;
 `
 
-const Anchor = styled.a`
+const Anchor = styled(Link)`
 	color: ${colors.base66};
 	text-decoration: none;
 	display: block;
@@ -61,9 +61,7 @@ const Anchor = styled.a`
 
 const LinkItem = ({href, label}) => (
 	<li style={{listStyle: 'none'}}>
-		<Link href={href}>
-			<Anchor href={href}>{label}</Anchor>
-		</Link>
+		<Anchor to={href}>{label}</Anchor>
 	</li>
 )
 
