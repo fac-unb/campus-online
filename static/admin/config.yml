@@ -78,4 +78,4 @@ collections:
     fields:
       - {label: "Nome da Editoria", name: "title", widget: "string", required: true}
       - {label: "Cor (hexadecimal)", name: "color", widget: "string", required: true, pattern: ["^#(?:[0-9a-fA-F]{3}){1,2}$", "Cor Inválida"]}
-      - {label: "Descrição (opcional)", name: "title", widget: "string", required: true}
+      - {label: "Descrição (opcional)", name: "description", widget: "text", required: false}
