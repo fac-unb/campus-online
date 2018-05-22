@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop",
-    "compile": "gatsby build",
+    "build": "gatsby build",
     "start": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
   },
