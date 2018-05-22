@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
+import Content, {HTMLContent} from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -11,9 +11,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         <div>
           <div>
             <div>
-              <h2>
-                {title}
-              </h2>
+              <h2>{title}</h2>
               <PageContent content={content} />
             </div>
           </div>
@@ -29,8 +27,8 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+const AboutPage = ({data}) => {
+  const {markdownRemark: post} = data
 
   return (
     <AboutPageTemplate
@@ -49,7 +47,7 @@ export default AboutPage
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       html
       frontmatter {
         title

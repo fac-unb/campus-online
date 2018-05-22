@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const FeatureGrid = ({ gridItems }) => (
+const FeatureGrid = ({gridItems}) => (
   <div>
     {gridItems.map(item => (
       <div key={item.image}>

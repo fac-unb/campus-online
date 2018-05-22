@@ -22,24 +22,18 @@ export const ProductPageTemplate = ({
           <div>
             <div>
               <div>
-                <h2>
-                  {title}
-                </h2>
+                <h2>{title}</h2>
               </div>
               <div>
                 <div>
-                  <h3>
-                    {heading}
-                  </h3>
+                  <h3>{heading}</h3>
                   <p>{description}</p>
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
               <div>
                 <div>
-                  <h3>
-                    {main.heading}
-                  </h3>
+                  <h3>{main.heading}</h3>
                   <p>{main.description}</p>
                 </div>
               </div>
@@ -48,36 +42,25 @@ export const ProductPageTemplate = ({
                   <div>
                     <div>
                       <article>
-                        <img
-                          src={main.image1.image}
-                          alt={main.image1.alt}
-                        />
+                        <img src={main.image1.image} alt={main.image1.alt} />
                       </article>
                     </div>
                     <div>
                       <article>
-                        <img
-                          src={main.image2.image}
-                          alt={main.image2.alt}
-                        />
+                        <img src={main.image2.image} alt={main.image2.alt} />
                       </article>
                     </div>
                   </div>
                   <div>
                     <article>
-                      <img
-                        src={main.image3.image}
-                        alt={main.image3.alt}
-                      />
+                      <img src={main.image3.image} alt={main.image3.alt} />
                     </article>
                   </div>
                 </div>
               </div>
               <Testimonials testimonials={testimonials} />
-              <div/>
-              <h2>
-                {pricing.heading}
-              </h2>
+              <div />
+              <h2>{pricing.heading}</h2>
               <p>{pricing.description}</p>
               <Pricing data={pricing.plans} />
             </div>
@@ -112,8 +95,8 @@ ProductPageTemplate.propTypes = {
   }),
 }
 
-const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const ProductPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark
 
   return (
     <ProductPageTemplate
@@ -142,7 +125,7 @@ export default ProductPage
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       frontmatter {
         title
         image

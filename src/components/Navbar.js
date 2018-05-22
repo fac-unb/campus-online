@@ -15,12 +15,8 @@ const Navbar = () => (
         </Link>
       </div>
       <div>
-        <Link>
-          About
-        </Link>
-        <Link>
-          Products
-        </Link>
+        <Link>About</Link>
+        <Link>Products</Link>
       </div>
       <div>
         <a
