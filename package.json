@@ -4,7 +4,7 @@
   "version": "2.0.0-alpha",
   "private": true,
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --port \"${PORT:-5000}\" --open",
     "build": "gatsby build",
     "start": "gatsby serve",
     "precommit": "pretty-quick --staged",
@@ -36,6 +36,6 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
     "prettier": "^1.7.4",
-    "pretty-quick": "^1.5.1"
+    "pretty-quick": "^1.6.0"
   }
 }
