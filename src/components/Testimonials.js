@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 const Testimonials = ({ testimonials }) => (
   <div>
     {testimonials.map(testimonial => (
-      <article key={testimonial.quote} className="message">
-        <div className="message-body">
+      <article key={testimonial.quote}>
+        <div>
           {testimonial.quote}
           <br />
           <cite> – {testimonial.author}</cite>
