@@ -16,7 +16,9 @@ export default class IndexPage extends React.Component {
 		window.netlifyIdentity.init()
 	}
 	render() {
-		const {blog: {posts}} = this.props.data
+		const {
+			blog: {posts},
+		} = this.props.data
 		return (
 			<section>
 				<div>

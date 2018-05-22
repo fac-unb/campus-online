@@ -7,13 +7,12 @@ import {mix} from 'polished'
 export const containerWidth = 1160
 export const columns = 12
 export const breakpoints = {
-	xs: {width:    0, gutter: 1.0},
-	sm: {width:  480, gutter: 1.5},
-	md: {width:  768, gutter: 2.0},
-	lg: {width:  992, gutter: 2.5},
+	xs: {width: 0, gutter: 1.0},
+	sm: {width: 480, gutter: 1.5},
+	md: {width: 768, gutter: 2.0},
+	lg: {width: 992, gutter: 2.5},
 	xg: {width: 1270, gutter: 2.5},
 }
-
 
 // ----------------------------------------------------
 // Colors
@@ -36,12 +35,13 @@ export const colors = {
 	danger: '#FF3860',
 }
 
-
 // ----------------------------------------------------
 // Font Stacks
 // ----------------------------------------------------
 
 export const fonts = {
-	text: '"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-	display: '"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif',
+	text:
+		'"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+	display:
+		'"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif',
 }

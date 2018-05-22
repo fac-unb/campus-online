@@ -8,12 +8,26 @@ import Footer from '../components/Footer'
 import {colors} from '../constants'
 
 const Layout = ({children}) => (
-	<div style={{display: 'flex', flexDirection: 'column', height: '100vh', color:colors.base}}>
-		<Navbar style={{flex: 'none'}}/>
-		<main style={{flex: '1 0 auto', width: '100%', background: colors.base03, paddingBottom: '8rem'}}>
+	<div
+		style={{
+			display: 'flex',
+			flexDirection: 'column',
+			height: '100vh',
+			color: colors.base,
+		}}
+	>
+		<Navbar style={{flex: 'none'}} />
+		<main
+			style={{
+				flex: '1 0 auto',
+				width: '100%',
+				background: colors.base03,
+				paddingBottom: '8rem',
+			}}
+		>
 			<Container>{children()}</Container>
 		</main>
-		<Footer style={{flex: 'none'}}/>
+		<Footer style={{flex: 'none'}} />
 	</div>
 )
 

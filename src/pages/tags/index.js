@@ -6,7 +6,9 @@ import Link from 'gatsby-link'
 const TagsPage = ({
 	data: {
 		blog: {tags},
-		site: {siteMetadata: {title}},
+		site: {
+			siteMetadata: {title},
+		},
 	},
 }) => (
 	<section>

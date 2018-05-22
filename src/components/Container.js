@@ -8,15 +8,14 @@ const Container = styled.div`
 	margin-right: auto;
 	display: block;
 	width: 100%;
-	max-width: ${containerWidth+'px'};
+	max-width: ${containerWidth + 'px'};
 	padding: 0 1rem;
 	${above.md`
 		padding: 0;
 		width: 90%;
-	`}
-	${above.xg`
+	`} ${above.xg`
 		width: 100%;
-	`}
+	`};
 `
 
 export default Container

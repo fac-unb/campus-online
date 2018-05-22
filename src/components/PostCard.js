@@ -5,16 +5,17 @@ import Container from './Container'
 import {colors} from '../constants'
 import LogoIcon from './LogoIcon'
 
-import { CardCell } from './CardGrid'
-import { colors, fonts } from '../constants'
-import { above } from '../utils/responsive'
+import {CardCell} from './CardGrid'
+import {colors, fonts} from '../constants'
+import {above} from '../utils/responsive'
 
 const minHeight = '26rem'
 const maxHeight = '16rem'
 
-
 const Wrapper = styled.article`
-	transition: padding .15s cubic-bezier(.4,0,.2,1),margin .15s cubic-bezier(.4,0,.2,1),box-shadow .15s cubic-bezier(.4,0,.2,1);
+	transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+		margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 	z-index: 0;
 	width: 100%;
 	flex: 1;
@@ -24,8 +25,7 @@ const Wrapper = styled.article`
 			box-shadow: 0 37.125px 70px -12.125px rgba(0,0,0,0.3);
 			z-index: 1;
 		}
-	`}
-
+	`};
 `
 
 const Padding = styled.div`
@@ -33,22 +33,22 @@ const Padding = styled.div`
 `
 
 const Inset = styled.div`
-	background: ${p => p.dark ? colors.base : 'white'};
-	color: ${p => p.dark ? 'white' : colors.base};
+	background: ${p => (p.dark ? colors.base : 'white')};
+	color: ${p => (p.dark ? 'white' : colors.base)};
 	border-bottom: 1px solid lightgray;
 	position: relative;
 	overflow: hidden;
-	transition: padding .15s cubic-bezier(.4,0,.2,1),margin .15s cubic-bezier(.4,0,.2,1),box-shadow .15s cubic-bezier(.4,0,.2,1);
+	transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+		margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 	${above.md`
 		border-bottom: 0;
-	`}
-	${above.md`
+	`} ${above.md`
 		${Wrapper}:hover &, ${Wrapper}:focus &, ${Wrapper}:active &{
 			padding: 6px 6px;
 			margin: -6px -6px;
 		}
-	`}
-
+	`};
 `
 
 const PostContent = styled.div`
@@ -59,7 +59,7 @@ const PostContent = styled.div`
 		flex-direction: row-reverse;
 		align-items: stretch;
 		min-height: ${minHeight};
-	`}
+	`};
 `
 
 const ImageWrapper = styled.figure`
@@ -96,7 +96,7 @@ const Image = styled.img`
 	${above.md`
 		min-height: 100%;
 		position: absolute;
-	`}
+	`};
 `
 
 const Text = styled.div`
@@ -104,7 +104,7 @@ const Text = styled.div`
 	padding: 1.5rem 1rem 2rem;
 	${above.md`
 		padding: 2rem 1.875rem 3.5rem;
-	`}
+	`};
 `
 
 const Meta = styled.div`
@@ -115,7 +115,7 @@ const Meta = styled.div`
 	letter-spacing: 0.5px;
 	${above.md`
 		font-size: 0.75rem;
-	`}
+	`};
 `
 
 const PostDate = styled.div`
@@ -143,7 +143,7 @@ const Title = styled.div`
 	${above.md`
 		font-size: 22px;
 		margin: 1.5rem 0 0;
-	`}
+	`};
 `
 
 const Tags = styled.div`
@@ -153,7 +153,6 @@ const Tags = styled.div`
 const Tag = styled.div`
 	display: block;
 `
-
 
 // -----------------------------------
 // gatsby approach
@@ -173,41 +172,43 @@ const Tag = styled.div`
 // 	</p>
 // </div>
 
-
-const PostCard = ({ data, content, excerpt=true, index, size }) => {
-	const { url, title, date, _entry, tag, page = 'post', dark } = data
+const PostCard = ({data, content, excerpt = true, index, size}) => {
+	const {url, title, date, _entry, tag, page = 'post', dark} = data
 	return (
-		<CardCell xs={12} md={size?12:6}>
+		<CardCell xs={12} md={size ? 12 : 6}>
 			<Wrapper>
 				<Padding>
 					<Inset dark={dark}>
 						<PostContent>
-							{ data.thumbnail &&
+							{data.thumbnail && (
 								<ImageWrapper size={size}>
-									<Image src={data.thumbnail}/>
+									<Image src={data.thumbnail} />
 								</ImageWrapper>
-							}
+							)}
 							<Text>
 								<Meta>
-									{tag &&
+									{tag && (
 										<Tags>
-											{tag.map(tag =>
-											<Tag key={`tag-${tag}`}>{` ${tag}`}</Tag>
-											)}
+											{tag.map(tag => (
+												<Tag key={`tag-${tag}`}>{` ${tag}`}</Tag>
+											))}
 										</Tags>
-									}
-									<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}`}</PostDate>
+									)}
+									<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
+										year: 'numeric',
+										month: 'long',
+										day: 'numeric',
+									})}`}</PostDate>
 								</Meta>
 								<Title>{title}</Title>
 							</Text>
 						</PostContent>
 					</Inset>
 				</Padding>
-				<Anchor to={url}/>
+				<Anchor to={url} />
 			</Wrapper>
 		</CardCell>
 	)
 }
-
 
 export default PostCard
