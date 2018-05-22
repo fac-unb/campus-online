@@ -59,9 +59,9 @@ const Anchor = styled(Link)`
 	}
 `
 
-const LinkItem = ({href, label}) => (
+const LinkItem = ({to, label}) => (
 	<li style={{listStyle: 'none'}}>
-		<Anchor to={href}>{label}</Anchor>
+		<Anchor to={to}>{label}</Anchor>
 	</li>
 )
 
@@ -69,11 +69,11 @@ const Footer = () => (
 	<Wrapper>
 		<Container>
 			<Flex>
-				<Logo href="/">
+				<Logo to="/">
 					<LogoIcon />
 				</Logo>
 				<Links>
-					<LinkItem href="/posts" label="Posts" />
+					<LinkItem to="/posts" label="Posts" />
 				</Links>
 			</Flex>
 		</Container>

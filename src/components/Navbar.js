@@ -80,9 +80,9 @@ const Anchor = styled(Link)`
 	}
 `
 
-const LinkItem = ({href, label}) => (
+const LinkItem = ({to, label}) => (
 	<li style={{listStyle: 'none', display: 'block'}}>
-		<Anchor to={href}>{label}</Anchor>
+		<Anchor to={to}>{label}</Anchor>
 	</li>
 )
 
@@ -90,14 +90,12 @@ const Navbar = () => (
 	<Wrapper>
 		<Container>
 			<Flex>
-				<Link href="/">
-					<Logo href="/">
-						<LogoIcon />
-					</Logo>
-				</Link>
+				<Logo to="/">
+					<LogoIcon />
+				</Logo>
 				<Navigation>
 					<Links>
-						<LinkItem href="/posts" label="Posts" />
+						<LinkItem to="/posts" label="Posts" />
 					</Links>
 				</Navigation>
 			</Flex>
