@@ -16,11 +16,10 @@ collections:
       - {label: "Template", name: "template", widget: "hidden", default: "blog-post"}
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Data de publicação", name: "date", widget: "date", format: "DD MM YY", required: true}
-      - {label: "Editoria", name: "editorial", widget: "relation", collection: "editorials", searchFields: ["title"], valueField: "title", required: true}
+      - {label: "Editoria", name: "editorial", widget: "relation", collection: "editorials", searchFields: ["title"], valueField: "title", required: false}
       - {label: "Autor", name: "author", widget: "relation", collection: "authors", searchFields: ["title"], valueField: "title", required: false}
       - {label: "Corpo", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
 
   - name: "pages"
     label: "Pages"
