@@ -36,7 +36,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 				path: edge.node.fields.slug,
 				tags: edge.node.frontmatter.tags,
 				component: path.resolve(
-					`src/templates/${String(edge.node.frontmatter.template)}.js`
+					`src/templates/${String(edge.node.frontmatter.template)}.js`,
 				),
 				// additional data can be passed via context
 				context: {

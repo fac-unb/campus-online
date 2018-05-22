@@ -8,8 +8,7 @@
     "build": "gatsby build",
     "start": "gatsby serve",
     "precommit": "pretty-quick --staged",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
+    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
