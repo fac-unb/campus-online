@@ -4,7 +4,12 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 const TagsPage = ({
-  data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
+  data: {
+    allMarkdownRemark: { group },
+    site: {
+      siteMetadata: { title },
+    },
+  },
 }) => (
   <section className="section">
     <Helmet title={`Tags | ${title}`} />

@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
 
 const Testimonials = ({ testimonials }) => (
   <div>
     {testimonials.map(testimonial => (
-      <article key={v4()} className="message">
+      <article key={testimonial.quote} className="message">
         <div className="message-body">
           {testimonial.quote}
           <br />
