@@ -7,7 +7,9 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "start": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
+    "precommit": "pretty-quick --staged",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
@@ -33,6 +35,9 @@
     "styled-components": "^3.2.6"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.7.4",
+    "pretty-quick": "^1.5.1"
   }
 }
