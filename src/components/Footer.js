@@ -23,16 +23,14 @@ const Flex = styled.div`
 	align-items: center;
 `
 
-const Logo = styled.a`
+const Logo = styled(Link)`
 	display: block;
 	margin-right: 3rem;
 	height: 1.5rem;
 	color: ${colors.base88};
-	svg {
-		height: 100%;
-		width: auto;
-	}
-	&:hover, &:focus, &:active{
+	&:hover,
+	&:focus,
+	&:active {
 		color: ${colors.base3};
 	}
 `
@@ -53,7 +51,9 @@ const Anchor = styled(Link)`
 	text-transform: lowercase;
 	letter-spacing: 0.5px;
 	padding: 1rem 0.75rem;
-	:hover, :focus, :active {
+	:hover,
+	:focus,
+	:active {
 		color: ${colors.base03};
 		text-decoration: underline;
 	}
@@ -65,16 +65,15 @@ const LinkItem = ({href, label}) => (
 	</li>
 )
 
-
 const Footer = () => (
 	<Wrapper>
 		<Container>
 			<Flex>
-				<Logo href='/'>
-					<LogoIcon/>
+				<Logo href="/">
+					<LogoIcon />
 				</Logo>
 				<Links>
-					<LinkItem href='/posts' label='Posts'/>
+					<LinkItem href="/posts" label="Posts" />
 				</Links>
 			</Flex>
 		</Container>
