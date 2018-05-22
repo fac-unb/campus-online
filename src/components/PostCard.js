@@ -1,13 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Container from './Container'
-import {colors} from '../constants'
-import LogoIcon from './LogoIcon'
-
-import {CardCell} from './CardGrid'
 import {colors, fonts} from '../constants'
 import {above} from '../utils/responsive'
+import Container from './Container'
+import LogoIcon from './LogoIcon'
+import {CardCell} from './CardGrid'
 
 const minHeight = '26rem'
 const maxHeight = '16rem'
@@ -172,43 +170,44 @@ const Tag = styled.div`
 // 	</p>
 // </div>
 
-const PostCard = ({data, content, excerpt = true, index, size}) => {
-	const {url, title, date, _entry, tag, page = 'post', dark} = data
-	return (
-		<CardCell xs={12} md={size ? 12 : 6}>
-			<Wrapper>
-				<Padding>
-					<Inset dark={dark}>
-						<PostContent>
-							{data.thumbnail && (
-								<ImageWrapper size={size}>
-									<Image src={data.thumbnail} />
-								</ImageWrapper>
-							)}
-							<Text>
-								<Meta>
-									{tag && (
-										<Tags>
-											{tag.map(tag => (
-												<Tag key={`tag-${tag}`}>{` ${tag}`}</Tag>
-											))}
-										</Tags>
-									)}
-									<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
-										year: 'numeric',
-										month: 'long',
-										day: 'numeric',
-									})}`}</PostDate>
-								</Meta>
-								<Title>{title}</Title>
-							</Text>
-						</PostContent>
-					</Inset>
-				</Padding>
-				<Anchor to={url} />
-			</Wrapper>
-		</CardCell>
-	)
-}
+const PostCard = ({
+	url,
+	title,
+	date,
+	tags = [],
+	size,
+	thumbnail,
+	dark = false,
+}) => (
+	<CardCell xs={12} md={size ? 12 : 6}>
+		<Wrapper>
+			<Padding>
+				<Inset dark={dark}>
+					<PostContent>
+						{thumbnail && (
+							<ImageWrapper size={size}>
+								<Image src={thumbnail} />
+							</ImageWrapper>
+						)}
+						<Text>
+							<Meta>
+								<Tags>
+									{tags.map(tag => <Tag key={`tag-${tag}`}>{` ${tag}`}</Tag>)}
+								</Tags>
+								<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
+									year: 'numeric',
+									month: 'long',
+									day: 'numeric',
+								})}`}</PostDate>
+							</Meta>
+							<Title>{title}</Title>
+						</Text>
+					</PostContent>
+				</Inset>
+			</Padding>
+			<Anchor to={url} />
+		</Wrapper>
+	</CardCell>
+)
 
 export default PostCard

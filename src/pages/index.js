@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import PostCard from '../components/PostCard'
 
 export default class IndexPage extends React.Component {
 	handleScriptLoad() {
@@ -21,26 +22,17 @@ export default class IndexPage extends React.Component {
 		} = this.props.data
 		return (
 			<section>
-				<div>
-					<div>
-						<h1>Latest Stories</h1>
-					</div>
-					{posts.map(({post}) => (
-						<div key={post.id}>
-							<p>
-								<Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-								<span> &bull; </span>
-								<small>{post.frontmatter.date}</small>
-							</p>
-							<p>
-								{post.excerpt}
-								<br />
-								<br />
-								<Link to={post.fields.slug}>Keep Reading →</Link>
-							</p>
-						</div>
-					))}
-				</div>
+				<h1>Latest Stories</h1>
+				{posts.map(({post}) => (
+					<PostCard
+						url={post.fields.slug}
+						title={post.frontmatter.title}
+						date={post.frontmatter.date}
+						excerpt={post.excerpt}
+						tags={post.frontmatter.tags}
+						key={post.id}
+					/>
+				))}
 			</section>
 		)
 	}
@@ -49,7 +41,7 @@ export default class IndexPage extends React.Component {
 IndexPage.propTypes = {
 	data: PropTypes.shape({
 		blog: PropTypes.shape({
-			edges: PropTypes.array,
+			posts: PropTypes.array,
 		}),
 	}),
 }
@@ -70,7 +62,8 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						template
-						date(formatString: "MMMM DD, YYYY")
+						tags
+						date(formatString: "YYYY-MM-DD")
 					}
 				}
 			}
