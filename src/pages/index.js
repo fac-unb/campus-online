@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import {CardRow} from '../components/CardGrid'
 import PostCard from '../components/PostCard'
 
 export default class IndexPage extends React.Component {
@@ -23,16 +24,21 @@ export default class IndexPage extends React.Component {
 		return (
 			<section>
 				<h1>Latest Stories</h1>
-				{posts.map(({post}) => (
-					<PostCard
-						url={post.fields.slug}
-						title={post.frontmatter.title}
-						date={post.frontmatter.date}
-						excerpt={post.excerpt}
-						tags={post.frontmatter.tags}
-						key={post.id}
-					/>
-				))}
+				{posts && (
+					<CardRow>
+						{posts.map(({post}) => (
+							<PostCard
+								url={post.fields.slug}
+								title={post.frontmatter.title}
+								date={post.frontmatter.date}
+								excerpt={post.excerpt}
+								tags={post.frontmatter.tags}
+								key={post.id}
+								size={1}
+							/>
+						))}
+					</CardRow>
+				)}
 			</section>
 		)
 	}

@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Container from '../components/Container'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import {colors} from '../constants'
+import {colors, fonts} from '../constants'
 
 const Layout = ({children}) => (
 	<div
@@ -14,6 +14,7 @@ const Layout = ({children}) => (
 			flexDirection: 'column',
 			height: '100vh',
 			color: colors.base,
+			fontFamily: fonts.text,
 		}}
 	>
 		<Navbar style={{flex: 'none'}} />
