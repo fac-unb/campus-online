@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-netlify-cms",
+  "name": "campus-online",
   "description": "Example Gatsby, and Netlify CMS project",
-  "version": "2.0.0-alpha",
+  "version": "0.0.0-alpha",
   "private": true,
   "scripts": {
     "dev": "gatsby develop --port \"${PORT:-5000}\" --open",
