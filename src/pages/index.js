@@ -16,16 +16,14 @@ export default class IndexPage extends React.Component {
 		window.netlifyIdentity.init()
 	}
 	render() {
-		const {data} = this.props
-		const {edges: posts} = data.allMarkdownRemark
-
+		const {blog: {posts}} = this.props.data
 		return (
 			<section>
 				<div>
 					<div>
 						<h1>Latest Stories</h1>
 					</div>
-					{posts.map(({node: post}) => (
+					{posts.map(({post}) => (
 						<div key={post.id}>
 							<p>
 								<Link to={post.fields.slug}>{post.frontmatter.title}</Link>
@@ -48,7 +46,7 @@ export default class IndexPage extends React.Component {
 
 IndexPage.propTypes = {
 	data: PropTypes.shape({
-		allMarkdownRemark: PropTypes.shape({
+		blog: PropTypes.shape({
 			edges: PropTypes.array,
 		}),
 	}),
@@ -56,12 +54,12 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
 	query IndexQuery {
-		allMarkdownRemark(
+		blog: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}
 		) {
-			edges {
-				node {
+			posts: edges {
+				post: node {
 					excerpt(pruneLength: 400)
 					id
 					fields {

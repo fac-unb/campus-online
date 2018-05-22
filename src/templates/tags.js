@@ -4,7 +4,14 @@ import Link from 'gatsby-link'
 
 class TagRoute extends React.Component {
 	render() {
-		const posts = this.props.data.allMarkdownRemark.edges
+		const {
+			pathContext: {tag},
+			data: {
+				site: {siteMetadata: title},
+				blog: {posts, totalCount},
+			},
+		} = this.props
+
 		const postLinks = posts.map(post => (
 			<li key={post.node.fields.slug}>
 				<Link to={post.node.fields.slug}>
@@ -12,9 +19,7 @@ class TagRoute extends React.Component {
 				</Link>
 			</li>
 		))
-		const tag = this.props.pathContext.tag
-		const title = this.props.data.site.siteMetadata.title
-		const totalCount = this.props.data.allMarkdownRemark.totalCount
+
 		const tagHeader = `${totalCount} post${
 			totalCount === 1 ? '' : 's'
 		} tagged with “${tag}”`
@@ -47,14 +52,14 @@ export const tagPageQuery = graphql`
 				title
 			}
 		}
-		allMarkdownRemark(
+		blog: allMarkdownRemark(
 			limit: 1000
 			sort: {fields: [frontmatter___date], order: DESC}
 			filter: {frontmatter: {tags: {in: [$tag]}}}
 		) {
 			totalCount
-			edges {
-				node {
+			posts: edges {
+				post: node {
 					fields {
 						slug
 					}

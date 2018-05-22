@@ -5,10 +5,8 @@ import Link from 'gatsby-link'
 
 const TagsPage = ({
 	data: {
-		allMarkdownRemark: {group},
-		site: {
-			siteMetadata: {title},
-		},
+		blog: {tags},
+		site: {siteMetadata: {title}},
 	},
 }) => (
 	<section>
@@ -18,7 +16,7 @@ const TagsPage = ({
 				<div>
 					<h1>Tags</h1>
 					<ul>
-						{group.map(tag => (
+						{tags.map(tag => (
 							<li key={tag.fieldValue}>
 								<Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
 									{tag.fieldValue} ({tag.totalCount})
@@ -41,8 +39,8 @@ export const tagPageQuery = graphql`
 				title
 			}
 		}
-		allMarkdownRemark(limit: 1000) {
-			group(field: frontmatter___tags) {
+		blog: allMarkdownRemark(limit: 1000) {
+			tags: group(field: frontmatter___tags) {
 				fieldValue
 				totalCount
 			}
