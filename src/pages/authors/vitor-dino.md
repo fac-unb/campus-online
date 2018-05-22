@@ -1,7 +1,5 @@
 ---
+template: author
 title: Vitor Dino
-active:
-  semester: '1'
-  year: 2018
+semester: '1/2018'
 ---
-
