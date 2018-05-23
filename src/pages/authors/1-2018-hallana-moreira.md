@@ -1,6 +1,6 @@
 ---
 template: author
 title: Hallana Moreira
-semester: 1/2018
+semester: 2018/1
 ---
 
