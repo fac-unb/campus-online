@@ -53,13 +53,13 @@ collections:
     create: true
     extension: "md"
     format: "yaml-frontmatter"
-    slug: "{{slug}}"
+    slug: "{{semester}}-{{slug}}"
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "author"}
       - {label: "Nome", name: "title", widget: "string", required: true}
       - {label: "Foto (opcional)", name: "thumbnail", widget: "image", required: false}
       - {label: "Bio (opcional)", name: "body", widget: "markdown", required: false}
-      - {label: "Semestre no Campus (S/AAAA)", name: "semester", widget: "string", required: true, pattern: ['^\d\/\d{4}$', "Semestre fora do formato"]}
+      - {label: "Semestre no Campus (AAAA/S)", name: "semester", widget: "string", required: true, pattern: ['^\d{4}\/\d$', "Semestre fora do formato"]}
 
   - name: "editorials"
     label: "Editorias"
