@@ -2,8 +2,12 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
-public_folder: /img
+display_url: https://campus-online.netlify.com
+media_folder: static/assets/images
+public_folder: /assets/images
+
+editor:
+  preview: false
 
 collections:
   - name: "blog"
@@ -15,6 +19,7 @@ collections:
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "blog-post"}
       - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Foto de Capa", name: "thumbnail", widget: "image"}
       - {label: "Data de publicação", name: "date", widget: "date", format: "DD MM YY", required: true}
       - {label: "Editoria", name: "editorial", widget: "relation", collection: "editorials", searchFields: ["title"], valueField: "title", required: false}
       - {label: "Autor", name: "author", widget: "relation", collection: "authors", searchFields: ["title"], valueField: "title", required: false}
