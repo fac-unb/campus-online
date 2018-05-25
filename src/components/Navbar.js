@@ -1,12 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Container from './Container'
 import {colors} from '../constants'
+import {above} from '../utils/responsive'
+import Container from './Container'
 import LogoIcon from './LogoIcon'
 
 const Wrapper = styled.nav`
 	background: white;
+	display: block;
+	position: relative;
+	margin-bottom: 2rem;
 `
 
 const Flex = styled.div`
@@ -20,45 +24,47 @@ const Logo = styled(Link)`
 	display: block;
 	cursor: pointer;
 	display: block;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
-	margin-right: 3rem;
-	height: 1.75rem;
+	padding-right: 2rem;
 	color: ${colors.base};
+	height: 3.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	position: relative;
+	${above.md`
+		height: 6rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		:before{
+			content: '';
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			right: 1rem;
+			bottom: 1rem;
+			z-index: -1;
+			background-position: 0 -0.25rem;
+			background-size: 0 3.25em;
+			background-repeat: no-repeat;
+			transition: all .2s ease-out;
+		}
+		:hover{
+			:before{
+				background-image: linear-gradient(180deg, transparent 75%, ${colors.base06} 0);
+				background-size: 100% 3.25em;
+			}
+		}
+	`};
 `
 
 const Navigation = styled.div`
 	display: block;
-	height: 3.75rem;
-	overflow: hidden;
-	position: relative;
 	margin-left: -1rem;
 	margin-right: -1rem;
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		z-index: 1;
-		pointer-events: none;
-		top: 0;
-		height: 3.75rem;
-		width: 1.25rem;
-		background: linear-gradient(90deg, white, rgba(255, 2550, 255, 0));
-	}
-	&::after {
-		left: initial;
-		right: 0;
-		background: linear-gradient(-90deg, white, rgba(255, 255, 255, 0));
-	}
 `
 
 const Links = styled.ul`
 	display: flex;
 	overflow-x: scroll;
-	overflow-y: hidden;
-	position: relative;
-	height: 6rem;
 `
 
 const Anchor = styled(Link)`
@@ -68,16 +74,39 @@ const Anchor = styled(Link)`
 	color: ${colors.base44};
 	display: block;
 	text-decoration: none;
-	font-size: 0.75rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding: 1.5rem 1rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-transform: lowercase;
+	padding: 1rem;
+	position: relative;
 	:hover,
-	:focus,
-	:active {
+	:focus {
 		color: ${colors.base88};
 	}
+	${above.md`
+		font-size: 1.125rem;
+		line-height: 2rem;
+		padding: 2rem 1rem;
+		:before{
+			content: '';
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			right: 0.5rem;
+			bottom: 1rem;
+			z-index: -1;
+			background-position: 0.375em 0.1875em;
+			background-size: 0 2.25em;
+			background-repeat: no-repeat;
+			transition: all .2s ease-out;
+		}
+		:hover{
+			:before{
+				background-image: linear-gradient(180deg, transparent 75%, ${colors.base06} 0);
+				background-size: 100% 2.25em;
+			}
+		}
+	`};
 `
 
 const LinkItem = ({to, label}) => (
@@ -86,18 +115,22 @@ const LinkItem = ({to, label}) => (
 	</li>
 )
 
-const Navbar = () => (
-	<Wrapper>
+const Navbar = ({links, style, ...props}) => (
+	<Wrapper style={style} {...props}>
 		<Container>
 			<Flex>
 				<Logo to="/">
 					<LogoIcon />
 				</Logo>
-				<Navigation>
-					<Links>
-						<LinkItem to="/posts" label="Posts" />
-					</Links>
-				</Navigation>
+				{links && (
+					<Navigation>
+						<Links>
+							{links.map((link, index) => (
+								<LinkItem to={link.href} label={link.label} />
+							))}
+						</Links>
+					</Navigation>
+				)}
 			</Flex>
 		</Container>
 	</Wrapper>

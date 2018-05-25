@@ -12,17 +12,23 @@ const Layout = ({children}) => (
 		style={{
 			display: 'flex',
 			flexDirection: 'column',
-			height: '100vh',
+			minHeight: '100vh',
 			color: colors.base,
 			fontFamily: fonts.text,
+			background: colors.base03,
 		}}
 	>
-		<Navbar style={{flex: 'none'}} />
+		<Navbar
+			style={{position: 'sticky', top: 0, zIndex: 2}}
+			links={[
+				{href: '/about', label: 'Sobre'},
+				{href: '/contact', label: 'Contato'},
+			]}
+		/>
 		<main
 			style={{
 				flex: '1 0 auto',
 				width: '100%',
-				background: colors.base03,
 				paddingBottom: '8rem',
 			}}
 		>
