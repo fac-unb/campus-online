@@ -61,6 +61,7 @@ const Logo = styled(Link)`
 		${p =>
 			p.hero &&
 			`
+			pointer-events: auto;
 			background-image: linear-gradient(180deg, transparent 75%, ${colors.base88} 0);
 		`};
 	}
@@ -125,6 +126,7 @@ const Anchor = styled(Link)`
 		${p =>
 			p.hero &&
 			`
+			pointer-events: auto;
 			background-image: linear-gradient(180deg, transparent 75%, ${colors.base88} 0);
 		`};
 	}

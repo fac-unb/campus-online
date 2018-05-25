@@ -94,7 +94,8 @@ const Title = styled.div`
 
 const Anchor = styled(Link)`
 	display: block;
-	${'' /* position: absolute; */} cursor: pointer;
+	position: absolute;
+	cursor: pointer;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -111,6 +112,7 @@ const PostHero = ({url, title, date, editorial, thumbnail}) => (
 				clip: 'rect(auto,auto,auto,auto)',
 				clipPath: 'inset(0)',
 				zIndex: 4,
+				pointerEvents: 'none',
 			}}
 		>
 			<Navbar
