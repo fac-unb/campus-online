@@ -102,7 +102,7 @@ const Anchor = styled(Link)`
 	bottom: 0;
 `
 
-const PostHero = ({url, title, date, editorial, thumbnail}) => (
+const HomeHero = ({url, title, date, editorial, thumbnail}) => (
 	<Wrapper>
 		<div
 			style={{
@@ -147,4 +147,4 @@ const PostHero = ({url, title, date, editorial, thumbnail}) => (
 	</Wrapper>
 )
 
-export default PostHero
+export default HomeHero

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
-import PostHero from '../components/PostHero'
+import HomeHero from '../components/HomeHero'
 import PostCard from '../components/PostCard'
 
 export default class IndexPage extends React.Component {
@@ -28,7 +28,7 @@ export default class IndexPage extends React.Component {
 				{posts
 					.slice(0, 1)
 					.map(({post}) => (
-						<PostHero
+						<HomeHero
 							url={post.fields.slug}
 							title={post.frontmatter.title}
 							date={post.frontmatter.date}
