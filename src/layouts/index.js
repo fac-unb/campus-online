@@ -18,7 +18,7 @@ const Layout = ({children}) => (
 		}}
 	>
 		<Navbar
-			style={{position: 'sticky', top: 0, zIndex: 2}}
+			style={{position: 'fixed', top: 0, zIndex: 2}}
 			links={[
 				{href: '/about', label: 'Sobre'},
 				{href: '/contact', label: 'Contato'},

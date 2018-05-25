@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
+import PostHero from '../components/PostHero'
 import PostCard from '../components/PostCard'
 
 export default class IndexPage extends React.Component {
@@ -23,26 +24,43 @@ export default class IndexPage extends React.Component {
 			blog: {posts},
 		} = this.props.data
 		return (
-			<Container>
-				<section>
-					<h1>Latest Stories</h1>
-					{posts && (
-						<CardRow>
-							{posts.map(({post}) => (
-								<PostCard
-									url={post.fields.slug}
-									title={post.frontmatter.title}
-									date={post.frontmatter.date}
-									excerpt={post.excerpt}
-									tags={post.frontmatter.tags}
-									key={post.id}
-									size={1}
-								/>
-							))}
-						</CardRow>
-					)}
-				</section>
-			</Container>
+			<div>
+				{posts
+					.slice(0, 1)
+					.map(({post}) => (
+						<PostHero
+							url={post.fields.slug}
+							title={post.frontmatter.title}
+							date={post.frontmatter.date}
+							excerpt={post.excerpt}
+							editorial={post.frontmatter.editorial}
+							key={post.id}
+							size={1}
+						/>
+					))}
+				<Container>
+					<section>
+						<h1>Latest Stories</h1>
+						{posts && (
+							<CardRow>
+								{posts
+									.slice(1)
+									.map(({post}) => (
+										<PostCard
+											url={post.fields.slug}
+											title={post.frontmatter.title}
+											date={post.frontmatter.date}
+											excerpt={post.excerpt}
+											tags={post.frontmatter.tags}
+											key={post.id}
+											size={1}
+										/>
+									))}
+							</CardRow>
+						)}
+					</section>
+				</Container>
+			</div>
 		)
 	}
 }
