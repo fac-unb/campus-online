@@ -3,8 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {colors, fonts} from '../constants'
 import {above} from '../utils/responsive'
-import Container from './Container'
-import LogoIcon from './LogoIcon'
 import {CardCell} from './CardGrid'
 
 const minHeight = '26rem'
@@ -151,24 +149,6 @@ const Tags = styled.div`
 const Tag = styled.div`
 	display: block;
 `
-
-// -----------------------------------
-// gatsby approach
-// -----------------------------------
-//
-// <div key={post.id}>
-// 	<p>
-// 		<Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-// 		<span> &bull; </span>
-// 		<small>{post.frontmatter.date}</small>
-// 	</p>
-// 	<p>
-// 		{post.excerpt}
-// 		<br />
-// 		<br />
-// 		<Link to={post.fields.slug}>Keep Reading →</Link>
-// 	</p>
-// </div>
 
 const PostCard = ({
 	url,
