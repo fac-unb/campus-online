@@ -4,41 +4,48 @@ import {kebabCase} from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, {HTMLContent} from '../components/Content'
+import Container from '../components/Container'
+import HomeHero from '../components/HomeHero'
 
 export const BlogPostTemplate = ({
 	content,
 	contentComponent,
 	description,
 	tags,
+	date,
 	title,
 	helmet,
+	id,
 }) => {
 	const PostContent = contentComponent || Content
 
 	return (
-		<section>
+		<article>
 			{helmet || ''}
-			<h1>{title}</h1>
-			<p>{description}</p>
-			<PostContent content={content} />
-			{tags && tags.length ? (
-				<div>
-					<h4>Tags</h4>
-					<ul>
-						{tags.map(tag => (
-							<li key={tag + `tag`}>
-								<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-							</li>
-						))}
-					</ul>
-				</div>
-			) : null}
-		</section>
+			<HomeHero title={title} date={date} key={id} />
+
+			<Container>
+				<PostContent content={content} />
+				{tags && tags.length ? (
+					<div>
+						<h4>Tags</h4>
+						<ul>
+							{tags.map(tag => (
+								<li key={tag + `tag`}>
+									<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				) : null}
+			</Container>
+		</article>
 	)
 }
 
 BlogPostTemplate.propTypes = {
 	content: PropTypes.string.isRequired,
+	date: PropTypes.date,
 	contentComponent: PropTypes.func,
 	description: PropTypes.string,
 	title: PropTypes.string,

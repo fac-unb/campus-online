@@ -132,18 +132,20 @@ const HomeHero = ({url, title, date, editorial, thumbnail}) => (
 			<Text>
 				<Container>
 					<Meta>
-						<Editorial>{editorial}</Editorial>
-						<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
-							year: 'numeric',
-							month: 'long',
-							day: 'numeric',
-						})}`}</PostDate>
+						{editorial && <Editorial>{editorial}</Editorial>}
+						{date && (
+							<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
+								year: 'numeric',
+								month: 'long',
+								day: 'numeric',
+							})}`}</PostDate>
+						)}
 					</Meta>
-					<Title>{title}</Title>
+					{title && <Title>{title}</Title>}
 				</Container>
 			</Text>
 		</PostContent>
-		<Anchor to={url} />
+		{url && <Anchor to={url} />}
 	</Wrapper>
 )
 
