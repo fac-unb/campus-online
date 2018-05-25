@@ -40,8 +40,8 @@ export const colors = {
 // ----------------------------------------------------
 
 export const fonts = {
-	text:
-		'"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-	display:
-		'"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif',
+	sans:
+		'"IBM Plex Sans","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
+	serif:
+		'"Tiempos Headline",Constantia,"Lucida Bright",Lucidabright,"Lucida Serif","DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;',
 }

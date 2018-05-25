@@ -133,7 +133,6 @@ const Title = styled.div`
 	line-height: 1.27273;
 	font-weight: 500;
 	letter-spacing: 0.015em;
-	font-family: ${fonts.display};
 	margin: 1rem 0 0;
 	word-wrap: break-word;
 	${above.md`
