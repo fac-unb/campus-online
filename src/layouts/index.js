@@ -2,7 +2,6 @@ import React from 'react'
 import css from '../utils/reset.css'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Container from '../components/Container'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import {colors, fonts} from '../constants'
@@ -32,7 +31,7 @@ const Layout = ({children}) => (
 				paddingBottom: '8rem',
 			}}
 		>
-			<Container>{children()}</Container>
+			{children()}
 		</main>
 		<Footer style={{flex: 'none'}} />
 	</div>
