@@ -35,5 +35,5 @@
 [www-url]: https://campus-online.netlify.com
 [admin-badge]: https://img.shields.io/badge/❖-cms-00C7B7.svg?colorA=00C7B7
 [admin-url]: https://campus-online.netlify.com/static/admin
-[figma-badge]: https://img.shields.io/badge/%CE%A9-figma-444648.svg?colorA=242628
+[figma-badge]: https://img.shields.io/badge/Ω-figma-444648.svg?colorA=242628
 [figma-url]: https://www.figma.com/file/M7qolUHcVVZiqcYh4XmsvV/campus?node-id=4%3A13
