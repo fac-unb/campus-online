@@ -2,8 +2,6 @@
 
 [![online][www-badge]][www-url] [![online][admin-badge]][admin-url] [![online][figma-badge]][figma-url]
 
-[figma](https://www.figma.com/file/M7qolUHcVVZiqcYh4XmsvV/campus?node-id=4%3A13)
-
 > website for fac-unb news lab
 
 ## Roadmap
