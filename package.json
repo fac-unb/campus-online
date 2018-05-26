@@ -29,9 +29,9 @@
     "netlify-cms": "^1.8.4",
     "polished": "^1.9.2",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
+    "react": "^16.4.0",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.2.6"
+    "styled-components": "^3.3.0"
   },
   "devDependencies": {
     "husky": "^0.14.3",
