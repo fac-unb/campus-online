@@ -54,7 +54,7 @@ export default class IndexPage extends React.Component {
 							{posts && (
 								<CardRow>
 									{posts
-										.slice(1)
+										.slice(2)
 										.map(({post}) => (
 											<PostCard
 												url={post.fields.slug}
