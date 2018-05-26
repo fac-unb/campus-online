@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {colors, fonts} from '../constants'
 import {above} from '../utils/responsive'
+import * as format from '../utils/format'
 import Link from './StylableLink'
 import {CardCell} from './CardGrid'
 
@@ -173,11 +174,7 @@ const PostCard = ({
 								<Tags>
 									{tags.map(tag => <Tag key={`tag-${tag}`}>{` ${tag}`}</Tag>)}
 								</Tags>
-								<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
-									year: 'numeric',
-									month: 'long',
-									day: 'numeric',
-								})}`}</PostDate>
+								<PostDate>{format.postDate(date)}</PostDate>
 							</Meta>
 							<Title>{title}</Title>
 						</Text>
