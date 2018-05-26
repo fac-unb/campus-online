@@ -52,14 +52,7 @@ const Layout = ({children}) => (
 		}}
 	>
 		<style dangerouslySetInnerHTML={{__html: fontStyleSheet}} />
-		<Navbar
-			style={{position: 'fixed', top: 0, zIndex: 2}}
-			links={[
-				{href: '/about', label: 'Sobre'},
-				{href: '/contact', label: 'Contato'},
-			]}
-		/>
-		<main
+		<div
 			style={{
 				flex: '1 0 auto',
 				width: '100%',
@@ -67,7 +60,7 @@ const Layout = ({children}) => (
 			}}
 		>
 			{children()}
-		</main>
+		</div>
 		<Footer style={{flex: 'none'}} />
 	</div>
 )
