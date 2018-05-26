@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, {HTMLContent} from '../components/Content'
 import Container from '../components/Container'
+import Navbar from '../components/Navbar'
 import HomeHero from '../components/HomeHero'
 
 export const BlogPostTemplate = ({
@@ -24,6 +25,13 @@ export const BlogPostTemplate = ({
 	return (
 		<article>
 			{helmet || ''}
+			<Navbar
+				style={{position: 'fixed', top: 0, zIndex: 2}}
+				links={[
+					{href: '/about', label: 'Sobre'},
+					{href: '/contact', label: 'Contato'},
+				]}
+			/>
 			<HomeHero
 				title={title}
 				date={date}
