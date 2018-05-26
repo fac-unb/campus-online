@@ -149,23 +149,15 @@ const Tag = styled.div`
 	display: block;
 `
 
-const PostCard = ({
-	url,
-	title,
-	date,
-	tags = [],
-	size,
-	thumbnail,
-	dark = false,
-}) => (
+const PostCard = ({url, title, date, tags = [], size, cover, dark = false}) => (
 	<CardCell xs={12} md={size ? 12 : 6}>
 		<Wrapper>
 			<Padding>
 				<Inset dark={dark}>
 					<PostContent>
-						{thumbnail && (
+						{cover && (
 							<ImageWrapper size={size}>
-								<Image src={thumbnail} />
+								<Image src={cover} />
 							</ImageWrapper>
 						)}
 						<Text>
