@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {colors, fonts} from '../constants'
 import {above} from '../utils/responsive'
+import * as format from '../utils/format'
 import Link from './StylableLink'
 import Navbar from './Navbar'
 import Container from './Container'
@@ -141,14 +142,7 @@ const HomeHero = ({url, title, date, editorial, cover, author}) => (
 				<Container>
 					<Meta>
 						{editorial && <Editorial>{editorial}</Editorial>}
-						{date && (
-							<PostDate>{`${new Date(date).toLocaleDateString('pt-BR', {
-								year: 'numeric',
-								month: 'long',
-								day: 'numeric',
-							})}`}</PostDate>
-						)}
-						{/* {author && <div style={{marginLeft:'auto', opacity: 0.66}}>{author}</div>} */}
+						{date && <PostDate>{format.postDate(date)}</PostDate>}
 					</Meta>
 					{title && <Title>{title}</Title>}
 				</Container>
