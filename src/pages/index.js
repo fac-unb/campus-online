@@ -43,8 +43,9 @@ export default class IndexPage extends React.Component {
 								date={post.frontmatter.date}
 								excerpt={post.excerpt}
 								editorial={post.frontmatter.editorial}
+								author={post.frontmatter.author}
+								cover={post.frontmatter.cover}
 								key={post.id}
-								size={1}
 							/>
 						))}
 					<Container>
@@ -99,6 +100,9 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						template
+						editorial
+						cover
+						author
 						tags
 						date
 					}

@@ -7,19 +7,20 @@ import Link from './StylableLink'
 import Navbar from './Navbar'
 import Container from './Container'
 
-const minHeight = '32rem'
-
 const Wrapper = styled.article`
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	min-height: ${minHeight};
 	background: ${colors.base};
 	color: white;
 	position: relative;
 	overflow: hidden;
 	z-index: 3;
 	margin-bottom: 8rem;
+	min-height: 24rem;
+	${above.md`
+		min-height: 32rem;
+	`};
 `
 
 const PostContent = styled.div`
@@ -32,6 +33,11 @@ const PostContent = styled.div`
 
 const ImageWrapper = styled.figure`
 	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	align-items: center;
 	justify-content: center;
 	object-fit: cover;
@@ -51,6 +57,7 @@ const Text = styled.div`
 	margin-top: auto;
 	padding-top: 6rem;
 	padding-bottom: 3rem;
+	position: relative;
 	background: linear-gradient(
 		180deg,
 		rgba(20, 22, 24, 0) 0%,
@@ -61,6 +68,7 @@ const Text = styled.div`
 
 const Meta = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	text-transform: uppercase;
 	font-size: 11px;
 	line-height: 1.25rem;
@@ -74,6 +82,7 @@ const Meta = styled.div`
 
 const Editorial = styled.div`
 	display: block;
+	margin-right: 0.5rem;
 `
 
 const PostDate = styled.div`
@@ -102,7 +111,7 @@ const Anchor = styled(Link)`
 	bottom: 0;
 `
 
-const HomeHero = ({url, title, date, editorial, thumbnail}) => (
+const HomeHero = ({url, title, date, editorial, cover, author}) => (
 	<Wrapper>
 		<div
 			style={{
@@ -124,9 +133,9 @@ const HomeHero = ({url, title, date, editorial, thumbnail}) => (
 			/>
 		</div>
 		<PostContent>
-			{thumbnail && (
-				<ImageWrapper size={size}>
-					<Image src={thumbnail} />
+			{cover && (
+				<ImageWrapper>
+					<Image src={cover} />
 				</ImageWrapper>
 			)}
 			<Text>

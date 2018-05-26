@@ -10,9 +10,11 @@ import HomeHero from '../components/HomeHero'
 export const BlogPostTemplate = ({
 	content,
 	contentComponent,
-	description,
 	tags,
 	date,
+	cover,
+	author,
+	editorial,
 	title,
 	helmet,
 	id,
@@ -22,8 +24,13 @@ export const BlogPostTemplate = ({
 	return (
 		<article>
 			{helmet || ''}
-			<HomeHero title={title} date={date} key={id} />
-
+			<HomeHero
+				title={title}
+				date={date}
+				key={id}
+				cover={cover}
+				editorial={editorial}
+			/>
 			<Container>
 				<PostContent content={content} />
 				{tags && tags.length ? (
@@ -43,24 +50,17 @@ export const BlogPostTemplate = ({
 	)
 }
 
-BlogPostTemplate.propTypes = {
-	content: PropTypes.string.isRequired,
-	date: PropTypes.date,
-	contentComponent: PropTypes.func,
-	description: PropTypes.string,
-	title: PropTypes.string,
-	helmet: PropTypes.instanceOf(Helmet),
-}
-
 const BlogPost = ({data}) => {
 	const {markdownRemark: post} = data
 
 	return (
 		<BlogPostTemplate
+			helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
 			content={post.html}
 			contentComponent={HTMLContent}
-			description={post.frontmatter.description}
-			helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+			date={post.frontmatter.date}
+			editorial={post.frontmatter.editorial}
+			cover={post.frontmatter.cover}
 			tags={post.frontmatter.tags}
 			title={post.frontmatter.title}
 		/>
@@ -83,7 +83,9 @@ export const pageQuery = graphql`
 			frontmatter {
 				date
 				title
-				description
+				cover
+				editorial
+				author
 				tags
 			}
 		}
