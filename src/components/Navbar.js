@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {colors} from '../constants'
 import {above} from '../utils/responsive'
+import Link from './StylableLink'
 import Container from './Container'
 import LogoIcon from './LogoIcon'
 
