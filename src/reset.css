@@ -1,4 +1,26 @@
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
@@ -8,10 +30,16 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
 	font-smooth: antialised;
 	font-smoothing: antialised;
 	text-rendering: optimizeLegibility;
-	font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "dlig" 1, "zero" 1;
+	font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'pnum' 1, 'tnum' 0,
+		'onum' 0, 'lnum' 1, 'dlig' 1, 'zero' 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-size: 100%;
 	font-weight: normal;
 }
@@ -20,7 +48,10 @@ ul {
 	list-style: none;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
 	margin: 0;
 }
 
@@ -28,11 +59,18 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
-img, embed, iframe, object, audio, video {
+img,
+embed,
+iframe,
+object,
+audio,
+video {
 	height: auto;
 	max-width: 100%;
 }
@@ -46,7 +84,8 @@ table {
 	border-spacing: 0;
 }
 
-td, th {
+td,
+th {
 	padding: 0;
 	text-align: left;
 }

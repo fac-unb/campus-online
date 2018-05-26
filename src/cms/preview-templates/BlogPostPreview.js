@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {BlogPostTemplate} from '../../templates/blog-post'
+import withStyleSheet from '../withStyleSheet'
 
 const BlogPostPreview = ({entry, widgetFor}) => (
 	<BlogPostTemplate
@@ -18,4 +19,4 @@ BlogPostPreview.propTypes = {
 	widgetFor: PropTypes.func,
 }
 
-export default BlogPostPreview
+export default withStyleSheet(BlogPostPreview)

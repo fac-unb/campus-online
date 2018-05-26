@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {AboutPageTemplate} from '../../templates/about-page'
+import withStyleSheet from '../withStyleSheet'
 
 const AboutPagePreview = ({entry, widgetFor}) => (
 	<AboutPageTemplate
@@ -16,4 +17,4 @@ AboutPagePreview.propTypes = {
 	widgetFor: PropTypes.func,
 }
 
-export default AboutPagePreview
+export default withStyleSheet(AboutPagePreview)
