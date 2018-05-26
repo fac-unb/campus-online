@@ -7,6 +7,7 @@ import Content, {HTMLContent} from '../components/Content'
 import Container from '../components/Container'
 import Navbar from '../components/Navbar'
 import HomeHero from '../components/HomeHero'
+import Text from '../components/Text'
 
 export const BlogPostTemplate = ({
 	content,
@@ -40,7 +41,9 @@ export const BlogPostTemplate = ({
 				editorial={editorial}
 			/>
 			<Container>
-				<PostContent content={content} />
+				<Text>
+					<PostContent content={content} />
+				</Text>
 				{tags && tags.length ? (
 					<div>
 						<h4>Tags</h4>

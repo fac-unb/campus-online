@@ -42,6 +42,8 @@ export const colors = {
 export const fonts = {
 	sans:
 		'"IBM Plex Sans","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
-	serif:
+	serifDisplay:
 		'"Tiempos Headline",Constantia,"Lucida Bright",Lucidabright,"Lucida Serif","DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;',
+	serifText:
+		'"Tiempos Text",Constantia,"Lucida Bright",Lucidabright,"Lucida Serif","DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;',
 }

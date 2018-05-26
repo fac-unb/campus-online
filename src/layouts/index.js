@@ -24,18 +24,27 @@ const fontStyleSheet = [
 	// ['IBM Plex Sans', 'ibm-plex-sans/IBMPlexSans-SemiBoldItalic', 700, 'italic'],
 	// ['IBM Plex Sans', 'ibm-plex-sans/IBMPlexSans-Bold', 800, 'normal'],
 	// ['IBM Plex Sans', 'ibm-plex-sans/IBMPlexSans-BoldItalic', 800, 'italic'],
-	// ['Tiempos Headline', 'TiemposHeadline-Light.ttf', 300, 'normal']
-	// ['Tiempos Headline', 'TiemposHeadline-LightItalic.ttf', 300, 'italic']
-	// ['Tiempos Headline', 'TiemposHeadline-Regular.ttf', 400, 'normal']
-	// ['Tiempos Headline', 'TiemposHeadline-Italic.ttf', 400, 'italic']
-	// ['Tiempos Headline', 'TiemposHeadline-Medium.ttf', 500, 'normal']
-	// ['Tiempos Headline', 'TiemposHeadline-MediumItalic.ttf', 500, 'italic']
-	['Tiempos Headline', 'TiemposHeadline-Semibold.ttf', 600, 'normal'],
-	// ['Tiempos Headline', 'TiemposHeadline-SemBdIta.ttf', 600, 'italic']
-	// ['Tiempos Headline', 'TiemposHeadline-Bold.ttf', 700, 'normal']
-	// ['Tiempos Headline', 'TiemposHeadline-BoldItalic.ttf', 700, 'italic']
-	// ['Tiempos Headline', 'TiemposHeadline-Black.ttf', 800, 'normal']
-	// ['Tiempos Headline', 'TiemposHeadline-BlackItalic.ttf', 800, 'italic']
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-Light', 300, 'normal'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-LightItalic', 300, 'italic'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-Regular', 400, 'normal'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-Italic', 400, 'italic'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-Medium', 500, 'normal'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-MediumItalic', 500, 'italic'],
+	[
+		'Tiempos Headline',
+		'tiempos-headline/TiemposHeadline-Semibold',
+		600,
+		'normal',
+	],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-SemBdIta', 600, 'italic'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-Bold', 700, 'normal'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-BoldItalic', 700, 'italic'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-Black', 800, 'normal'],
+	// ['Tiempos Headline', 'tiempos-headline/TiemposHeadline-BlackItalic', 800, 'italic'],
+	['Tiempos Text', 'tiempos-text/TiemposText-Regular', 400, 'normal'],
+	['Tiempos Text', 'tiempos-text/TiemposText-RegularItalic', 400, 'italic'],
+	['Tiempos Text', 'tiempos-text/TiemposText-Semibold', 600, 'normal'],
+	['Tiempos Text', 'tiempos-text/TiemposText-SemiBoldItalic', 600, 'italic'],
 ]
 	.map(fontFace)
 	.join('\n')
