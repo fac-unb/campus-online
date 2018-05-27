@@ -1,6 +1,11 @@
+/* eslint-env node */
+/* global Promise */
+
 const _ = require('lodash')
 const path = require('path')
 const {createFilePath} = require('gatsby-source-filesystem')
+
+/* eslint-disable no-console */
 
 exports.createPages = ({boundActionCreators, graphql}) => {
 	const {createPage} = boundActionCreators
@@ -84,7 +89,7 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
 	}
 }
 
-exports.modifyWebpackConfig = ({config, stage}) =>
+exports.modifyWebpackConfig = ({config}) =>
 	config.merge({
 		module: {
 			noParse: [/node_modules\/netlify-cms\/dist\/cms.js/],

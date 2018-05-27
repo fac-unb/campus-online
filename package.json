@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop --port \"${PORT:-5000}\" --open",
+    "lint": "eslint './*.js' 'src/**.js'",
     "build": "gatsby build",
     "start": "gatsby serve",
-    "precommit": "pretty-quick --staged",
+    "precommit": "pretty-quick --staged && npm run lint",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "dependencies": {
