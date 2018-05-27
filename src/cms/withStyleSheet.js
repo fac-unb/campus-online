@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import {StyleSheetManager} from 'styled-components'
 import resetCSS from '!raw!../reset.css'
 import fontsCSS from '!raw!../fonts.css'
