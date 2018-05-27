@@ -1,16 +1,16 @@
 {
   "parser": "babel-eslint",
-  "rules": {
-    "react/prop-types": 0
-  },
- "env": {
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "env": {
     "browser": true
   },
   "globals": {
     "graphql": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ]
+  "rules": {
+    "react/prop-types": 0
+  },
 }
