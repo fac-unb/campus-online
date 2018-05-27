@@ -6,6 +6,7 @@
 
 ## Roadmap
 
+* [ ] :put_litter_in_its_place: cleanup remaining cruft
 * [ ] :pencil: real content
 * [ ] :bookmark_tabs: post pagination
 * [ ] :mag_right: search
