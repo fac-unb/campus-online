@@ -19,14 +19,14 @@ collections:
     folder: "src/pages/blog"
     create: true
     format: "yaml-frontmatter"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{date}}-{{slug}}"
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "blog-post"}
       - {label: "Título", name: "title", widget: "string", required: true}
       - {label: "Foto de Capa", name: "cover", widget: "image"}
       - {label: "Data de publicação", name: "date", widget: "date", format: "YYYY-MM-DD", required: true}
       - {label: "Editoria", name: "editorial", widget: "relation", collection: "editorials", searchFields: ["title"], valueField: "title", required: false}
-      - {label: "Autor", name: "author", widget: "relation", collection: "authors", searchFields: ["title"], valueField: "title", required: false}
+      - {label: "Autor", name: "author", widget: "relation", collection: "authors", displayFields: ["semester", "title"], searchFields: ["title", "semester"], valueField: "title", required: false}
       - {label: "Corpo", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
