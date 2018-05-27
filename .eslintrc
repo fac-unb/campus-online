@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "react/prop-types": 0,
+    "react/no-children-prop": 0
+  },
+ "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ]
+}

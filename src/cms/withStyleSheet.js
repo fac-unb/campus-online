@@ -28,8 +28,12 @@ class StyleSheetWrapper extends Component {
 	}
 }
 
+const getDisplayName = WrappedComponent =>
+	WrappedComponent.displayName || WrappedComponent.name || 'Component'
+
 const withStyleSheet = WrappedComponent => {
-	return class extends Component {
+	return class WithStyleSheet extends Component {
+		static displayName = `WithStyleSheet(${getDisplayName(WrappedComponent)})`
 		render() {
 			return (
 				<StyleSheetWrapper>
