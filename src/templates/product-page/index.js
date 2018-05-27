@@ -5,14 +5,12 @@ import Testimonials from '../../components/Testimonials'
 import Pricing from '../../components/Pricing'
 
 export const ProductPage = ({
-	image,
 	title,
 	heading,
 	description,
 	intro,
 	main,
 	testimonials,
-	fullImage,
 	pricing,
 }) => (
 	<section>
@@ -47,7 +45,6 @@ export const ProductPage = ({
 )
 
 ProductPage.propTypes = {
-	image: PropTypes.string,
 	title: PropTypes.string,
 	heading: PropTypes.string,
 	description: PropTypes.string,
@@ -62,7 +59,6 @@ ProductPage.propTypes = {
 		image3: PropTypes.object,
 	}),
 	testimonials: PropTypes.array,
-	fullImage: PropTypes.string,
 	pricing: PropTypes.shape({
 		heading: PropTypes.string,
 		description: PropTypes.string,

@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
 import Template from '.'

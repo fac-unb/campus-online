@@ -1,6 +1,5 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
 import Navbar from '../components/Navbar'

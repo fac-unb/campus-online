@@ -1,10 +1,8 @@
 import '../reset.css'
 import '../fonts.css'
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {colors, fonts} from '../constants'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const Wrapper = styled.div`

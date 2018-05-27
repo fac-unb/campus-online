@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {colors, fonts} from '../constants'
+import {colors} from '../constants'
 import {above} from '../utils/responsive'
 import * as format from '../utils/format'
 import Link from './StylableLink'
@@ -111,7 +111,7 @@ const Anchor = styled(Link)`
 	bottom: 0;
 `
 
-const HomeHero = ({url, title, date, editorial, cover, author}) => (
+const HomeHero = ({url, title, date, editorial, cover}) => (
 	<Wrapper>
 		<div
 			style={{

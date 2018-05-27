@@ -1,7 +1,7 @@
 import React from 'react'
 import Content from '../../components/Content'
 
-const AboutPage = ({title, content, contentComponent}) => (
+const AboutPage = ({title, content}) => (
 	<section>
 		<h2>{title}</h2>
 		<Content>{content}</Content>

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import {breakpoints, columns} from '../utils/constants'
 import {above} from '../utils/responsive'

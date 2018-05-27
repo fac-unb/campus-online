@@ -8,7 +8,7 @@ import Navbar from '../../components/Navbar'
 import HomeHero from '../../components/HomeHero'
 import Text from '../../components/Text'
 
-const BlogPost = ({content, tags, date, cover, author, editorial, title}) => {
+const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 	return (
 		<article>
 			<Helmet title={`${title} | Blog`} />

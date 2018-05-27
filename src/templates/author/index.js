@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content from '../../components/Content'
-import Container from '../../components/Container'
 
 // [TODO]: move markup to this file, from ./gatsby.js
 // i've ported the earlier structure, it's probably wrong though,
