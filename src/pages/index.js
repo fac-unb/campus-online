@@ -110,6 +110,7 @@ export const pageQuery = graphql`
 						editorial
 						cover
 						author
+						featured
 						tags
 						date
 					}

@@ -16,7 +16,9 @@ const Wrapper = styled.article`
 	width: 100%;
 	flex: 1;
 	position: relative;
+	margin-bottom: 0.5rem;
 	${above.md`
+		margin-bottom: 0;
 		&:hover, &:focus, &:active{
 			box-shadow: 0 37.125px 70px -12.125px rgba(0,0,0,0.3);
 			z-index: 1;
@@ -67,13 +69,13 @@ const ImageWrapper = styled.figure`
 	position: relative;
 	min-height: 100%;
 	${above.md`
-		flex: 5;
+		flex: 4;
 	`}
 	${above.lg`
 		flex: 6;
 	`}
 	${above.xg`
-		flex: 8;
+		flex: 7;
 	`}
 	flex: ${p => !p.size && `3 !important`}
 `

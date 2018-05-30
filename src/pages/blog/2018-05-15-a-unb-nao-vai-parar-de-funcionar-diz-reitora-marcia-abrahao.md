@@ -4,6 +4,7 @@ title: '“A UnB não vai parar de funcionar”, diz reitora Márcia Abrahão'
 cover: /uploads/reitoria.jpg
 date: '2018-05-15'
 editorial: Universidade
+featured: true
 author: Daniele Brandão
 tags:
   - orçamento
