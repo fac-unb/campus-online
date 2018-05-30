@@ -1,38 +1,88 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import {colors} from '../../constants'
+import Navbar from '../../components/Navbar'
+import TextHero from '../../components/TextHero'
+import Container from '../../components/Container'
+import {CardRow} from '../../components/CardGrid'
+import PostCard from '../../components/PostCard'
 
 class TagRoute extends React.Component {
 	render() {
 		const {
 			pathContext: {tag},
 			data: {
-				site: {siteMetadata: title},
+				site: {siteMetadata},
 				blog: {posts, totalCount},
 			},
 		} = this.props
 
 		const postLinks = posts.map(({post}) => (
-			<li key={post.fields.slug}>
-				<Link to={post.fields.slug}>
-					<h2>{post.frontmatter.title}</h2>
-				</Link>
-			</li>
+			<PostCard
+				url={post.fields.slug}
+				title={post.frontmatter.title}
+				date={post.frontmatter.date}
+				excerpt={post.excerpt}
+				editorial={post.frontmatter.editorial}
+				cover={post.frontmatter.cover}
+				author={post.frontmatter.author}
+				key={post.id}
+				size={1}
+				dark={true}
+				alt={true}
+			/>
 		))
 
-		const tagHeader = `${totalCount} post${
-			totalCount === 1 ? '' : 's'
-		} tagged with “${tag}”`
+		const tagSup = `
+			${totalCount} Matéria${totalCount === 1 ? '' : 's'} com a tag
+		`
 
 		return (
-			<section>
-				<Helmet title={`${tag} | ${title}`} />
-				<h3>{tagHeader}</h3>
-				<ul>{postLinks}</ul>
-				<p>
-					<Link to="/tags/">Browse all tags</Link>
-				</p>
-			</section>
+			<div
+				style={{
+					background: colors.base,
+					color: 'white',
+					marginBottom: '-8rem',
+					paddingBottom: '8rem',
+				}}
+			>
+				<Helmet title={`${siteMetadata.title} | ${tag}`} />
+				<Navbar
+					dark={true}
+					style={{
+						position: 'fixed',
+						top: 0,
+						zIndex: 20,
+						color: 'white',
+						background: colors.base,
+					}}
+					links={[
+						{href: '/about', label: 'Sobre'},
+						{href: '/contact', label: 'Contato'},
+					]}
+				/>
+				<TextHero title={tag} sup={tagSup} navbar={false} />
+				<section>
+					<Container>
+						<CardRow>{postLinks}</CardRow>
+						<Link
+							style={{
+								display: 'block',
+								fontSize: '1.125rem',
+								lineHeight: '1.5rem',
+								marginTop: '4rem',
+								color: 'currentColor',
+								marginBottom: '2rem',
+								textDecoration: 'none',
+							}}
+							to="/tags/"
+						>
+							Ver todas as tags
+						</Link>
+					</Container>
+				</section>
+			</div>
 		)
 	}
 }
@@ -59,6 +109,9 @@ export const tagPageQuery = graphql`
 					}
 					frontmatter {
 						title
+						cover
+						editorial
+						author
 					}
 				}
 			}

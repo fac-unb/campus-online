@@ -16,6 +16,7 @@ const Wrapper = styled.nav`
 	position: relative;
 	margin-bottom: 2rem;
 	width: 100%;
+	transition: 0.2s 0.2s all;
 	${p =>
 		p.hero &&
 		`
@@ -24,16 +25,24 @@ const Wrapper = styled.nav`
 		z-index: 3;
 		background: none;
 		&:before {
+			transition: 0.2s 0.1s all;
 			content: '';
 			top: 0;
 			position: absolute;
 			bottom: -2rem;
 			left: 0;
 			right: 0;
+			z-index: -1;
 			padding-bottom: 2rem;
 			background-blend-mode: multiply;
 			background: linear-gradient(180deg, rgba(20, 22, 24, 0.88) 0%, rgba(20, 22, 24, 0) 100%);
 		}
+	`};
+	${p =>
+		p.dark &&
+		`
+		background: ${colors.base};
+		color: ${colors.white};
 	`};
 	${p =>
 		p.isMenuOpen &&
@@ -41,6 +50,7 @@ const Wrapper = styled.nav`
 		background: white !important;
 		color: ${colors.base} !important;
 		&:before{
+			background: linear-gradient(180deg, rgba(20, 22, 24, 0) 0%, rgba(20, 22, 24, 0) 100%);
 			opacity: 0;
 		}
 	`};
@@ -67,35 +77,20 @@ const Links = styled.ul`
 	width: 100%;
 	left: 0;
 	top: 100%;
-	transform: scaleY(0);
+	transform: translateY(-200%);
 	transform-origin: 0 0;
-	opacity: 0;
-	transition: all 0.3s ease;
+	z-index: -1;
+	color: white;
+	transition: transform 0.3s, color 0.5s 0.2s;
 	padding-bottom: 1rem;
-	:before, :after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	}
-	:before{
-		height: 2rem;
-		box-shadow: 0 0 6rem ${colors.base66};
-		z-index: -1;
-	}
-	:after{
-		height: 100%
-		background: white;
-		z-index: -1;
-	}
 	${p =>
 		p.isMenuOpen &&
 		`
 		transform: none;
 		color: black;
-		opacity: 1;
-	`}
-	${above.md`
+		box-shadow: 0 3rem 4rem rgba(0,0,0,0.22);
+		transition: transform 0.3s 0.2s, color 0.5s;
+	`} ${above.md`
 		color: inherit;
 		padding-bottom: 0;
 		opacity: 1;
@@ -108,10 +103,7 @@ const Links = styled.ul`
 		width: auto;
 		position: inherit;
 		background: none;
-		:before, :after {
-			display: none;
-		}
-	`}
+	`};
 `
 
 const Anchor = styled(Link)`
@@ -142,7 +134,7 @@ const Anchor = styled(Link)`
 		background-position: 0 0;
 		background-size: 0 100%;
 		background-repeat: no-repeat;
-		transition: all 0.2s ease-out;
+		transition: all 0.3s ease;
 		background-image: linear-gradient(
 			180deg,
 			transparent 37.5%,
@@ -153,6 +145,13 @@ const Anchor = styled(Link)`
 			`
 			pointer-events: auto;
 			background-image: linear-gradient(180deg, transparent 37.5%, ${colors.base} 0);
+		`};
+		${p =>
+			p.dark &&
+			`
+			background-image: linear-gradient(180deg, transparent 37.5%, ${
+				colors.base88
+			} 0);
 		`};
 	}
 	${above.md`
@@ -179,22 +178,36 @@ const Right = styled.div`
 	align-items: center;
 `
 
-const LinkItem = ({to, label, hero, dropdownItems = []}) => (
+const LinkItem = ({to, label, hero, dark, dropdownItems = []}) => (
 	<li style={{listStyle: 'none', display: 'block'}}>
-		<Anchor hero={hero} to={to}>
+		<Anchor hero={hero} dark={dark} to={to}>
 			{label}
 		</Anchor>
 		{dropdownItems.length > 0 && <Dropdown dropdownItems={dropdownItems} />}
 	</li>
 )
 
-const Navbar = ({links, style, hero, isMenuOpen, onMenuClick, ...props}) => (
-	<Wrapper style={style} hero={hero} isMenuOpen={isMenuOpen} {...props}>
+const Navbar = ({
+	links,
+	style,
+	hero,
+	dark,
+	isMenuOpen,
+	onMenuClick,
+	...props
+}) => (
+	<Wrapper
+		style={style}
+		hero={hero}
+		dark={dark}
+		isMenuOpen={isMenuOpen}
+		{...props}
+	>
 		<Main>
 			<Container>
 				<Flex>
 					<Left>
-						<Logo to="/" hero={hero} />
+						<Logo to="/" hero={hero} dark={dark} />
 					</Left>
 					<Right>
 						<Hamburguer hero={hero} isOpen={isMenuOpen} onClick={onMenuClick} />
@@ -206,6 +219,7 @@ const Navbar = ({links, style, hero, isMenuOpen, onMenuClick, ...props}) => (
 											key={link.href}
 											to={link.href}
 											hero={hero}
+											dark={dark}
 											label={link.label}
 											dropdownItems={link.dropdownItems}
 										/>

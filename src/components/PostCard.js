@@ -29,9 +29,10 @@ const Padding = styled.div`
 `
 
 const Inset = styled.div`
-	background: ${p => (p.dark ? colors.base : 'white')};
+	background: ${p =>
+		!p.dark ? 'white' : p.alt ? 'rgba(255,255,255,0.03)' : colors.base};
 	color: ${p => (p.dark ? 'white' : colors.base)};
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid ${p => (p.dark ? colors.base88 : colors.base11)};
 	position: relative;
 	overflow: hidden;
 	transition: padding ${timing}, margin ${timing}, box-shadow ${timing};
@@ -169,11 +170,12 @@ const PostCard = ({
 	size,
 	cover,
 	dark = false,
+	alt = false,
 }) => (
 	<CardCell xs={12} md={size ? 12 : 6}>
 		<Wrapper>
 			<Padding>
-				<Inset dark={dark}>
+				<Inset dark={dark} alt={alt}>
 					<PostContent>
 						{cover && (
 							<ImageWrapper size={size}>
