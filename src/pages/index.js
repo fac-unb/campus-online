@@ -53,14 +53,16 @@ export default class IndexPage extends React.Component {
 							{posts && (
 								<CardRow>
 									{posts
-										.slice(2)
+										.slice(1)
 										.map(({post}) => (
 											<PostCard
 												url={post.fields.slug}
 												title={post.frontmatter.title}
 												date={post.frontmatter.date}
 												excerpt={post.excerpt}
-												tags={post.frontmatter.tags}
+												editorial={post.frontmatter.editorial}
+												cover={post.frontmatter.cover}
+												author={post.frontmatter.author}
 												key={post.id}
 												size={1}
 											/>

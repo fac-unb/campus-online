@@ -9,10 +9,9 @@ import {CardCell} from './CardGrid'
 const minHeight = '26rem'
 const maxHeight = '16rem'
 
+const timing = '0.15s cubic-bezier(0.4, 0, 0.2, 1)'
 const Wrapper = styled.article`
-	transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-		margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: padding ${timing}, margin ${timing}, box-shadow ${timing};
 	z-index: 0;
 	width: 100%;
 	flex: 1;
@@ -35,15 +34,13 @@ const Inset = styled.div`
 	border-bottom: 1px solid lightgray;
 	position: relative;
 	overflow: hidden;
-	transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-		margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: padding ${timing}, margin ${timing}, box-shadow ${timing};
 	${above.md`
 		border-bottom: 0;
 	`} ${above.md`
 		${Wrapper}:hover &, ${Wrapper}:focus &, ${Wrapper}:active &{
-			padding: 6px 6px;
-			margin: -6px -6px;
+			padding: 6px;
+			margin: -6px;
 		}
 	`};
 `
@@ -65,10 +62,8 @@ const ImageWrapper = styled.figure`
 	align-items: center;
 	justify-content: center;
 	object-fit: cover;
-	transition: padding .15s cubic-bezier(.4,0,.2,1),margin .15s cubic-bezier(.4,0,.2,1),box-shadow .15s cubic-bezier(.4,0,.2,1);
-	margin: -6px -6px;
+	margin: -6px;
 	position: relative;
-	overflow: hidden;
 	min-height: 100%;
 	${above.md`
 		flex: 5;
@@ -84,7 +79,6 @@ const ImageWrapper = styled.figure`
 
 const Image = styled.img`
 	display: block;
-	overflow: hidden;
 	object-fit: cover;
 	height: 100%;
 	min-width: 100%;
@@ -99,8 +93,10 @@ const Image = styled.img`
 const Text = styled.div`
 	flex: 2;
 	padding: 1.5rem 1rem 2rem;
+	display: flex;
+	flex-direction: column;
 	${above.md`
-		padding: 2rem 1.875rem 3.5rem;
+		padding: 2rem 1.875rem 2rem;
 	`};
 `
 
@@ -127,6 +123,12 @@ const Anchor = styled(Link)`
 	left: 0;
 	right: 0;
 	bottom: 0;
+	outline-offset: -6px;
+	transition: outline ${timing};
+	${Wrapper}:hover &,
+	${Wrapper}:active & {
+		outline-offset: 0;
+	}
 `
 
 const Title = styled.div`
@@ -142,15 +144,32 @@ const Title = styled.div`
 	`};
 `
 
-const Tags = styled.div`
+const Editorial = styled.div`
 	display: block;
 `
 
-const Tag = styled.div`
-	display: block;
+const Author = styled.div`
+	margin-top: auto;
+	padding-top: 1.5rem;
+	color: ${colors.base44};
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	font-weight: 600;
+	${above.md`
+		font-size: 0.875rem;
+	`};
 `
 
-const PostCard = ({url, title, date, tags = [], size, cover, dark = false}) => (
+const PostCard = ({
+	url,
+	title,
+	date,
+	editorial,
+	author,
+	size,
+	cover,
+	dark = false,
+}) => (
 	<CardCell xs={12} md={size ? 12 : 6}>
 		<Wrapper>
 			<Padding>
@@ -163,12 +182,11 @@ const PostCard = ({url, title, date, tags = [], size, cover, dark = false}) => (
 						)}
 						<Text>
 							<Meta>
-								<Tags>
-									{tags.map(tag => <Tag key={`tag-${tag}`}>{` ${tag}`}</Tag>)}
-								</Tags>
-								<PostDate>{format.postDate(date)}</PostDate>
+								{editorial && <Editorial>{editorial}</Editorial>}
+								{date && <PostDate>{format.postDate(date)}</PostDate>}
 							</Meta>
-							<Title>{title}</Title>
+							{title && <Title>{title}</Title>}
+							{author && <Author>{author}</Author>}
 						</Text>
 					</PostContent>
 				</Inset>
