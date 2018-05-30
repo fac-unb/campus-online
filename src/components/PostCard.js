@@ -72,7 +72,7 @@ const ImageWrapper = styled.figure`
 		flex: 6;
 	`}
 	${above.xg`
-		flex: 9;
+		flex: 8;
 	`}
 	flex: ${p => !p.size && `3 !important`}
 `
@@ -92,7 +92,7 @@ const Image = styled.img`
 
 const Text = styled.div`
 	flex: 2;
-	padding: 1.5rem 1rem 2rem;
+	padding: 1.5rem 1rem 1rem;
 	display: flex;
 	flex-direction: column;
 	${above.md`
@@ -136,7 +136,7 @@ const Title = styled.div`
 	line-height: 1.27273;
 	font-weight: 500;
 	letter-spacing: 0.015em;
-	margin: 1rem 0 0;
+	margin: 1rem 0;
 	word-wrap: break-word;
 	${above.md`
 		font-size: 22px;
@@ -150,7 +150,7 @@ const Editorial = styled.div`
 
 const Author = styled.div`
 	margin-top: auto;
-	padding-top: 1.5rem;
+	padding-top: 0.5rem;
 	color: ${colors.base44};
 	font-size: 0.75rem;
 	line-height: 1.25rem;
