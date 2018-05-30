@@ -6,7 +6,7 @@ import Link from './StylableLink'
 import Navbar from './Navbar'
 import Container from './Container'
 
-const Wrapper = styled.article`
+const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;

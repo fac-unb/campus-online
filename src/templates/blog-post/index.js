@@ -9,7 +9,7 @@ import Tags from '../../components/Tags'
 
 const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 	return (
-		<article>
+		<main>
 			<Helmet title={`${title} | Blog`} />
 			<Navbar
 				style={{position: 'fixed', top: 0, zIndex: 2}}
@@ -32,7 +32,7 @@ const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 					</div>
 				) : null}
 			</Container>
-		</article>
+		</main>
 	)
 }
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
 import Navbar from '../components/Navbar'
+import StoriesTitle from '../components/StoriesTitle'
 import HomeHero from '../components/HomeHero'
 import PostCard from '../components/PostCard'
 
@@ -49,7 +50,11 @@ export default class IndexPage extends React.Component {
 						))}
 					<Container>
 						<section>
-							<h1>Latest Stories</h1>
+							<StoriesTitle
+								title="Publicações recentes"
+								label="Ver todas"
+								to="/posts"
+							/>
 							{posts && (
 								<CardRow>
 									{posts
