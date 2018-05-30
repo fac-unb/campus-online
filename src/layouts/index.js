@@ -3,6 +3,7 @@ import '../fonts.css'
 import React from 'react'
 import styled from 'styled-components'
 import {colors, fonts} from '../constants'
+import {Provider as MenuProvider} from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const Wrapper = styled.div`
@@ -21,10 +22,12 @@ const Inner = styled.div`
 `
 
 const Layout = ({children}) => (
-	<Wrapper>
-		<Inner>{typeof children === 'function' ? children() : children}</Inner>
-		<Footer style={{flex: 'none'}} />
-	</Wrapper>
+	<MenuProvider>
+		<Wrapper>
+			<Inner>{typeof children === 'function' ? children() : children}</Inner>
+			<Footer style={{flex: 'none'}} />
+		</Wrapper>
+	</MenuProvider>
 )
 
 export default Layout

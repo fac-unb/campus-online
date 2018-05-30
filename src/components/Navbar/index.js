@@ -7,6 +7,8 @@ import Container from '../Container'
 import Logo from './Logo'
 import Dropdown from './Dropdown'
 import Hamburguer from './Hamburguer'
+import {withMenu} from './Context'
+export {Provider} from './Context'
 
 const Wrapper = styled.nav`
 	background: white;
@@ -218,4 +220,4 @@ const Navbar = ({links, style, hero, isMenuOpen, onMenuClick, ...props}) => (
 	</Wrapper>
 )
 
-export default Navbar
+export default withMenu(Navbar)
