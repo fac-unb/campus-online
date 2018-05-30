@@ -42,7 +42,7 @@ const Links = styled.ul`
 	margin-right: -1rem;
 `
 
-const Anchor = styled(Link)`
+const StyledLink = styled(Link)`
 	color: ${colors.base66};
 	text-decoration: none;
 	display: block;
@@ -55,13 +55,15 @@ const Anchor = styled(Link)`
 	:focus,
 	:active {
 		color: ${colors.base03};
-		text-decoration: underline;
 	}
 `
 
-const LinkItem = ({to, label}) => (
+const StyledAnchor = StyledLink.withComponent('a')
+
+const LinkItem = ({to, href, label}) => (
 	<li style={{listStyle: 'none'}}>
-		<Anchor to={to}>{label}</Anchor>
+		{to && <StyledLink to={to}>{label}</StyledLink>}
+		{href && <StyledAnchor href={href}>{label}</StyledAnchor>}
 	</li>
 )
 
@@ -73,7 +75,7 @@ const Footer = () => (
 					<LogoIcon />
 				</Logo>
 				<Links>
-					<LinkItem to="/posts" label="Posts" />
+					<LinkItem href="https://kunst.com.br" label="kunst" />
 				</Links>
 			</Flex>
 		</Container>
