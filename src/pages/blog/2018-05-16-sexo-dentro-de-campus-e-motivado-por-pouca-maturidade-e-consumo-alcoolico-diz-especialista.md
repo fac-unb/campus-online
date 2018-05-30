@@ -6,7 +6,9 @@ title: >-
 cover: /uploads/bce-2.jpg
 date: '2018-05-16'
 editorial: Tabu
-author: ''
+author:
+  slug: 2018-1-robson-g-rodrigues
+  title: Robson G. Rodrigues
 tags:
   - bce
   - campus
