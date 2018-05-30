@@ -97,6 +97,7 @@ const Title = styled.div`
 	word-wrap: break-word;
 	${above.md`
 		font-size: 2rem;
+		max-width: 56rem;
 		line-height: 2.5rem;
 	`};
 `
