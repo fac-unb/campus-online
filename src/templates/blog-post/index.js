@@ -1,12 +1,11 @@
 import React from 'react'
-import {kebabCase} from 'lodash'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import Content from '../../components/Content'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
 import HomeHero from '../../components/HomeHero'
 import Text from '../../components/Text'
+import Tags from '../../components/Tags'
 
 const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 	return (
@@ -28,11 +27,7 @@ const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 					<div>
 						<h4>Tags</h4>
 						<ul>
-							{tags.map(tag => (
-								<li key={tag}>
-									<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-								</li>
-							))}
+							<Tags tags={tags} />
 						</ul>
 					</div>
 				) : null}
