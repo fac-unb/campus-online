@@ -92,6 +92,11 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
 exports.modifyWebpackConfig = ({config}) =>
 	config.merge({
 		module: {
-			noParse: [/node_modules\/netlify-cms\/dist\/cms.js/],
+			noParse: [/netlify-cms\/dist\/cms\.js/],
+		},
+		resolve: {
+			alias: {
+				'netlify-cms': '@leonardodino/netlify-cms',
+			},
 		},
 	})

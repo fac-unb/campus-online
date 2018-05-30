@@ -12,6 +12,7 @@
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "dependencies": {
+    "@leonardodino/netlify-cms": "^1.8.1-rc-8",
     "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
@@ -27,7 +28,6 @@
     "gatsby-transformer-sharp": "^1.6.21",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms": "^1.8.4",
     "polished": "^1.9.2",
     "prop-types": "^15.6.0",
     "react": "^16.4.0",
