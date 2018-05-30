@@ -1,10 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 import {breakpoints, columns} from '../constants'
 import {above} from '../utils/responsive'
-
-const mapBreakpoints = fn =>
-	Object.keys(breakpoints).map(label => above[label]`${fn(breakpoints[label])}`)
 
 const mapPropsBreakpoints = fn => props =>
 	Object.keys(props)

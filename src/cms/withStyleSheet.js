@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import {StyleSheetManager} from 'styled-components'
 import resetCSS from '!raw!../reset.css'
 import fontsCSS from '!raw!../fonts.css'
@@ -29,8 +28,12 @@ class StyleSheetWrapper extends Component {
 	}
 }
 
+const getDisplayName = WrappedComponent =>
+	WrappedComponent.displayName || WrappedComponent.name || 'Component'
+
 const withStyleSheet = WrappedComponent => {
-	return class extends Component {
+	return class WithStyleSheet extends Component {
+		static displayName = `WithStyleSheet(${getDisplayName(WrappedComponent)})`
 		render() {
 			return (
 				<StyleSheetWrapper>

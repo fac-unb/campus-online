@@ -160,7 +160,7 @@ const Navbar = ({links, style, hero, ...props}) => (
 				{links && (
 					<Navigation>
 						<Links>
-							{links.map((link, index) => (
+							{links.map(link => (
 								<LinkItem
 									key={link.href}
 									to={link.href}

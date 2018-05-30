@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Pricing = ({data}) => (
+const Pricing = ({data = []}) => (
 	<div>
 		{data.map(price => (
 			<div key={price.plan}>

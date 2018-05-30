@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop --port \"${PORT:-5000}\" --open -H 0.0.0.0",
+    "lint": "eslint './*.js' 'src'",
     "build": "gatsby build",
     "start": "gatsby serve",
-    "precommit": "pretty-quick --staged",
+    "precommit": "pretty-quick --staged && npm run lint",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "dependencies": {
@@ -34,6 +35,12 @@
     "styled-components": "^3.3.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "gatsby-plugin-eslint": "^1.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
     "prettier": "^1.7.4",
