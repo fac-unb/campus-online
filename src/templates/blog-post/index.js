@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Content from '../../components/Content'
 import Container from '../../components/Container'
+import {Row, Cell} from '../../components/Grid'
 import Navbar from '../../components/Navbar'
 import HomeHero from '../../components/HomeHero'
 import Text from '../../components/Text'
@@ -20,9 +21,13 @@ const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 			/>
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
 			<Container>
-				<Text>
-					<Content>{content}</Content>
-				</Text>
+				<Row>
+					<Cell xs={12} lg={8}>
+						<Text>
+							<Content>{content}</Content>
+						</Text>
+					</Cell>
+				</Row>
 				{tags && tags.length ? (
 					<div>
 						<h4>Tags</h4>

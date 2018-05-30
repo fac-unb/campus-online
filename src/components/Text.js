@@ -5,125 +5,87 @@ import {above} from '../utils/responsive'
 const lineHeight = 2
 
 const Text = styled.div`
-	font-size: 1.25rem;
-	line-height: ${lineHeight}rem;
-	margin-bottom: 4rem;
 	font-family: ${fonts.serifText};
-
-	strong{
-		font-weight: bold
+	line-height: ${lineHeight};
+	margin-bottom: 4rem;
+	color: ${colors.base88};
+	${above.md`
+		font-size: 1.125em;
+	`} strong {
+		font-weight: bold;
 	}
 
-	*+*{
-		margin-top: ${lineHeight}rem;
+	em {
+		font-style: italic;
 	}
 
-	h1, h2, h3{
-		margin-top: ${2 * lineHeight}rem;
-		${above.lg`
-			:before{
-				transform: translateX(-100%);;
-				margin-left: -0.5rem;
-				font-weight: 500;
-				position: absolute;;
-				opacity: 0.25;
-			}
-		`}
+	* + * {
+		margin-top: ${0.5 * lineHeight}em;
 	}
 
-	h1+h2, h1+h3, h2+h1, h2+h3, h3+h1, h3+h2{
-		margin-top: ${lineHeight}rem;
+	h2,
+	h3 {
+		margin-top: ${lineHeight}em;
+		font-family: ${fonts.sans};
 	}
 
-	h1{
-		font-size: 1.5rem;
-		hyphens: none;
-		${above.lg`
-			:before{
-				content: '#';
-			}
-		`}
+	h2 + h3,
+	h3 + h2 {
+		margin-top: ${lineHeight}em;
 	}
 
 	h2 {
+		font-size: 1.5em;
 		hyphens: none;
-		font-size: 1.25rem;
-		color: ${colors.base44};
-		position: relative;;
-		${above.lg`
-			:before{
-				content: '##';
-			}
-		`}
-
-	h3{
-		${above.lg`
-			:before{
-				content: '###';
-			}
-		`}
+		line-height: ${0.75 * lineHeight};
+		color: ${colors.base66};
 	}
 
-
-	a{
-		color: currentColor;
-		box-shadow: 0px 1px ${colors.base66};
-		:hover{
-			color: ${colors.base44};
-			box-shadow: 0px 1px ${colors.base03};
-		}
-	}
-
-	blockquote{
+	h3 {
 		hyphens: none;
-		border-left: 3px solid ${colors.base88};
 		font-size: 1.25em;
-		padding: 1rem 0 1rem 1.25rem;
-		${above.lg`
-			margin-left: -1.25em;
-		`}
-		a{
-			box-shadow: 0px 2px ${colors.base66};
-			:hover{
-				box-shadow: 0px 2px ${colors.base03};
-			}
+		font-weight: 600;
+		position: relative;
+		line-height: ${0.875 * lineHeight};
+	}
+
+	a {
+		color: currentColor;
+		:hover {
+			color: ${colors.base};
 		}
 	}
 
-	hr{
-		border: 1px dashed ${colors.base88};
-		margin-top: ${1.5 * lineHeight}rem;
-		margin-bottom: ${1.5 * lineHeight}rem;
-		height: 0;
-		${above.md`
-			margin-left: 0;
-			width: 20%;
-		`}
-	}
-
-	li{
-		margin-left: 1.1em;
-		margin-top: ${0.5 * lineHeight}rem;
-		:before{
-			position: absolute;
-			color: ${colors.base44};
-			font-weight: 600;
-			margin-left: -1.25rem;
-			${above.lg`
-				margin-left: 0;
-			`}
-		}
-	}
-
-	em{
-		font-style: italic;;
+	blockquote {
+		hyphens: none;
+		border-left: 1px solid ${colors.base22};
+		font-size: 1.125em;
+		font-style: italic;
 		letter-spacing: -0.25px;
+		line-height: ${0.875 * lineHeight};
+		color: ${colors.base66};
+		padding: 1em 0 1em 1.5em;
+		${above.lg`
+			margin-left: -1.5em;
+		`};
 	}
 
-	img{
+	hr {
+		margin: 3em 0;
+		border: none;
+		height: 1px;
+		background: ${colors.base22};
+	}
+
+	img {
 		width: 100%;
 	}
 
+	ul {
+		li {
+			list-style: circle;
+		}
+	}
 `
 
 export default Text

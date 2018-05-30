@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {breakpoints, columns} from '../utils/constants'
+import {breakpoints, columns} from '../constants'
 import {above} from '../utils/responsive'
 
 const mapBreakpoints = fn =>
