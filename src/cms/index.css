@@ -1,6 +1,6 @@
 .SplitPane.vertical .Resizer.vertical {
-	width: 11px !important;
+	width: 11px;
 }
 .nc-previewPane-frame {
-	border-radius: 0 !important;
+	border-radius: 0;
 }
