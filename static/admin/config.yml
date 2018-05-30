@@ -7,8 +7,8 @@ slug:
   clean_accents: true
 
 display_url: https://campus-online.netlify.com
-media_folder: static/assets/images
-public_folder: /assets/images
+media_folder: static/uploads
+public_folder: /uploads
 
 editor:
   preview: false

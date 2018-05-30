@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: 'Novos prazeres, velhos costumes: A prevenção contra infecções sexualmente transmissíveis na Universidade'
-cover: /assets/images/novos-prazeres-velhos-costumes.jpg
+cover: /uploads/novos-prazeres-velhos-costumes.jpg
 date: '2018-05-15'
 editorial: Tabu
 author: Thalyta Guerra
