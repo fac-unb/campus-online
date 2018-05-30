@@ -2,19 +2,30 @@ import React, {Component} from 'react'
 import {StyleSheetManager} from 'styled-components'
 import resetCSS from '!raw!../reset.css'
 import fontsCSS from '!raw!../fonts.css'
+import styleCSS from '!raw!./index.css'
 import {Wrapper} from '../layouts'
 
 const css = [resetCSS, fontsCSS].join('\n')
 
 class StyleSheetWrapper extends Component {
 	state = {$head: null}
-	componentDidMount() {
+	injectPreviewCSS() {
 		const $iframe = document.querySelector('.nc-previewPane-frame')
 		const $head = $iframe.contentDocument.head
 		const $style = document.createElement('style')
 		$style.appendChild(document.createTextNode(css))
 		$head.appendChild($style)
 		this.setState(state => ({...state, $head}))
+	}
+	overideCSS() {
+		const $head = document.head
+		const $style = document.createElement('style')
+		$style.appendChild(document.createTextNode(styleCSS))
+		$head.appendChild($style)
+	}
+	componentDidMount() {
+		this.overideCSS()
+		this.injectPreviewCSS()
 	}
 	render() {
 		const {children} = this.props
