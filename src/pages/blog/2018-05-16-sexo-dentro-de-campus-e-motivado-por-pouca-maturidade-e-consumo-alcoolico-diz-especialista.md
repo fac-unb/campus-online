@@ -6,7 +6,9 @@ title: >-
 cover: /uploads/bce-2.jpg
 date: '2018-05-16'
 editorial: Tabu
-author: Robson G. Rodrigues
+author:
+  slug: 2018-1-vitor-dino
+  title: Vitor Dino
 tags:
   - bce
   - campus
