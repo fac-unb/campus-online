@@ -117,7 +117,7 @@ const Anchor = styled(Link)`
 	cursor: pointer;
 	text-decoration: none;
 	color: currentColor;
-	opacity: 0.44;
+	opacity: 0.66;
 	display: block;
 	text-decoration: none;
 	font-size: 1rem;
@@ -127,7 +127,7 @@ const Anchor = styled(Link)`
 	position: relative;
 	:hover,
 	:focus {
-		opacity: 0.88;
+		opacity: 1;
 	}
 	:before {
 		content: '';
