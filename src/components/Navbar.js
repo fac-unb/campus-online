@@ -46,7 +46,7 @@ const Logo = styled(Link)`
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
-		right: 1rem;
+		right: 1.25rem;
 		bottom: 1rem;
 		z-index: -1;
 		transition: all 0.2s ease-out;
@@ -55,21 +55,21 @@ const Logo = styled(Link)`
 		background-repeat: no-repeat;
 		background-image: linear-gradient(
 			180deg,
-			transparent 75%,
+			transparent 37.5%,
 			${colors.base06} 0
 		);
 		${p =>
 			p.hero &&
 			`
 			pointer-events: auto;
-			background-image: linear-gradient(180deg, transparent 75%, ${colors.base88} 0);
+			background-image: linear-gradient(180deg, transparent 37.5%, ${colors.base} 0);
 		`};
 	}
 
 	${above.md`
-		height: 6rem;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		height: 4rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		:hover{
 			:before{
 				background-size: 100% 3.25em;
@@ -109,34 +109,33 @@ const Anchor = styled(Link)`
 	:before {
 		content: '';
 		position: absolute;
-		top: 1rem;
-		left: 1rem;
+		top: 1.5rem;
+		left: 1.5rem;
 		right: 0.5rem;
-		bottom: 1rem;
+		bottom: 1.125rem;
 		z-index: -1;
-		background-position: 0.375em 0.1875em;
-		background-size: 0 2.25em;
+		background-position: 0 0;
+		background-size: 0 100%;
 		background-repeat: no-repeat;
 		transition: all 0.2s ease-out;
 		background-image: linear-gradient(
 			180deg,
-			transparent 75%,
+			transparent 37.5%,
 			${colors.base06} 0
 		);
 		${p =>
 			p.hero &&
 			`
 			pointer-events: auto;
-			background-image: linear-gradient(180deg, transparent 75%, ${colors.base88} 0);
+			background-image: linear-gradient(180deg, transparent 37.5%, ${colors.base} 0);
 		`};
 	}
 	${above.md`
 		font-size: 1.125rem;
 		line-height: 2rem;
-		padding: 2rem 1rem;
 		:hover{
 			:before{
-				background-size: 100% 2.25em;
+				background-size: 100% 100%;
 			}
 		}
 	`};
