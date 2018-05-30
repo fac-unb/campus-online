@@ -150,12 +150,12 @@ const Editorial = styled.div`
 
 const Author = styled.div`
 	margin-top: auto;
-	padding-top: 0.5rem;
 	color: ${colors.base44};
 	font-size: 0.75rem;
 	line-height: 1.25rem;
 	font-weight: 600;
 	${above.md`
+		padding-top: 2.5rem;
 		font-size: 0.875rem;
 	`};
 `
