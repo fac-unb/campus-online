@@ -12,7 +12,7 @@
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "dependencies": {
-    "@leonardodino/netlify-cms": "^1.8.1-rc-8",
+    "@leonardodino/netlify-cms": "^1.8.1",
     "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
