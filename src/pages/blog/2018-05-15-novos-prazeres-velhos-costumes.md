@@ -1,18 +1,18 @@
 ---
 template: blog-post
-title: 'Novos prazeres, velhos costumes: A prevenção contra infecções sexualmente transmissíveis na Universidade'
+title: >-
+  Novos prazeres, velhos costumes: A prevenção contra infecções sexualmente
+  transmissíveis na Universidade
 cover: /uploads/novos-prazeres-velhos-costumes.jpg
 date: '2018-05-15'
 editorial: Tabu
 author: Thalyta Guerra
-
 tags:
   - IST
   - saúde
   - prevenção
   - sexo
 ---
-
 > Jovens e adolescentes no início da vida sexual cometem excessos e acabam esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as devidas orientações.
 
 Falar sobre sexo não é uma coisa tão natural para muita gente, mas que deveria ser diferente. O conceito de sexualidade está muito mais relacionado à orientação sexual do que com o sexo propriamente dito. O ato sexual é uma das formas de prazer que o corpo necessita, e para isso, é extremamente importante o cuidado com a saúde do seu corpo no que diz respeito à vida sexual.
@@ -49,7 +49,11 @@ No caso do HIV, existe a PEP (Profilaxia Pós- Exposição ao HIV). É uma medid
 
 A PEP é composta por medicamentos antirretrovirais que agem evitando a sobrevivência e a multiplicação do HIV no organismo e, por isso, deve ser iniciada o mais rápido possível, preferencialmente nas 2 (duas) primeiras horas após a exposição ao vírus e no máximo em até 72 horas. Os medicamentos são oferecidos gratuitamente pelo SUS e, no Polo de Prevenção da UnB, são feitos a transferência do paciente para a Unidade de Saúde mais próxima.
 
-A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)
+![A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)](/uploads/novos-prazeres-velhos-costumes.jpg)
+
+> A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)
+
+
 
 ## Qual a diferença entre o HIV e Aids?
 
@@ -77,4 +81,8 @@ Cada vez mais aumentam os diagnósticos positivos. Mário relembra que há um m�
 
 ### Serviço:
 
-> Polo de Prevenção DST/AIDS Local: ICC SUL – Sala A1-136 Contato: 3107-6735
+**Polo de Prevenção DST/AIDS**\
+**Local:** ICC SUL – Sala A1-136\
+**Contato:** 3107-6735
+
+![Arte: Natália Alves](/uploads/img-20180515-wa0040.jpg)
