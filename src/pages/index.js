@@ -68,6 +68,7 @@ export default class IndexPage extends React.Component {
 												editorial={post.frontmatter.editorial}
 												cover={post.frontmatter.cover}
 												author={post.frontmatter.author}
+												dark={post.frontmatter.featured}
 												key={post.id}
 												size={1}
 											/>
