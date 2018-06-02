@@ -1,7 +1,7 @@
 /* eslint-env node */
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby + Netlify CMS Starter',
+		title: 'Campus Online',
 	},
 	plugins: [
 		'gatsby-plugin-styled-components',
