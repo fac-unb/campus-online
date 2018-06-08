@@ -22,8 +22,11 @@ export default class IndexPage extends React.Component {
 	}
 	render() {
 		const {
-			blog: {posts},
+			blog: {
+				posts: [{post: hero}, ...posts],
+			},
 		} = this.props.data
+
 		return (
 			<div>
 				<Navbar
@@ -34,20 +37,16 @@ export default class IndexPage extends React.Component {
 					]}
 				/>
 				<main>
-					{posts
-						.slice(0, 1)
-						.map(({post}) => (
-							<HomeHero
-								url={post.fields.slug}
-								title={post.frontmatter.title}
-								date={post.frontmatter.date}
-								excerpt={post.excerpt}
-								editorial={post.frontmatter.editorial}
-								author={post.frontmatter.author}
-								cover={post.frontmatter.cover}
-								key={post.id}
-							/>
-						))}
+					<HomeHero
+						url={hero.fields.slug}
+						title={hero.frontmatter.title}
+						date={hero.frontmatter.date}
+						excerpt={hero.excerpt}
+						editorial={hero.frontmatter.editorial}
+						author={hero.frontmatter.author}
+						cover={hero.frontmatter.cover}
+						key={hero.id}
+					/>
 					<Container>
 						<section>
 							<StoriesTitle
@@ -57,23 +56,21 @@ export default class IndexPage extends React.Component {
 							/>
 							{posts && (
 								<CardRow>
-									{posts
-										.slice(1)
-										.map(({post}, index) => (
-											<PostCard
-												reverse={index % 2}
-												url={post.fields.slug}
-												title={post.frontmatter.title}
-												date={post.frontmatter.date}
-												excerpt={post.excerpt}
-												editorial={post.frontmatter.editorial}
-												cover={post.frontmatter.cover}
-												author={post.frontmatter.author}
-												dark={post.frontmatter.featured}
-												key={post.id}
-												size={1}
-											/>
-										))}
+									{posts.map(({post}, index) => (
+										<PostCard
+											reverse={index % 2}
+											url={post.fields.slug}
+											title={post.frontmatter.title}
+											date={post.frontmatter.date}
+											excerpt={post.excerpt}
+											editorial={post.frontmatter.editorial}
+											cover={post.frontmatter.cover}
+											author={post.frontmatter.author}
+											dark={post.frontmatter.featured}
+											key={post.id}
+											size={1}
+										/>
+									))}
 								</CardRow>
 							)}
 						</section>
