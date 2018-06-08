@@ -27,11 +27,11 @@ const Logo = styled(Link)`
 	display: block;
 	margin-right: 3rem;
 	height: 1.5rem;
-	color: ${colors.base88};
+	color: ${colors.base22};
 	&:hover,
 	&:focus,
 	&:active {
-		color: ${colors.base3};
+		color: ${colors.base03};
 	}
 `
 
