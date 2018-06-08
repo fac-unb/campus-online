@@ -23,7 +23,11 @@ const Flex = styled.div`
 	align-items: center;
 `
 
-const Logo = styled(Link)`
+const Logo = styled(props => (
+	<Link to="/" {...props}>
+		<LogoIcon />
+	</Link>
+))`
 	display: block;
 	margin-right: 3rem;
 	height: 1.5rem;
@@ -35,14 +39,19 @@ const Logo = styled(Link)`
 	}
 `
 
-const Links = styled.ul`
+const LinkList = styled.ul`
 	display: flex;
 	align-items: center;
 	margin-left: -1rem;
 	margin-right: -1rem;
+	list-style: none;
 `
 
-const StyledLink = styled(Link)`
+const LinkItem = styled(props => (
+	<li>
+		<Link {...props} />
+	</li>
+))`
 	color: ${colors.base66};
 	text-decoration: none;
 	display: block;
@@ -58,25 +67,14 @@ const StyledLink = styled(Link)`
 	}
 `
 
-const StyledAnchor = StyledLink.withComponent('a')
-
-const LinkItem = ({to, href, label}) => (
-	<li style={{listStyle: 'none'}}>
-		{to && <StyledLink to={to}>{label}</StyledLink>}
-		{href && <StyledAnchor href={href}>{label}</StyledAnchor>}
-	</li>
-)
-
 const Footer = () => (
 	<Wrapper>
 		<Container>
 			<Flex>
-				<Logo to="/">
-					<LogoIcon />
-				</Logo>
-				<Links>
-					<LinkItem href="https://kunst.com.br" label="kunst" />
-				</Links>
+				<Logo />
+				<LinkList>
+					<LinkItem to="https://kunst.com.br">kunst</LinkItem>
+				</LinkList>
 			</Flex>
 		</Container>
 	</Wrapper>
