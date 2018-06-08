@@ -7,7 +7,8 @@ const Container = styled.div`
 	margin-right: auto;
 	display: block;
 	width: 100%;
-	max-width: ${containerWidth + 'px'};
+	max-width: ${p =>
+		(p.small ? containerWidth.small : containerWidth.default) + 'px'};
 	padding: 0 1rem;
 	${above.md`
 		padding: 0;
