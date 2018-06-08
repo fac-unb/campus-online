@@ -53,9 +53,9 @@ const PostContent = styled.div`
 	position: relative;
 	${above.md`
 		display: flex;
-		flex-direction: row-reverse;
 		align-items: stretch;
 		min-height: ${minHeight};
+		flex-direction: ${p => (p.reverse ? 'row' : 'row-reverse')};
 	`};
 `
 
@@ -173,12 +173,13 @@ const PostCard = ({
 	cover,
 	dark = false,
 	alt = false,
+	reverse = false,
 }) => (
 	<CardCell xs={12} md={size ? 12 : 6}>
 		<Wrapper>
 			<Padding>
 				<Inset dark={dark} alt={alt}>
-					<PostContent>
+					<PostContent reverse={reverse}>
 						{cover && (
 							<ImageWrapper size={size}>
 								<Image src={cover} />
