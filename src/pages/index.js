@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {colors} from '../constants'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
 import Navbar from '../components/Navbar'
@@ -36,7 +37,7 @@ export default class IndexPage extends React.Component {
 						{href: '/contact', label: 'Contato'},
 					]}
 				/>
-				<main>
+				<main style={{background: colors.base03, paddingBottom: '8rem'}}>
 					<HomeHero
 						url={hero.fields.slug}
 						title={hero.frontmatter.title}

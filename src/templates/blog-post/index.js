@@ -10,7 +10,7 @@ import Tags from '../../components/Tags'
 
 const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 	return (
-		<main>
+		<main style={{paddingBottom: '8rem'}}>
 			<Helmet title={`${title} | Blog`} />
 			<Navbar
 				style={{position: 'fixed', top: 0, zIndex: 2}}

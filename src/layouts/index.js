@@ -12,13 +12,12 @@ export const Wrapper = styled.div`
 	min-height: 100vh;
 	color: ${colors.base};
 	font-family: ${fonts.sans};
-	background: ${colors.base03};
+	background: ${colors.white};
 `
 
 const Inner = styled.div`
 	flex: 1 0 auto;
 	width: 100%;
-	padding-bottom: 8rem;
 `
 
 const Layout = ({children}) => (
