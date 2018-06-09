@@ -8,7 +8,7 @@ import HomeHero from '../../components/HomeHero'
 import Text from '../../components/Text'
 import Tags from '../../components/Tags'
 
-const BlogPost = ({content, tags, date, cover, editorial, title}) => {
+const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 	return (
 		<main>
 			<Helmet title={`${title} | Blog`} />
@@ -27,15 +27,19 @@ const BlogPost = ({content, tags, date, cover, editorial, title}) => {
 							<Content>{content}</Content>
 						</Text>
 					</Cell>
+					<Cell xs={0} lg={1} />
+					<Cell xs={12} lg={3} style={{position: 'sticky', top: '6rem'}}>
+						<div>
+							{tags &&
+								tags.length && (
+									<ul>
+										<Tags tags={tags} />
+									</ul>
+								)}
+							{author}
+						</div>
+					</Cell>
 				</Row>
-				{tags && tags.length ? (
-					<div>
-						<h4>Tags</h4>
-						<ul>
-							<Tags tags={tags} />
-						</ul>
-					</div>
-				) : null}
 			</Container>
 		</main>
 	)
