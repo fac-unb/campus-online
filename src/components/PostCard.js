@@ -54,7 +54,7 @@ const PostContent = styled.div`
 	${above.md`
 		display: flex;
 		align-items: stretch;
-		min-height: ${minHeight};
+		min-height: ${p => (p.compact ? 'auto' : minHeight)};
 		flex-direction: ${p => (p.reverse ? 'row' : 'row-reverse')};
 	`};
 `
@@ -70,6 +70,7 @@ const ImageWrapper = styled.figure`
 	min-height: 100%;
 	${above.md`
 		flex: 4;
+		max-width: ${p => (p.compact ? '14rem' : 'auto')};
 	`}
 	${above.lg`
 		flex: 6;
@@ -77,7 +78,7 @@ const ImageWrapper = styled.figure`
 	${above.xg`
 		flex: 7;
 	`}
-	flex: ${p => !p.size && `3 !important`}
+	flex: ${p => !p.size && `3 !important`};
 `
 
 const Image = styled.img`
@@ -141,6 +142,7 @@ const Title = styled.div`
 	letter-spacing: 0.015em;
 	margin: 1rem 0;
 	word-wrap: break-word;
+	max-width: 32em;
 	${above.md`
 		font-size: 22px;
 		margin: 1.5rem 0 0;
@@ -169,19 +171,20 @@ const PostCard = ({
 	date,
 	editorial,
 	author,
-	size,
 	cover,
+	size = true,
 	dark = false,
 	alt = false,
 	reverse = false,
+	compact = false,
 }) => (
 	<CardCell xs={12} md={size ? 12 : 6}>
 		<Wrapper>
 			<Padding>
 				<Inset dark={dark} alt={alt}>
-					<PostContent reverse={reverse}>
+					<PostContent reverse={reverse} compact={compact}>
 						{cover && (
-							<ImageWrapper size={size}>
+							<ImageWrapper size={size} compact={compact}>
 								<Image src={cover} />
 							</ImageWrapper>
 						)}
