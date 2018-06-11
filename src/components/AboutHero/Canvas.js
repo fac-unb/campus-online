@@ -18,7 +18,7 @@ class CanvasComponent extends React.Component {
 
 		window.onmousemove = function(e) {
 			mouse.x = (e.pageX - cb.left - scrollX) * ratio
-			mouse.y = (e.pageY - cb.top - scrollY) * ratio
+			mouse.y = (e.pageY - cb.top) * ratio
 		}
 		window.onresize = function() {
 			ctx.canvas.width = window.innerWidth * ratio
