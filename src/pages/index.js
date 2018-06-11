@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import {colors} from '../constants'
 import Container from '../components/Container'
@@ -23,6 +24,7 @@ export default class IndexPage extends React.Component {
 	}
 	render() {
 		const {
+			site,
 			blog: {
 				posts: [{post: hero}, ...posts],
 			},
@@ -30,6 +32,9 @@ export default class IndexPage extends React.Component {
 
 		return (
 			<div>
+				<Helmet>
+					<title>{site.siteMetadata.title} | Home</title>
+				</Helmet>
 				<Navbar
 					style={{position: 'fixed', top: 0, zIndex: 2}}
 					links={[
@@ -86,11 +91,21 @@ IndexPage.propTypes = {
 		blog: PropTypes.shape({
 			posts: PropTypes.array,
 		}),
+		site: PropTypes.shape({
+			siteMetadata: PropTypes.shape({
+				title: PropTypes.string,
+			}),
+		}),
 	}),
 }
 
 export const pageQuery = graphql`
 	query IndexQuery {
+		site {
+			siteMetadata {
+				title
+			}
+		}
 		blog: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}

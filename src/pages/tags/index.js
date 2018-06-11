@@ -1,7 +1,7 @@
 import React from 'react'
-import {kebabCase} from 'lodash'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import Container from '../../components/Container'
+import {TagsCounter} from '../../components/Tags'
 
 const TagsPage = ({
 	data: {
@@ -11,19 +11,13 @@ const TagsPage = ({
 		},
 	},
 }) => (
-	<section>
+	<Container>
 		<Helmet title={`${title} | Tags `} />
-		<h1>Tags</h1>
-		<ul>
-			{tags.map(tag => (
-				<li key={tag.fieldValue}>
-					<Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-						{tag.fieldValue} ({tag.totalCount})
-					</Link>
-				</li>
-			))}
-		</ul>
-	</section>
+		<section>
+			<h1>Tags</h1>
+			<TagsCounter tags={tags} />
+		</section>
+	</Container>
 )
 
 export default TagsPage
