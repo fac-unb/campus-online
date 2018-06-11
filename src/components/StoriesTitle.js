@@ -38,8 +38,8 @@ const Anchor = styled(Link)`
 	}
 `
 
-const StoriesTitle = ({title, label, to}) => (
-	<Wrapper>
+const StoriesTitle = ({title, label, to, style}) => (
+	<Wrapper style={style}>
 		<Title>{title}</Title>
 		<Anchor to={to}>{label}</Anchor>
 	</Wrapper>

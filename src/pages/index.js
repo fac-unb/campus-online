@@ -53,7 +53,7 @@ export default class IndexPage extends React.Component {
 							<StoriesTitle
 								title="Publicações recentes"
 								label="Ver todas"
-								to="/posts"
+								to="/blog"
 							/>
 							{posts && (
 								<CardRow>
