@@ -93,7 +93,6 @@ class CanvasComponent extends React.Component {
 				}
 			)
 		})()
-
 		;(function animloop() {
 			render()
 			requestAnimationFrame(animloop)

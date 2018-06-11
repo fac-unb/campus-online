@@ -3,5 +3,6 @@
   "singleQuote": true,
   "bracketSpacing": false,
   "trailingComma": "all",
-  "proseWrap": "never"
+  "proseWrap": "never",
+  "printWidth": 80
 }
