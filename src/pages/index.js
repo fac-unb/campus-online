@@ -59,7 +59,6 @@ export default class IndexPage extends React.Component {
 								<CardRow>
 									{posts.map(({post}, index) => (
 										<PostCard
-											reverse={index % 2}
 											url={post.fields.slug}
 											title={post.frontmatter.title}
 											date={post.frontmatter.date}
@@ -69,7 +68,7 @@ export default class IndexPage extends React.Component {
 											author={post.frontmatter.author}
 											dark={post.frontmatter.featured}
 											key={post.id}
-											size={1}
+											size={!(index % 3) % 2}
 										/>
 									))}
 								</CardRow>
@@ -118,3 +117,8 @@ export const pageQuery = graphql`
 		}
 	}
 `
+
+//
+//    1    2    3    4    5    6
+//    1    2    3    4    5    6
+//    1    1    0    0    1    1
