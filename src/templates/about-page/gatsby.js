@@ -16,7 +16,10 @@ const AboutPage = ({data: {markdownRemark, site}}) => {
 AboutPage.propTypes = {
 	data: PropTypes.shape({
 		markdownRemark: PropTypes.shape({
-			frontmatter: PropTypes.object.isRequired,
+			frontmatter: PropTypes.shape({
+				title: PropTypes.string,
+				items: PropTypes.array,
+			}).isRequired,
 			html: PropTypes.node.isRequired,
 		}),
 		site: PropTypes.shape({
@@ -35,6 +38,10 @@ export const aboutPageQuery = graphql`
 			html
 			frontmatter {
 				title
+				items {
+					title
+					body
+				}
 			}
 		}
 		site {

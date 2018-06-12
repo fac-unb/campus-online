@@ -5,6 +5,7 @@ import {above} from '../../utils/responsive'
 const Wrapper = styled.div`
 	display: block;
 	padding: 1rem;
+	position: relative;
 	${above.sm`
 		padding: 2rem 2rem 4rem;
 	`}

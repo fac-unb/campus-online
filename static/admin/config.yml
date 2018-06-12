@@ -13,6 +13,7 @@ public_folder: /uploads
 editor:
   preview: false
 
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -49,6 +50,7 @@ collections:
       - {label: "Foto (opcional)", name: "image", widget: "image", required: false}
       - {label: "Bio (opcional)", name: "body", widget: "markdown", required: false}
 
+
   - name: "editorials"
     label: "Editorias"
     folder: "src/pages/editorials"
@@ -64,6 +66,7 @@ collections:
       - {label: "Semestre", name: "semester", widget: "relation", collection: "semesters", searchFields: ["title"], valueField: "title", required: true}
       - {label: "Descrição (opcional)", name: "description", widget: "text", required: false}
 
+
   - name: "semesters"
     label: "Semestres"
     folder: "src/pages/semesters"
@@ -78,7 +81,6 @@ collections:
       - {label: "Semestre (AAAA/S)", name: "title", widget: "string", required: true, pattern: ['^\d{4}\/\d$', "Semestre fora do formato"]}
 
 
-
   - name: "pages"
     label: "Pages"
     files:
@@ -88,4 +90,5 @@ collections:
         fields:
           - {label: "Template", name: "template", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Itens", name: "items", widget: "list", fields: [{label: "Título", name: "title", widget: "string"}, {label: "Corpo", name: "body", widget: "markdown"}]}
+          - {label: "Itens", name: "items", widget: "list", fields: [{label: "Título", name: "title", widget: "string"}, {label: "Corpo", name: "body", widget: "text"}]}
+          - {label: "Corpo", name: "body", widget: "markdown"}
