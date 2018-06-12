@@ -1,11 +1,22 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+import {colors} from '../constants'
 import Navbar from '../components/Navbar'
+import TextHero from '../components/TextHero'
 
 const NotFoundPage = () => (
-	<div>
-		<Navbar style={{position: 'sticky', top: 0, zIndex: 2}} />
-		<h1>NOT FOUND</h1>
-		<p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+	<div
+		style={{
+			background: colors.base,
+			position: 'absolute',
+			minHeight: '100vh',
+			width: '100%',
+			zIndex: '0',
+		}}
+	>
+		<Helmet title={'Campus Online | 404'} />
+		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
+		<TextHero title="404" sub="Página não encontrada" />
 	</div>
 )
 
