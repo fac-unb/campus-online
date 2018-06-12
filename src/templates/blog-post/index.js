@@ -22,13 +22,7 @@ const BlogPost = ({
 	return (
 		<main style={{paddingBottom: '8rem'}}>
 			<Helmet title={`${siteTitle} | ${title}`} />
-			<Navbar
-				style={{position: 'fixed', top: 0, zIndex: 2}}
-				links={[
-					{href: '/about', label: 'Sobre'},
-					{href: '/contact', label: 'Contato'},
-				]}
-			/>
+			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
 			<Container>
 				<Row>

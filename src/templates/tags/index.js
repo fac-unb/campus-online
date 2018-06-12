@@ -57,10 +57,6 @@ class TagRoute extends React.Component {
 						color: 'white',
 						background: colors.base,
 					}}
-					links={[
-						{href: '/about', label: 'Sobre'},
-						{href: '/contact', label: 'Contato'},
-					]}
 				/>
 				<TextHero title={tag} sup={tagSup} navbar={false} />
 				<section>

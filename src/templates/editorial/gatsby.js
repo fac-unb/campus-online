@@ -12,13 +12,7 @@ const Editorial = ({data: {markdownRemark}}) => {
 	return (
 		<Fragment>
 			<Helmet title={`${title} | Blog`} />
-			<Navbar
-				style={{position: 'sticky', top: 0, zIndex: 2}}
-				links={[
-					{href: '/about', label: 'Sobre'},
-					{href: '/contact', label: 'Contato'},
-				]}
-			/>
+			<Navbar style={{position: 'sticky', top: 0, zIndex: 2}} />
 			<Container>
 				<Template name={title} color={color} semester={semester} />
 			</Container>

@@ -35,13 +35,7 @@ export default class IndexPage extends React.Component {
 				<Helmet>
 					<title>{site.siteMetadata.title} | Home</title>
 				</Helmet>
-				<Navbar
-					style={{position: 'fixed', top: 0, zIndex: 2}}
-					links={[
-						{href: '/about', label: 'Sobre'},
-						{href: '/contact', label: 'Contato'},
-					]}
-				/>
+				<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 				<main style={{background: colors.base03, paddingBottom: '8rem'}}>
 					<HomeHero
 						url={hero.fields.slug}

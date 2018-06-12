@@ -108,10 +108,6 @@ const TextHero = ({
 				<Navbar
 					shadow={shadow}
 					dark={dark}
-					links={[
-						{href: '/about', label: 'Sobre'},
-						{href: '/contact', label: 'Contato'},
-					]}
 					style={{
 						position: 'fixed',
 						background: 'none',

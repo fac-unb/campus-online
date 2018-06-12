@@ -126,13 +126,7 @@ const HomeHero = ({url, title, date, editorial, cover}) => (
 				pointerEvents: 'none',
 			}}
 		>
-			<Navbar
-				shadow={true}
-				links={[
-					{href: '/about', label: 'Sobre'},
-					{href: '/contact', label: 'Contato'},
-				]}
-			/>
+			<Navbar shadow={true} />
 		</div>
 		<PostContent>
 			{cover && (

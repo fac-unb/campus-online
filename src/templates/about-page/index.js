@@ -18,10 +18,6 @@ const AboutPage = ({siteTitle, title, content}) => (
 				top: 0,
 				zIndex: 2,
 			}}
-			links={[
-				{href: '/about', label: 'Sobre'},
-				{href: '/contact', label: 'Contato'},
-			]}
 		/>
 		<AboutHero />
 		<Container>

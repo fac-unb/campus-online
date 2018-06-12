@@ -7,13 +7,7 @@ import AuthorCard from '../../components/AuthorCard'
 
 const AuthorsPage = ({data: {authorsList, site}}) => (
 	<React.Fragment>
-		<Navbar
-			style={{position: 'fixed', top: 0, zIndex: 2}}
-			links={[
-				{href: '/about', label: 'Sobre'},
-				{href: '/contact', label: 'Contato'},
-			]}
-		/>
+		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 		<TextHero
 			title="Autores"
 			dark={true}

@@ -238,4 +238,11 @@ const Navbar = ({
 	</Wrapper>
 )
 
+Navbar.defaultProps = {
+	links: [
+		{href: '/about', label: 'Sobre'},
+		{href: '/contact', label: 'Contato'},
+	],
+}
+
 export default withMenu(Navbar)
