@@ -92,4 +92,4 @@ collections:
         editor:
           preview: false
         fields:
-          - {label: "Semestre Atual", name: "semester", widget: "relation", collection: "semesters", searchFields: ["title"], valueField: "title", required: true}
+          - {label: "Semestre Atual", name: "semester", widget: "relation", collection: "semesters", searchFields: ["title"], valueField: "title", pattern: ['^\d{4}\/\d$', "Semestre fora do formato"], required: true}

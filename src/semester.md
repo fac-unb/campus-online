@@ -1,3 +1,3 @@
 ---
-semester: '1/2018'
+semester: 2/2018
 ---
