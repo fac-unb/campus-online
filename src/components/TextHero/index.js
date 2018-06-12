@@ -89,7 +89,7 @@ const TextHero = ({
 	cover,
 	background,
 	shadow,
-	dark,
+	dark = true,
 	navbar = true,
 }) => (
 	<Wrapper background={background}>
@@ -110,7 +110,6 @@ const TextHero = ({
 					dark={dark}
 					style={{
 						position: 'fixed',
-						background: 'none',
 						pointerEvents: 'all',
 					}}
 				/>

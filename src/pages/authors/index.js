@@ -10,9 +10,7 @@ const AuthorsPage = ({data: {authorsList, site}}) => (
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 		<TextHero
 			title="Autores"
-			dark={true}
 			sub={`${authorsList.authors.length} autores no total`}
-			navbar={true}
 		/>
 		<Container>
 			<Helmet title={`${site.siteMetadata.title} | Autores`} />
