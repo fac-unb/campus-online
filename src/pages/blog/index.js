@@ -3,8 +3,6 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import flatten from '../../utils/flatten'
-// import {above} from '../../utils/responsive'
-import {colors} from '../../constants'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
 import {CardRow} from '../../components/CardGrid'
@@ -44,7 +42,7 @@ export default class BlogPage extends React.Component {
 					<title>{site.siteMetadata.title} | Todos as matérias</title>
 				</Helmet>
 				<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-				<main style={{background: colors.base03, paddingBottom: '8rem'}}>
+				<main style={{paddingBottom: '8rem'}}>
 					<Container>
 						<section>
 							<StoriesTitle

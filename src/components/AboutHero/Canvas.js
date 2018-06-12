@@ -44,7 +44,7 @@ class CanvasComponent extends React.Component {
 
 		function render() {
 			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-			ctx.fillStyle = 'rgba(230,230,230,1)'
+			ctx.fillStyle = 'rgba(229,228,227,1)'
 			for (var i = 0; i < dots.length; i++) {
 				var s = dots[i]
 				var v = getV(s)

@@ -13,7 +13,6 @@ const Wrapper = styled.div`
 const CanvasWrapper = styled.div`
 	overflow: hidden;
 	position: relative;
-	background: white;
 	right: 0;
 	left: 0;
 	${above.md`
@@ -21,8 +20,8 @@ const CanvasWrapper = styled.div`
 	`};
 `
 
-const AboutHero = () => (
-	<Wrapper>
+const AboutHero = ({style}) => (
+	<Wrapper style={style}>
 		<Container style={{position: 'relative'}}>
 			<CanvasWrapper>
 				<Canvas />

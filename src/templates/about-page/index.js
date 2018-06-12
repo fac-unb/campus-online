@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import {colors} from '../../constants'
 import Navbar from '../../components/Navbar'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -9,7 +10,7 @@ import AboutHero from '../../components/AboutHero'
 import Items from '../../components/Items'
 
 const AboutPage = ({siteTitle, title, items, content}) => (
-	<div style={{background: 'white'}}>
+	<div style={{overflowX: 'hidden', position: 'relative'}}>
 		<Helmet>
 			<title>
 				{siteTitle} | {title}
@@ -17,12 +18,13 @@ const AboutPage = ({siteTitle, title, items, content}) => (
 		</Helmet>
 		<Navbar
 			style={{
-				position: 'sticky',
+				position: 'fixed',
 				top: 0,
 				zIndex: 2,
+				background: colors.base03,
 			}}
 		/>
-		<AboutHero />
+		<AboutHero style={{marginTop: '7rem'}} />
 		<Container>
 			{items.length && <Items items={items} xs={12} />}
 			{content && (

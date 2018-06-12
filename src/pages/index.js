@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import {colors} from '../constants'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
 import Navbar from '../components/Navbar'
@@ -36,7 +35,7 @@ export default class IndexPage extends React.Component {
 					<title>{site.siteMetadata.title} | Home</title>
 				</Helmet>
 				<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-				<main style={{background: colors.base03, paddingBottom: '8rem'}}>
+				<main style={{paddingBottom: '8rem'}}>
 					<HomeHero
 						url={hero.fields.slug}
 						title={hero.frontmatter.title}

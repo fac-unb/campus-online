@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 	min-height: 100vh;
 	color: ${colors.base};
 	font-family: ${fonts.sans};
-	background: ${colors.white};
+	background: ${colors.base03};
 `
 
 const Inner = styled.div`
