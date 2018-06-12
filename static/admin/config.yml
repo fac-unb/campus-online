@@ -62,3 +62,16 @@ collections:
       - {label: "Cor (hexadecimal)", name: "color", widget: "string", required: true, pattern: ['^#(?:[0-9a-fA-F]{3}){1,2}$', "Cor Inválida"]}
       - {label: "Semestre (AAAA/S)", name: "semester", widget: "string", required: true, pattern: ['^\d{4}\/\d$', "Semestre fora do formato"]}
       - {label: "Descrição (opcional)", name: "description", widget: "text", required: false}
+
+  - name: "semesters"
+    label: "Semestres"
+    folder: "src/pages/semesters"
+    create: true
+    extension: "md"
+    format: "yaml-frontmatter"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Template", name: "template", widget: "hidden", default: "semester"}
+      - {label: "Semestre (AAAA/S)", name: "title", widget: "string", required: true, pattern: ['^\d{4}\/\d$', "Semestre fora do formato"]}
