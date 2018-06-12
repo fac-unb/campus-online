@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Container from '../../components/Container'
+import Navbar from '../../components/Navbar'
 import TextHero from '../../components/TextHero'
 import {TagsCounter} from '../../components/Tags'
 
@@ -13,16 +14,22 @@ const TagsPage = ({
 	},
 }) => (
 	<React.Fragment>
+		<Navbar
+			style={{position: 'fixed', top: 0, zIndex: 2}}
+			links={[
+				{href: '/about', label: 'Sobre'},
+				{href: '/contact', label: 'Contato'},
+			]}
+		/>
 		<TextHero
 			title="Navegar por tags"
+			dark={true}
 			sub={`${tags.length} tags no total`}
 			navbar={true}
 		/>
 		<Container>
 			<Helmet title={`${title} | Tags `} />
-
-			<section>
-				<h1>Tags</h1>
+			<section style={{padding: '6rem 0 8rem'}}>
 				<TagsCounter tags={tags} />
 			</section>
 		</Container>

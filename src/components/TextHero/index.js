@@ -112,6 +112,11 @@ const TextHero = ({
 						{href: '/about', label: 'Sobre'},
 						{href: '/contact', label: 'Contato'},
 					]}
+					style={{
+						position: 'fixed',
+						background: 'none',
+						pointerEvents: 'all',
+					}}
 				/>
 			)}
 		</div>
