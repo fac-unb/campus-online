@@ -1,5 +1,6 @@
 ---
 template: blog-post
+semester: 2018/1
 title: 'CampusCast #1 — Sexo & tabus'
 cover: /uploads/campuscast-1.png
 date: '2018-05-18'
@@ -11,9 +12,8 @@ tags:
   - tabu
   - podcast
 ---
+
 O Campuscast #1 já está no ar e o tema é quente: sexo como tabu.
-
-
 
 Para falar sobre o assunto, convidamos a psicóloga Nicole Zaneti, que fez doutorado no tema sexualidade e espiritualidade feminina, a estudante de ciências naturais e fundadora da Carpe Diem Sensual Store Ana Carolina Mikitchuk e a estudante de artes visuais e co-criadora do Foda Truck, um sex shop itinerante, Pamella Anderson.
 

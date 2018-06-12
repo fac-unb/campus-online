@@ -1,5 +1,6 @@
 ---
 template: blog-post
+semester: 2018/1
 title: '“A UnB não vai parar de funcionar”, diz reitora Márcia Abrahão'
 cover: /uploads/reitoria.jpg
 date: '2018-05-15'

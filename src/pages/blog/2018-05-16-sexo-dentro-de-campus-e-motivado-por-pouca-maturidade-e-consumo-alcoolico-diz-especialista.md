@@ -1,5 +1,6 @@
 ---
 template: blog-post
+semester: 2018/1
 title: >-
   Sexo dentro de Campus é motivado por pouca maturidade e consumo alcoólico, diz
   especialista
@@ -12,9 +13,8 @@ tags:
   - campus
   - sexo
 ---
+
 > Apesar da janela e da proximidade com outros estudantes, as salas de estudo privativas da biblioteca foram utilizadas para prática inapropriada. (Foto: Caroline Zampiron)
-
-
 
 Para sexólogo, noção de censura diminui num ambiente onde se prega liberdade
 
@@ -24,17 +24,13 @@ Para o especialista em sexualidade humana, Alexandre Marques, graduado em psicol
 
 Um estudante de 23 anos que preferiu não identificar nome ou curso, conta já ter feito sexo em três ocasiões dentro da área pública da UnB — levando em conta que o campus compreende a CEU (Casa do Estudante Universitário) e a Colina, alojamentos onde, naturalmente, é permitida a prática sexual. A sala de estudos da BCE (Biblioteca Central da UnB), por duas vezes, e atrás do prédio BSA Norte foram os locais escolhidos pelo aluno. Ele diz se arrepender de ter transado na biblioteca: “É um lugar completamente inapropriado. As pessoas podiam estar estudando, mas eu estava ocupando para outra coisa”. A sala privativa da BCE conta com apenas uma pequena janela na porta que não pode ser tapada, como instrui placa afixada na parede. Antes, era necessário que dois estudantes reservassem o local. Hoje, é exigida a presença de três deles.
 
-
-
 ![](/uploads/bsa-n.jpg)
 
 > O local já foi utilizado para sexo entre alunos da UnB após festa no campus. (Foto: Caroline Zampiron)
 
-
-
 Atrás do BSA Norte, por outro lado, não pesa à consciência do jovem não identificado. “Foi próximo a um happy hour em que fui. Estava bêbado. Não iria atrapalhar em nada, porque era vazio. Não corria risco de ser flagrado, então não me arrependo”, conta. Chamados Happy Hours, as festas que ocorrem na UnB levam muitos jovens, incentivados pela bebida alcoólica, a transar dentro do campus. Quando a prática é estimulada pelo consumo alcoólico, a coisa pode ser pior. O risco do não uso de preservativo e da concessão impensada aumentam com a cognição alterada. Para o especialista, “sem a censura, já que o álcool vai para o sistema nervoso central aumentando o sentimento de euforia e de liberdade, o sexo fica mais fácil”.
 
-“Acho pouco provável que o par alcoolizado esteja atento ao uso de preservativo. A pessoa pode saber que está fazendo algo agradável, mas sem ter noção do que está acontecendo verdadeiramente. Muita vezes, não tem a condição de perceber precisamente a intensidade,  o prazer do ato. Muitas vezes nem há afetividade”, explica ele, que também leva em conta a possibilidade de modismo, ou seja, de transar no campus porque outras pessoas também transam.
+“Acho pouco provável que o par alcoolizado esteja atento ao uso de preservativo. A pessoa pode saber que está fazendo algo agradável, mas sem ter noção do que está acontecendo verdadeiramente. Muita vezes, não tem a condição de perceber precisamente a intensidade, o prazer do ato. Muitas vezes nem há afetividade”, explica ele, que também leva em conta a possibilidade de modismo, ou seja, de transar no campus porque outras pessoas também transam.
 
 Em nota, a Secretaria de Comunicação da UnB afirma avaliar caso a caso eventuais práticas promovidas dentro do campus. Confira o comunicado na íntegra.
 

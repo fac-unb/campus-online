@@ -1,5 +1,6 @@
 ---
 template: blog-post
+semester: 2018/1
 title: >-
   Novos prazeres, velhos costumes: A prevenção contra infecções sexualmente
   transmissíveis na Universidade
@@ -13,6 +14,7 @@ tags:
   - prevenção
   - sexo
 ---
+
 > Jovens e adolescentes no início da vida sexual cometem excessos e acabam esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as devidas orientações.
 
 Falar sobre sexo não é uma coisa tão natural para muita gente, mas que deveria ser diferente. O conceito de sexualidade está muito mais relacionado à orientação sexual do que com o sexo propriamente dito. O ato sexual é uma das formas de prazer que o corpo necessita, e para isso, é extremamente importante o cuidado com a saúde do seu corpo no que diz respeito à vida sexual.
@@ -52,8 +54,6 @@ A PEP é composta por medicamentos antirretrovirais que agem evitando a sobreviv
 ![A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)](/uploads/novos-prazeres-velhos-costumes.jpg)
 
 > A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)
-
-
 
 ## Qual a diferença entre o HIV e Aids?
 
