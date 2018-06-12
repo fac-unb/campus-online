@@ -24,7 +24,11 @@ module.exports = class HTML extends React.Component {
 			)
 		}
 		return (
-			<html {...this.props.htmlAttributes} style={{background: '#1a1b1c'}}>
+			<html
+				lang="pt"
+				{...this.props.htmlAttributes}
+				style={{background: '#1a1b1c'}}
+			>
 				<head>
 					<meta charSet="utf-8" />
 					<meta httpEquiv="x-ua-compatible" content="ie=edge" />
