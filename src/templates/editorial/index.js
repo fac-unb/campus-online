@@ -1,22 +1,29 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import Container from '../../components/Container'
+import Navbar from '../../components/Navbar'
+import TextHero from '../../components/TextHero'
 
-// [TODO]: move markup to this file, from ./gatsby.js
-// i've ported the earlier structure, it's probably wrong though,
-// most styling and structure should be inside this file,
-// and general page layout must be inside a layout, in layouts folder
-// https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#choosing-the-page-layout
-
-export const Editorial = ({name, semester, color}) => (
-	<section style={{color: color}}>
-		<h1>{name}</h1>
-		<p>{semester}</p>
-	</section>
+export const Editorial = ({name, color, siteTitle, bodyText}) => (
+	<React.Fragment>
+		<TextHero
+			title={name}
+			background={color}
+			navbar={false}
+			bodyText={bodyText}
+		/>
+		<Navbar
+			background={color}
+			dark={true}
+			style={{position: 'fixed', top: 0, zIndex: 30}}
+		/>
+		<Container>
+			<Helmet title={`${siteTitle} | ${name}`} />
+			<section style={{padding: '6rem 0 8rem'}}>
+				<div>[TODO]: MAP Articles HERE</div>
+			</section>
+		</Container>
+	</React.Fragment>
 )
-
-Editorial.propTypes = {
-	name: PropTypes.string,
-	semester: PropTypes.string,
-}
 
 export default Editorial

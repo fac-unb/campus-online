@@ -8,11 +8,15 @@ const Text = styled.div`
 	font-family: ${fonts.serifText};
 	line-height: ${lineHeight};
 	margin-bottom: 4rem;
-	color: ${colors.base88};
+	color: ${p => (!p.dark ? colors.base88 : 'white')};
 	${above.md`
 		font-size: 1.125em;
 	`} strong {
 		font-weight: bold;
+	}
+
+	p {
+		opacity: ${p => (!p.dark ? 1 : '0.88')};
 	}
 
 	em {
@@ -38,7 +42,8 @@ const Text = styled.div`
 		font-size: 1.5em;
 		hyphens: none;
 		line-height: ${0.75 * lineHeight};
-		color: ${colors.base66};
+		color: ${p => (!p.dark ? colors.base66 : 'white')};
+		opacity: ${p => (!p.dark ? 1 : 0.66)};
 	}
 
 	h3 {
@@ -52,18 +57,21 @@ const Text = styled.div`
 	a {
 		color: currentColor;
 		:hover {
-			color: ${colors.base};
+			color: ${p => (!p.dark ? colors.base : 'white')};
+			opacity: ${p => (!p.dark ? 1 : 'white')};
 		}
 	}
 
 	blockquote {
 		hyphens: none;
-		border-left: 1px solid ${colors.base22};
+		border-left: 1px solid ${p => (!p.dark ? colors.base22 : 'white')};
+		opacity: ${p => (!p.dark ? 1 : 0.22)};
 		font-size: 1.125em;
 		font-style: italic;
 		letter-spacing: -0.25px;
 		line-height: ${0.875 * lineHeight};
-		color: ${colors.base66};
+		color: ${p => (!p.dark ? colors.base66 : 'white')};
+		opacity: ${p => (!p.dark ? 1 : 0.66)};
 		padding: 1em 0 1em 1.5em;
 		${above.lg`
 			margin-left: -1.5em;
@@ -74,7 +82,8 @@ const Text = styled.div`
 		margin: 3em 0;
 		border: none;
 		height: 1px;
-		background: ${colors.base22};
+		background: ${p => (!p.dark ? colors.base22 : 'white')};
+		opacity: ${p => (!p.dark ? 1 : 0.22)};
 	}
 
 	img {

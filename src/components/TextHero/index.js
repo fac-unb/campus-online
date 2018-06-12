@@ -5,6 +5,8 @@ import {above} from '../../utils/responsive'
 import Link from '../StylableLink'
 import Navbar from '../Navbar'
 import Container from '../Container'
+import Content from '../Content'
+import Text from '../Text'
 
 const Wrapper = styled.div`
 	display: flex;
@@ -38,7 +40,7 @@ const Image = styled.img`
 	flex: 1;
 `
 
-const Text = styled.div`
+const TextWrapper = styled.div`
 	margin-top: 6rem;
 	margin-bottom: 3rem;
 	${above.md`
@@ -71,6 +73,12 @@ const Title = styled.div`
 	`};
 `
 
+const BodyText = styled(Text)`
+	display: block;
+	max-width: 40em;
+	margin: 2rem 0 0;
+`
+
 const Anchor = styled(Link)`
 	display: block;
 	position: absolute;
@@ -86,6 +94,7 @@ const TextHero = ({
 	sup,
 	title,
 	sub,
+	bodyText,
 	cover,
 	background,
 	shadow,
@@ -120,13 +129,18 @@ const TextHero = ({
 				<Image src={cover} />
 			</ImageWrapper>
 		)}
-		<Text>
+		<TextWrapper>
 			<Container>
 				{sup && <Sup>{sup}</Sup>}
 				{title && <Title>{title}</Title>}
 				{sub && <Sub>{sub}</Sub>}
+				{bodyText && (
+					<BodyText dark={dark}>
+						<Content>{bodyText}</Content>
+					</BodyText>
+				)}
 			</Container>
-		</Text>
+		</TextWrapper>
 		{url && <Anchor to={url} />}
 	</Wrapper>
 )

@@ -44,6 +44,7 @@ const Wrapper = styled.nav`
 		background: ${colors.base};
 		color: ${colors.white};
 	`};
+	${p => p.background && `background: ${p.background};`};
 	${p =>
 		p.isMenuOpen &&
 		`
@@ -194,6 +195,7 @@ const Navbar = ({
 	dark,
 	isMenuOpen,
 	onMenuClick,
+	background,
 	...props
 }) => (
 	<Wrapper
@@ -201,6 +203,7 @@ const Navbar = ({
 		shadow={shadow}
 		dark={dark}
 		isMenuOpen={isMenuOpen}
+		background={background}
 		{...props}
 	>
 		<Main>
