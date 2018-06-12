@@ -81,7 +81,17 @@ const Anchor = styled(Link)`
 	bottom: 0;
 `
 
-const TextHero = ({url, sup, title, sub, cover, background, navbar = true}) => (
+const TextHero = ({
+	url,
+	sup,
+	title,
+	sub,
+	cover,
+	background,
+	shadow,
+	dark,
+	navbar = true,
+}) => (
 	<Wrapper background={background}>
 		<div
 			style={{
@@ -96,7 +106,8 @@ const TextHero = ({url, sup, title, sub, cover, background, navbar = true}) => (
 		>
 			{navbar && (
 				<Navbar
-					hero={true}
+					shadow={shadow}
+					dark={dark}
 					links={[
 						{href: '/about', label: 'Sobre'},
 						{href: '/contact', label: 'Contato'},

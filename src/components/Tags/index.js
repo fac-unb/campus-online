@@ -38,8 +38,8 @@ const Counter = styled.span`
 	color: ${colors.base44};
 `
 
-const Tags = ({tags}) => (
-	<Wrapper>
+const Tags = ({tags, style}) => (
+	<Wrapper style={style}>
 		{tags.map(tag => (
 			<li key={tag}>
 				<Tag to={`/tags/${kebabCase(tag)}/`}>{tag}</Tag>
@@ -48,8 +48,8 @@ const Tags = ({tags}) => (
 	</Wrapper>
 )
 
-export const TagsCounter = ({tags}) => (
-	<Wrapper>
+export const TagsCounter = ({tags, style}) => (
+	<Wrapper style={style}>
 		{tags.map(tag => (
 			<li key={tag.fieldValue}>
 				<Tag to={`/tags/${kebabCase(tag.fieldValue)}/`}>

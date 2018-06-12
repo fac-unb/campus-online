@@ -18,7 +18,7 @@ const Wrapper = styled.nav`
 	width: 100%;
 	transition: 0.2s 0.2s all;
 	${p =>
-		p.hero &&
+		p.shadow &&
 		`
 		position: fixed;
 		top: 0;
@@ -141,7 +141,7 @@ const Anchor = styled(Link)`
 			${colors.base06} 0
 		);
 		${p =>
-			p.hero &&
+			p.shadow &&
 			`
 			pointer-events: auto;
 			background-image: linear-gradient(180deg, transparent 37.5%, ${colors.base} 0);
@@ -178,9 +178,9 @@ const Right = styled.div`
 	align-items: center;
 `
 
-const LinkItem = ({to, label, hero, dark, dropdownItems = []}) => (
+const LinkItem = ({to, label, shadow, dark, dropdownItems = []}) => (
 	<li style={{listStyle: 'none', display: 'block'}}>
-		<Anchor hero={hero} dark={dark} to={to}>
+		<Anchor shadow={shadow} dark={dark} to={to}>
 			{label}
 		</Anchor>
 		{dropdownItems.length > 0 && <Dropdown dropdownItems={dropdownItems} />}
@@ -190,7 +190,7 @@ const LinkItem = ({to, label, hero, dark, dropdownItems = []}) => (
 const Navbar = ({
 	links,
 	style,
-	hero,
+	shadow,
 	dark,
 	isMenuOpen,
 	onMenuClick,
@@ -198,7 +198,7 @@ const Navbar = ({
 }) => (
 	<Wrapper
 		style={style}
-		hero={hero}
+		shadow={shadow}
 		dark={dark}
 		isMenuOpen={isMenuOpen}
 		{...props}
@@ -207,10 +207,14 @@ const Navbar = ({
 			<Container>
 				<Flex>
 					<Left>
-						<Logo to="/" hero={hero} dark={dark} />
+						<Logo to="/" shadow={shadow} dark={dark} />
 					</Left>
 					<Right>
-						<Hamburguer hero={hero} isOpen={isMenuOpen} onClick={onMenuClick} />
+						<Hamburguer
+							shadow={shadow}
+							isOpen={isMenuOpen}
+							onClick={onMenuClick}
+						/>
 						{links && (
 							<Navigation>
 								<Links isMenuOpen={isMenuOpen}>
@@ -218,7 +222,7 @@ const Navbar = ({
 										<LinkItem
 											key={link.href}
 											to={link.href}
-											hero={hero}
+											shadow={shadow}
 											dark={dark}
 											label={link.label}
 											dropdownItems={link.dropdownItems}

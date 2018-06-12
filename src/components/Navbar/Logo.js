@@ -33,7 +33,7 @@ const LogoWrapper = styled(Link)`
 			${colors.base06} 0
 		);
 		${p =>
-			p.hero &&
+			p.shadow &&
 			`
 			pointer-events: auto;
 			background-image: linear-gradient(180deg, transparent 37.5%, ${colors.base} 0);
@@ -59,8 +59,8 @@ const LogoWrapper = styled(Link)`
 	`};
 `
 
-const Logo = ({hero, dark}) => (
-	<LogoWrapper to="/" hero={hero} dark={dark}>
+const Logo = ({shadow, dark}) => (
+	<LogoWrapper to="/" shadow={shadow} dark={dark}>
 		<LogoIcon />
 	</LogoWrapper>
 )

@@ -1,6 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import flatten from '../../utils/flatten'
+// import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -8,6 +11,14 @@ import {CardRow} from '../../components/CardGrid'
 import Navbar from '../../components/Navbar'
 import StoriesTitle from '../../components/StoriesTitle'
 import PostCard from '../../components/PostCard'
+import Tags from '../../components/Tags'
+
+const getTags = posts => flatten(posts.map(x => x.post.frontmatter.tags))
+
+const LayoutGrid = styled(Row)`
+	flex-direction: row-reverse;
+	justify-content: space-between;
+`
 
 export default class BlogPage extends React.Component {
 	handleScriptLoad() {
@@ -27,7 +38,6 @@ export default class BlogPage extends React.Component {
 			site,
 			blog: {posts},
 		} = this.props.data
-
 		return (
 			<div>
 				<Helmet>
@@ -47,33 +57,12 @@ export default class BlogPage extends React.Component {
 								title="Todas as publicações"
 								style={{paddingTop: '8em', paddingBottom: '1em'}}
 							/>
-							<Row>
-								<Cell xs={12} lg={3} xg={3} style={{position: 'relative'}}>
-									<div
-										style={{
-											fontWeight: 600,
-											background: 'red',
-											margin: '0.5rem 0',
-											padding: '1rem',
-											width: '100%',
-										}}
-									>
-										[TODO]: Filters Editorials + Authors + Tags
-										{
-											'' /* <ul>
-											{posts.filter(x => x.frontmatter.tags).map(tag => (
-												<li key={tag.fieldValue}>
-													<Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-														{tag.fieldValue} ({tag.totalCount})
-													</Link>
-												</li>
-											))}
-										</ul> */
-										}
-										{/* {console.log(JSON.stringify(posts.map(x=>x.post.frontmatter.tags)))} */}
+							<LayoutGrid>
+								<Cell xs={12} lg={4} xg={4} style={{position: 'relative'}}>
+									<div>
+										<Tags tags={getTags(posts)} />
 									</div>
 								</Cell>
-								<Cell lg={1} />
 								<Cell xs={12} lg={8} xg={7}>
 									{posts && (
 										<CardRow>
@@ -87,14 +76,15 @@ export default class BlogPage extends React.Component {
 													cover={post.frontmatter.cover}
 													author={post.frontmatter.author}
 													dark={post.frontmatter.featured}
-													key={post.id}
+													key={post.fields.slug}
+													reverse={true}
 													compact={true}
 												/>
 											))}
 										</CardRow>
 									)}
 								</Cell>
-							</Row>
+							</LayoutGrid>
 						</section>
 					</Container>
 				</main>
@@ -130,7 +120,6 @@ export const pageQuery = graphql`
 			posts: edges {
 				post: node {
 					excerpt(pruneLength: 400)
-					id
 					fields {
 						slug
 					}

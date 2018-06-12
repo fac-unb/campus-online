@@ -127,7 +127,7 @@ const HomeHero = ({url, title, date, editorial, cover}) => (
 			}}
 		>
 			<Navbar
-				hero={true}
+				shadow={true}
 				links={[
 					{href: '/about', label: 'Sobre'},
 					{href: '/contact', label: 'Contato'},
