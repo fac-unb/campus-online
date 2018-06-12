@@ -81,14 +81,15 @@ collections:
       - {label: "Semestre (AAAA/S)", name: "title", widget: "string", required: true, pattern: ['^\d{4}\/\d$', "Semestre fora do formato"]}
 
 
-  - name: "pages"
-    label: "Pages"
+  - name: "config"
+    label: "Configurações"
     files:
-      - file: "src/pages/about/index.md"
-        label: "Sobre"
-        name: "about"
+      - name: "semester"
+        label: "Semestre Atual"
+        file: "src/semester.md"
+        extension: "md"
+        format: "yaml-frontmatter"
+        editor:
+          preview: false
         fields:
-          - {label: "Template", name: "template", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Itens", name: "items", widget: "list", fields: [{label: "Título", name: "title", widget: "string"}, {label: "Corpo", name: "body", widget: "text"}]}
-          - {label: "Corpo", name: "body", widget: "markdown"}
+          - {label: "Semestre Atual", name: "semester", widget: "relation", collection: "semesters", searchFields: ["title"], valueField: "title", required: true}
