@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {colors} from '../constants'
-import Link from './StylableLink'
-import Container from './Container.js'
-import LogoIcon from './LogoIcon'
+import {colors} from '../../constants'
+import Link from '../StylableLink'
+import Container from '../Container'
+import LogoIcon from '../LogoIcon'
 
 const Wrapper = styled.footer`
 	padding-top: 1rem;

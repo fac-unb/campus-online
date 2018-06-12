@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {above} from '../utils/responsive'
-import {containerWidth} from '../constants'
+import {above} from '../../utils/responsive'
+import {containerWidth} from '../../constants'
 
 const Container = styled.div`
 	margin-left: auto;

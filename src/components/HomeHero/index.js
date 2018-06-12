@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import {colors} from '../constants'
-import {above} from '../utils/responsive'
-import * as format from '../utils/format'
-import Link from './StylableLink'
-import Navbar from './Navbar'
-import Container from './Container'
+import {colors} from '../../constants'
+import {above} from '../../utils/responsive'
+import * as format from '../../utils/format'
+import Link from '../StylableLink'
+import Navbar from '../Navbar'
+import Container from '../Container'
 
 const Wrapper = styled.article`
 	display: flex;

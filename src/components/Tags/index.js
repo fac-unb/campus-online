@@ -1,8 +1,8 @@
 import React from 'react'
 import {kebabCase, padStart} from 'lodash'
 import styled from 'styled-components'
-import {colors} from '../constants'
-import Link from './StylableLink'
+import {colors} from '../../constants'
+import Link from '../StylableLink'
 
 const Wrapper = styled.ul`
 	display: flex;

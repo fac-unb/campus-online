@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {above} from '../utils/responsive'
-import Link from './StylableLink'
+import {above} from '../../utils/responsive'
+import Link from '../StylableLink'
 
 const Wrapper = styled.div`
 	display: flex;

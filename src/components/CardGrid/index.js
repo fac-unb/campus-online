@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {breakpoints, columns} from '../constants'
-import {above} from '../utils/responsive'
+import {breakpoints, columns} from '../../constants'
+import {above} from '../../utils/responsive'
 
 const mapPropsBreakpoints = fn => props =>
 	Object.keys(props)

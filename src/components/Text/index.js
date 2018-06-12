@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {colors, fonts} from '../constants'
-import {above} from '../utils/responsive'
+import {colors, fonts} from '../../constants'
+import {above} from '../../utils/responsive'
 
 const lineHeight = 2
 
