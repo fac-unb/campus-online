@@ -180,7 +180,11 @@ const Title = styled.div`
 	`};
 `
 
-const Editorial = styled(Link)`
+const Editorial = styled(({url, color, title, style, ...props}) => (
+	<Link to={url} style={{...style, color}} {...props}>
+		{title}
+	</Link>
+))`
 	text-decoration: none;
 	position: relative;
 	z-index: 3;
@@ -208,7 +212,7 @@ const PostCard = ({
 	date,
 	editorial,
 	cover,
-	author = {},
+	author,
 	size = true,
 	dark = false,
 	alt = false,
@@ -228,23 +232,11 @@ const PostCard = ({
 						)}
 						<Text size={size}>
 							<Meta>
-								{editorial.title && (
-									// [TODO]: pick editorial title, slug, color
-									<Editorial
-										to="/editorials/2018-1-universidade"
-										style={{color: 'salmon'}}
-									>
-										{editorial.title}
-									</Editorial>
-								)}
+								{editorial && <Editorial {...editorial} />}
 								{date && <PostDate>{format.postDate(date)}</PostDate>}
 							</Meta>
 							{title && <Title>{title}</Title>}
-							{author &&
-								author.title && (
-									// [TODO]: pick author title, slug, image
-									<Author to={author.url}>{author.title}</Author>
-								)}
+							{author && <Author to={author.url}>{author.title}</Author>}
 						</Text>
 					</PostContent>
 				</Inset>

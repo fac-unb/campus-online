@@ -43,12 +43,16 @@ const enhance = mapProps(({data: {site, blog: {posts}}}) => ({
 	siteTitle: fp.getOr('[default title]', 'siteMetadata.title')(site),
 	posts: posts
 		.map(fp.get('post'))
-		.map(({fields: {slug, author}, frontmatter}) => ({
+		.map(({fields: {slug, author, editorial}, frontmatter}) => ({
 			...frontmatter,
 			url: slug,
 			author: author && {
 				...author.frontmatter,
 				url: author.fields.slug,
+			},
+			editorial: editorial && {
+				...editorial.frontmatter,
+				url: editorial.fields.slug,
 			},
 		})),
 }))
@@ -94,12 +98,18 @@ export const pageQuery = graphql`
 								image
 							}
 						}
+						editorial {
+							fields {
+								slug
+							}
+							frontmatter {
+								title
+								color
+							}
+						}
 					}
 					frontmatter {
 						title
-						editorial {
-							title
-						}
 						cover
 						dark: featured
 						tags
