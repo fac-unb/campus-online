@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import Template from '.'
 
 const BlogPost = ({data: {markdownRemark, site}}) => {
-	const {frontmatter, html} = markdownRemark
+	const {frontmatter, fields = {}, html} = markdownRemark
 	return (
 		<Template
 			{...frontmatter}
+			{...fields}
 			siteTitle={site.siteMetadata.title}
 			content={html}
 		/>
@@ -16,6 +17,7 @@ const BlogPost = ({data: {markdownRemark, site}}) => {
 BlogPost.propTypes = {
 	data: PropTypes.shape({
 		markdownRemark: PropTypes.shape({
+			fields: PropTypes.object.isRequired,
 			frontmatter: PropTypes.object.isRequired,
 			html: PropTypes.node.isRequired,
 		}),
@@ -38,7 +40,6 @@ export const pageQuery = graphql`
 				title
 				cover
 				editorial
-				author
 				tags
 			}
 		}

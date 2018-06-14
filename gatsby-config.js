@@ -3,6 +3,10 @@ module.exports = {
 	siteMetadata: {
 		title: 'Campus Online',
 	},
+	mapping: {
+		'MarkdownRemark.fields.author': 'MarkdownRemark',
+		'MarkdownRemark.fields.posts': 'MarkdownRemark',
+	},
 	plugins: [
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-react-helmet',
@@ -32,6 +36,7 @@ module.exports = {
 				plugins: [],
 			},
 		},
+		'gatsby-transformer-campus-post',
 		{
 			resolve: 'gatsby-plugin-netlify-cms',
 			options: {
