@@ -52,7 +52,7 @@ export default class BlogPage extends React.Component {
 										<Tags tags={getTags(posts)} />
 									</div>
 								</Cell>
-								<Cell xs={12} lg={8} xg={7}>
+								<Cell xs={12} lg={8} xg={8}>
 									{posts && (
 										<CardRow>
 											{posts.map(({post}) => (
@@ -66,7 +66,6 @@ export default class BlogPage extends React.Component {
 													author={post.frontmatter.author}
 													dark={post.frontmatter.featured}
 													key={post.fields.slug}
-													reverse={true}
 													compact={true}
 												/>
 											))}

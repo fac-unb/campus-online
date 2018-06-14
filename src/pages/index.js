@@ -66,6 +66,7 @@ export default class IndexPage extends React.Component {
 											author={post.frontmatter.author}
 											dark={post.frontmatter.featured}
 											key={post.id}
+											dynamic={true}
 											size={!(index % 3) % 2}
 										/>
 									))}

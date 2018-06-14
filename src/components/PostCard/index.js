@@ -10,6 +10,21 @@ const minHeight = '26rem'
 const maxHeight = '16rem'
 
 const timing = '0.15s cubic-bezier(0.4, 0, 0.2, 1)'
+
+const StyledCardCell = styled(CardCell)`
+	flex-grow: 1;
+	${above.lg`
+		${p =>
+			!p.cover &&
+			p.dynamic &&
+			`
+			flex: 1;
+			max-width: 50%;
+			flex-basis: 33.33%;
+		`}
+	`};
+`
+
 const Wrapper = styled.article`
 	transition: padding ${timing}, margin ${timing}, box-shadow ${timing};
 	z-index: 0;
@@ -199,8 +214,9 @@ const PostCard = ({
 	alt = false,
 	reverse = false,
 	compact = false,
+	dynamic = false,
 }) => (
-	<CardCell xs={12} md={size ? 12 : 6}>
+	<StyledCardCell xs={12} md={size ? 12 : 6} cover={cover} dynamic={dynamic}>
 		<Wrapper>
 			<Padding>
 				<Inset dark={dark} alt={alt}>
@@ -234,7 +250,7 @@ const PostCard = ({
 			</Padding>
 			<Anchor to={url} />
 		</Wrapper>
-	</CardCell>
+	</StyledCardCell>
 )
 
 export default PostCard
