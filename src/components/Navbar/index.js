@@ -16,7 +16,7 @@ const Wrapper = styled.nav`
 	position: relative;
 	margin-bottom: 2rem;
 	width: 100%;
-	transition: 0.2s 0.2s all;
+	transition: 0.2s all;
 	z-index: 3;
 	${p =>
 		p.shadow &&
@@ -25,17 +25,18 @@ const Wrapper = styled.nav`
 		top: 0;
 		background: none;
 		&:before {
-			transition: 0.2s 0.1s all;
 			content: '';
 			top: 0;
+			z-index: -1;
 			position: absolute;
 			bottom: -2rem;
 			left: 0;
 			right: 0;
-			z-index: -1;
 			padding-bottom: 2rem;
-			background-blend-mode: multiply;
 			background: linear-gradient(180deg, rgba(20, 22, 24, 0.88) 0%, rgba(20, 22, 24, 0) 100%);
+		}
+		&:after{
+			content:'';
 		}
 	`};
 	${p =>
@@ -48,10 +49,9 @@ const Wrapper = styled.nav`
 	${p =>
 		p.isMenuOpen &&
 		`
-		background: white !important;
-		color: ${colors.base} !important;
+		color: ${colors.base};
+		background: linear-gradient(180deg, white 0%, white 100%);
 		&:before{
-			background: linear-gradient(180deg, rgba(20, 22, 24, 0) 0%, rgba(20, 22, 24, 0) 100%);
 			opacity: 0;
 		}
 	`};
@@ -82,20 +82,17 @@ const Links = styled.ul`
 	transform-origin: 0 0;
 	z-index: -1;
 	color: white;
-	transition: transform 0.3s, color 0.5s 0.2s;
+	transition: 0.3s all;
 	padding-bottom: 1rem;
 	${p =>
 		p.isMenuOpen &&
 		`
 		transform: none;
 		color: black;
-		box-shadow: 0 3rem 4rem rgba(0,0,0,0.22);
-		transition: transform 0.3s 0.2s, color 0.5s;
 	`} ${above.md`
 		color: inherit;
 		padding-bottom: 0;
 		opacity: 1;
-		box-shadow: none;
 		display: flex;
 		transform: none;
 		opacity: 1;
