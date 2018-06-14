@@ -6,7 +6,7 @@ title: >-
 cover: /uploads/img-20180517-wa0100.jpg
 date: '2018-05-17'
 editorial:
-  slug: 2018-1-educacao
+  slug: /editorials/2018-1-educacao/
   title: Educação
 author:
   slug: /authors/2018-1-caroline-zampiron/
