@@ -39,7 +39,9 @@ export const pageQuery = graphql`
 				date
 				title
 				cover
-				editorial
+				editorial {
+					title
+				}
 				tags
 			}
 		}

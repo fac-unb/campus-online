@@ -228,13 +228,13 @@ const PostCard = ({
 						)}
 						<Text size={size}>
 							<Meta>
-								{editorial && (
+								{editorial.title && (
 									// [TODO]: pick editorial title, slug, color
 									<Editorial
 										to="/editorials/2018-1-universidade"
 										style={{color: 'salmon'}}
 									>
-										{editorial}
+										{editorial.title}
 									</Editorial>
 								)}
 								{date && <PostDate>{format.postDate(date)}</PostDate>}

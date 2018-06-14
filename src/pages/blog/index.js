@@ -122,7 +122,9 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						template
-						editorial
+						editorial {
+							title
+						}
 						cover
 						featured
 						tags

@@ -23,7 +23,12 @@ const BlogPost = ({
 		<main style={{paddingBottom: '8rem'}}>
 			<Helmet title={`${siteTitle} | ${title}`} />
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
+			<HomeHero
+				title={title}
+				date={date}
+				cover={cover}
+				editorial={editorial.title}
+			/>
 			<Container>
 				<Row>
 					<Cell xs={12} lg={8}>

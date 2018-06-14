@@ -24,7 +24,7 @@ class TagRoute extends React.Component {
 				title={post.frontmatter.title}
 				date={post.frontmatter.date}
 				excerpt={post.excerpt}
-				editorial={post.frontmatter.editorial}
+				editorial={post.frontmatter.editorial.title}
 				cover={post.frontmatter.cover}
 				author={post.frontmatter.author}
 				key={post.id}
@@ -106,7 +106,9 @@ export const tagPageQuery = graphql`
 					frontmatter {
 						title
 						cover
-						editorial
+						editorial {
+							title
+						}
 					}
 				}
 			}

@@ -97,7 +97,9 @@ export const pageQuery = graphql`
 					}
 					frontmatter {
 						title
-						editorial
+						editorial {
+							title
+						}
 						cover
 						dark: featured
 						tags
