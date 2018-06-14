@@ -2,16 +2,11 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
-import TextHero from '../../components/TextHero'
+import Hero from '../../components/Hero'
 
 export const Editorial = ({name, color, siteTitle, bodyText}) => (
 	<React.Fragment>
-		<TextHero
-			title={name}
-			background={color}
-			navbar={false}
-			bodyText={bodyText}
-		/>
+		<Hero title={name} background={color} navbar={false} bodyText={bodyText} />
 		<Navbar
 			background={color}
 			dark={true}

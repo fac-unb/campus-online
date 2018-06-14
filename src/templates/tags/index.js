@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import {colors} from '../../constants'
 import Navbar from '../../components/Navbar'
-import TextHero from '../../components/TextHero'
+import Hero from '../../components/Hero'
 import Container from '../../components/Container'
 import {CardRow} from '../../components/CardGrid'
 import PostCard from '../../components/PostCard'
@@ -58,7 +58,7 @@ class TagRoute extends React.Component {
 						background: colors.base,
 					}}
 				/>
-				<TextHero title={tag} sup={tagSup} navbar={false} />
+				<Hero title={tag} sup={tagSup} navbar={false} />
 				<section>
 					<Container>
 						<CardRow>{postLinks}</CardRow>

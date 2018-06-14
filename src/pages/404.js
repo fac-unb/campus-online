@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import {colors} from '../constants'
 import Navbar from '../components/Navbar'
-import TextHero from '../components/TextHero'
+import Hero from '../components/Hero'
 
 const NotFoundPage = () => (
 	<div
@@ -16,7 +16,7 @@ const NotFoundPage = () => (
 	>
 		<Helmet title={'Campus Online | 404'} />
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-		<TextHero title="404" sub="Página não encontrada" />
+		<Hero title="404" sub="Página não encontrada" />
 	</div>
 )
 

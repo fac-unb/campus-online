@@ -1,8 +1,6 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Navbar from '../../components/Navbar'
-import Container from '../../components/Container'
 import Template from '.'
 
 const Author = ({data: {markdownRemark}}) => {
@@ -10,14 +8,12 @@ const Author = ({data: {markdownRemark}}) => {
 	return (
 		<Fragment>
 			<Helmet title={`${frontmatter.title} | Author`} />
-			<Navbar style={{position: 'sticky', top: 0, zIndex: 2}} />
-			<Container>
-				<Template
-					content={html}
-					name={frontmatter.title}
-					semester={frontmatter.semester}
-				/>
-			</Container>
+			<Template
+				content={html}
+				name={frontmatter.title}
+				semester={frontmatter.semester}
+				avatar={frontmatter.image}
+			/>
 		</Fragment>
 	)
 }
@@ -29,6 +25,7 @@ Author.propTypes = {
 			frontmatter: PropTypes.shape({
 				title: PropTypes.string.isRequired,
 				semester: PropTypes.string.isRequired,
+				image: PropTypes.string,
 			}).isRequired,
 		}).isRequired,
 	}).isRequired,
@@ -43,6 +40,7 @@ export const pageQuery = graphql`
 			frontmatter {
 				title
 				semester
+				image
 			}
 		}
 	}

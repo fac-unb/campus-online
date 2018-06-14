@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content from '../../components/Content'
+import Container from '../../components/Container'
+import Hero from '../../components/Hero'
 
 // [TODO]: move markup to this file, from ./gatsby.js
 // i've ported the earlier structure, it's probably wrong though,
@@ -8,11 +9,17 @@ import Content from '../../components/Content'
 // and general page layout must be inside a layout, in layouts folder
 // https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#choosing-the-page-layout
 
-const Author = ({name, semester, content}) => (
+const Author = ({name, semester, avatar, content}) => (
 	<section>
-		<h1>{name}</h1>
-		<p>{semester}</p>
-		<Content>{content}</Content>
+		<Hero
+			title={name}
+			sub={semester}
+			author={{name, avatar}}
+			bodyText={content}
+		/>
+		<Container>
+			[TODO]: map articles here & add counter after semester on hero
+		</Container>
 	</section>
 )
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import Link from '../StylableLink'
-import Avatar from './Avatar'
+import Avatar from '../Avatar'
 
 const Wrapper = styled(Link)`
 	display: flex;

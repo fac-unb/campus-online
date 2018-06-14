@@ -2,19 +2,19 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
-import TextHero from '../../components/TextHero'
+import Hero from '../../components/Hero'
 import AuthorCard from '../../components/AuthorCard'
 
 const AuthorsPage = ({data: {authorsList, site}}) => (
 	<React.Fragment>
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-		<TextHero
+		<Hero
 			title="Autores"
 			sub={`${authorsList.authors.length} autores no total`}
 		/>
 		<Container>
 			<Helmet title={`${site.siteMetadata.title} | Autores`} />
-			<section style={{padding: '6rem 0 8rem'}}>
+			<section style={{padding: '6rem 0 8rem', overflow: 'hidden'}}>
 				{/* {JSON.stringify(authorsList.authors)} */}
 				<div style={{display: 'flex', flexWrap: 'wrap', margin: '0 -2rem'}}>
 					{authorsList.authors.map(({author}) => (

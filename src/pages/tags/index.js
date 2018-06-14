@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
-import TextHero from '../../components/TextHero'
+import Hero from '../../components/Hero'
 import {TagsCounter} from '../../components/Tags'
 
 const TagsPage = ({
@@ -15,7 +15,7 @@ const TagsPage = ({
 }) => (
 	<React.Fragment>
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-		<TextHero title="Navegar por tags" sub={`${tags.length} tags no total`} />
+		<Hero title="Navegar por tags" sub={`${tags.length} tags no total`} />
 		<Container>
 			<Helmet title={`${title} | Tags `} />
 			<section style={{padding: '6rem 0 8rem'}}>

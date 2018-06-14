@@ -7,6 +7,7 @@ import Navbar from '../Navbar'
 import Container from '../Container'
 import Content from '../Content'
 import Text from '../Text'
+import Avatar from '../Avatar'
 
 const Wrapper = styled.div`
 	display: flex;
@@ -40,14 +41,37 @@ const Image = styled.img`
 	flex: 1;
 `
 
-const TextWrapper = styled.div`
+const ContentWrapper = styled.div`
 	margin-top: 6rem;
 	margin-bottom: 3rem;
 	${above.md`
+		display: flex;
+		align-items: center;
 		margin-top: 10rem;
 		margin-bottom: 6rem;
 	`};
 `
+
+const AvatarWrapper = styled.div`
+	margin-bottom: 0.5rem;
+	${above.md`
+		margin-bottom: 0;
+		margin-right: 1rem;
+	`};
+`
+
+const HeroAvatar = styled(Avatar)`
+	width: 4rem;
+	height: 4rem;
+	font-size: 1rem;
+	${above.md`
+		width: 5.5rem;
+		height: 5.5rem;
+		font-size: 1.25rem;
+	`};
+`
+
+const TextWrapper = styled.div``
 
 const Sup = styled.div`
 	display: block;
@@ -89,7 +113,7 @@ const Anchor = styled(Link)`
 	bottom: 0;
 `
 
-const TextHero = ({
+const Hero = ({
 	url,
 	sup,
 	title,
@@ -98,6 +122,7 @@ const TextHero = ({
 	cover,
 	background,
 	shadow,
+	author,
 	dark = true,
 	navbar = true,
 }) => (
@@ -129,20 +154,27 @@ const TextHero = ({
 				<Image src={cover} />
 			</ImageWrapper>
 		)}
-		<TextWrapper>
-			<Container>
-				{sup && <Sup>{sup}</Sup>}
-				{title && <Title>{title}</Title>}
-				{sub && <Sub>{sub}</Sub>}
-				{bodyText && (
-					<BodyText dark={dark}>
-						<Content>{bodyText}</Content>
-					</BodyText>
+		<Container>
+			<ContentWrapper>
+				{author && (
+					<AvatarWrapper>
+						<HeroAvatar name={author.name} avatar={author.avatar} dark={true} />
+					</AvatarWrapper>
 				)}
-			</Container>
-		</TextWrapper>
+				<TextWrapper>
+					{sup && <Sup>{sup}</Sup>}
+					{title && <Title>{title}</Title>}
+					{sub && <Sub>{sub}</Sub>}
+					{bodyText && (
+						<BodyText dark={dark}>
+							<Content>{bodyText}</Content>
+						</BodyText>
+					)}
+				</TextWrapper>
+			</ContentWrapper>
+		</Container>
 		{url && <Anchor to={url} />}
 	</Wrapper>
 )
 
-export default TextHero
+export default Hero
