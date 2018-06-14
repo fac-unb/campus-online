@@ -4,7 +4,7 @@ title: 'CampusCast #1 — Sexo & tabus'
 cover: /uploads/campuscast-1.png
 date: '2018-05-18'
 editorial:
-  slug: 2018-1-tabu
+  slug: /editorials/2018-1-tabu/
   title: Tabu
 author:
   slug: /authors/2018-1-victor-farias/
