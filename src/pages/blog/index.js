@@ -31,6 +31,12 @@ export default class BlogPage extends React.Component {
 		}
 		window.netlifyIdentity.init()
 	}
+	static defaultProps = {
+		data: {
+			site: {siteMetadata: {title: '[default title]'}},
+			blog: {posts: []},
+		},
+	}
 	render() {
 		const {
 			site,
@@ -63,7 +69,9 @@ export default class BlogPage extends React.Component {
 													excerpt={post.excerpt}
 													editorial={post.frontmatter.editorial}
 													cover={post.frontmatter.cover}
-													author={post.frontmatter.author}
+													author={
+														post.fields.author && post.fields.author.title
+													}
 													dark={post.frontmatter.featured}
 													key={post.fields.slug}
 													compact={true}
@@ -116,7 +124,6 @@ export const pageQuery = graphql`
 						template
 						editorial
 						cover
-						author
 						featured
 						tags
 						date

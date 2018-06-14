@@ -207,8 +207,8 @@ const PostCard = ({
 	title,
 	date,
 	editorial,
-	author,
 	cover,
+	author = {},
 	size = true,
 	dark = false,
 	alt = false,
@@ -240,10 +240,11 @@ const PostCard = ({
 								{date && <PostDate>{format.postDate(date)}</PostDate>}
 							</Meta>
 							{title && <Title>{title}</Title>}
-							{author && (
-								// [TODO]: pick author title, slug, image
-								<Author to="/authors/2018-1-vitor-dino">{author}</Author>
-							)}
+							{author &&
+								author.title && (
+									// [TODO]: pick author title, slug, image
+									<Author to={author.url}>{author.title}</Author>
+								)}
 						</Text>
 					</PostContent>
 				</Inset>

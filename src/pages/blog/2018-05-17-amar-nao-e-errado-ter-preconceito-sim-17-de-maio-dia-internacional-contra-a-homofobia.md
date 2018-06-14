@@ -1,13 +1,17 @@
 ---
 template: blog-post
-semester: 2018/1
 title: >-
   Amar não é errado; ter preconceito, sim! 17 de maio: Dia Internacional contra
   a Homofobia
 cover: /uploads/img-20180517-wa0100.jpg
 date: '2018-05-17'
-editorial: Educação
-author: Caroline Zampiron
+editorial:
+  slug: 2018-1-educacao
+  title: Educação
+author:
+  slug: /authors/2018-1-caroline-zampiron/
+  title: Caroline Zampiron
+semester: 2018/1
 tags:
   - homofobia
   - lgbt

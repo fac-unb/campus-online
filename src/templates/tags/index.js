@@ -107,7 +107,6 @@ export const tagPageQuery = graphql`
 						title
 						cover
 						editorial
-						author
 					}
 				}
 			}

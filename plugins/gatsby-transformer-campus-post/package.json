@@ -1,0 +1,8 @@
+{
+  "name": "gatsby-transformer-campus-post",
+  "version": "0.0.0-alpha",
+  "description": "Gatsby Transformer for moeda FAQ, extends MoedaDocuments",
+  "main": "index.js",
+  "author": "Startaê Team <hi@startae.com.br>",
+  "private": true
+}

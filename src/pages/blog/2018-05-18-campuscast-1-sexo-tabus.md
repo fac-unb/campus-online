@@ -1,11 +1,15 @@
 ---
 template: blog-post
-semester: 2018/1
 title: 'CampusCast #1 — Sexo & tabus'
 cover: /uploads/campuscast-1.png
 date: '2018-05-18'
-editorial: Tabu
-author: Victor Farias
+editorial:
+  slug: 2018-1-tabu
+  title: Tabu
+author:
+  slug: /authors/2018-1-victor-farias/
+  title: Victor Farias
+semester: 2018/1
 tags:
   - campuscast
   - sexo
