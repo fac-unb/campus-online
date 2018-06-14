@@ -9,7 +9,7 @@ editorial:
   slug: /editorials/2018-1-tabu/
   title: Tabu
 author: ''
-semester: 2019/1
+semester: 2018/1
 tags:
   - bce
   - campus
