@@ -11,7 +11,7 @@ editorial:
 author:
   slug: /authors/2018-1-caroline-zampiron/
   title: Caroline Zampiron
-semester: 2018/
+semester: 2018/1
 tags:
   - homofobia
   - lgbt
