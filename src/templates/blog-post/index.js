@@ -13,7 +13,7 @@ import SideSection from '../../components/SideSection'
 const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 	return (
 		<main style={{paddingBottom: '8rem'}}>
-			<MetaTags title={title} description={content} />
+			<MetaTags title={title} description={content} image={cover} />
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
 			<Container>

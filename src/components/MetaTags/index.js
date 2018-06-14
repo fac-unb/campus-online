@@ -1,9 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import {URL} from 'whatwg-url'
 import {withRouter} from 'react-router'
 import truncate from '../../utils/truncate'
 import {homepage} from '../../../package.json'
+
+const joinURL = (...args) =>
+	args
+		.reverse()
+		.join('/')
+		.replace(/([^:])\/+/g, '$1/')
 
 const MetaTags = ({
 	title,
@@ -14,12 +19,11 @@ const MetaTags = ({
 	location: {pathname},
 }) => {
 	const composedTitle = `${siteTitle} | ${title}`
-	const imageURL = new URL(image, homepage)
-	// const canonical = new URL(pathname, homepage)
+	// const canonical = joinURL(pathname, homepage)
 	const latlng = '-15.760837, -47.8702936'
 	const locale = 'pt_BR'
 	const truncatedDescription = truncate(description, 120)
-
+	const imageURL = joinURL(image, homepage)
 	return (
 		<Helmet>
 			<title>{composedTitle}</title>
@@ -29,7 +33,7 @@ const MetaTags = ({
 			<meta name="geo.region" content="BR-DF" />
 			<meta name="geo.placename" content="Brasília" />
 
-			<meta property="og:url" content={new URL(pathname, homepage)} />
+			<meta property="og:url" content={joinURL(pathname, homepage)} />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content={composedTitle} />
 			<meta property="og:image" content={imageURL} />
@@ -40,10 +44,10 @@ const MetaTags = ({
 
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:site" content="@campusitounb" />
-			<meta name="twitter:url" content={new URL(pathname, homepage)} />
+			<meta name="twitter:url" content={joinURL(pathname, homepage)} />
 			<meta name="twitter:title" content={composedTitle} />
 			<meta name="twitter:description" content={truncatedDescription} />
-			<meta name="twitter:image" content={image} />
+			<meta name="twitter:image" content={imageURL} />
 		</Helmet>
 	)
 }
@@ -51,7 +55,7 @@ const MetaTags = ({
 MetaTags.defaultProps = {
 	title: 'Home',
 	description: 'Laboratório de Jornalismo da UnB',
-	image: new URL('/assets/images/og-image.png', homepage),
+	image: '/assets/images/og-image.png',
 	authorName: null,
 	siteTitle: 'Campus Online',
 }
