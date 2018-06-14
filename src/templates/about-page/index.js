@@ -1,6 +1,6 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import {colors} from '../../constants'
+import MetaTags from '../../components/MetaTags'
 import Navbar from '../../components/Navbar'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -9,13 +9,9 @@ import Content from '../../components/Content'
 import AboutHero from '../../components/AboutHero'
 import Items from '../../components/Items'
 
-const AboutPage = ({siteTitle, title, items, content}) => (
+const AboutPage = ({title, items, content}) => (
 	<div style={{overflowX: 'hidden', position: 'relative'}}>
-		<Helmet>
-			<title>
-				{siteTitle} | {title}
-			</title>
-		</Helmet>
+		<MetaTags title={title} />
 		<Navbar
 			style={{
 				position: 'fixed',

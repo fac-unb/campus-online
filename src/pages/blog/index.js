@@ -1,8 +1,8 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import flatten from '../../utils/flatten'
+import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
 import {CardRow} from '../../components/CardGrid'
@@ -33,20 +33,16 @@ export default class BlogPage extends React.Component {
 	}
 	static defaultProps = {
 		data: {
-			site: {siteMetadata: {title: '[default title]'}},
 			blog: {posts: []},
 		},
 	}
 	render() {
 		const {
-			site,
 			blog: {posts},
 		} = this.props.data
 		return (
 			<div>
-				<Helmet>
-					<title>{site.siteMetadata.title} | Todos as matérias</title>
-				</Helmet>
+				<MetaTags title="Todos as matérias" />
 				<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 				<main style={{padding: '8rem 0'}}>
 					<Container>
@@ -94,21 +90,11 @@ BlogPage.propTypes = {
 		blog: PropTypes.shape({
 			posts: PropTypes.array,
 		}),
-		site: PropTypes.shape({
-			siteMetadata: PropTypes.shape({
-				title: PropTypes.string,
-			}),
-		}),
 	}),
 }
 
 export const pageQuery = graphql`
 	query BlogQuery {
-		site {
-			siteMetadata {
-				title
-			}
-		}
 		blog: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}

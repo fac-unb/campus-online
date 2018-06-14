@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import MetaTags from '../../components/MetaTags'
 import Navbar from '../../components/Navbar'
 import Container from '../../components/Container'
 import Template from '.'
@@ -9,7 +9,7 @@ const Semester = ({data: {markdownRemark}}) => {
 	const {frontmatter} = markdownRemark || {frontmatter: {}}
 	return (
 		<Fragment>
-			<Helmet title={`${frontmatter.title}`} />
+			<MetaTags title={frontmatter.title} />
 			<Navbar style={{position: 'sticky', top: 0, zIndex: 2}} />
 			<Container>
 				<Template name={frontmatter.title} />

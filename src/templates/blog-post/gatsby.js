@@ -4,7 +4,6 @@ import BlogPost from '.'
 const enhance = mapProps(
 	({
 		data: {
-			site,
 			post: {
 				frontmatter,
 				html,
@@ -14,7 +13,6 @@ const enhance = mapProps(
 	}) => ({
 		...frontmatter,
 		content: html,
-		siteTitle: site.siteMetadata.title,
 		author: author && {
 			...author.frontmatter,
 			url: author.fields.slug,
@@ -57,11 +55,6 @@ export const pageQuery = graphql`
 				title
 				cover
 				tags
-			}
-		}
-		site {
-			siteMetadata {
-				title
 			}
 		}
 	}

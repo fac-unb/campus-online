@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react'
-import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import {mapProps} from 'recompose'
 import fp from 'lodash/fp'
+import MetaTags from '../components/MetaTags'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
 import Navbar from '../components/Navbar'
@@ -10,11 +10,9 @@ import StoriesTitle from '../components/StoriesTitle'
 import HomeHero from '../components/HomeHero'
 import PostCard from '../components/PostCard'
 
-const PageComponent = ({siteTitle, posts: [hero, ...posts]}) => (
+const PageComponent = ({posts: [hero, ...posts]}) => (
 	<Fragment>
-		<Helmet>
-			<title>{siteTitle} | Home</title>
-		</Helmet>
+		<MetaTags title="Home" />
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 		<main style={{paddingBottom: '8rem'}}>
 			{hero && <HomeHero {...hero} />}
@@ -39,8 +37,7 @@ const PageComponent = ({siteTitle, posts: [hero, ...posts]}) => (
 	</Fragment>
 )
 
-const enhance = mapProps(({data: {site, blog: {posts}}}) => ({
-	siteTitle: fp.getOr('[default title]', 'siteMetadata.title')(site),
+const enhance = mapProps(({data: {blog: {posts}}}) => ({
 	posts: posts
 		.map(fp.get('post'))
 		.map(({fields: {slug, author, editorial}, frontmatter}) => ({
@@ -64,11 +61,6 @@ IndexPage.propTypes = {
 		blog: PropTypes.shape({
 			posts: PropTypes.array,
 		}),
-		site: PropTypes.shape({
-			siteMetadata: PropTypes.shape({
-				title: PropTypes.string,
-			}),
-		}),
 	}),
 }
 
@@ -76,11 +68,6 @@ export default IndexPage
 
 export const pageQuery = graphql`
 	query IndexQuery {
-		site {
-			siteMetadata {
-				title
-			}
-		}
 		blog: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}

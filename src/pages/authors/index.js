@@ -1,11 +1,11 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import AuthorCard from '../../components/AuthorCard'
 
-const AuthorsPage = ({data: {authorsList, site}}) => (
+const AuthorsPage = ({data: {authorsList}}) => (
 	<React.Fragment>
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 		<Hero
@@ -13,9 +13,8 @@ const AuthorsPage = ({data: {authorsList, site}}) => (
 			sub={`${authorsList.authors.length} autores no total`}
 		/>
 		<Container>
-			<Helmet title={`${site.siteMetadata.title} | Autores`} />
+			<MetaTags title="Autores" />
 			<section style={{padding: '6rem 0 8rem', overflow: 'hidden'}}>
-				{/* {JSON.stringify(authorsList.authors)} */}
 				<div style={{display: 'flex', flexWrap: 'wrap', margin: '0 -2rem'}}>
 					{authorsList.authors.map(({author}) => (
 						<div key={author.fields.slug} style={{padding: '1rem 2rem'}}>
@@ -36,11 +35,6 @@ export default AuthorsPage
 
 export const authorsPageQuery = graphql`
 	query AuthorsQuery {
-		site {
-			siteMetadata {
-				title
-			}
-		}
 		authorsList: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___title]}
 			filter: {frontmatter: {template: {eq: "author"}}}

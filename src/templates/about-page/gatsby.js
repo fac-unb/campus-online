@@ -2,15 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Template from '.'
 
-const AboutPage = ({data: {markdownRemark, site}}) => {
+const AboutPage = ({data: {markdownRemark}}) => {
 	const {frontmatter, html} = markdownRemark
-	return (
-		<Template
-			siteTitle={site.siteMetadata.title}
-			{...frontmatter}
-			content={html}
-		/>
-	)
+	return <Template {...frontmatter} content={html} />
 }
 
 AboutPage.propTypes = {
@@ -21,11 +15,6 @@ AboutPage.propTypes = {
 				items: PropTypes.array,
 			}).isRequired,
 			html: PropTypes.node.isRequired,
-		}),
-		site: PropTypes.shape({
-			siteMetadata: PropTypes.shape({
-				title: PropTypes.string,
-			}),
 		}),
 	}),
 }
@@ -42,11 +31,6 @@ export const aboutPageQuery = graphql`
 					title
 					body
 				}
-			}
-		}
-		site {
-			siteMetadata {
-				title
 			}
 		}
 	}

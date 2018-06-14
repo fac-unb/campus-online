@@ -1,7 +1,7 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import {colors} from '../../constants'
+import MetaTags from '../../components/MetaTags'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import Container from '../../components/Container'
@@ -13,7 +13,6 @@ class TagRoute extends React.Component {
 		const {
 			pathContext: {tag},
 			data: {
-				site: {siteMetadata},
 				blog: {posts, totalCount},
 			},
 		} = this.props
@@ -47,7 +46,7 @@ class TagRoute extends React.Component {
 					paddingBottom: '8rem',
 				}}
 			>
-				<Helmet title={`${siteMetadata.title} | ${tag}`} />
+				<MetaTags title={tag} />
 				<Navbar
 					dark={true}
 					style={{
@@ -87,11 +86,6 @@ export default TagRoute
 
 export const tagPageQuery = graphql`
 	query TagPage($tag: String) {
-		site {
-			siteMetadata {
-				title
-			}
-		}
 		blog: allMarkdownRemark(
 			limit: 1000
 			sort: {fields: [frontmatter___date], order: DESC}

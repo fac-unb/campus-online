@@ -1,10 +1,10 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 
-export const Editorial = ({name, color, siteTitle, bodyText}) => (
+export const Editorial = ({name, color, bodyText}) => (
 	<React.Fragment>
 		<Hero title={name} background={color} navbar={false} bodyText={bodyText} />
 		<Navbar
@@ -13,7 +13,7 @@ export const Editorial = ({name, color, siteTitle, bodyText}) => (
 			style={{position: 'fixed', top: 0, zIndex: 30}}
 		/>
 		<Container>
-			<Helmet title={`${siteTitle} | ${name}`} />
+			<MetaTags title={name} />
 			<section style={{padding: '6rem 0 8rem'}}>
 				<div>[TODO]: MAP Articles HERE</div>
 			</section>

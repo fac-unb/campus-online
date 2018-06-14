@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import Helmet from 'react-helmet'
+import MetaTags from '../../components/MetaTags'
 import Content from '../../components/Content'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -10,23 +10,10 @@ import Tags from '../../components/Tags'
 import AuthorCard from '../../components/AuthorCard'
 import SideSection from '../../components/SideSection'
 
-const BlogPost = ({
-	content,
-	tags,
-	date,
-	cover,
-	editorial,
-	title,
-	author,
-	siteTitle,
-}) => {
+const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 	return (
 		<main style={{paddingBottom: '8rem'}}>
-			<Helmet>
-				<title>
-					{siteTitle} | {title}
-				</title>
-			</Helmet>
+			<MetaTags title={title} description={content} />
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
 			<Container>
