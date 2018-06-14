@@ -9,7 +9,7 @@ editorial:
 author:
   slug: /authors/2018-1-victor-farias/
   title: Victor Farias
-semester: 2018/1
+semester: 2018/
 tags:
   - campuscast
   - sexo
