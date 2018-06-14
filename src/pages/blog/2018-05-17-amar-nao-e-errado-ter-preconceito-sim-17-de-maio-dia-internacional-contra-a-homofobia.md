@@ -5,11 +5,13 @@ title: >-
   a Homofobia
 cover: /uploads/img-20180517-wa0100.jpg
 date: '2018-05-17'
-editorial: Educação
+editorial:
+  slug: 2018-1-educacao
+  title: Educação
 author:
   slug: /authors/2018-1-caroline-zampiron/
   title: Caroline Zampiron
-semester: 2018/1
+semester: 2018/
 tags:
   - homofobia
   - lgbt
