@@ -5,7 +5,7 @@ cover: /uploads/campuscast-1.png
 date: '2018-05-18'
 editorial: Tabu
 author:
-  slug: 2018-1-victor-farias
+  slug: /authors/2018-1-victor-farias/
   title: Victor Farias
 semester: 2018/1
 tags:
