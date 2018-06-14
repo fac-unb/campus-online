@@ -5,6 +5,7 @@ module.exports = {
 	},
 	mapping: {
 		'MarkdownRemark.fields.author': 'MarkdownRemark',
+		'MarkdownRemark.fields.editorial': 'MarkdownRemark',
 		'MarkdownRemark.fields.posts': 'MarkdownRemark',
 	},
 	plugins: [

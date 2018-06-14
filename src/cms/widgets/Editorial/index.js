@@ -28,7 +28,10 @@ const methods = {
 	isValid,
 	renderSuggestion,
 	shouldRenderSuggestions: () => true,
-	getSuggestionValue: ({slug = '', data: {title = ''}}) => ({slug, title}),
+	getSuggestionValue: ({slug, data, collection}) => ({
+		title: data.title || '',
+		slug: slug && `/${collection}/${slug}/`,
+	}),
 	valueToFieldString: _value => {
 		const value = _value.toJS ? _value.toJS() : _value
 		return String((value || {}).title || value || '')

@@ -1,6 +1,11 @@
 const fp = require('lodash/fp')
 const type = 'MarkdownRemark'
 
+const isEditorialNode = fp.isMatch({
+	internal: {type: 'MarkdownRemark'},
+	frontmatter: {template: 'editorial'},
+})
+
 const isPostNode = fp.isMatch({
 	internal: {type: 'MarkdownRemark'},
 	frontmatter: {template: 'blog-post'},
@@ -12,15 +17,20 @@ const isAuthorNode = fp.isMatch({
 })
 
 const getAuthorSlug = fp.get('frontmatter.author.slug')
+const getEditorialSlug = fp.get('frontmatter.editorial.slug')
 
 module.exports = ({boundActionCreators, getNodes, getNode}) => {
-	console.log('===>WHAT<====')
 	const {createNodeField} = boundActionCreators
-	const postsByAuthors = {}
 	const allNodes = getNodes()
-	const authorNodes = allNodes.filter(isAuthorNode)
-	const postWithAuthorNodes = allNodes.filter(isPostNode).filter(getAuthorSlug)
 
+	const postNodes = allNodes.filter(isPostNode)
+	const authorNodes = allNodes.filter(isAuthorNode)
+	const editorialNodes = allNodes.filter(isEditorialNode)
+
+	const postWithAuthorNodes = postNodes.filter(getAuthorSlug)
+	const postWithEditorialNodes = postNodes.filter(getEditorialSlug)
+
+	const postsByAuthors = {}
 	postWithAuthorNodes.forEach(node => {
 		const slug = getAuthorSlug(node)
 		const authorNode = authorNodes.find(fp.matches({fields: {slug}}))
@@ -31,11 +41,25 @@ module.exports = ({boundActionCreators, getNodes, getNode}) => {
 		postsByAuthors[authorId] = [...postsByAuthors[authorId], node.id]
 	})
 
-	console.log(postsByAuthors)
+	Object.entries(postsByAuthors).forEach(([id, postIds]) => {
+		createNodeField({node: getNode(id), name: 'posts', value: postIds})
+	})
 
-	Object.entries(postsByAuthors).forEach(([authorNodeId, postIds]) => {
-		const node = getNode(authorNodeId)
-		if (!node) return
-		createNodeField({node, name: 'posts', value: postIds})
+	const postsByEditorials = {}
+	postWithEditorialNodes.forEach(node => {
+		const slug = getEditorialSlug(node)
+		const editorialNode = editorialNodes.find(fp.matches({fields: {slug}}))
+		if (!editorialNode) return
+		const editorialId = editorialNode.id
+		createNodeField({node, name: 'editorial', value: editorialId})
+		postsByEditorials[editorialId] = postsByEditorials[editorialId] || []
+		postsByEditorials[editorialId] = [
+			...postsByEditorials[editorialId],
+			node.id,
+		]
+	})
+
+	Object.entries(postsByEditorials).forEach(([id, postIds]) => {
+		createNodeField({node: getNode(id), name: 'posts', value: postIds})
 	})
 }
