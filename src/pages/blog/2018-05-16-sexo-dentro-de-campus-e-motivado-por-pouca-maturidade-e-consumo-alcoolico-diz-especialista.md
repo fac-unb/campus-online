@@ -1,6 +1,5 @@
 ---
 template: blog-post
-semester: 2018/1
 title: >-
   Sexo dentro de Campus é motivado por pouca maturidade e consumo alcoólico, diz
   especialista
@@ -8,6 +7,7 @@ cover: /uploads/bce-2.jpg
 date: '2018-05-16'
 editorial: Tabu
 author: ''
+semester: 2018/1
 tags:
   - bce
   - campus
