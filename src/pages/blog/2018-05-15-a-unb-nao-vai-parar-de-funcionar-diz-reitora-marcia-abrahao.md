@@ -1,16 +1,18 @@
 ---
 template: blog-post
-semester: 2018/1
 title: '“A UnB não vai parar de funcionar”, diz reitora Márcia Abrahão'
 cover: /uploads/reitoria.jpg
 date: '2018-05-15'
 editorial: Universidade
-featured: true
-author: Daniele Brandão
+author:
+  slug: 2018-1-daniele-brandao
+  title: Daniele Brandão
+semester: 2018/1
 tags:
   - orçamento
   - funcionários
   - tercerizados
+featured: true
 ---
 
 > A reitora negou também a demissão de funcionários da segurança da Universidade de Brasília. A reitora da Universidade de Brasília, Márcia Abrahão, garantiu em entrevista ao Campus Online que não existe a chance de interrupção do funcionamento da UnB no segundo semestre de 2018. “A universidade não vai fechar em agosto, mas a comunidade tem que se conscientizar que alguns ajustes precisam ser feitos e não comprometem o funcionamento da UnB”, disse. Os ajustes a que Márcia se refere são revisões em contratos com as empresas terceirizadas que prestam serviços à Fundação Universidade de Brasília (FUB), como limpeza, manutenção, segurança patrimonial e fornecimento de refeições no Restaurante Universitário.
