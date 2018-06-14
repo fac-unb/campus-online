@@ -19,8 +19,13 @@ function isValid() {
 	return true
 }
 
+const methods = {
+	isValid,
+	shouldRenderSuggestions: () => false,
+}
+
 const SemesterControl = forwardRef((props, ref) => (
-	<Relation.control ref={ref} {...props} isValid={isValid} />
+	<Relation.control ref={ref} {...props} {...methods} />
 ))
 
 export default SemesterControl

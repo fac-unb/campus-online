@@ -6,7 +6,7 @@ slug:
   encoding: "ascii"
   clean_accents: true
 
-display_url: https://campus-online.netlify.com
+display_url: https://campus.kunst.cloud
 media_folder: static/uploads
 public_folder: /uploads
 
@@ -66,30 +66,15 @@ collections:
       - {label: "Semestre", name: "semester", widget: "semester", collection: "semesters", searchFields: ["title"], valueField: "title", required: true}
       - {label: "Descrição (opcional)", name: "description", widget: "text", required: false}
 
-
-  - name: "semesters"
-    label: "Semestres"
-    folder: "src/pages/semesters"
-    create: true
-    extension: "md"
-    format: "yaml-frontmatter"
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - {label: "Template", name: "template", widget: "hidden", default: "semester"}
-      - {label: "Semestre (AAAA/S)", name: "title", widget: "string", required: true, pattern: ['^\d{4}\/\d$', "Semestre fora do formato"]}
-
-
   - name: "config"
     label: "Configurações"
     files:
       - name: "semester"
         label: "Semestre Atual"
-        file: "src/semester.md"
-        extension: "md"
-        format: "yaml-frontmatter"
+        file: "src/semester.json"
+        extension: "json"
+        format: "json"
         editor:
           preview: false
         fields:
-          - {label: "Semestre Atual", name: "semester", widget: "semester", collection: "semesters", searchFields: ["title"], valueField: "title", required: true}
+          - {label: "Semestre Atual", name: "semester", widget: "semester", required: true}
