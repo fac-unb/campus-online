@@ -1,47 +1,61 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Template from '.'
+import {mapProps} from 'recompose'
+import BlogPost from '.'
 
-const BlogPost = ({data: {markdownRemark, site}}) => {
-	const {frontmatter, fields = {}, html} = markdownRemark
-	return (
-		<Template
-			{...frontmatter}
-			{...fields}
-			siteTitle={site.siteMetadata.title}
-			content={html}
-		/>
-	)
-}
-
-BlogPost.propTypes = {
-	data: PropTypes.shape({
-		markdownRemark: PropTypes.shape({
-			fields: PropTypes.object.isRequired,
-			frontmatter: PropTypes.object.isRequired,
-			html: PropTypes.node.isRequired,
-		}),
-		site: PropTypes.shape({
-			siteMetadata: PropTypes.shape({
-				title: PropTypes.string,
-			}),
-		}),
+const enhance = mapProps(
+	({
+		data: {
+			site,
+			post: {
+				frontmatter,
+				html,
+				fields: {editorial, author},
+			},
+		},
+	}) => ({
+		...frontmatter,
+		content: html,
+		siteTitle: site.siteMetadata.title,
+		author: author && {
+			...author.frontmatter,
+			url: author.fields.slug,
+		},
+		editorial: editorial && {
+			...editorial.frontmatter,
+			url: editorial.fields.slug,
+		},
 	}),
-}
+)
 
-export default BlogPost
+export default enhance(BlogPost)
 
 export const pageQuery = graphql`
 	query BlogPostByID($id: String!) {
-		markdownRemark(id: {eq: $id}) {
+		post: markdownRemark(id: {eq: $id}) {
 			html
+			fields {
+				editorial {
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						color
+					}
+				}
+				author {
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						image
+					}
+				}
+			}
 			frontmatter {
 				date
 				title
 				cover
-				editorial {
-					title
-				}
 				tags
 			}
 		}
@@ -52,13 +66,3 @@ export const pageQuery = graphql`
 		}
 	}
 `
-//
-// export const siteQuery = graphql`
-// 	query Metadata() {
-// 		site {
-// 			siteMetadata {
-// 				title
-// 			}
-// 		}
-// 	}
-// `

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Template from '.'
 
-const Author = ({data: {markdownRemark}}) => {
+const Author = ({data: {site, markdownRemark}}) => {
 	const {frontmatter, html} = markdownRemark || {frontmatter: {}, html: ''}
 	return (
 		<Fragment>
-			<Helmet title={`${frontmatter.title} | Author`} />
+			<Helmet title={`${site.siteMetadata.title} | ${frontmatter.title}`} />
 			<Template
 				content={html}
 				name={frontmatter.title}
@@ -35,6 +35,11 @@ export default Author
 
 export const pageQuery = graphql`
 	query AuthorByID($id: String!) {
+		site {
+			siteMetadata {
+				title
+			}
+		}
 		markdownRemark(id: {eq: $id}) {
 			html
 			frontmatter {

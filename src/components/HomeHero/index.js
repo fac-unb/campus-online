@@ -137,7 +137,7 @@ const HomeHero = ({url, title, date, editorial, cover}) => (
 			<Text>
 				<Container>
 					<Meta>
-						{editorial.title && <Editorial>{editorial.title}</Editorial>}
+						{editorial && <Editorial>{editorial.title}</Editorial>}
 						{date && <PostDate>{format.postDate(date)}</PostDate>}
 					</Meta>
 					{title && <Title>{title}</Title>}

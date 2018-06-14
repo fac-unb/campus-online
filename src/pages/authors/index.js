@@ -27,7 +27,6 @@ const AuthorsPage = ({data: {authorsList, site}}) => (
 						</div>
 					))}
 				</div>
-				<div />
 			</section>
 		</Container>
 	</React.Fragment>
