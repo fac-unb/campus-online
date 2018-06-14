@@ -17,12 +17,12 @@ const Wrapper = styled.nav`
 	margin-bottom: 2rem;
 	width: 100%;
 	transition: 0.2s 0.2s all;
+	z-index: 3;
 	${p =>
 		p.shadow &&
 		`
 		position: fixed;
 		top: 0;
-		z-index: 3;
 		background: none;
 		&:before {
 			transition: 0.2s 0.1s all;

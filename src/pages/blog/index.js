@@ -42,13 +42,10 @@ export default class BlogPage extends React.Component {
 					<title>{site.siteMetadata.title} | Todos as matérias</title>
 				</Helmet>
 				<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-				<main style={{paddingBottom: '8rem'}}>
+				<main style={{padding: '8rem 0'}}>
 					<Container>
 						<section>
-							<StoriesTitle
-								title="Todas as publicações"
-								style={{paddingTop: '8em', paddingBottom: '1em'}}
-							/>
+							<StoriesTitle title="Todas as publicações" />
 							<LayoutGrid>
 								<Cell xs={12} lg={4} xg={4} style={{position: 'relative'}}>
 									<div>

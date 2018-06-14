@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import Link from '../StylableLink'
 
@@ -9,23 +10,32 @@ const Wrapper = styled.div`
 	justify-content: space-between;
 	align-items: baseline;
 	position: relative;
-	margin-bottom: 2rem;
+	position: sticky;
+	top: 3.5rem;
+	z-index: 2;
+	box-shadow: -2rem 0 0 ${colors.base03}, 2rem 0 0 ${colors.base03};
+	background: ${colors.base03};
+	${above.md`
+		top: 4rem;
+		margin-bottom: 1rem;
+	`};
 `
 
 const Title = styled.div`
-	font-size: 2rem;
+	font-size: 1.25rem;
 	font-weight: 600;
-	line-height: 2.5rem;
+	line-height: 3rem;
 	position: relative;
+	color: ${colors.base88};
 	${above.md`
-		font-size: 3rem;
+		font-size: 1.5rem;
 		line-height: 3.5rem;
 	`};
 `
 
 const Anchor = styled(Link)`
 	display: block;
-	font-size: 1.125rem;
+	font-size: 0.875rem;
 	line-height: 1.5rem;
 	opacity: 0.66;
 	font-weight: 600;
@@ -36,6 +46,9 @@ const Anchor = styled(Link)`
 	:hover {
 		opacity: 1;
 	}
+	${above.md`
+		font-size: 1rem;
+	`};
 `
 
 const StoriesTitle = ({title, label, to, style}) => (
