@@ -149,11 +149,18 @@ const Title = styled.div`
 	`};
 `
 
-const Editorial = styled.div`
+const Editorial = styled(Link)`
+	text-decoration: none;
+	position: relative;
+	z-index: 3;
+	color: currentColor;
 	display: block;
 `
 
-const Author = styled.div`
+const Author = styled(Link)`
+	text-decoration: none;
+	position: relative;
+	z-index: 3;
 	margin-top: auto;
 	color: ${colors.base44};
 	font-size: 0.75rem;
@@ -190,11 +197,22 @@ const PostCard = ({
 						)}
 						<Text>
 							<Meta>
-								{editorial && <Editorial>{editorial}</Editorial>}
+								{editorial && (
+									// [TODO]: pick editorial title, slug, color
+									<Editorial
+										to="/editorials/2018-1-universidade"
+										style={{color: 'salmon'}}
+									>
+										{editorial}
+									</Editorial>
+								)}
 								{date && <PostDate>{format.postDate(date)}</PostDate>}
 							</Meta>
 							{title && <Title>{title}</Title>}
-							{author && <Author>{author}</Author>}
+							{author && (
+								// [TODO]: pick author title, slug, image
+								<Author to="/authors/2018-1-vitor-dino">{author}</Author>
+							)}
 						</Text>
 					</PostContent>
 				</Inset>
