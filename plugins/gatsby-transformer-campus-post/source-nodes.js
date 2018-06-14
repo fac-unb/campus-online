@@ -1,5 +1,4 @@
 const fp = require('lodash/fp')
-const type = 'MarkdownRemark'
 
 const isEditorialNode = fp.isMatch({
 	internal: {type: 'MarkdownRemark'},
