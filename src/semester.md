@@ -1,3 +1,4 @@
 ---
-semester: 2/2018
+semester: 2018/1
 ---
+
