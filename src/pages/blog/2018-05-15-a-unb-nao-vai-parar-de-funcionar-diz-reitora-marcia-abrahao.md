@@ -5,7 +5,7 @@ cover: /uploads/reitoria.jpg
 date: '2018-05-15'
 editorial: Universidade
 author:
-  slug: 2018-1-daniele-brandao
+  slug: /authors/2018-1-daniele-brandao/
   title: Daniele Brandão
 semester: 2018/1
 tags:
