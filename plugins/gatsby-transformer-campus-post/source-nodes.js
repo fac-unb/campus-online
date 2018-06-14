@@ -1,4 +1,5 @@
 const fp = require('lodash/fp')
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 const isEditorialNode = fp.isMatch({
 	internal: {type: 'MarkdownRemark'},
@@ -18,8 +19,11 @@ const isAuthorNode = fp.isMatch({
 const getAuthorSlug = fp.get('frontmatter.author.slug')
 const getEditorialSlug = fp.get('frontmatter.editorial.slug')
 
-module.exports = ({boundActionCreators, getNodes, getNode}) => {
+module.exports = async ({boundActionCreators, getNodes, getNode}) => {
 	const {createNodeField} = boundActionCreators
+
+	await delay(500) // wait for filesystem nodes
+
 	const allNodes = getNodes()
 
 	const postNodes = allNodes.filter(isPostNode)
