@@ -55,6 +55,10 @@ const PostContent = styled.div`
 		display: flex;
 		align-items: stretch;
 		min-height: ${p => (p.compact ? 'auto' : minHeight)};
+		flex-direction: ${p =>
+			p.size ? (p.reverse ? 'row' : 'row-reverse') : 'column'};
+	`};
+	${above.xg`
 		flex-direction: ${p => (p.reverse ? 'row' : 'row-reverse')};
 	`};
 `
@@ -77,8 +81,12 @@ const ImageWrapper = styled.figure`
 	`}
 	${above.xg`
 		flex: 7;
+		${p =>
+			!p.size &&
+			`
+			flex: 2.25 !important;
+		`}
 	`}
-	flex: ${p => !p.size && `3 !important`};
 `
 
 const Image = styled.img`
@@ -101,6 +109,14 @@ const Text = styled.div`
 	flex-direction: column;
 	${above.md`
 		padding: 2rem 1.875rem 2rem;
+		${p =>
+			!p.size &&
+			`
+			flex: 0;
+		`}
+	`};
+	${above.xg`
+		flex: 2;
 	`};
 `
 
@@ -145,7 +161,7 @@ const Title = styled.div`
 	max-width: 32em;
 	${above.md`
 		font-size: 22px;
-		margin: 1.5rem 0 0;
+		margin: 1.5rem 0 1rem;
 	`};
 `
 
@@ -161,13 +177,12 @@ const Author = styled(Link)`
 	text-decoration: none;
 	position: relative;
 	z-index: 3;
-	margin-top: auto;
 	color: ${colors.base44};
 	font-size: 0.75rem;
 	line-height: 1.25rem;
 	font-weight: 600;
+	margin-top: auto;
 	${above.md`
-		padding-top: 2.5rem;
 		font-size: 0.875rem;
 	`};
 `
@@ -189,13 +204,13 @@ const PostCard = ({
 		<Wrapper>
 			<Padding>
 				<Inset dark={dark} alt={alt}>
-					<PostContent reverse={reverse} compact={compact}>
+					<PostContent reverse={reverse} size={size} compact={compact}>
 						{cover && (
 							<ImageWrapper size={size} compact={compact}>
 								<Image src={cover} />
 							</ImageWrapper>
 						)}
-						<Text>
+						<Text size={size}>
 							<Meta>
 								{editorial && (
 									// [TODO]: pick editorial title, slug, color
