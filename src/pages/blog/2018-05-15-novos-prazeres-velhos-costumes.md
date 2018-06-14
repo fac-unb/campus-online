@@ -7,7 +7,7 @@ cover: /uploads/novos-prazeres-velhos-costumes.jpg
 date: '2018-05-15'
 editorial: Tabu
 author:
-  slug: 2018-1-thalyta-guerra
+  slug: /authors/2018-1-thalyta-guerra/
   title: Thalyta Guerra
 semester: 2018/1
 tags:
