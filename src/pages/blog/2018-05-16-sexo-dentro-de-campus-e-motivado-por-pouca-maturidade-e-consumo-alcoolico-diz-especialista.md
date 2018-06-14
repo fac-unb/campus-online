@@ -15,8 +15,7 @@ tags:
   - campus
   - sexo
 ---
-
-> Apesar da janela e da proximidade com outros estudantes, as salas de estudo privativas da biblioteca foram utilizadas para prática inapropriada. (Foto: Caroline Zampiron)
+> Apesar da janela e da proximidade com outros estudantes, as salas de estudo privativas da biblioteca foram utilizadas para prática inapropriada.
 
 Para sexólogo, noção de censura diminui num ambiente onde se prega liberdade
 
@@ -26,7 +25,7 @@ Para o especialista em sexualidade humana, Alexandre Marques, graduado em psicol
 
 Um estudante de 23 anos que preferiu não identificar nome ou curso, conta já ter feito sexo em três ocasiões dentro da área pública da UnB — levando em conta que o campus compreende a CEU (Casa do Estudante Universitário) e a Colina, alojamentos onde, naturalmente, é permitida a prática sexual. A sala de estudos da BCE (Biblioteca Central da UnB), por duas vezes, e atrás do prédio BSA Norte foram os locais escolhidos pelo aluno. Ele diz se arrepender de ter transado na biblioteca: “É um lugar completamente inapropriado. As pessoas podiam estar estudando, mas eu estava ocupando para outra coisa”. A sala privativa da BCE conta com apenas uma pequena janela na porta que não pode ser tapada, como instrui placa afixada na parede. Antes, era necessário que dois estudantes reservassem o local. Hoje, é exigida a presença de três deles.
 
-![](/uploads/bsa-n.jpg)
+![Foto: Caroline Zampiron](/uploads/bsa-n.jpg)
 
 > O local já foi utilizado para sexo entre alunos da UnB após festa no campus. (Foto: Caroline Zampiron)
 
