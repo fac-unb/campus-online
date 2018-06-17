@@ -45,7 +45,13 @@ const Padding = styled.div`
 	padding: 6px 6px;
 `
 
-const Inset = styled.div`
+const PlainDiv = ({className, children, style}) => (
+	<div className={className} style={style}>
+		{children}
+	</div>
+)
+
+const Inset = styled(PlainDiv)`
 	background: ${p =>
 		!p.dark ? 'white' : p.alt ? 'rgba(255,255,255,0.03)' : colors.base};
 	color: ${p => (p.dark ? 'white' : colors.base)};
