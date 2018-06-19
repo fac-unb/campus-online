@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {withState} from 'recompose'
+import {kebabCase} from 'lodash/fp'
 import {colors} from '../../constants'
 import Link from '../StylableLink'
 
@@ -88,13 +89,19 @@ const ShowMore = styled.div`
 `
 
 const enhance = withState('expanded', 'onExpand', false)
+const byLabel = ({label: _a}, {label: _b}) => {
+	const {a, b} = {a: kebabCase(_a), b: kebabCase(_b)}
+	if (a < b) return -1
+	if (a > b) return 1
+	return 0
+}
 
 const ScrollList = enhance(
 	({title, url, list, style, className, expanded, onExpand}) => (
 		<Wrapper style={style} className={className}>
 			<Title to={url}>{title}</Title>
 			<List expanded={expanded}>
-				{list.map(({label, url}) => (
+				{list.sort(byLabel).map(({label, url}) => (
 					<li key={url}>
 						<Item to={url}>{label}</Item>
 					</li>
