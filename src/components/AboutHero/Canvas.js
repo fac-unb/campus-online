@@ -5,7 +5,6 @@ import Container from '../Container'
 const Wrapper = styled.div`
 	overflow: hidden;
 	position: relative;
-	margin-top: 100px;
 `
 
 const HtmlCanvas = styled.canvas`
