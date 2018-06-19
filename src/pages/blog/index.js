@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {mapProps} from 'recompose'
-import fp from 'lodash/fp'
+import {get, kebabCase} from 'lodash/fp'
 import styled from 'styled-components'
 import {colors} from '../../constants'
 import MetaTags from '../../components/MetaTags'
@@ -12,10 +12,14 @@ import Navbar from '../../components/Navbar'
 import StoriesTitle from '../../components/StoriesTitle'
 import PostCard from '../../components/PostCard'
 import Editorials from '../../components/Editorials'
+import ScrollList from '../../components/ScrollList'
 
 const LayoutGrid = styled(Row)`
 	justify-content: space-between;
 `
+
+const enhanceTuthor = ({name, url}) => ({label: name, url})
+const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
 
 const PageComponent = ({posts, tags, authors, editorials}) => (
 	<div
@@ -30,17 +34,16 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} dark={true} />
 		<main style={{padding: '8rem 0'}}>
 			<Container>
-				{/* [TODO]: sort tags */}
-				<Editorials editorials={editorials} />
-				<details>
-					<summary>authors</summary>
-					<pre>{JSON.stringify(authors, null, 2)}</pre>
-				</details>
-				<details>
-					<summary>tags</summary>
-					<pre>{JSON.stringify(tags, null, 2)}</pre>
-				</details>
-
+				{/* [TODO]: sort tags and authors*/}
+				<section style={{marginBottom: '6rem'}}>
+					<Editorials editorials={editorials} style={{marginBottom: '2rem'}} />
+					<ScrollList
+						title="Alunos"
+						to={'/authors'}
+						list={authors.map(enhanceTuthor)}
+					/>
+					<ScrollList title="Tags" to={'/tags'} list={tags.map(enhanceTag)} />
+				</section>
 				<section>
 					<StoriesTitle title="Todas as publicações" dark={true} />
 					<LayoutGrid>
@@ -76,13 +79,13 @@ const enhance = mapProps(
 	}) => ({
 		tags,
 		editorials: editorials
-			.map(fp.get('editorial'))
+			.map(get('editorial'))
 			.map(({frontmatter, fields}) => ({...frontmatter, ...fields})),
 		authors: authors
-			.map(fp.get('author'))
+			.map(get('author'))
 			.map(({frontmatter, fields}) => ({...frontmatter, ...fields})),
 		posts: posts
-			.map(fp.get('post'))
+			.map(get('post'))
 			.map(({fields: {slug, author, editorial}, frontmatter}) => ({
 				...frontmatter,
 				url: slug,
