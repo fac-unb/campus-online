@@ -5,6 +5,7 @@ import BlogPost from '.'
 const fromGraphql = ({data: {post, prev, next}}) => ({
 	...flattenBlogPostInfo(post),
 	content: post.content,
+	excerpt: post.excerpt,
 	prev: prev && flattenBlogPostInfo(prev),
 	next: next && flattenBlogPostInfo(next),
 })
@@ -22,6 +23,7 @@ export const pageQuery = graphql`
 		post: markdownRemark(id: {eq: $id}) {
 			...BlogPostInfo
 			content: html
+			excerpt(pruneLength: 120)
 		}
 	}
 `
