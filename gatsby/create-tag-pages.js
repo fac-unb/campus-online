@@ -35,7 +35,7 @@ module.exports = async ({boundActionCreators, graphql}) => {
 
 		createPage({
 			path: url,
-			component: path.resolve(`src/templates/tags/index.js`),
+			component: path.resolve(`src/templates/tags/gatsby.js`),
 			context: {tag},
 		})
 	})

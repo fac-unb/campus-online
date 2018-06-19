@@ -8,81 +8,58 @@ import Container from '../../components/Container'
 import {CardRow} from '../../components/CardGrid'
 import PostCard from '../../components/PostCard'
 
-class TagRoute extends React.Component {
-	render() {
-		const {
-			pathContext: {tag},
-			data: {
-				blog: {posts, totalCount},
-			},
-		} = this.props
-
-		const postLinks = posts.map(({post}) => (
-			<PostCard
-				url={post.fields.slug}
-				title={post.frontmatter.title}
-				date={post.frontmatter.date}
-				excerpt={post.excerpt}
-				editorial={post.frontmatter.editorial.title}
-				cover={post.frontmatter.cover}
-				author={post.frontmatter.author}
-				key={post.id}
-				size={1}
-				dark={true}
-				alt={true}
-			/>
-		))
-
-		const tagSup = `
-			${totalCount} Matéria${totalCount === 1 ? '' : 's'} com a tag
-		`
-
-		return (
-			<div
-				style={{
-					background: colors.base,
-					color: 'white',
-					marginBottom: '-8rem',
-					paddingBottom: '8rem',
-				}}
-			>
-				<MetaTags title={tag} />
-				<Navbar
-					dark={true}
+const TagPage = ({tag, posts, totalCount}) => (
+	<div
+		style={{
+			background: colors.base,
+			color: 'white',
+			marginBottom: '-8rem',
+			paddingBottom: '8rem',
+		}}
+	>
+		<MetaTags title={tag} />
+		<Navbar
+			dark={true}
+			style={{
+				position: 'fixed',
+				top: 0,
+				zIndex: 20,
+				color: 'white',
+				background: colors.base,
+			}}
+		/>
+		<Hero
+			title={tag}
+			sup={`${totalCount} Matéria${totalCount === 1 ? '' : 's'} com a tag`}
+			navbar={false}
+		/>
+		<section>
+			<Container>
+				<CardRow>
+					{posts.map(post => (
+						<PostCard dark alt {...post} key={post.url} size={1} />
+					))}
+				</CardRow>
+				<Link
 					style={{
-						position: 'fixed',
-						top: 0,
-						zIndex: 20,
-						color: 'white',
-						background: colors.base,
+						display: 'block',
+						fontSize: '1.125rem',
+						lineHeight: '1.5rem',
+						marginTop: '4rem',
+						color: 'currentColor',
+						marginBottom: '2rem',
+						textDecoration: 'none',
 					}}
-				/>
-				<Hero title={tag} sup={tagSup} navbar={false} />
-				<section>
-					<Container>
-						<CardRow>{postLinks}</CardRow>
-						<Link
-							style={{
-								display: 'block',
-								fontSize: '1.125rem',
-								lineHeight: '1.5rem',
-								marginTop: '4rem',
-								color: 'currentColor',
-								marginBottom: '2rem',
-								textDecoration: 'none',
-							}}
-							to="/tags/"
-						>
-							Ver todas as tags
-						</Link>
-					</Container>
-				</section>
-			</div>
-		)
-	}
-}
+					to="/tags/"
+				>
+					Ver todas as tags
+				</Link>
+			</Container>
+		</section>
+	</div>
+)
 
-export default TagRoute
+export default TagPage
 
 export const tagPageQuery = graphql`
 	query TagPage($tag: String) {
