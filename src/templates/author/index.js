@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Hero from '../../components/Hero'
+import PostCard from '../../components/PostCard'
 
-const Author = ({name, semester, avatar, content}) => (
-	<section>
+const Author = ({name, semester, avatar, content, posts}) => (
+	<Fragment>
 		<MetaTags title={name} image={avatar} />
 		<Hero
 			title={name}
@@ -12,8 +13,10 @@ const Author = ({name, semester, avatar, content}) => (
 			author={{name, avatar}}
 			bodyText={content}
 		/>
-		<Container />
-	</section>
+		<Container style={{paddingTop: '6rem', paddingBottom: '8rem'}}>
+			{posts.map(post => <PostCard {...post} key={post.url} author={null} />)}
+		</Container>
+	</Fragment>
 )
 
 export default Author
