@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {withState} from 'recompose'
 import {colors} from '../../constants'
 import Link from '../StylableLink'
 
@@ -19,7 +20,7 @@ const Title = styled(Link)`
 	font-weight: 500;
 	color: currentColor;
 	text-decoration: none;
-	padding: 1rem;
+	padding: 1rem 0.5rem 1rem 1rem;
 	&:after {
 		content: '';
 		background: linear-gradient(to left, transparent, ${colors.base});
@@ -27,6 +28,7 @@ const Title = styled(Link)`
 		height: 100%;
 		left: 100%;
 		width: 3rem;
+		pointer-events: none;
 	}
 `
 
@@ -35,6 +37,12 @@ const List = styled.ul`
 	display: flex;
 	overflow: scroll;
 	flex: 1;
+	${p =>
+		p.expanded &&
+		`
+		overflow: initial;
+		flex-wrap: wrap;
+	`};
 `
 
 const Item = styled(Link)`
@@ -44,7 +52,7 @@ const Item = styled(Link)`
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	font-weight: 600;
-	padding: 1rem;
+	padding: 0.25rem 0.75rem;
 	white-space: nowrap;
 	opacity: 0.66;
 	&:hover {
@@ -56,7 +64,8 @@ const ShowMore = styled.div`
 	display: block;
 	cursor: pointer;
 	position: relative;
-	padding: 1rem;
+	padding: 1rem 1rem 0.5rem 1rem;
+	user-select: none;
 	&:before {
 		content: '';
 		background: linear-gradient(to right, transparent, ${colors.base});
@@ -64,21 +73,39 @@ const ShowMore = styled.div`
 		height: 100%;
 		right: 100%;
 		width: 3rem;
+		pointer-events: none;
+	}
+	&:after {
+		content: '···';
+		line-height: 1rem;
+		${p =>
+			p.expanded &&
+			`
+			content: '×';
+			font-size: 1.5rem;
+		`} position: relative;
 	}
 `
 
-const ScrollList = ({title, to, list, style, className}) => (
-	<Wrapper to={to} style={style} className={className}>
-		<Title>{title}</Title>
-		<List>
-			{list.map(({label, url}) => (
-				<li key={url}>
-					<Item to={url}>{label}</Item>
-				</li>
-			))}
-		</List>
-		<ShowMore>···</ShowMore>
-	</Wrapper>
+const enhance = withState('expanded', 'onExpand', false)
+
+const ScrollList = enhance(
+	({title, to, list, style, className, expanded, onExpand}) => (
+		<Wrapper to={to} style={style} className={className}>
+			<Title>{title}</Title>
+			<List expanded={expanded}>
+				{list.map(({label, url}) => (
+					<li key={url}>
+						<Item to={url}>{label}</Item>
+					</li>
+				))}
+			</List>
+			<ShowMore
+				expanded={expanded}
+				onClick={() => onExpand(expanded => !expanded)}
+			/>
+		</Wrapper>
+	),
 )
 
 export default ScrollList
