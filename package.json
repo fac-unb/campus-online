@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop --port \"${PORT:-5000}\" --open -H 0.0.0.0",
-    "lint": "eslint './*.js' 'src' 'plugins'",
+    "lint": "eslint './*.js' 'src' 'plugins' 'gatsby'",
     "build": "gatsby build",
     "start": "gatsby serve",
     "precommit": "pretty-quick --staged && npm run lint",
