@@ -60,29 +60,3 @@ const TagPage = ({tag, posts, totalCount}) => (
 )
 
 export default TagPage
-
-export const tagPageQuery = graphql`
-	query TagPage($tag: String) {
-		blog: allMarkdownRemark(
-			limit: 1000
-			sort: {fields: [frontmatter___date], order: DESC}
-			filter: {frontmatter: {tags: {in: [$tag]}}}
-		) {
-			totalCount
-			posts: edges {
-				post: node {
-					fields {
-						slug
-					}
-					frontmatter {
-						title
-						cover
-						editorial {
-							title
-						}
-					}
-				}
-			}
-		}
-	}
-`
