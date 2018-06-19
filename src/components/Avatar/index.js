@@ -28,6 +28,7 @@ const Wrapper = styled.div`
 	height: 3rem;
 	letter-spacing: 0.1em;
 	font-size: 0.875rem;
+	user-select: none;
 	${p =>
 		p.small &&
 		`
@@ -39,6 +40,7 @@ const Wrapper = styled.div`
 `
 
 const Image = styled.img`
+	user-select: auto;
 	display: block;
 	object-fit: cover;
 	min-height: 100%;
