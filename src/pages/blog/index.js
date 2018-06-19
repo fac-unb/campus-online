@@ -1,9 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {mapProps} from 'recompose'
 import {get, kebabCase} from 'lodash/fp'
 import styled from 'styled-components'
 import {colors} from '../../constants'
+import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
+import flattenAuthorInfo from '../../fragments/AuthorInfo'
+import flattenEditorialInfo from '../../fragments/EditorialInfo'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -18,7 +20,7 @@ const LayoutGrid = styled(Row)`
 	justify-content: space-between;
 `
 
-const enhanceTuthor = ({name, url}) => ({label: name, url})
+const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
 
 const PageComponent = ({posts, tags, authors, editorials}) => (
@@ -39,28 +41,26 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 					<Editorials editorials={editorials} style={{marginBottom: '2rem'}} />
 					<ScrollList
 						title="Alunos"
-						to={'/authors'}
-						list={authors.map(enhanceTuthor)}
+						url="/authors"
+						list={authors.map(enhanceAuthor)}
 					/>
-					<ScrollList title="Tags" to={'/tags'} list={tags.map(enhanceTag)} />
+					<ScrollList title="Tags" url="/tags" list={tags.map(enhanceTag)} />
 				</section>
 				<section>
-					<StoriesTitle title="Todas as publicações" dark={true} />
+					<StoriesTitle dark title="Todas as publicações" />
 					<LayoutGrid>
 						<Cell xs={12} lg={8} xg={8}>
-							{posts && (
-								<CardRow>
-									{posts.map(post => (
-										<PostCard
-											{...post}
-											key={post.slug}
-											dark={!post.featured}
-											alt={true}
-											compact={true}
-										/>
-									))}
-								</CardRow>
-							)}
+							<CardRow>
+								{posts.map(post => (
+									<PostCard
+										key={post.url}
+										{...post}
+										dark={!post.featured}
+										alt={true}
+										compact={true}
+									/>
+								))}
+							</CardRow>
 						</Cell>
 					</LayoutGrid>
 				</section>
@@ -72,32 +72,15 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 const enhance = mapProps(
 	({
 		data: {
-			blog: {posts, tags},
-			allAuthors: {authors},
-			allEditorials: {editorials},
+			blog: {posts = [], tags = []},
+			allAuthors: {authors = []},
+			allEditorials: {editorials = []},
 		},
 	}) => ({
 		tags,
-		editorials: editorials
-			.map(get('editorial'))
-			.map(({frontmatter, fields}) => ({...frontmatter, ...fields})),
-		authors: authors
-			.map(get('author'))
-			.map(({frontmatter, fields}) => ({...frontmatter, ...fields})),
-		posts: posts
-			.map(get('post'))
-			.map(({fields: {slug, author, editorial}, frontmatter}) => ({
-				...frontmatter,
-				url: slug,
-				author: author && {
-					...author.frontmatter,
-					url: author.fields.slug,
-				},
-				editorial: editorial && {
-					...editorial.frontmatter,
-					url: editorial.fields.slug,
-				},
-			})),
+		editorials: editorials.map(get('editorial')).map(flattenEditorialInfo),
+		authors: authors.map(get('author')).map(flattenAuthorInfo),
+		posts: posts.map(get('post')).map(flattenBlogPostInfo),
 	}),
 )
 
@@ -105,49 +88,34 @@ const BlogPage = enhance(PageComponent)
 
 export default BlogPage
 
-BlogPage.propTypes = {
-	data: PropTypes.shape({
-		blog: PropTypes.shape({
-			posts: PropTypes.array,
-		}),
-	}),
-}
-
 export const pageQuery = graphql`
 	query BlogQuery {
+		# [TODO]: filter author on current semester
 		allAuthors: allMarkdownRemark(
-			# [TODO]: filter author on current semester
 			sort: {order: DESC, fields: [frontmatter___title]}
 			filter: {frontmatter: {template: {eq: "author"}}}
 		) {
 			authors: edges {
 				author: node {
-					frontmatter {
-						name: title
-						avatar: image
-					}
-					fields {
-						url: slug
-					}
+					...AuthorInfo
 				}
 			}
 		}
+
+		# [TODO]: filter editorial on current semester
 		allEditorials: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___title]}
 			filter: {frontmatter: {template: {eq: "editorial"}}}
 		) {
 			editorials: edges {
 				editorial: node {
-					frontmatter {
-						name: title
-						color
-					}
-					fields {
-						url: slug
-					}
+					...EditorialInfo
 				}
 			}
 		}
+
+		# [TODO]: filter posts on current semester
+		# [TODO]: add infinite-scrolling
 		blog: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}
@@ -155,34 +123,7 @@ export const pageQuery = graphql`
 			tags: distinct(field: frontmatter___tags)
 			posts: edges {
 				post: node {
-					fields {
-						slug
-						author {
-							fields {
-								slug
-							}
-							frontmatter {
-								title
-								image
-							}
-						}
-						editorial {
-							fields {
-								slug
-							}
-							frontmatter {
-								title
-								color
-							}
-						}
-					}
-					frontmatter {
-						title
-						cover
-						featured
-						tags
-						date
-					}
+					...BlogPostInfo
 				}
 			}
 		}
