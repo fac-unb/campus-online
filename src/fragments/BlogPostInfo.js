@@ -8,6 +8,7 @@ export const fragment = graphql`
 			date
 			cover
 			tags
+			featured
 		}
 		fields {
 			url: slug
@@ -21,8 +22,7 @@ export const fragment = graphql`
 	}
 `
 
-const flatten = ({frontmatter, fields, ...other}) => ({
-	...other,
+const flatten = ({frontmatter, fields}) => ({
 	...frontmatter,
 	...fields,
 	editorial: flattenEditorial(fields.editorial),

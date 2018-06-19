@@ -90,3 +90,12 @@ th {
 	padding: 0;
 	text-align: left;
 }
+
+::selection {
+	background-color: var(--selection-color, rgba(125, 125, 125, 1));
+	color: var(--selection-background, white);
+}
+
+img::selection {
+	background-color: rgba(125, 125, 125, 0.22);
+}
