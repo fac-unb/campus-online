@@ -71,10 +71,18 @@ collections:
     files:
       - name: "semester"
         label: "Semestre Atual"
-        file: "src/semester.json"
+        file: "src/siteMetadata.json"
         extension: "json"
         format: "json"
         editor:
           preview: false
         fields:
-          - {label: "Semestre Atual", name: "semester", widget: "semester", required: true}
+          - {label: "Semestre Atual", name: "activeSemester", widget: "semester", required: true}
+          - {label: "Título", name: "title", widget: "string", required: true}
+          - {label: "Descrição", name: "description", widget: "string", pattern: ['/^.{1,120}$/', 'máximo de 120 caracteres excedido'], required: true}
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {label: "Nome", name: "label", widget: string}
+              - {label: "Link", name: "url", widget: string}
