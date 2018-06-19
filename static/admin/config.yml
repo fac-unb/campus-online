@@ -77,7 +77,7 @@ collections:
         extension: "json"
         format: "json"
         fields:
-          - {label: "Semestre Atual", name: "activeSemester", widget: "semester", required: true}
+          - {label: "Semestre Atual (AAAA/S)", name: "activeSemester", widget: "semester", required: true}
           - {label: "Título", name: "title", widget: "string", required: true}
           - {label: "Descrição", name: "description", widget: "string", pattern: ['^.{1,120}$', 'máximo de 120 caracteres excedido'], required: true}
           - label: "Links"
