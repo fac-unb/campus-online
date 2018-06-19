@@ -39,6 +39,7 @@ const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 										name={author.title}
 										avatar={author.image}
 										slug={author.url}
+										small={true}
 									/>
 								</Fragment>
 							)}

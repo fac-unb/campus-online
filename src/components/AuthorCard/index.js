@@ -15,6 +15,14 @@ const Wrapper = styled(Link)`
 	&:hover {
 		color: ${colors.base88};
 	}
+	${p =>
+		p.dark &&
+		`
+		color: ${colors.base44};
+		&:hover {
+			color: ${colors.base11};
+		}
+	`};
 `
 
 const Title = styled.div`
@@ -24,8 +32,8 @@ const Title = styled.div`
 	${p =>
 		p.small &&
 		`
-		font-size: 1rem;
-		line-height: 1.25rem;
+		font-size: 0.875rem;
+		line-height: 1rem;
 		font-weight: 600;
 	`} ${above.md`
 		font-size: 1.25rem;
@@ -39,9 +47,9 @@ const Title = styled.div`
 	`};
 `
 
-const AuthorCard = ({url, name, avatar, small, style, className}) => (
-	<Wrapper to={url} style={style} className={className}>
-		<Avatar avatar={avatar} name={name} small={small} />
+const AuthorCard = ({url, name, avatar, small, style, dark, className}) => (
+	<Wrapper to={url} style={style} className={className} dark={dark}>
+		<Avatar avatar={avatar} name={name} small={small} dark={dark} />
 		{name && <Title small={small}>{name}</Title>}
 	</Wrapper>
 )

@@ -5,6 +5,7 @@ import {above} from '../../utils/responsive'
 import * as format from '../../utils/format'
 import Link from '../StylableLink'
 import {CardCell} from '../CardGrid'
+import AuthorCard from '../AuthorCard'
 
 const minHeight = '26rem'
 const maxHeight = '16rem'
@@ -198,17 +199,13 @@ const Editorial = styled(({url, color, title, style, ...props}) => (
 	display: block;
 `
 
-const Author = styled(Link)`
-	text-decoration: none;
-	position: relative;
+const Author = styled(AuthorCard)`
 	z-index: 3;
-	color: ${colors.base44};
-	font-size: 0.75rem;
-	line-height: 1.25rem;
-	font-weight: 600;
+	padding-top: 0.25rem;
 	margin-top: auto;
-	${above.md`
-		font-size: 0.875rem;
+	${above.md &&
+		`
+		padding-top: 1rem;
 	`};
 `
 
@@ -242,7 +239,14 @@ const PostCard = ({
 								{date && <PostDate>{format.postDate(date)}</PostDate>}
 							</Meta>
 							{title && <Title>{title}</Title>}
-							{author && <Author to={author.url}>{author.title}</Author>}
+							{author && (
+								<Author
+									name={author.title}
+									url={author.slug}
+									small={true}
+									dark={dark}
+								/>
+							)}
 						</Text>
 					</PostContent>
 				</Inset>
