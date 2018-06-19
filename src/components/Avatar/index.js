@@ -18,16 +18,24 @@ const Wrapper = styled.div`
 	justify-content: center;
 	object-fit: cover;
 	overflow: hidden;
-	width: 3rem;
-	height: 3rem;
 	background: ${p => (p.dark ? colors.base88 : colors.base11)};
 	font-weight: 700;
-	letter-spacing: 0.1em;
-	font-size: 0.875rem;
 	color: ${p => (p.dark ? colors.base66 : colors.base44)};
 	text-align: center;
 	border-radius: 50%;
 	margin-right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	letter-spacing: 0.1em;
+	font-size: 0.875rem;
+	${p =>
+		p.small &&
+		`
+		margin-right: 0.75rem;
+		width: 2rem;
+		height: 2rem;
+		font-size: 0.75rem;
+	`};
 `
 
 const Image = styled.img`
@@ -38,8 +46,8 @@ const Image = styled.img`
 	flex: 1;
 `
 
-const Avatar = ({name, avatar, dark, ...props}) => (
-	<Wrapper dark={dark} {...props}>
+const Avatar = ({name, avatar, dark, small, ...props}) => (
+	<Wrapper dark={dark} small={small} {...props}>
 		{avatar && <Image src={avatar} />}
 		{!avatar && initials(name)}
 	</Wrapper>

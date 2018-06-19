@@ -11,23 +11,38 @@ const Wrapper = styled(Link)`
 	text-decoration: none;
 	color: currentColor;
 	position: relative;
-	margin-top: 2rem;
+	color: ${colors.base66};
+	&:hover {
+		color: ${colors.base88};
+	}
 `
 
 const Title = styled.div`
 	font-size: 1.25rem;
 	line-height: 1.5rem;
-	color: ${colors.base88};
-	${above.md`
+	font-weight: 500;
+	${p =>
+		p.small &&
+		`
+		font-size: 1rem;
+		line-height: 1.25rem;
+		font-weight: 600;
+	`} ${above.md`
 		font-size: 1.25rem;
 		line-height: 1.75rem;
+		${p =>
+			p.small &&
+			`
+			font-size: 1rem;
+			line-height: 1.25rem;
+		`}
 	`};
 `
 
-const AuthorCard = ({slug, name, avatar}) => (
-	<Wrapper to={slug}>
-		<Avatar avatar={avatar} name={name} />
-		{name && <Title>{name}</Title>}
+const AuthorCard = ({url, name, avatar, small, style, className}) => (
+	<Wrapper to={url} style={style} className={className}>
+		<Avatar avatar={avatar} name={name} small={small} />
+		{name && <Title small={small}>{name}</Title>}
 	</Wrapper>
 )
 
