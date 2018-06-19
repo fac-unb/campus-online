@@ -4,16 +4,16 @@ import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 
-export const Editorial = ({name, color, bodyText}) => (
+export const Editorial = ({title, color, content}) => (
 	<React.Fragment>
-		<Hero title={name} background={color} navbar={false} bodyText={bodyText} />
+		<Hero title={title} background={color} navbar={false} bodyText={content} />
 		<Navbar
 			background={color}
 			dark={true}
 			style={{position: 'fixed', top: 0, zIndex: 30}}
 		/>
 		<Container>
-			<MetaTags title={name} />
+			<MetaTags title={title} />
 			<section style={{padding: '6rem 0 8rem'}}>
 				<div>[TODO]: MAP Articles HERE</div>
 			</section>

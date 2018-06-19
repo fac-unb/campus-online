@@ -1,41 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Template from '.'
+import {mapProps} from 'recompose'
+import flattenEditorialInfo from '../../fragments/EditorialInfo'
+import EditorialPage from '.'
 
-const Editorial = ({data: {markdownRemark}}) => {
-	const {
-		frontmatter: {title, color, semester},
-		html,
-	} = markdownRemark
-	return (
-		<Template name={title} color={color} semester={semester} bodyText={html} />
-	)
-}
+const enhance = mapProps(({data: {editorial}}) => ({
+	...flattenEditorialInfo(editorial),
+	content: editorial.content,
+}))
 
-Editorial.propTypes = {
-	data: PropTypes.shape({
-		markdownRemark: PropTypes.shape({
-			html: PropTypes.node,
-			frontmatter: PropTypes.shape({
-				title: PropTypes.string,
-				color: PropTypes.string,
-				semester: PropTypes.string,
-			}),
-		}),
-	}),
-}
-
-export default Editorial
+export default enhance(EditorialPage)
 
 export const pageQuery = graphql`
 	query EditorialByID($id: String!) {
-		markdownRemark(id: {eq: $id}) {
-			html
-			frontmatter {
-				color
-				title
-				semester
-			}
+		editorial: markdownRemark(id: {eq: $id}) {
+			...EditorialInfo
+			content: html
 		}
 	}
 `
