@@ -6,7 +6,7 @@ const StylableLink = ({to, children, className, style}) => {
 	const external = /^[^./]/.test(href)
 	const allowedProps = {className, style, children}
 	return external ? (
-		<a {...allowedProps} href={href} />
+		<a {...allowedProps} href={href} target="_blank" />
 	) : (
 		<Link {...allowedProps} to={to} />
 	)
