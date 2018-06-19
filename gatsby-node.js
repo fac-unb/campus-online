@@ -33,6 +33,7 @@ exports.modifyWebpackConfig = ({config}) =>
 				paths: true,
 				flattening: true,
 				currying: true,
+				deburring: true,
 			}),
 		],
 	})
