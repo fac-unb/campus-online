@@ -45,12 +45,13 @@ const Editorial = styled(Link)`
 		position: relative;
 	}
 `
+
 const Editorials = ({editorials, style, className}) => (
 	<Wrapper style={style} className={className}>
-		{editorials.map(editorial => (
-			<li key={editorial}>
-				<Editorial to={editorial.url} color={editorial.color}>
-					<span>{editorial.name}</span>
+		{editorials.map(({url, color, title}) => (
+			<li key={url}>
+				<Editorial to={url} color={color}>
+					<span>{title}</span>
 				</Editorial>
 			</li>
 		))}
