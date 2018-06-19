@@ -52,11 +52,10 @@ const Tags = ({tags, style}) => (
 
 export const TagsCounter = ({tags, style}) => (
 	<Wrapper style={style}>
-		{tags.map(tag => (
-			<li key={tag.fieldValue}>
-				<Tag to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-					{tag.fieldValue}&nbsp;
-					<Counter>{leftPad(tag.totalCount)}</Counter>
+		{tags.map(({label, totalCount}) => (
+			<li key={label}>
+				<Tag to={`/tags/${kebabCase(label)}/`}>
+					{label}&nbsp;<Counter>{leftPad(totalCount)}</Counter>
 				</Tag>
 			</li>
 		))}
