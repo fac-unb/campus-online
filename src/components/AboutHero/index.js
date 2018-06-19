@@ -1,34 +1,25 @@
 import React from 'react'
-import styled from 'styled-components'
-import {above} from '../../utils/responsive'
-// import {colors} from '../../constants'
+import {colors} from '../../constants'
 import Container from '../Container'
+import MediaQuery from '../MediaQuery'
 import Canvas from './Canvas'
 import Letters from './Letters'
 
-const Wrapper = styled.div`
-	position: relative;
-`
+const Wrapper = ({children, background}) => (
+	<MediaQuery above="md">
+		{desktop =>
+			desktop ? <Canvas background={background}>{children}</Canvas> : children
+		}
+	</MediaQuery>
+)
 
-const CanvasWrapper = styled.div`
-	overflow: hidden;
-	position: relative;
-	right: 0;
-	left: 0;
-	${above.md`
-		margin-right: calc(-50vw + 50%);
-	`};
-`
-
-const AboutHero = ({style}) => (
-	<Wrapper style={style}>
-		<Container style={{position: 'relative'}}>
-			<CanvasWrapper>
-				<Canvas />
-				<Letters />
-			</CanvasWrapper>
+const AboutHero = ({style, background}) => (
+	<Wrapper background={background}>
+		<Container style={style}>
+			<Letters />
 		</Container>
 	</Wrapper>
 )
 
+AboutHero.defaultProps = {background: colors.base03}
 export default AboutHero

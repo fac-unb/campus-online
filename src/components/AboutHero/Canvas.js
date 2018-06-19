@@ -1,111 +1,146 @@
-import React from 'react'
+import React, {createRef} from 'react'
+import styled from 'styled-components'
+import Container from '../Container'
 
-// [TODO]: review hack on window.innerWidth to remove on mobile
+const Wrapper = styled.div`
+	overflow: hidden;
+	position: relative;
+	margin-top: 100px;
+`
+
+const HtmlCanvas = styled.canvas`
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: ${p => p.background || 'black'};
+`
+
+const color = 'rgba(230, 230, 230, 1)'
+const retina = [
+	'(min-resolution: 1.5dppx)',
+	'(-webkit-min-device-pixel-ratio: 1.5)',
+].join(',')
+
+CanvasRenderingContext2D.prototype.circle = function(x, y, r, fill) {
+	this.beginPath()
+	this.arc(x, y, r, 0, 2 * Math.PI, false)
+	this.closePath()
+	if (fill) this.fill()
+}
+
+const range = length => Array.from({length}, (_, i) => i)
+const getAngle = (p1, p2) =>
+	(Math.atan2(p2.y - p1.y, p2.x - p1.x) / Math.PI) * 180
+const getDistance = (p1, p2) =>
+	Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
+const getV = (dot, mouse, ratio = 1) => {
+	const d = getDistance(dot, mouse)
+	const angle = getAngle(dot, mouse)
+	return {
+		size: Math.max((200 * ratio - d) / 30, 2 * ratio),
+		x: (d > 15 ? 15 : d) * Math.cos((angle * Math.PI) / 180) * ratio,
+		y: (d > 15 ? 15 : d) * Math.sin((angle * Math.PI) / 180) * ratio,
+	}
+}
+
+const render = ({width, height, ratio, mouse, grid, gridOffset}) => {
+	const dots = []
+	const cols = (width - gridOffset) / grid + 2
+	const rows = height / grid
+	range(cols).forEach(i => {
+		range(rows).forEach(j => {
+			if (j / 0.15 < height / grid) return
+			if (j / 0.85 > height / grid) return
+			const {x, y} = {x: gridOffset + i * grid, y: j * grid}
+			const v = getV({x, y}, mouse, ratio)
+			dots.push({
+				x: x + v.x,
+				y: y + v.y,
+				size: v.size,
+			})
+		})
+	})
+	return dots
+}
+
+const loop = ({width, height, ratio, mouse, grid, gridOffset, ctx}) => {
+	const result = render({width, height, ratio, mouse, grid, gridOffset})
+	ctx.clearRect(0, 0, width, height)
+	ctx.fillStyle = color
+	result.forEach(({x, y, size}) => {
+		ctx.circle(x, y, size, true)
+	})
+}
+
 class CanvasComponent extends React.Component {
+	canvas = createRef()
+	wrapper = createRef()
+	container = createRef()
+	onResize = () => {
+		const {
+			current: {offsetWidth, offsetHeight},
+		} = this.wrapper
+		const {
+			current: {offsetWidth: containerWidth},
+		} = this.container
+		const {
+			current: {style},
+		} = this.canvas
+
+		const rect = this.canvas.current.getBoundingClientRect()
+		this.canvasOffset = {x: rect.left, y: rect.top}
+		this.ratio = window.devicePixelRatio || 1
+		this.grid = 16 * this.ratio
+		this.minSize = 2 * this.ratio
+
+		this.gridOffset = (offsetWidth / 2 - containerWidth / 2) * this.ratio
+
+		this.width = offsetWidth * this.ratio
+		this.height = offsetHeight * this.ratio
+
+		this.ctx.canvas.width = this.width
+		this.ctx.canvas.height = this.height
+
+		style.width = `${offsetWidth}px`
+		style.height = `${offsetHeight}px`
+
+		this.onMouseMove({pageX: 0, pageY: 0})
+	}
+	onMouseMove = ({pageX, pageY}) => {
+		const {ratio, grid, ctx, width, height, gridOffset, canvasOffset} = this
+		const mouse = {
+			x: (pageX - canvasOffset.x) * ratio,
+			y: (pageY - canvasOffset.y) * ratio,
+		}
+		loop({width, height, ratio, mouse, grid, gridOffset, ctx})
+	}
 	componentDidMount() {
-		window.innerWidth > 768 && this.updateCanvas()
+		const {current: canvas} = this.canvas
+		this.ctx = canvas.getContext('2d')
+		this.mediaQueryList = window.matchMedia(retina)
+
+		this.mediaQueryList.addListener(this.onResize)
+		window.addEventListener('resize', this.onResize)
+		window.addEventListener('mousemove', this.onMouseMove)
+
+		this.onResize()
 	}
-	updateCanvas() {
-		const stage = document.querySelector('#dots')
-		var cb = stage.getBoundingClientRect()
-		const ctx = stage.getContext('2d')
-		const ratio = window.devicePixelRatio || 1
-		const mouse = {x: 0, y: 0}
-		const dots = []
-		const wide = ctx.canvas.width / 8
-		const high = ctx.canvas.height / 8
-		const padding = 0
-
-		window.onmousemove = function(e) {
-			mouse.x = (e.pageX - cb.left - scrollX) * ratio
-			mouse.y = (e.pageY - cb.top) * ratio
-		}
-		window.onresize = function() {
-			ctx.canvas.width = window.innerWidth * ratio
-			ctx.canvas.height = window.innerHeight * ratio
-			cb = stage.getBoundingClientRect()
-		}
-		window.onresize()
-
-		function create() {
-			for (var i = -1; ++i < wide; ) {
-				var x =
-					Math.floor(((cb.width - padding * 2) / (wide - 1)) * i + padding) *
-					ratio
-				for (var j = -1; ++j < high; ) {
-					var y =
-						Math.floor(((cb.height - padding * 2) / (high - 1)) * j + padding) *
-						ratio
-					dots.push({x: x, y: y, ox: x, oy: y})
-				}
-			}
-		}
-		create()
-
-		function render() {
-			ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-			ctx.fillStyle = 'rgba(229,228,227,1)'
-			for (var i = 0; i < dots.length; i++) {
-				var s = dots[i]
-				var v = getV(s)
-				ctx.circle(s.x + v.x, s.y + v.y, s.size * ratio, true)
-				ctx.fill()
-			}
-		}
-
-		function getV(dot) {
-			var d = getDistance(dot, mouse)
-			dot.size = (200 - d) / 30
-			dot.size = dot.size < 3 ? 3 : dot.size
-			dot.angle = getAngle(dot, mouse)
-			return {
-				x: (d > 15 ? 15 : d) * Math.cos((dot.angle * Math.PI) / 180),
-				y: (d > 15 ? 15 : d) * Math.sin((dot.angle * Math.PI) / 180),
-			}
-		}
-
-		function getAngle(obj1, obj2) {
-			var dX = obj2.x - obj1.x
-			var dY = obj2.y - obj1.y
-			var angleDeg = (Math.atan2(dY, dX) / Math.PI) * 180
-			return angleDeg
-		}
-
-		function getDistance(obj1, obj2) {
-			var dx = obj1.x - obj2.x
-			var dy = obj1.y - obj2.y
-			return Math.sqrt(dx * dx + dy * dy)
-		}
-
-		CanvasRenderingContext2D.prototype.circle = function(x, y, r) {
-			this.beginPath()
-			this.arc(x, y, r, 0, 2 * Math.PI, false)
-			this.closePath()
-		}
-
-		window.requestAnimFrame = (function() {
-			return (
-				window.requestAnimationFrame ||
-				window.webkitRequestAnimationFrame ||
-				window.mozRequestAnimationFrame ||
-				function(callback) {
-					window.setTimeout(callback, 1000 / 60)
-				}
-			)
-		})()
-		;(function animloop() {
-			render()
-			requestAnimationFrame(animloop)
-		})()
+	componentWillUnmount() {
+		this.mediaQueryList.removeListener(this.onResize)
+		window.removeEventListener('resize', this.onResize)
+		window.removeEventListener('mousemove', this.onMouseMove)
 	}
+	static defaultProps = {background: '#ffffff'}
 	render() {
+		const {children, ...props} = this.props
 		return (
-			<canvas
-				style={{
-					position: 'absolute',
-				}}
-				id={'dots'}
-			/>
+			<Wrapper innerRef={this.wrapper}>
+				<Container innerRef={this.container} />
+				<HtmlCanvas innerRef={this.canvas} {...props} />
+				{children}
+			</Wrapper>
 		)
 	}
 }
