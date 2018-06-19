@@ -16,7 +16,6 @@ const Wrapper = styled(Link)`
 	font-weight: 600;
 	color: white;
 	text-decoration: none;
-	background: rgba(6, 8, 10, 0.88);
 	border-radius: 2rem;
 	padding: 0.5rem 0.75rem;
 	position: relative;
@@ -24,6 +23,7 @@ const Wrapper = styled(Link)`
 	${above.md`
 		opacity: 0;
 		transform: translateX(2rem);
+		background: rgba(6, 8, 10, 0.88);
 	`} .PostCard:hover &, .PostCard:focus & {
 		opacity: 1;
 		transform: none;

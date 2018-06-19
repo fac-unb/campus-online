@@ -214,12 +214,22 @@ const TagsWrapper = styled.div`
 	display: flex;
 	align-items: flex-end;
 	position: absolute;
+	width: 100%;
 	max-width: 100%;
 	max-height: 100%;
 	right: 0;
 	bottom: 0;
-	padding: 0.5rem;
+	padding: 10rem 0.5rem 0.5rem;
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.66) 0%,
+		rgba(0, 0, 0, 0.22) 44%,
+		rgba(0, 0, 0, 0) 66%
+	);
 	${above.md`
+		width: auto;
+		background: none;
+		padding: 0.5rem;
 		flex-direction: column-reverse;
 	`};
 `
