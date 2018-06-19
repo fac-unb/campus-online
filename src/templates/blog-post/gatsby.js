@@ -17,8 +17,8 @@ const flatten = ({content, frontmatter, fields: {url, editorial, author}}) => ({
 
 const fromGraphql = ({data: {post, prev, next}}) => ({
 	...flatten(post),
-	prev: flatten(prev),
-	next: flatten(next),
+	prev: prev && flatten(prev),
+	next: next && flatten(next),
 })
 
 const enhance = mapProps(fromGraphql)
