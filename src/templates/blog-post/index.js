@@ -9,14 +9,26 @@ import Text from '../../components/Text'
 import Tags from '../../components/Tags'
 import AuthorCard from '../../components/AuthorCard'
 import SideSection from '../../components/SideSection'
+import {CardRow} from '../../components/CardGrid'
+import PostCard from '../../components/PostCard'
 
-const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
+const BlogPost = ({
+	content,
+	tags,
+	date,
+	cover,
+	editorial,
+	title,
+	author,
+	prev,
+	next,
+}) => {
 	return (
-		<main style={{paddingBottom: '8rem'}}>
+		<Fragment>
 			<MetaTags title={title} description={content} image={cover} />
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
-			<Container>
+			<Container style={{paddingBottom: '8rem'}}>
 				<Row>
 					<Cell xs={12} lg={8}>
 						<Text>
@@ -41,8 +53,12 @@ const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 						</div>
 					</Cell>
 				</Row>
+				<CardRow style={{paddingTop: '3rem'}}>
+					{prev && <PostCard {...prev} size={0} />}
+					{next && <PostCard {...next} size={0} />}
+				</CardRow>
 			</Container>
-		</main>
+		</Fragment>
 	)
 }
 
