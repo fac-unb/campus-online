@@ -90,9 +90,9 @@ const ShowMore = styled.div`
 const enhance = withState('expanded', 'onExpand', false)
 
 const ScrollList = enhance(
-	({title, to, list, style, className, expanded, onExpand}) => (
-		<Wrapper to={to} style={style} className={className}>
-			<Title>{title}</Title>
+	({title, url, list, style, className, expanded, onExpand}) => (
+		<Wrapper style={style} className={className}>
+			<Title to={url}>{title}</Title>
 			<List expanded={expanded}>
 				{list.map(({label, url}) => (
 					<li key={url}>
