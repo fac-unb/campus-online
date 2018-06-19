@@ -68,18 +68,18 @@ collections:
 
   - name: "config"
     label: "Configurações"
+    editor:
+      preview: false
     files:
-      - name: "semester"
-        label: "Semestre Atual"
+      - name: "general"
+        label: "Geral"
         file: "src/siteMetadata.json"
         extension: "json"
         format: "json"
-        editor:
-          preview: false
         fields:
           - {label: "Semestre Atual", name: "activeSemester", widget: "semester", required: true}
           - {label: "Título", name: "title", widget: "string", required: true}
-          - {label: "Descrição", name: "description", widget: "string", pattern: ['/^.{1,120}$/', 'máximo de 120 caracteres excedido'], required: true}
+          - {label: "Descrição", name: "description", widget: "string", pattern: ['^.{1,120}$', 'máximo de 120 caracteres excedido'], required: true}
           - label: "Links"
             name: "links"
             widget: "list"
