@@ -23,11 +23,13 @@ const retina = [
 	'(-webkit-min-device-pixel-ratio: 1.5)',
 ].join(',')
 
-CanvasRenderingContext2D.prototype.circle = function(x, y, r, fill) {
-	this.beginPath()
-	this.arc(x, y, r, 0, 2 * Math.PI, false)
-	this.closePath()
-	if (fill) this.fill()
+if (typeof CanvasRenderingContext2D !== 'undefined') {
+	CanvasRenderingContext2D.prototype.circle = function(x, y, r, fill) {
+		this.beginPath()
+		this.arc(x, y, r, 0, 2 * Math.PI, false)
+		this.closePath()
+		if (fill) this.fill()
+	}
 }
 
 const range = length => Array.from({length}, (_, i) => i)
