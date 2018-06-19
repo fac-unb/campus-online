@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react'
-import PropTypes from 'prop-types'
 import {mapProps} from 'recompose'
-import fp from 'lodash/fp'
+import flattenBlogPostInfo from '../fragments/BlogPostInfo'
 import MetaTags from '../components/MetaTags'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
@@ -20,13 +19,14 @@ const PageComponent = ({posts: [hero, ...posts]}) => (
 				<StoriesTitle
 					title="Publicações recentes"
 					label="Ver todas"
-					to="/blog"
+					url="/blog"
 				/>
 				<CardRow>
 					{posts.map((post, index) => (
 						<PostCard
 							{...post}
 							dynamic
+							dark={post.featured}
 							key={post.url}
 							size={!(index % 3) % 2}
 						/>
@@ -38,31 +38,10 @@ const PageComponent = ({posts: [hero, ...posts]}) => (
 )
 
 const enhance = mapProps(({data: {blog: {posts}}}) => ({
-	posts: posts
-		.map(fp.get('post'))
-		.map(({fields: {slug, author, editorial}, frontmatter}) => ({
-			...frontmatter,
-			url: slug,
-			author: author && {
-				...author.frontmatter,
-				url: author.fields.slug,
-			},
-			editorial: editorial && {
-				...editorial.frontmatter,
-				url: editorial.fields.slug,
-			},
-		})),
+	posts: posts.map(({post}) => flattenBlogPostInfo(post)),
 }))
 
 const IndexPage = enhance(PageComponent)
-
-IndexPage.propTypes = {
-	data: PropTypes.shape({
-		blog: PropTypes.shape({
-			posts: PropTypes.array,
-		}),
-	}),
-}
 
 export default IndexPage
 
@@ -74,34 +53,7 @@ export const pageQuery = graphql`
 		) {
 			posts: edges {
 				post: node {
-					fields {
-						slug
-						author {
-							fields {
-								slug
-							}
-							frontmatter {
-								title
-								image
-							}
-						}
-						editorial {
-							fields {
-								slug
-							}
-							frontmatter {
-								title
-								color
-							}
-						}
-					}
-					frontmatter {
-						title
-						cover
-						dark: featured
-						tags
-						date
-					}
+					...BlogPostInfo
 				}
 			}
 		}
