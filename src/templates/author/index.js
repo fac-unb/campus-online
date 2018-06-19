@@ -4,9 +4,9 @@ import Container from '../../components/Container'
 import Hero from '../../components/Hero'
 import PostCard from '../../components/PostCard'
 
-const Author = ({name, semester, avatar, content, posts}) => (
+const Author = ({name, semester, avatar, content, excerpt, posts}) => (
 	<Fragment>
-		<MetaTags title={name} image={avatar} />
+		<MetaTags title={name} image={avatar} description={excerpt} />
 		<Hero
 			title={name}
 			sub={semester}

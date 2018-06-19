@@ -14,6 +14,7 @@ import PostCard from '../../components/PostCard'
 
 const BlogPost = ({
 	content,
+	excerpt,
 	tags,
 	date,
 	cover,
@@ -25,7 +26,7 @@ const BlogPost = ({
 }) => {
 	return (
 		<Fragment>
-			<MetaTags title={title} description={content} image={cover} />
+			<MetaTags title={title} description={excerpt} image={cover} />
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
 			<Container style={{paddingBottom: '8rem'}}>

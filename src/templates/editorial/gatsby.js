@@ -8,6 +8,7 @@ const enhance = mapProps(({data: {editorial}}) => ({
 	...flattenEditorialInfo(editorial),
 	posts: map(flattenBlogPostInfo, editorial.fields.posts),
 	content: editorial.content,
+	excerpt: editorial.excerpt,
 }))
 
 export default enhance(EditorialPage)
@@ -17,6 +18,7 @@ export const pageQuery = graphql`
 		editorial: markdownRemark(id: {eq: $id}) {
 			...EditorialInfo
 			content: html
+			excerpt(pruneLength: 120)
 			fields {
 				posts {
 					...BlogPostInfo
