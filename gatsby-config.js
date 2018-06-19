@@ -12,6 +12,13 @@ module.exports = {
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-react-helmet',
 		{
+			resolve: 'gatsby-plugin-nprogress',
+			options: {
+				color: '#29d',
+				showSpinner: false,
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-eslint',
 			options: {
 				test: /\.js$|\.jsx$/,
