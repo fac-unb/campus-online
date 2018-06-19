@@ -47,7 +47,7 @@ const getV = (dot, mouse, ratio = 1) => {
 
 const render = ({width, height, ratio, mouse, grid, gridOffset}) => {
 	const dots = []
-	const cols = (width - gridOffset) / grid + 2
+	const cols = (width - Math.abs(gridOffset)) / grid + 2
 	const rows = height / grid
 	range(cols).forEach(i => {
 		range(rows).forEach(j => {
@@ -95,7 +95,8 @@ class CanvasComponent extends React.Component {
 		this.grid = 16 * this.ratio
 		this.minSize = 2 * this.ratio
 
-		this.gridOffset = (offsetWidth / 2 - containerWidth / 2) * this.ratio
+		const inv = this.props.bleed === 'left' ? -0.5 : 1
+		this.gridOffset = (offsetWidth / 2 - containerWidth / 2) * this.ratio * inv
 
 		this.width = offsetWidth * this.ratio
 		this.height = offsetHeight * this.ratio
