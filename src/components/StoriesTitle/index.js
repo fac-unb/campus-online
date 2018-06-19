@@ -13,9 +13,16 @@ const Wrapper = styled.div`
 	position: sticky;
 	top: 3.5rem;
 	z-index: 2;
-	box-shadow: -2rem 0 0 ${colors.base03}, 2rem 0 0 ${colors.base03};
 	background: ${colors.base03};
-	${above.md`
+	color: ${colors.base88};
+	box-shadow: -2rem 0 0 ${colors.base03}, 2rem 0 0 ${colors.base03};
+	${p =>
+		p.dark &&
+		`
+		background: ${colors.base};
+		color: ${colors.white};
+		box-shadow: -2rem 0 0 ${colors.base}, 2rem 0 0 ${colors.base};
+	`} ${above.md`
 		top: 4rem;
 		margin-bottom: 1rem;
 	`};
@@ -26,7 +33,6 @@ const Title = styled.div`
 	font-weight: 600;
 	line-height: 3rem;
 	position: relative;
-	color: ${colors.base88};
 	${above.md`
 		font-size: 1.5rem;
 		line-height: 3.5rem;
@@ -51,8 +57,8 @@ const Anchor = styled(Link)`
 	`};
 `
 
-const StoriesTitle = ({title, label, to, style}) => (
-	<Wrapper style={style}>
+const StoriesTitle = ({title, label, to, dark, style}) => (
+	<Wrapper dark={dark} style={style}>
 		<Title>{title}</Title>
 		<Anchor to={to}>{label}</Anchor>
 	</Wrapper>

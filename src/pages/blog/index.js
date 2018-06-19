@@ -1,7 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import flatten from '../../utils/flatten'
+import {mapProps} from 'recompose'
+import fp from 'lodash/fp'
+import styled from 'styled-components'
+import {colors} from '../../constants'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -9,81 +11,98 @@ import {CardRow} from '../../components/CardGrid'
 import Navbar from '../../components/Navbar'
 import StoriesTitle from '../../components/StoriesTitle'
 import PostCard from '../../components/PostCard'
-import Tags from '../../components/Tags'
-
-const getTags = posts => flatten(posts.map(x => x.post.frontmatter.tags))
 
 const LayoutGrid = styled(Row)`
-	flex-direction: row-reverse;
 	justify-content: space-between;
 `
 
-export default class BlogPage extends React.Component {
-	handleScriptLoad() {
-		if (window.netlifyIdentity) {
-			window.netlifyIdentity.on('init', user => {
-				if (!user) {
-					window.netlifyIdentity.on('login', () => {
-						document.location.href = '/admin/'
-					})
-				}
-			})
-		}
-		window.netlifyIdentity.init()
-	}
-	static defaultProps = {
+const PageComponent = ({posts, tags, authors, editorials}) => (
+	<div
+		style={{
+			background: colors.base,
+			color: 'white',
+			marginBottom: '-8rem',
+			paddingBottom: '8rem',
+		}}
+	>
+		<MetaTags title="Todos as matérias" />
+		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} dark={true} />
+		<main style={{padding: '8rem 0'}}>
+			<Container>
+				{/* [TODO]: sort tags */}
+				<details>
+					<summary>editorials</summary>
+					<pre>{JSON.stringify(editorials, null, 2)}</pre>
+				</details>
+				<details>
+					<summary>authors</summary>
+					<pre>{JSON.stringify(authors, null, 2)}</pre>
+				</details>
+				<details>
+					<summary>tags</summary>
+					<pre>{JSON.stringify(tags, null, 2)}</pre>
+				</details>
+
+				<section>
+					<StoriesTitle title="Todas as publicações" dark={true} />
+					<LayoutGrid>
+						<Cell xs={12} lg={8} xg={8}>
+							{posts && (
+								<CardRow>
+									{posts.map(post => (
+										<PostCard
+											{...post}
+											key={post.slug}
+											dark={!post.featured}
+											alt={true}
+											compact={true}
+										/>
+									))}
+								</CardRow>
+							)}
+						</Cell>
+					</LayoutGrid>
+				</section>
+			</Container>
+		</main>
+	</div>
+)
+
+const enhance = mapProps(
+	({
 		data: {
-			blog: {posts: []},
+			blog: {posts, tags},
+			allAuthors: {authors},
+			allEditorials: {editorials},
 		},
-	}
-	render() {
-		const {
-			blog: {posts},
-		} = this.props.data
-		return (
-			<div>
-				<MetaTags title="Todos as matérias" />
-				<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-				<main style={{padding: '8rem 0'}}>
-					<Container>
-						<section>
-							<StoriesTitle title="Todas as publicações" />
-							<LayoutGrid>
-								<Cell xs={12} lg={4} xg={4} style={{position: 'relative'}}>
-									<div>
-										<Tags tags={getTags(posts)} />
-									</div>
-								</Cell>
-								<Cell xs={12} lg={8} xg={8}>
-									{posts && (
-										<CardRow>
-											{posts.map(({post}) => (
-												<PostCard
-													url={post.fields.slug}
-													title={post.frontmatter.title}
-													date={post.frontmatter.date}
-													excerpt={post.excerpt}
-													editorial={post.frontmatter.editorial}
-													cover={post.frontmatter.cover}
-													author={
-														post.fields.author && post.fields.author.title
-													}
-													dark={post.frontmatter.featured}
-													key={post.fields.slug}
-													compact={true}
-												/>
-											))}
-										</CardRow>
-									)}
-								</Cell>
-							</LayoutGrid>
-						</section>
-					</Container>
-				</main>
-			</div>
-		)
-	}
-}
+	}) => ({
+		tags,
+		editorials: editorials
+			.map(fp.get('editorial'))
+			.map(({frontmatter, fields}) => ({...frontmatter, ...fields})),
+		authors: authors
+			.map(fp.get('author'))
+			.map(({frontmatter, fields}) => ({...frontmatter, ...fields})),
+		posts: posts
+			.map(fp.get('post'))
+			.map(({fields: {slug, author, editorial}, frontmatter}) => ({
+				...frontmatter,
+				url: slug,
+				author: author && {
+					...author.frontmatter,
+					url: author.fields.slug,
+				},
+				editorial: editorial && {
+					...editorial.frontmatter,
+					url: editorial.fields.slug,
+				},
+			})),
+	}),
+)
+
+const BlogPage = enhance(PageComponent)
+
+export default BlogPage
 
 BlogPage.propTypes = {
 	data: PropTypes.shape({
@@ -95,22 +114,69 @@ BlogPage.propTypes = {
 
 export const pageQuery = graphql`
 	query BlogQuery {
+		allAuthors: allMarkdownRemark(
+			# [TODO]: filter author on current semester
+			sort: {order: DESC, fields: [frontmatter___title]}
+			filter: {frontmatter: {template: {eq: "author"}}}
+		) {
+			authors: edges {
+				author: node {
+					frontmatter {
+						name: title
+						avatar: image
+					}
+					fields {
+						url: slug
+					}
+				}
+			}
+		}
+		allEditorials: allMarkdownRemark(
+			sort: {order: DESC, fields: [frontmatter___title]}
+			filter: {frontmatter: {template: {eq: "editorial"}}}
+		) {
+			editorials: edges {
+				editorial: node {
+					frontmatter {
+						name: title
+						color
+					}
+					fields {
+						url: slug
+					}
+				}
+			}
+		}
 		blog: allMarkdownRemark(
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}
 		) {
+			tags: distinct(field: frontmatter___tags)
 			posts: edges {
 				post: node {
-					excerpt(pruneLength: 400)
 					fields {
 						slug
+						author {
+							fields {
+								slug
+							}
+							frontmatter {
+								title
+								image
+							}
+						}
+						editorial {
+							fields {
+								slug
+							}
+							frontmatter {
+								title
+								color
+							}
+						}
 					}
 					frontmatter {
 						title
-						template
-						editorial {
-							title
-						}
 						cover
 						featured
 						tags
