@@ -1,4 +1,5 @@
 /* eslint-env node, es6 */
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const {createFilePath} = require('gatsby-source-filesystem')
 
 exports.createPages = async (...args) => {
@@ -25,4 +26,13 @@ exports.modifyWebpackConfig = ({config}) =>
 				'netlify-cms': '@leonardodino/netlify-cms',
 			},
 		},
+		plugins: [
+			// https://github.com/lodash/lodash-webpack-plugin#feature-sets
+			new LodashModuleReplacementPlugin({
+				unicode: true,
+				paths: true,
+				flattening: true,
+				currying: true,
+			}),
+		],
 	})

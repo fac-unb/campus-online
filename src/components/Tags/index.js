@@ -1,5 +1,5 @@
 import React from 'react'
-import {kebabCase, padStart} from 'lodash'
+import {kebabCase, padCharsStart} from 'lodash/fp'
 import styled from 'styled-components'
 import {colors} from '../../constants'
 import Link from '../StylableLink'
@@ -38,6 +38,8 @@ const Counter = styled.span`
 	color: ${colors.base44};
 `
 
+const leftPad = padCharsStart('0', 2)
+
 const Tags = ({tags, style}) => (
 	<Wrapper style={style}>
 		{tags.map(tag => (
@@ -54,7 +56,7 @@ export const TagsCounter = ({tags, style}) => (
 			<li key={tag.fieldValue}>
 				<Tag to={`/tags/${kebabCase(tag.fieldValue)}/`}>
 					{tag.fieldValue}&nbsp;
-					<Counter>{padStart(tag.totalCount, 2, 0)}</Counter>
+					<Counter>{leftPad(tag.totalCount)}</Counter>
 				</Tag>
 			</li>
 		))}

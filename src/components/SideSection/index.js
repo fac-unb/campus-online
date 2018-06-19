@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {padStart} from 'lodash'
+import {padCharsStart} from 'lodash/fp'
 import {colors} from '../../constants'
 import Link from '../StylableLink'
 
@@ -25,11 +25,11 @@ const Counter = styled.div`
 	font-size: 0.875rem;
 	line-height: 1rem;
 `
-
+const leftPad = padCharsStart('0', 2)
 const SideSection = ({title, to, count, style}) => (
 	<Wrapper to={to} style={style}>
 		{title}
-		{count && <Counter>{padStart(count.length, 2, 0)}</Counter>}
+		{count && <Counter>{leftPad(count.length)}</Counter>}
 	</Wrapper>
 )
 
