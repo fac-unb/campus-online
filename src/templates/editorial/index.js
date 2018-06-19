@@ -5,10 +5,16 @@ import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import PostCard from '../../components/PostCard'
 
-export const Editorial = ({title, color, content, excerpt, posts}) => (
+const Editorial = ({title, color, content, excerpt, posts}) => (
 	<Fragment>
 		<MetaTags title={title} description={excerpt} />
-		<Hero title={title} background={color} navbar={false} bodyText={content} />
+		<Hero
+			sup="Editoria"
+			title={title}
+			background={color}
+			navbar={false}
+			bodyText={content}
+		/>
 		<Navbar
 			background={color}
 			dark={true}
