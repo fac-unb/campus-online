@@ -35,12 +35,7 @@ const BlogPost = ({content, tags, date, cover, editorial, title, author}) => {
 							{author && (
 								<Fragment>
 									<SideSection title="Autor" to="/authors" />
-									<AuthorCard
-										name={author.title}
-										avatar={author.image}
-										slug={author.url}
-										small={true}
-									/>
+									<AuthorCard {...author} small />
 								</Fragment>
 							)}
 						</div>

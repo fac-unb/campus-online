@@ -1,42 +1,26 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Template from '.'
+import {map} from 'lodash/fp'
+import {mapProps} from 'recompose'
+import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
+import flattenAuthorInfo from '../../fragments/AuthorInfo'
+import AuthorPage from '.'
 
-const Author = ({data: {markdownRemark}}) => {
-	const {frontmatter, html} = markdownRemark || {frontmatter: {}, html: ''}
-	return (
-		<Template
-			content={html}
-			name={frontmatter.title}
-			semester={frontmatter.semester}
-			avatar={frontmatter.image}
-		/>
-	)
-}
+const enhance = mapProps(({data: {author}}) => ({
+	...flattenAuthorInfo(author),
+	posts: map(flattenBlogPostInfo, author.fields.posts),
+	content: author.content,
+}))
 
-Author.propTypes = {
-	data: PropTypes.shape({
-		markdownRemark: PropTypes.shape({
-			html: PropTypes.string.isRequired,
-			frontmatter: PropTypes.shape({
-				title: PropTypes.string.isRequired,
-				semester: PropTypes.string.isRequired,
-				image: PropTypes.string,
-			}).isRequired,
-		}).isRequired,
-	}).isRequired,
-}
-
-export default Author
+export default enhance(AuthorPage)
 
 export const pageQuery = graphql`
 	query AuthorByID($id: String!) {
-		markdownRemark(id: {eq: $id}) {
-			html
-			frontmatter {
-				title
-				semester
-				image
+		author: markdownRemark(id: {eq: $id}) {
+			content: html
+			...AuthorInfo
+			fields {
+				posts {
+					...BlogPostInfo
+				}
 			}
 		}
 	}
