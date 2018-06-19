@@ -11,6 +11,7 @@ import {CardRow} from '../../components/CardGrid'
 import Navbar from '../../components/Navbar'
 import StoriesTitle from '../../components/StoriesTitle'
 import PostCard from '../../components/PostCard'
+import Editorials from '../../components/Editorials'
 
 const LayoutGrid = styled(Row)`
 	justify-content: space-between;
@@ -30,10 +31,7 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 		<main style={{padding: '8rem 0'}}>
 			<Container>
 				{/* [TODO]: sort tags */}
-				<details>
-					<summary>editorials</summary>
-					<pre>{JSON.stringify(editorials, null, 2)}</pre>
-				</details>
+				<Editorials editorials={editorials} />
 				<details>
 					<summary>authors</summary>
 					<pre>{JSON.stringify(authors, null, 2)}</pre>
