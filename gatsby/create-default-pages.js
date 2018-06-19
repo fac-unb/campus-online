@@ -1,33 +1,21 @@
 /* eslint-env node */
 const path = require('path')
+const {createQuery} = require('./helpers')
 
 const resolveComponent = (template = 'missing-template') =>
 	path.resolve(`src/templates/${template}/gatsby.js`)
 
-const query = async graphql => {
-	const {data, errors} = await graphql(`
-		query CreateDefaultPagesQuery {
-			allMarkdownRemark {
-				pages: edges {
-					node {
-						id
-						fields {
-							url: slug
-						}
-						frontmatter {
-							template
-						}
-					}
-				}
+const query = createQuery('CreateDefaultPages')`
+	allMarkdownRemark {
+		pages: edges {
+			node {
+				id
+				fields { url: slug }
+				frontmatter { template }
 			}
 		}
-	`)
-
-	if (!errors) return data
-
-	errors.forEach(e => console.error(e.toString())) // eslint-disable-line
-	throw errors
-}
+	}
+`
 
 module.exports = async ({boundActionCreators, graphql}) => {
 	const {createPage} = boundActionCreators

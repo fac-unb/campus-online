@@ -1,27 +1,17 @@
 /* eslint-env node */
 const _ = require('lodash')
 const path = require('path')
+const {createQuery} = require('./helpers')
 
-const query = async graphql => {
-	const {data, errors} = await graphql(`
-		query CreateTagPagesQuery {
-			allMarkdownRemark(filter: {frontmatter: {template: {eq: "blog-post"}}}) {
-				posts: edges {
-					post: node {
-						frontmatter {
-							tags
-						}
-					}
-				}
+const query = createQuery('CreateTagPages')`
+	allMarkdownRemark(filter: {frontmatter: {template: {eq: "blog-post"}}}) {
+		posts: edges {
+			post: node {
+				frontmatter { tags }
 			}
 		}
-	`)
-
-	if (!errors) return data
-
-	errors.forEach(e => console.error(e.toString())) // eslint-disable-line
-	throw errors
-}
+	}
+`
 
 module.exports = async ({boundActionCreators, graphql}) => {
 	const {createPage, deletePage} = boundActionCreators

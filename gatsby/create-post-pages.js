@@ -1,5 +1,6 @@
 /* eslint-env node */
 const path = require('path')
+const {createQuery} = require('./helpers')
 
 // [TODO]: create BlogPost node type
 // [TODO]: make editorial and author BlogPost GraphQL key
@@ -19,27 +20,18 @@ const PostInfoFrament = `
 	}
 `
 
-const query = async graphql => {
-	const {data, errors} = await graphql(`
-		query CreatePostPagesQuery {
-			allMarkdownRemark(
-				sort: {order: DESC, fields: [frontmatter___date]},
-				filter: {frontmatter: {template: {eq: "blog-post"}}},
-			) {
-				posts: edges {
-					post: node { id fields { url: slug } }
-					prev: previous { ${PostInfoFrament} }
-					next: next { ${PostInfoFrament} }
-				}
-			}
+const query = createQuery('CreatePostPages')`
+	allMarkdownRemark(
+		sort: {order: DESC, fields: [frontmatter___date]},
+		filter: {frontmatter: {template: {eq: "blog-post"}}},
+	) {
+		posts: edges {
+			post: node { id fields { url: slug } }
+			prev: previous { ${PostInfoFrament} }
+			next: next { ${PostInfoFrament} }
 		}
-	`)
-
-	if (!errors) return data
-
-	errors.forEach(e => console.error(e.toString())) // eslint-disable-line
-	throw errors
-}
+	}
+`
 
 const flattenPostInfo = ({frontmatter, fields: {url, editorial, author}}) => ({
 	...frontmatter,
