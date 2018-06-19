@@ -1,61 +1,71 @@
 import {mapProps} from 'recompose'
 import BlogPost from '.'
 
-const enhance = mapProps(
-	({
-		data: {
-			post: {
-				frontmatter,
-				html,
-				fields: {editorial, author},
-			},
-		},
-	}) => ({
-		...frontmatter,
-		content: html,
-		author: author && {
-			...author.frontmatter,
-			url: author.fields.slug,
-		},
-		editorial: editorial && {
-			...editorial.frontmatter,
-			url: editorial.fields.slug,
-		},
-	}),
-)
+const flatten = ({content, frontmatter, fields: {url, editorial, author}}) => ({
+	url,
+	content,
+	...frontmatter,
+	editorial: editorial && {
+		...editorial.frontmatter,
+		...editorial.fields,
+	},
+	author: author && {
+		...author.frontmatter,
+		...author.fields,
+	},
+})
 
+const fromGraphql = ({data: {post, prev, next}}) => ({
+	...flatten(post),
+	prev: flatten(prev),
+	next: flatten(next),
+})
+
+const enhance = mapProps(fromGraphql)
 export default enhance(BlogPost)
-
 export const pageQuery = graphql`
-	query BlogPostByID($id: String!) {
-		post: markdownRemark(id: {eq: $id}) {
-			html
-			fields {
-				editorial {
-					fields {
-						slug
-					}
-					frontmatter {
-						title
-						color
-					}
+	fragment PostInfo on MarkdownRemark {
+		frontmatter {
+			title
+			date
+			cover
+		}
+		fields {
+			url: slug
+			editorial {
+				frontmatter {
+					title
+					color
 				}
-				author {
-					fields {
-						slug
-					}
-					frontmatter {
-						title
-						image
-					}
+				fields {
+					url: slug
 				}
 			}
+			author {
+				frontmatter {
+					title
+					image
+				}
+				fields {
+					url: slug
+				}
+			}
+		}
+	}
+	query BlogPostTemplate($id: String!, $prev: String, $next: String) {
+		prev: markdownRemark(id: {eq: $prev}) {
+			...PostInfo
+		}
+		next: markdownRemark(id: {eq: $next}) {
+			...PostInfo
+		}
+		post: markdownRemark(id: {eq: $id}) {
+			...PostInfo
+			content: html
 			frontmatter {
-				date
-				title
-				cover
 				tags
 			}
 		}
 	}
+
 `
