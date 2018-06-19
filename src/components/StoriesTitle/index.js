@@ -57,10 +57,10 @@ const Anchor = styled(Link)`
 	`};
 `
 
-const StoriesTitle = ({title, label, to, dark, style}) => (
+const StoriesTitle = ({title, label, url, dark, style}) => (
 	<Wrapper dark={dark} style={style}>
 		<Title>{title}</Title>
-		<Anchor to={to}>{label}</Anchor>
+		<Anchor to={url}>{label}</Anchor>
 	</Wrapper>
 )
 
