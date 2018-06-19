@@ -17,9 +17,10 @@ tags:
   - lgbt
   - amor
   - preconceito
+headline: '“Dirigi a palavra a uma senhora que se encontrava sentada perto de mim. Disse-lhe: “Nossa! Está quente, né?”'
 ---
 
-> “Dirigi a palavra a uma senhora que se encontrava sentada perto de mim. Disse-lhe: “Nossa! Está quente, né?”. A senhora nada respondeu. Em seguida, ela pegou sua bolsa do mesmo cubo onde tivera eu deixado meus babados. A pobre talvez tenha pensado que representasse uma ameaça a seu patrimônio ou a sua moral de latrina. Fiquei chocado! Mentira! Já me acostumei. Afinal, cresci alvejado por bastantes gentalhas! Homofobia e inveja não são coisas que me são estranhas.”
+> A senhora nada respondeu. Em seguida, ela pegou sua bolsa do mesmo cubo onde tivera eu deixado meus babados. A pobre talvez tenha pensado que representasse uma ameaça a seu patrimônio ou a sua moral de latrina. Fiquei chocado! Mentira! Já me acostumei. Afinal, cresci alvejado por bastantes gentalhas! Homofobia e inveja não são coisas que me são estranhas.”
 
 **Henrique Augusto — Letras Francês**
 

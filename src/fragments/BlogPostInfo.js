@@ -5,6 +5,7 @@ export const fragment = graphql`
 	fragment BlogPostInfo on MarkdownRemark {
 		frontmatter {
 			title
+			headline
 			date
 			cover
 			tags

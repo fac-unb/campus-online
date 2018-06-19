@@ -31,6 +31,7 @@ collections:
       - {label: "Semestre de publicação", name: "semester", widget: "semester", collection: "semesters", searchFields: ["title"], valueField: "title", required: true}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: false}
+      - {label: "Sutiã", name: "headline", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
 

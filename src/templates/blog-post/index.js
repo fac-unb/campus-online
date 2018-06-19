@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {colors} from '../../constants'
 import MetaTags from '../../components/MetaTags'
 import Content from '../../components/Content'
 import Container from '../../components/Container'
@@ -15,6 +16,7 @@ import PostCard from '../../components/PostCard'
 const BlogPost = ({
 	content,
 	excerpt,
+	headline,
 	tags,
 	date,
 	cover,
@@ -26,13 +28,24 @@ const BlogPost = ({
 }) => {
 	return (
 		<Fragment>
-			<MetaTags title={title} description={excerpt} image={cover} />
+			<MetaTags
+				title={title}
+				description={headline ? headline : excerpt}
+				image={cover}
+			/>
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
 			<Container style={{paddingBottom: '8rem'}}>
 				<Row>
 					<Cell xs={12} lg={8}>
 						<Text>
+							{headline && (
+								<h2
+									style={{marginTop: 0, color: colors.base88, fontWeight: 600}}
+								>
+									{headline}
+								</h2>
+							)}
 							<Content>{content}</Content>
 						</Text>
 					</Cell>

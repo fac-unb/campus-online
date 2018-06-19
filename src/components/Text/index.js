@@ -42,7 +42,7 @@ const Text = styled.div`
 		font-size: 1.5em;
 		hyphens: none;
 		line-height: ${0.75 * lineHeight};
-		color: ${p => (!p.dark ? colors.base66 : 'white')};
+		color: ${p => (!p.dark ? colors.base88 : 'white')};
 		opacity: ${p => (!p.dark ? 1 : 0.66)};
 	}
 

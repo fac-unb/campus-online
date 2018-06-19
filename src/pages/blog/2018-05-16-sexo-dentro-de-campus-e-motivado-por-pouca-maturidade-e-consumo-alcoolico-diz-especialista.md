@@ -14,8 +14,8 @@ tags:
   - bce
   - campus
   - sexo
+headline: 'Apesar da janela e da proximidade com outros estudantes, as salas de estudo privativas da biblioteca foram utilizadas para prática inapropriada.'
 ---
-> Apesar da janela e da proximidade com outros estudantes, as salas de estudo privativas da biblioteca foram utilizadas para prática inapropriada.
 
 Para sexólogo, noção de censura diminui num ambiente onde se prega liberdade
 

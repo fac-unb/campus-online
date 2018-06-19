@@ -17,8 +17,8 @@ tags:
   - saúde
   - prevenção
   - sexo
+headline: 'Jovens e adolescentes no início da vida sexual cometem excessos e acabam esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as devidas orientações.'
 ---
-> Jovens e adolescentes no início da vida sexual cometem excessos e acabam esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as devidas orientações.
 
 Falar sobre sexo não é uma coisa tão natural para muita gente, mas que deveria ser diferente. O conceito de sexualidade está muito mais relacionado à orientação sexual do que com o sexo propriamente dito. O ato sexual é uma das formas de prazer que o corpo necessita, e para isso, é extremamente importante o cuidado com a saúde do seu corpo no que diz respeito à vida sexual.
 
