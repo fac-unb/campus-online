@@ -6,6 +6,7 @@ import * as format from '../../utils/format'
 import Link from '../StylableLink'
 import {CardCell} from '../CardGrid'
 import AuthorCard from '../AuthorCard'
+import Tag from './Tag'
 
 const minHeight = '26rem'
 const maxHeight = '16rem'
@@ -26,7 +27,7 @@ const StyledCardCell = styled(CardCell)`
 	`};
 `
 
-const Wrapper = styled.article`
+export const Wrapper = styled.article.attrs({className: 'PostCard'})`
 	transition: padding ${timing}, margin ${timing}, box-shadow ${timing};
 	z-index: 0;
 	width: 100%;
@@ -209,12 +210,27 @@ const Author = styled(AuthorCard)`
 	`};
 `
 
+const TagsWrapper = styled.div`
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	right: 0;
+	bottom: 0;
+	padding: 0.5rem;
+	${above.md`
+		flex-direction: column-reverse;
+	`};
+`
+
 const PostCard = ({
 	url,
 	title,
 	date,
 	editorial,
 	cover,
+	tags,
 	author,
 	size = true,
 	dark = false,
@@ -231,6 +247,13 @@ const PostCard = ({
 						{cover && (
 							<ImageWrapper size={size} compact={compact}>
 								<Image src={cover} />
+								{tags && (
+									<TagsWrapper>
+										{tags.map((tag, index) => (
+											<Tag key={tag} tag={tag} index={index} />
+										))}
+									</TagsWrapper>
+								)}
 							</ImageWrapper>
 						)}
 						<Text size={size}>
