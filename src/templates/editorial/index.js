@@ -1,24 +1,23 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
+import PostCard from '../../components/PostCard'
 
-export const Editorial = ({title, color, content}) => (
-	<React.Fragment>
+export const Editorial = ({title, color, content, posts}) => (
+	<Fragment>
+		<MetaTags title={title} />
 		<Hero title={title} background={color} navbar={false} bodyText={content} />
 		<Navbar
 			background={color}
 			dark={true}
-			style={{position: 'fixed', top: 0, zIndex: 30}}
+			style={{position: 'fixed', top: 0, zIndex: 3}}
 		/>
-		<Container>
-			<MetaTags title={title} />
-			<section style={{padding: '6rem 0 8rem'}}>
-				<div>[TODO]: MAP Articles HERE</div>
-			</section>
+		<Container style={{paddingTop: '6rem', paddingBottom: '8rem'}}>
+			{posts.map(post => <PostCard {...post} key={post.url} />)}
 		</Container>
-	</React.Fragment>
+	</Fragment>
 )
 
 export default Editorial
