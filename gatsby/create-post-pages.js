@@ -4,21 +4,6 @@ const {createQuery} = require('./helpers')
 
 // [TODO]: create BlogPost node type
 // [TODO]: make editorial and author BlogPost GraphQL key
-// [TODO]: use real GraphQL fragments
-const PostInfoFrament = `
-	frontmatter { title date cover }
-	fields {
-		url: slug
-		editorial {
-			frontmatter { title color }
-			fields { url: slug }
-		}
-		author {
-			frontmatter { title image }
-			fields { url: slug }
-		}
-	}
-`
 
 const query = createQuery('CreatePostPages')`
 	allMarkdownRemark(
@@ -27,24 +12,11 @@ const query = createQuery('CreatePostPages')`
 	) {
 		posts: edges {
 			post: node { id fields { url: slug } }
-			prev: previous { ${PostInfoFrament} }
-			next: next { ${PostInfoFrament} }
+			prev: previous { id }
+			next: next { id }
 		}
 	}
 `
-
-const flattenPostInfo = ({frontmatter, fields: {url, editorial, author}}) => ({
-	...frontmatter,
-	url,
-	editorial: editorial && {
-		...editorial.frontmatter,
-		...editorial.fields,
-	},
-	author: author && {
-		...author.frontmatter,
-		...author.fields,
-	},
-})
 
 module.exports = async ({boundActionCreators, graphql}) => {
 	const {createPage, deletePage} = boundActionCreators
@@ -65,8 +37,8 @@ module.exports = async ({boundActionCreators, graphql}) => {
 			component: path.resolve(`src/templates/blog-post/gatsby.js`),
 			context: {
 				id: post.id,
-				prev: prev && flattenPostInfo(prev),
-				next: next && flattenPostInfo(next),
+				prev: prev && prev.id,
+				next: next && next.id,
 			},
 		})
 	})
