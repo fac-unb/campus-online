@@ -49,7 +49,7 @@ const Image = styled.img`
 const Avatar = ({name, avatar, dark, small, ...props}) => (
 	<Wrapper dark={dark} small={small} {...props}>
 		{avatar && <Image src={avatar} />}
-		{!avatar && initials(name)}
+		{!avatar && name && initials(name)}
 	</Wrapper>
 )
 
