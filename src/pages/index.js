@@ -12,7 +12,7 @@ import PostCard from '../components/PostCard'
 const PageComponent = ({posts: [hero, ...posts]}) => (
 	<Fragment>
 		<MetaTags title="Home" />
-		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
+		<Navbar style={{position: 'fixed', top: 0, zIndex: 3}} />
 		<main style={{paddingBottom: '8rem'}}>
 			{hero && <HomeHero {...hero} />}
 			<Container>

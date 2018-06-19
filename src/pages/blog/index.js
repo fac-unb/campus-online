@@ -33,7 +33,7 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 		}}
 	>
 		<MetaTags title="Todos as matérias" />
-		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} dark={true} />
+		<Navbar style={{position: 'fixed', top: 0, zIndex: 3}} dark={true} />
 		<main style={{padding: '8rem 0'}}>
 			<Container>
 				{/* [TODO]: sort tags and authors*/}
