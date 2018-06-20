@@ -15,6 +15,7 @@ tags:
   - sexo
   - tabu
   - podcast
+featured: false
 headline: 'O Campuscast #1 já está no ar e o tema é quente: sexo como tabu.'
 ---
 

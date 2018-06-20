@@ -14,6 +14,7 @@ tags:
   - bce
   - campus
   - sexo
+featured: false
 headline: 'Apesar da janela e da proximidade com outros estudantes, as salas de estudo privativas da biblioteca foram utilizadas para prática inapropriada.'
 ---
 

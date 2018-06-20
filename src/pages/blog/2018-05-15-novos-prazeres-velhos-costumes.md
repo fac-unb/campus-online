@@ -17,6 +17,7 @@ tags:
   - saúde
   - prevenção
   - sexo
+featured: false
 headline: 'Jovens e adolescentes no início da vida sexual cometem excessos e acabam esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as devidas orientações.'
 ---
 

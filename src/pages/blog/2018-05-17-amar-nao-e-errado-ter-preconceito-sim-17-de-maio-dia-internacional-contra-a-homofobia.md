@@ -17,6 +17,7 @@ tags:
   - lgbt
   - amor
   - preconceito
+featured: false
 headline: '“Dirigi a palavra a uma senhora que se encontrava sentada perto de mim. Disse-lhe: “Nossa! Está quente, né?”'
 ---
 
