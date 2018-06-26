@@ -22,6 +22,7 @@ export const pageQuery = graphql`
 			fields {
 				posts {
 					...BlogPostInfo
+					...BlogPostCoverThumbnail
 				}
 			}
 		}

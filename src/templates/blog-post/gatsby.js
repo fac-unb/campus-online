@@ -16,12 +16,15 @@ export const pageQuery = graphql`
 	query BlogPostTemplate($id: String!, $prev: String, $next: String) {
 		prev: markdownRemark(id: {eq: $prev}) {
 			...BlogPostInfo
+			...BlogPostCoverThumbnail_noBase64
 		}
 		next: markdownRemark(id: {eq: $next}) {
 			...BlogPostInfo
+			...BlogPostCoverThumbnail_noBase64
 		}
 		post: markdownRemark(id: {eq: $id}) {
 			...BlogPostInfo
+			...BlogPostCoverImage
 			content: html
 			excerpt(pruneLength: 120)
 		}

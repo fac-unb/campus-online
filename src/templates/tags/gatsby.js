@@ -20,6 +20,7 @@ export const tagPageQuery = graphql`
 			posts: edges {
 				post: node {
 					...BlogPostInfo
+					...BlogPostCoverThumbnail
 				}
 			}
 		}

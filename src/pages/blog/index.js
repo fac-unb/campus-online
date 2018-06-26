@@ -124,6 +124,7 @@ export const pageQuery = graphql`
 			posts: edges {
 				post: node {
 					...BlogPostInfo
+					...BlogPostCoverThumbnail
 				}
 			}
 		}

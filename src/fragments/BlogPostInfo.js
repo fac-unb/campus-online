@@ -1,13 +1,54 @@
 import flattenAuthor from './AuthorInfo'
 import flattenEditorial from './EditorialInfo'
 
+export const blogPostCoverImage = graphql`
+	fragment BlogPostCoverImage on MarkdownRemark {
+		frontmatter {
+			cover {
+				image: childImageSharp {
+					sizes(maxWidth: 1920, quality: 100) {
+						...GatsbyImageSharpSizes
+					}
+				}
+			}
+		}
+	}
+`
+
+export const fullsizeCoverThumbnail = graphql`
+	fragment BlogPostCoverThumbnail on MarkdownRemark {
+		frontmatter {
+			cover {
+				thumbnail: childImageSharp {
+					sizes(maxWidth: 865, quality: 88) {
+						...GatsbyImageSharpSizes
+					}
+				}
+			}
+		}
+	}
+`
+
+export const fullsizeCoverThumbnailNoBase64 = graphql`
+	fragment BlogPostCoverThumbnail_noBase64 on MarkdownRemark {
+		frontmatter {
+			cover {
+				thumbnail: childImageSharp {
+					sizes(maxWidth: 865, quality: 88) {
+						...GatsbyImageSharpSizes_noBase64
+					}
+				}
+			}
+		}
+	}
+`
+
 export const fragment = graphql`
 	fragment BlogPostInfo on MarkdownRemark {
 		frontmatter {
 			title
 			headline
 			date
-			cover
 			tags
 			featured
 		}

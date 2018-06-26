@@ -6,6 +6,7 @@ import * as format from '../../utils/format'
 import Link from '../StylableLink'
 import Navbar from '../Navbar'
 import Container from '../Container'
+import Image from './Image'
 
 const Wrapper = styled.article`
 	display: flex;
@@ -32,25 +33,13 @@ const PostContent = styled.div`
 	flex: 1;
 `
 
-const ImageWrapper = styled.figure`
-	display: flex;
-	position: absolute;
+const ImageWrapper = styled(Image)`
+	position: bsolut;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	align-items: center;
-	justify-content: center;
-	object-fit: cover;
-`
-
-const Image = styled.img`
-	display: block;
 	overflow: hidden;
-	object-fit: cover;
-	height: 100%;
-	min-width: 100%;
-	flex: 1;
 `
 
 const Text = styled.div`
@@ -129,11 +118,7 @@ const HomeHero = ({url, title, date, editorial, cover}) => (
 			<Navbar shadow={true} />
 		</div>
 		<PostContent>
-			{cover && (
-				<ImageWrapper>
-					<Image src={cover} />
-				</ImageWrapper>
-			)}
+			{cover && <ImageWrapper image={cover.image} position="absolute" />}
 			<Text>
 				<Container>
 					<Meta>

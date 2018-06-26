@@ -51,9 +51,13 @@ export const pageQuery = graphql`
 			sort: {order: DESC, fields: [frontmatter___date]}
 			filter: {frontmatter: {template: {eq: "blog-post"}}}
 		) {
+			# [TODO]: separate hero
+			# [TODO]: fetch CoverImage for hero, CoverThumbnail for the rest
 			posts: edges {
 				post: node {
 					...BlogPostInfo
+					...BlogPostCoverImage
+					...BlogPostCoverThumbnail
 				}
 			}
 		}

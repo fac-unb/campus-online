@@ -249,23 +249,29 @@ const PostCard = ({
 	compact = false,
 	dynamic = false,
 }) => (
-	<StyledCardCell xs={12} md={size ? 12 : 6} cover={cover} dynamic={dynamic}>
+	<StyledCardCell
+		xs={12}
+		md={size ? 12 : 6}
+		cover={cover.thumbnail}
+		dynamic={dynamic}
+	>
 		<Wrapper>
 			<Padding>
 				<Inset dark={dark} alt={alt}>
 					<PostContent reverse={reverse} size={size} compact={compact}>
-						{cover && (
-							<ImageWrapper size={size} compact={compact}>
-								<Image src={cover} />
-								{tags && (
-									<TagsWrapper>
-										{tags.map((tag, index) => (
-											<Tag key={tag} tag={tag} index={index} />
-										))}
-									</TagsWrapper>
-								)}
-							</ImageWrapper>
-						)}
+						{cover &&
+							cover.thumbnail && (
+								<ImageWrapper size={size} compact={compact}>
+									<Image src={cover.thumbnail.sizes.src} />
+									{tags && (
+										<TagsWrapper>
+											{tags.map((tag, index) => (
+												<Tag key={tag} tag={tag} index={index} />
+											))}
+										</TagsWrapper>
+									)}
+								</ImageWrapper>
+							)}
 						<Text size={size}>
 							<Meta>
 								{editorial && <Editorial {...editorial} />}
