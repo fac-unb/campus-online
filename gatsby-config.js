@@ -32,18 +32,36 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
+				path: `${__dirname}/static/uploads`,
+				name: 'uploads',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
 				path: `${__dirname}/src/pages`,
 				name: 'pages',
 			},
 		},
-		'gatsby-plugin-sharp',
-		'gatsby-transformer-sharp',
 		{
 			resolve: 'gatsby-transformer-remark',
 			options: {
-				plugins: [],
+				plugins: [
+					'gatsby-remark-relative-images',
+					{
+						resolve: 'gatsby-remark-images',
+						options: {
+							maxWidth: 761,
+							linkImagesToOriginal: false,
+						},
+					},
+					'gatsby-remark-external-links',
+					'gatsby-remark-responsive-iframe',
+				],
 			},
 		},
+		'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
 		'gatsby-transformer-campus-post',
 		{
 			resolve: 'gatsby-plugin-netlify-cms',
