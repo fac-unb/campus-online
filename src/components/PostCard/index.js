@@ -6,10 +6,11 @@ import * as format from '../../utils/format'
 import Link from '../StylableLink'
 import {CardCell} from '../CardGrid'
 import AuthorCard from '../AuthorCard'
+import Image from './Image'
 import Tag from './Tag'
 
-const minHeight = '26rem'
-const maxHeight = '16rem'
+export const minHeight = '26rem'
+export const maxHeight = '16rem'
 
 const timing = '0.15s cubic-bezier(0.4, 0, 0.2, 1)'
 
@@ -17,8 +18,7 @@ const StyledCardCell = styled(CardCell)`
 	flex-grow: 1;
 	${above.lg`
 		${p =>
-			!p.cover &&
-			p.dynamic &&
+			p.mini &&
 			`
 			flex: 1;
 			max-width: 50%;
@@ -45,6 +45,9 @@ export const Wrapper = styled.article.attrs({className: 'PostCard'})`
 
 const Padding = styled.div`
 	padding: 6px 6px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 `
 
 const PlainDiv = ({className, children, style}) => (
@@ -61,18 +64,21 @@ const Inset = styled(PlainDiv)`
 	position: relative;
 	overflow: hidden;
 	transition: padding ${timing}, margin ${timing}, box-shadow ${timing};
+	flex: 1;
 	${above.md`
 		border-bottom: 0;
-	`} ${above.md`
 		${Wrapper}:hover &, ${Wrapper}:focus &, ${Wrapper}:active &{
 			padding: 6px;
 			margin: -6px;
 		}
+	`} ${above.xg`
+		display: flex;
 	`};
 `
 
 const PostContent = styled.div`
 	width: 100%;
+	height: 100%;
 	position: relative;
 	${above.md`
 		display: flex;
@@ -86,21 +92,22 @@ const PostContent = styled.div`
 	`};
 `
 
-const ImageWrapper = styled.figure`
+const ImageWrapper = styled.div`
 	display: flex;
-	flex: 2;
 	align-items: center;
 	justify-content: center;
 	object-fit: cover;
 	margin: -6px;
 	position: relative;
-	min-height: 100%;
+	flex: 0;
+	min-height: 14rem;
 	${above.md`
-		flex: 4;
-		max-width: ${p => (p.compact ? '14rem' : 'auto')};
+		min-height: ${p => (p.compact ? 'initial' : '12rem')};
+		flex: ${p => (!p.size && !p.compact ? 0 : 4)};
+		max-width: ${p => (p.compact ? '14rem' : 'initial')};
 	`}
 	${above.lg`
-		flex: 6;
+		flex: ${p => (!p.size && !p.compact ? 0 : 6)};
 	`}
 	${above.xg`
 		flex: 7;
@@ -110,19 +117,6 @@ const ImageWrapper = styled.figure`
 			flex: 2.25 !important;
 		`}
 	`}
-`
-
-const Image = styled.img`
-	display: block;
-	object-fit: cover;
-	height: 100%;
-	min-width: 100%;
-	max-height: ${maxHeight};
-	flex: 1;
-	${above.md`
-		min-height: 100%;
-		position: absolute;
-	`};
 `
 
 const Text = styled.div`
@@ -135,7 +129,7 @@ const Text = styled.div`
 		${p =>
 			!p.size &&
 			`
-			flex: 0;
+			flex: 1;
 		`}
 	`};
 	${above.xg`
@@ -252,8 +246,7 @@ const PostCard = ({
 	<StyledCardCell
 		xs={12}
 		md={size ? 12 : 6}
-		cover={cover.thumbnail}
-		dynamic={dynamic}
+		mini={dynamic && !(cover && cover.thumbnail)}
 	>
 		<Wrapper>
 			<Padding>
@@ -262,7 +255,7 @@ const PostCard = ({
 						{cover &&
 							cover.thumbnail && (
 								<ImageWrapper size={size} compact={compact}>
-									<Image src={cover.thumbnail.sizes.src} />
+									<Image image={cover.thumbnail} dark={dark} />
 									{tags && (
 										<TagsWrapper>
 											{tags.map((tag, index) => (

@@ -12,7 +12,7 @@ export const CardRow = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	box-sizing: border-box;
-	align-items: flex-start;
+	align-items: stretch;
 	margin-left: -6px;
 	margin-right: -6px;
 `
