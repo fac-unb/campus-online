@@ -4,7 +4,7 @@ title: >-
   Novos prazeres, velhos costumes: A prevenção contra infecções sexualmente
   transmissíveis na Universidade
 cover: /uploads/novos-prazeres-velhos-costumes.jpg
-date: '2018-05-15'
+date: '2018-05-14'
 editorial:
   slug: /editorials/2018-1-tabu/
   title: Tabu
