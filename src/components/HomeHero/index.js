@@ -34,7 +34,7 @@ const PostContent = styled.div`
 `
 
 const ImageWrapper = styled(Image)`
-	position: bsolut;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
