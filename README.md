@@ -27,8 +27,7 @@ $ yarn build # outputs to ./public directory
 |:-----|:-------:|:------------|
 | [`react`](https://reactjs.org/) | [`MIT`](https://api.github.com/repos/facebook/react/license) | declarative, component-based, functional approach to user interfaces |
 | [`gatsby`](https://www.gatsbyjs.org/) | [`MIT`](https://github.com/gatsbyjs/gatsby/blob/master/LICENSE) | blazing fast static site generator for `react` |
-| [`recompose`](https://github.com/acdlite/recompose) | [`MIT`](https://github.com/acdlite/recompose/blob/master/LICENSE.md) | a `react` utility belt for function components and `higher-order components`.
- |
+| [`recompose`](https://github.com/acdlite/recompose) | [`MIT`](https://github.com/acdlite/recompose/blob/master/LICENSE.md) | a `react` utility belt for function components and `higher-order components`. |
 | [`styled-components`](https://styled-components.com/) | [`MIT`](https://api.github.com/repos/:owner/:repo/license) | `css-in-js` library, composable styling |
 | [`netlify-cms`](https://www.netlifycms.org/docs/widgets/) | [`MIT`](https://github.com/netlify/netlify-cms/blob/master/LICENSE) | open source content management for your `git` workflow |
 
