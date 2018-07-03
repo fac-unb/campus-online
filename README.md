@@ -4,40 +4,42 @@
 
 > website for fac-unb news lab
 
-### Prerequisites
-
-1. [Node.js](https://nodejs.org/en/)
-1. [yarn](https://yarnpkg.com/)
-
----
-
-### Tech stack
-
-> This is based on [`gatsby-starter-netlify-cms`](github.com/AustinGreen/gatsby-starter-netlify-cms)
-
-- [`gatsby`](https://www.gatsbyjs.org/): Blazing-fast static site generator for React
-- [`styled-components`](https://github.com/styled-components): Visual primitives for the component age.
-- [`netlify-cms`](https://www.netlifycms.org/): _serverless_ git-based CMS
-
----
-
-### Runing locally
-
-#### Development Server
-
+## Development Guide
 ```bash
-yarn
-yarn dev
-```
-> listen on `localhost:5000`
+# install project dependencies
+$ yarn
 
-#### Production Build
+# development server
+$ yarn dev # starts dev server
 
-```bash
-yarn
-yarn build
+# build static site
+$ yarn build # outputs to ./public directory
 ```
-> outputs static app on a `/public` folder
+
+
+
+## Tech Stack
+> This project started as a fork of [gatsby-starter-netlify-cms](https://github.com/fac-unb/campus-online/blob/master/github.com/AustinGreen/gatsby-starter-netlify-cms)
+
+#### Front-End Packages
+
+| name | license | description |
+|:-----|:-------:|:------------|
+| [`react`](https://reactjs.org/) | [`MIT`](https://api.github.com/repos/facebook/react/license) | declarative, component-based, functional approach to user interfaces |
+| [`gatsby`](https://www.gatsbyjs.org/) | [`MIT`](https://github.com/gatsbyjs/gatsby/blob/master/LICENSE) | blazing fast static site generator for `react` |
+| [`recompose`](https://github.com/acdlite/recompose) | [`MIT`](https://github.com/acdlite/recompose/blob/master/LICENSE.md) | a `react` utility belt for function components and `higher-order components`.
+ |
+| [`styled-components`](https://styled-components.com/) | [`MIT`](https://api.github.com/repos/:owner/:repo/license) | `css-in-js` library, composable styling |
+| [`netlify-cms`](https://www.netlifycms.org/docs/widgets/) | [`MIT`](https://github.com/netlify/netlify-cms/blob/master/LICENSE) | open source content management for your `git` workflow |
+
+
+#### System Dependencies
+| name   | min. version |
+|:-------|-------------:|
+| `bash` |      `3.0.0` |
+| `node` |      `8.0.0` |
+| `yarn` |      `1.0.0` |
+
 
 ---
 
