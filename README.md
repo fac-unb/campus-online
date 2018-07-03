@@ -4,16 +4,14 @@
 
 > website for fac-unb news lab
 
-## Prerequisites
+### Prerequisites
 
 1. [Node.js](https://nodejs.org/en/)
 1. [yarn](https://yarnpkg.com/)
 
-
-
 ---
 
-## Tech stack
+### Tech stack
 
 > This is based on [`gatsby-starter-netlify-cms`](github.com/AustinGreen/gatsby-starter-netlify-cms)
 
@@ -23,7 +21,9 @@
 
 ---
 
-### Development Server
+### Runing locally
+
+#### Development Server
 
 ```bash
 yarn
@@ -31,7 +31,7 @@ yarn dev
 ```
 > listen on `localhost:5000`
 
-### Production Build
+#### Production Build
 
 ```bash
 yarn
