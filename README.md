@@ -4,15 +4,12 @@
 
 > website for fac-unb news lab
 
-## Roadmap
+## Prerequisites
 
-- [ ] :put_litter_in_its_place: cleanup remaining cruft
-- [ ] :pencil: real content
-- [ ] :bookmark_tabs: post pagination
-- [ ] :mag_right: search
-- [x] :bookmark: tag filter
-- [ ] :lipstick: decent styling
-- [ ] :notebook_with_decorative_cover: [`storybook`](https://github.com/storybooks/storybook)
+1. [Node.js](https://nodejs.org/en/)
+1. [yarn](https://yarnpkg.com/)
+
+
 
 ---
 
@@ -23,6 +20,24 @@
 - [`gatsby`](https://www.gatsbyjs.org/): Blazing-fast static site generator for React
 - [`styled-components`](https://github.com/styled-components): Visual primitives for the component age.
 - [`netlify-cms`](https://www.netlifycms.org/): _serverless_ git-based CMS
+
+---
+
+### Development Server
+
+```bash
+yarn
+yarn dev
+```
+> listen on `localhost:5000`
+
+### Production Build
+
+```bash
+yarn
+yarn build
+```
+> outputs static app on a `/public` folder
 
 ---
 
