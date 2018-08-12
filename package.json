@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "gatsby develop --port \"${PORT:-5000}\" --open -H 0.0.0.0",
     "lint": "eslint './*.js' 'src' 'plugins' 'gatsby'",
-    "build": "gatsby build",
+    "build": "concurrently -n 'LAMBDA,GATSBY' 'npm run build:functions' 'npm run build:website'",
+    "build:website": "gatsby build",
+    "build:functions": "netlify-lambda build src/functions",
     "start": "gatsby serve",
     "precommit": "pretty-quick --staged && npm run lint",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
@@ -49,6 +51,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-plugin-lodash": "^3.3.4",
+    "concurrently": "^3.6.1",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.12.0",
@@ -56,6 +59,7 @@
     "gatsby-plugin-eslint": "^1.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
+    "netlify-lambda": "^0.4.0",
     "prettier": "^1.7.4",
     "pretty-quick": "^1.6.0"
   }
