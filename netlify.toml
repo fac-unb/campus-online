@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   command = "npm run build"
+  functions = "functions"
 
 [[headers]]
   for = "/assets/fonts/*"
