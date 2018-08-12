@@ -1,32 +1,28 @@
-export async function handler(event) {
-	const validationError = getValidationError(event)
-	if (validationError) return validationError
+import {createHash} from 'crypto'
+import fetch from 'node-fetch'
+import LRU from 'lru-cache'
 
-	const {
-		user: {email},
-	} = JSON.parse(event.body)
-	if (!email.endsWith('@kunstdesign.com.br')) return reject('wrong acl')
-	return {statusCode: 204, body: ''}
+const sha256 = string =>
+	createHash('sha256')
+		.update(string)
+		.digest('hex')
+const fetchJSON = async (...args) => await (await fetch(...args)).json()
+const cache = LRU({max: 64, maxAge: 60 * 1000})
+const isAllowed = async email => {
+	if (typeof email !== 'string') throw new Error('email is not a string')
+	if (cache.has(email)) return cache.get(email)
+	const url = `https://auth-netlify.firebaseio.com/acl/${sha256(email)}.json`
+	const result = email === (await fetchJSON(`${url}?shallow=true`))
+	return cache.set(email, result), result
 }
 
-const reject = (...reasons) => {
-	console.log(...reasons) // eslint-disable-line no-console
-	return {statusCode: 403, body: ''}
-}
-
-const getValidationError = event => {
-	if (!event) return reject('event missing')
-	if (!event.body) return reject('event.body missing')
-	let json = {}
-
+export const handler = async ({body = 'null'} = {}) => {
 	try {
-		json = JSON.parse(event.body)
-	} catch (e) {
-		return reject('error parsing json', typeof event.body)
+		const {email} = JSON.parse(body).user
+		if (await isAllowed(email)) return {statusCode: 204, body: ''}
+		throw new Error(`email '${email}' is not allowed`)
+	} catch ({message}) {
+		console.log(message) // eslint-disable-line
 	}
-
-	if (!json) return reject('empty json')
-	if (!json.user) return reject('empty json.user')
-	if (!json.user.email) return reject('empty json.user.email')
-	if (typeof json.user.email !== 'string') return reject('email is not string')
+	return {statusCode: 403, body: ''}
 }
