@@ -1,16 +1,16 @@
 import {createHash} from 'crypto'
 import fetch from 'node-fetch'
 
-const sha256 = string =>
-	createHash('sha256')
-		.update(string)
-		.digest('hex')
+// prettier-ignore
+const sha256 = string => createHash('sha256').update(string).digest('hex')
 const fetchJSON = async (...args) => await (await fetch(...args)).json()
-const isAllowed = async email => {
-	if (typeof email !== 'string') throw new Error('email is not a string')
-	const url = `https://auth-netlify.firebaseio.com/acl/${sha256(email)}.json`
+const isAllowed = async _email => {
+	if (typeof _email !== 'string') throw new Error('email is not a string')
+	const email = _email.toLowerCase()
+	const hash = sha256(email).toLowerCase()
+	const url = `https://auth-netlify.firebaseio.com/invite/${hash}/email.json`
 	const value = await fetchJSON(`${url}?shallow=true`)
-	console.log({email, value, hash: sha256(email)}) // eslint-disable-line
+	console.log({email, value, hash}) // eslint-disable-line
 	return email === value
 }
 
