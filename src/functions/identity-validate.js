@@ -8,7 +8,7 @@ const isAllowed = async _email => {
 	if (typeof _email !== 'string') throw new Error('email is not a string')
 	const email = _email.toLowerCase()
 	const hash = sha256(email).toLowerCase()
-	const url = `https://auth-netlify.firebaseio.com/invite/${hash}/email.json`
+	const url = `https://campus-unb.firebaseio.com/invite/${hash}/email.json`
 	const value = await fetchJSON(`${url}?shallow=true`)
 	console.log({email, value, hash}) // eslint-disable-line
 	return email === value
