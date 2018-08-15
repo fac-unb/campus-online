@@ -3,12 +3,11 @@ import Link from 'gatsby-link'
 
 const StylableLink = ({to, children, className, style}) => {
 	const href = (to || {}).pathname || (typeof to === 'string' ? to : '/')
-	const external = /^[^./]/.test(href)
-	const allowedProps = {className, style, children}
-	return external ? (
-		<a {...allowedProps} href={href} target="_blank" />
+	const props = {className, style, children}
+	return /^[./]/.test(href) ? (
+		<Link {...props} to={to} />
 	) : (
-		<Link {...allowedProps} to={to} />
+		<a {...props} href={href} target="_blank" rel="noopener noreferrer" />
 	)
 }
 
