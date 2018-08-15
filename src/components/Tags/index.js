@@ -55,7 +55,9 @@ export const TagsCounter = ({tags, style}) => (
 		{tags.map(({label, totalCount}) => (
 			<li key={label}>
 				<Tag to={`/tags/${kebabCase(label)}/`}>
-					{label}&nbsp;<Counter>{leftPad(totalCount)}</Counter>
+					{label}
+					&nbsp;
+					<Counter>{leftPad(totalCount)}</Counter>
 				</Tag>
 			</li>
 		))}

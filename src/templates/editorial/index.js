@@ -21,7 +21,9 @@ const Editorial = ({title, color, content, excerpt, posts}) => (
 			style={{position: 'fixed', top: 0, zIndex: 3}}
 		/>
 		<Container style={{paddingTop: '6rem', paddingBottom: '8rem'}}>
-			{posts.map(post => <PostCard {...post} key={post.url} />)}
+			{posts.map(post => (
+				<PostCard {...post} key={post.url} />
+			))}
 		</Container>
 	</Fragment>
 )

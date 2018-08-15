@@ -14,7 +14,9 @@ const Author = ({name, semester, avatar, content, excerpt, posts}) => (
 			bodyText={content}
 		/>
 		<Container style={{paddingTop: '6rem', paddingBottom: '8rem'}}>
-			{posts.map(post => <PostCard {...post} key={post.url} author={null} />)}
+			{posts.map(post => (
+				<PostCard {...post} key={post.url} author={null} />
+			))}
 		</Container>
 	</Fragment>
 )
