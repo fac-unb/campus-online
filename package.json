@@ -1,12 +1,21 @@
 {
   "scripts": {
-    "build": "wsrun build"
+    "dev": "wsrun dev --exclude-missing",
+    "lint": "wsrun lint --exclude-missing",
+    "build": "wsrun build --exclude-missing",
+    "format": "wsrun format --exclude-missing",
+    "precommit": "wsrun precommit --exclude-missing"
   },
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "engines": {
+    "node": "^8.10",
+    "yarn": "^1.9"
+  },
   "devDependencies": {
+    "husky": "^0.14.3",
     "wsrun": "^2.2.1"
   }
 }

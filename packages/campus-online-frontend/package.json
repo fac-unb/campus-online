@@ -6,11 +6,17 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop --port \"${PORT:-5000}\" --open -H 0.0.0.0",
-    "lint": "eslint './*.js' 'src' 'plugins' 'gatsby'",
     "build": "gatsby build",
-    "start": "gatsby serve",
-    "precommit": "pretty-quick --staged && npm run lint",
-    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
+    "lint": "eslint './*.js' 'src' 'plugins' 'gatsby'",
+    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "{gatsby-,src/*}*.js": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "@leonardodino/netlify-cms": "^1.8.1",
@@ -54,9 +60,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "gatsby-plugin-eslint": "^1.0.3",
-    "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
-    "prettier": "^1.7.4",
-    "pretty-quick": "^1.6.0"
+    "prettier": "^1.7.4"
   }
 }
