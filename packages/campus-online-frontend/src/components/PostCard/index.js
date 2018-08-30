@@ -6,11 +6,9 @@ import * as format from '../../utils/format'
 import Link from '../StylableLink'
 import {CardCell} from '../CardGrid'
 import AuthorCard from '../AuthorCard'
+import {minHeight} from './constants'
 import Image from './Image'
 import Tag from './Tag'
-
-export const minHeight = '26rem'
-export const maxHeight = '16rem'
 
 const timing = '0.15s cubic-bezier(0.4, 0, 0.2, 1)'
 
@@ -282,3 +280,4 @@ const PostCard = ({
 )
 
 export default PostCard
+export {minHeight, maxHeight} from './constants'

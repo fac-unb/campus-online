@@ -1,7 +1,9 @@
+import {graphql} from 'gatsby'
 import React from 'react'
 import {map, get, flow} from 'lodash/fp'
-import {mapProps} from 'recompose'
+import {mapProps, compose} from 'recompose'
 import flattenAuthorInfo from '../../fragments/AuthorInfo'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
@@ -27,12 +29,15 @@ const AuthorsPage = ({authors}) => (
 	</React.Fragment>
 )
 
-const enhance = mapProps(
-	flow([
-		get('data.authorList.authors'),
-		map(flow([get('author'), flattenAuthorInfo])),
-		authors => ({authors}),
-	]),
+const enhance = compose(
+	withLayout,
+	mapProps(
+		flow([
+			get('data.authorList.authors'),
+			map(flow([get('author'), flattenAuthorInfo])),
+			authors => ({authors}),
+		]),
+	),
 )
 
 export default enhance(AuthorsPage)

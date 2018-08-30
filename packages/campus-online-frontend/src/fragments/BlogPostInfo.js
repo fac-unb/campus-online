@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby'
 import flattenAuthor from './AuthorInfo'
 import flattenEditorial from './EditorialInfo'
 

@@ -1,11 +1,13 @@
+import {graphql} from 'gatsby'
 import React from 'react'
-import {mapProps} from 'recompose'
+import {mapProps, compose} from 'recompose'
 import {get, kebabCase} from 'lodash/fp'
 import styled from 'styled-components'
 import {colors} from '../../constants'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
 import flattenAuthorInfo from '../../fragments/AuthorInfo'
 import flattenEditorialInfo from '../../fragments/EditorialInfo'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
@@ -69,19 +71,22 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 	</div>
 )
 
-const enhance = mapProps(
-	({
-		data: {
-			blog: {posts = [], tags = []},
-			allAuthors: {authors = []},
-			allEditorials: {editorials = []},
-		},
-	}) => ({
-		tags,
-		editorials: editorials.map(get('editorial')).map(flattenEditorialInfo),
-		authors: authors.map(get('author')).map(flattenAuthorInfo),
-		posts: posts.map(get('post')).map(flattenBlogPostInfo),
-	}),
+const enhance = compose(
+	withLayout,
+	mapProps(
+		({
+			data: {
+				blog: {posts = [], tags = []},
+				allAuthors: {authors = []},
+				allEditorials: {editorials = []},
+			},
+		}) => ({
+			tags,
+			editorials: editorials.map(get('editorial')).map(flattenEditorialInfo),
+			authors: authors.map(get('author')).map(flattenAuthorInfo),
+			posts: posts.map(get('post')).map(flattenBlogPostInfo),
+		}),
+	),
 )
 
 const BlogPage = enhance(PageComponent)

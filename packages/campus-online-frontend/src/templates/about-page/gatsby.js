@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Template from '.'
@@ -22,8 +23,8 @@ AboutPage.propTypes = {
 export default AboutPage
 
 export const aboutPageQuery = graphql`
-	query AboutPage($id: String!) {
-		markdownRemark(id: {eq: $id}) {
+	query AboutPage($url: String!) {
+		markdownRemark(fields: {slug: {eq: $url}}) {
 			html
 			frontmatter {
 				title

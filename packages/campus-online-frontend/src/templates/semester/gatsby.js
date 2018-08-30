@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby'
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import MetaTags from '../../components/MetaTags'
@@ -31,8 +32,8 @@ Semester.propTypes = {
 export default Semester
 
 export const pageQuery = graphql`
-	query SemesterByID($id: String!) {
-		markdownRemark(id: {eq: $id}) {
+	query SemesterByurl($url: String!) {
+		markdownRemark(fields: {slug: {eq: $url}}) {
 			frontmatter {
 				title
 			}

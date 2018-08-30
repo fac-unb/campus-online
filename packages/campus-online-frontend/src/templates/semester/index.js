@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {withLayout} from '../../components/Layout'
 
 // [TODO]: move markup to this file, from ./gatsby.js
 // i've ported the earlier structure, it's probably wrong though,
@@ -15,4 +16,4 @@ const Semester = ({name}) => (
 
 Semester.propTypes = {name: PropTypes.string}
 
-export default Semester
+export default withLayout(Semester)

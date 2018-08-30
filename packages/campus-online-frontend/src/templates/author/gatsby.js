@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby'
 import {map} from 'lodash/fp'
 import {mapProps} from 'recompose'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
@@ -14,8 +15,8 @@ const enhance = mapProps(({data: {author}}) => ({
 export default enhance(AuthorPage)
 
 export const pageQuery = graphql`
-	query AuthorByID($id: String!) {
-		author: markdownRemark(id: {eq: $id}) {
+	query AuthorByurl($url: String!) {
+		author: markdownRemark(fields: {slug: {eq: $url}}) {
 			...AuthorInfo
 			content: html
 			excerpt(pruneLength: 120)

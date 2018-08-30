@@ -1,9 +1,10 @@
+import {graphql} from 'gatsby'
 import {mapProps} from 'recompose'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
 import TagPage from '.'
 
-const enhance = mapProps(({pathContext, data: {blog}}) => ({
-	tag: pathContext.tag,
+const enhance = mapProps(({pageContext, data: {blog}}) => ({
+	tag: pageContext.tag,
 	totalCount: blog.totalCount,
 	posts: blog.posts.map(({post}) => flattenBlogPostInfo(post)),
 }))

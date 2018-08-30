@@ -1,4 +1,6 @@
+import {graphql} from 'gatsby'
 import React, {Fragment} from 'react'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
@@ -22,7 +24,7 @@ const TagsPage = ({
 	</Fragment>
 )
 
-export default TagsPage
+export default withLayout(TagsPage)
 
 export const tagPageQuery = graphql`
 	query TagsQuery {

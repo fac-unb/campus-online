@@ -1,6 +1,8 @@
+import {graphql} from 'gatsby'
 import React, {Fragment} from 'react'
-import {mapProps} from 'recompose'
+import {mapProps, compose} from 'recompose'
 import flattenBlogPostInfo from '../fragments/BlogPostInfo'
+import {withLayout} from '../components/Layout'
 import MetaTags from '../components/MetaTags'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
@@ -37,9 +39,12 @@ const PageComponent = ({posts: [hero, ...posts]}) => (
 	</Fragment>
 )
 
-const enhance = mapProps(({data: {blog: {posts}}}) => ({
-	posts: posts.map(({post}) => flattenBlogPostInfo(post)),
-}))
+const enhance = compose(
+	withLayout,
+	mapProps(({data: {blog: {posts}}}) => ({
+		posts: posts.map(({post}) => flattenBlogPostInfo(post)),
+	})),
+)
 
 const IndexPage = enhance(PageComponent)
 

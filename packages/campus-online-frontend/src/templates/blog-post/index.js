@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import {colors} from '../../constants'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Content from '../../components/Content'
 import Container from '../../components/Container'
@@ -76,4 +77,4 @@ const BlogPost = ({
 	)
 }
 
-export default BlogPost
+export default withLayout(BlogPost)

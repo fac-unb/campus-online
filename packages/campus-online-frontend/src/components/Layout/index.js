@@ -1,11 +1,11 @@
-import '../reset.css'
-import '../fonts.css'
+import '../../reset.css'
+import '../../fonts.css'
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import {colors, fonts} from '../constants'
-import {Provider as MenuProvider} from '../components/Navbar'
-import Footer from '../components/Footer'
+import {colors, fonts} from '../../constants'
+import {Provider as MenuProvider} from '../../components/Navbar'
+import Footer from '../../components/Footer'
 
 export const Wrapper = styled.div`
 	display: flex;
@@ -37,3 +37,4 @@ const Layout = ({children}) => (
 )
 
 export default Layout
+export {default as withLayout} from './withLayout'

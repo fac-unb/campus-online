@@ -1,8 +1,5 @@
 /* eslint-env node */
 module.exports = {
-	siteMetadata: {
-		title: 'Campus Online',
-	},
 	mapping: {
 		'MarkdownRemark.fields.author': 'MarkdownRemark',
 		'MarkdownRemark.fields.editorial': 'MarkdownRemark',
@@ -48,12 +45,11 @@ module.exports = {
 			resolve: 'gatsby-transformer-remark',
 			options: {
 				plugins: [
-					'gatsby-remark-relative-images',
 					{
 						resolve: 'gatsby-remark-images',
 						options: {
-							maxWidth: 761,
-							linkImagesToOriginal: false,
+							maxWidth: 760,
+							showCaptions: true,
 						},
 					},
 					'gatsby-remark-external-links',
@@ -64,12 +60,12 @@ module.exports = {
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		'gatsby-transformer-campus-post',
-		{
-			resolve: 'gatsby-plugin-netlify-cms',
-			options: {
-				modulePath: `${__dirname}/src/cms/cms.js`,
-			},
-		},
+		// {
+		// 	resolve: 'gatsby-plugin-netlify-cms',
+		// 	options: {
+		// 		modulePath: `${__dirname}/src/cms/cms.js`,
+		// 	},
+		// },
 		'gatsby-plugin-netlify', // make sure to keep it last in the array
 	],
 }

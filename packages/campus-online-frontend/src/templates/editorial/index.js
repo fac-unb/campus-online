@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Navbar from '../../components/Navbar'
@@ -28,4 +29,4 @@ const Editorial = ({title, color, content, excerpt, posts}) => (
 	</Fragment>
 )
 
-export default Editorial
+export default withLayout(Editorial)

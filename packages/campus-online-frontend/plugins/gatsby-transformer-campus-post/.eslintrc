@@ -3,9 +3,6 @@
   "extends": [
     "../../.eslintrc"
   ],
-  "globals": {
-    "graphql": false
-  },
   "env": {
     "browser": false,
     "es6": true,

@@ -11,15 +11,14 @@ const query = createQuery('CreatePostPages')`
 		filter: {frontmatter: {template: {eq: "blog-post"}}},
 	) {
 		posts: edges {
-			post: node { id fields { url: slug } }
-			prev: previous { id }
-			next: next { id }
+			post: node { fields { url: slug } }
+			prev: previous { fields { url: slug } }
+			next: next { fields { url: slug } }
 		}
 	}
 `
 
-module.exports = async ({boundActionCreators, graphql}) => {
-	const {createPage, deletePage} = boundActionCreators
+module.exports = async ({graphql, actions: {createPage, deletePage}}) => {
 	const {
 		allMarkdownRemark: {posts},
 	} = await query(graphql)
@@ -35,11 +34,7 @@ module.exports = async ({boundActionCreators, graphql}) => {
 		createPage({
 			path: url,
 			component: path.resolve(`src/templates/blog-post/gatsby.js`),
-			context: {
-				id: post.id,
-				prev: prev && prev.id,
-				next: next && next.id,
-			},
+			context: {url, next: null, post: null}, // [TODO]: fix next prev
 		})
 	})
 }
