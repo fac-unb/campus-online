@@ -61,6 +61,12 @@ module.exports = {
 		'gatsby-transformer-sharp',
 		'gatsby-transformer-campus-post',
 		{
+			resolve: 'gatsby-custom-netlify-cms-alias',
+			options: {
+				package: '@leonardodino/netlify-cms',
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-netlify-cms',
 			options: {
 				modulePath: `${__dirname}/src/admin`,
