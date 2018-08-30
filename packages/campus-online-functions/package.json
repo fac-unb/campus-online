@@ -1,0 +1,31 @@
+{
+  "name": "campus-online-functions",
+  "description": "FAC-UNB campus online lambda functions",
+  "homepage": "https://campus.kunst.cloud/",
+  "version": "0.0.0-alpha",
+  "private": true,
+  "scripts": {
+    "dev": "netlify-lambda serve src -c webpack.config.js",
+    "build": "netlify-lambda build src -c webpack.config.js",
+    "lint": "eslint 'src'",
+    "format": "prettier --write \"{src/**/*.js}\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "lint-staged": "^7.2.2",
+    "netlify-lambda": "^0.4.0",
+    "prettier": "^1.14.2",
+    "uglifyjs-webpack-plugin": "^1.3.0"
+  }
+}

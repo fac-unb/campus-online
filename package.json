@@ -1,68 +1,21 @@
 {
-  "name": "campus-online",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "homepage": "https://campus.kunst.cloud/",
-  "version": "0.0.0-alpha",
-  "private": true,
   "scripts": {
-    "dev": "gatsby develop --port \"${PORT:-5000}\" --open -H 0.0.0.0",
-    "dev:functions": "AWS_LAMBDA_JS_RUNTIME=nodejs8.10 netlify-lambda serve src/functions -c functions.webpack.config.js",
-    "lint": "eslint './*.js' 'src' 'plugins' 'gatsby'",
-    "build": "concurrently -n 'LAMBDA,GATSBY' 'npm run build:functions' 'npm run build:website'",
-    "build:website": "gatsby build",
-    "build:functions": "netlify-lambda build src/functions -c functions.webpack.config.js",
-    "start": "gatsby serve",
-    "precommit": "pretty-quick --staged && npm run lint",
-    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
+    "dev": "wsrun dev --exclude-missing",
+    "lint": "wsrun lint --exclude-missing",
+    "build": "wsrun build --exclude-missing",
+    "format": "wsrun format --exclude-missing",
+    "precommit": "wsrun precommit --exclude-missing"
   },
-  "dependencies": {
-    "@leonardodino/netlify-cms": "^1.8.1",
-    "babel-plugin-styled-components": "^1.5.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "deep-map": "^1.5.0",
-    "gatsby": "^1.9.213",
-    "gatsby-image": "^1.0.54",
-    "gatsby-link": "^1.6.37",
-    "gatsby-plugin-lodash": "^1.0.11",
-    "gatsby-plugin-netlify": "^1.0.19",
-    "gatsby-plugin-netlify-cms": "^2.0.1",
-    "gatsby-plugin-nprogress": "^1.0.14",
-    "gatsby-plugin-react-helmet": "^2.0.5",
-    "gatsby-plugin-sharp": "^1.6.34",
-    "gatsby-plugin-styled-components": "^2.0.11",
-    "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-remark-images": "^1.5.67",
-    "gatsby-remark-relative-images": "^0.1.2",
-    "gatsby-remark-responsive-iframe": "^1.4.20",
-    "gatsby-source-filesystem": "^1.5.23",
-    "gatsby-transformer-remark": "^1.7.33",
-    "gatsby-transformer-sharp": "^1.6.21",
-    "lodash": "^4.17.5",
-    "lru-cache": "^4.1.3",
-    "node-fetch": "^2.2.0",
-    "polished": "^1.9.2",
-    "prop-types": "^15.6.0",
-    "react": "^16.4.0",
-    "react-helmet": "^5.2.0",
-    "react-window-size": "^1.2.0",
-    "recompose": "^0.27.1",
-    "styled-components": "^3.3.0"
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": "^8.10",
+    "yarn": "^1.9"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "concurrently": "^3.6.1",
-    "eslint": "^4.19.1",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-react": "^7.8.2",
-    "gatsby-plugin-eslint": "^1.0.3",
     "husky": "^0.14.3",
-    "lint-staged": "^7.1.2",
-    "netlify-lambda": "^0.4.0",
-    "prettier": "^1.7.4",
-    "pretty-quick": "^1.6.0",
-    "uglifyjs-webpack-plugin": "^1.2.7"
+    "wsrun": "^2.2.1"
   }
 }
