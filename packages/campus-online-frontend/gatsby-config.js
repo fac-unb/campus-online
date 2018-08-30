@@ -60,12 +60,12 @@ module.exports = {
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		'gatsby-transformer-campus-post',
-		// {
-		// 	resolve: 'gatsby-plugin-netlify-cms',
-		// 	options: {
-		// 		modulePath: `${__dirname}/src/cms/cms.js`,
-		// 	},
-		// },
+		{
+			resolve: 'gatsby-plugin-netlify-cms',
+			options: {
+				modulePath: `${__dirname}/src/admin`,
+			},
+		},
 		'gatsby-plugin-netlify', // make sure to keep it last in the array
 	],
 }

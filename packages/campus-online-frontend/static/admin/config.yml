@@ -7,7 +7,7 @@ slug:
   clean_accents: true
 
 display_url: https://campus.kunst.cloud
-media_folder: static/uploads
+media_folder: packages/campus-online-frontend/static/uploads
 public_folder: /uploads
 
 editor:
@@ -17,7 +17,7 @@ editor:
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/pages/blog"
+    folder: "packages/campus-online-frontend/src/pages/blog"
     create: true
     format: "yaml-frontmatter"
     slug: "{{date}}-{{slug}}"
@@ -37,7 +37,7 @@ collections:
 
   - name: "authors"
     label: "Autores"
-    folder: "src/pages/authors"
+    folder: "packages/campus-online-frontend/src/pages/authors"
     create: true
     extension: "md"
     format: "yaml-frontmatter"
@@ -54,7 +54,7 @@ collections:
 
   - name: "editorials"
     label: "Editorias"
-    folder: "src/pages/editorials"
+    folder: "packages/campus-online-frontend/src/pages/editorials"
     create: true
     extension: "md"
     format: "yaml-frontmatter"
@@ -74,7 +74,7 @@ collections:
     files:
       - name: "general"
         label: "Geral"
-        file: "src/siteMetadata.json"
+        file: "packages/campus-online-frontend/src/siteMetadata.json"
         extension: "json"
         format: "json"
         fields:
