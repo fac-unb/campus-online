@@ -13,8 +13,7 @@ const query = createQuery('CreateTagPages')`
 	}
 `
 
-module.exports = async ({boundActionCreators, graphql}) => {
-	const {createPage, deletePage} = boundActionCreators
+module.exports = async ({graphql, actions: {createPage, deletePage}}) => {
 	const {
 		allMarkdownRemark: {posts},
 	} = await query(graphql)

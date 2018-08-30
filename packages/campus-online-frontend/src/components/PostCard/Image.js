@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {mapProps} from 'recompose'
 import GatsbyImage from 'gatsby-image'
 import {above} from '../../utils/responsive'
-import {maxHeight} from '.'
+import {maxHeight} from './constants'
 
 const outerWrapper = mapProps(({className, ...props}) => ({
 	...props,

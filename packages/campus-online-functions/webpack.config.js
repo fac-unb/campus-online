@@ -1,3 +1,7 @@
-/* eslint-env commonjs */
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-module.exports = { plugins: [new UglifyJsPlugin()] };
+module.exports = {
+	resolve: {
+		alias: {
+			'node-fetch$': 'node-fetch/lib/index.js',
+		}
+	}
+}

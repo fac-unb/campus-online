@@ -1,3 +1,5 @@
+import {graphql} from 'gatsby'
+
 export const fragment = graphql`
 	fragment EditorialInfo on MarkdownRemark {
 		frontmatter {

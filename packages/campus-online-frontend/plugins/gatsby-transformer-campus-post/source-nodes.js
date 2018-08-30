@@ -19,9 +19,7 @@ const isAuthorNode = fp.isMatch({
 const getAuthorSlug = fp.get('frontmatter.author.slug')
 const getEditorialSlug = fp.get('frontmatter.editorial.slug')
 
-module.exports = async ({boundActionCreators, getNodes, getNode}) => {
-	const {createNodeField} = boundActionCreators
-
+module.exports = async ({getNodes, getNode, actions: {createNodeField}}) => {
 	await delay(500) // wait for filesystem nodes
 
 	const allNodes = getNodes()

@@ -1,5 +1,6 @@
 import React from 'react'
 import {colors} from '../../constants'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Navbar from '../../components/Navbar'
 import Container from '../../components/Container'
@@ -38,4 +39,4 @@ const AboutPage = ({title, items, content}) => (
 	</div>
 )
 
-export default AboutPage
+export default withLayout(AboutPage)

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 
 const StylableLink = ({to, children, className, style}) => {
 	const href = (to || {}).pathname || (typeof to === 'string' ? to : '/')

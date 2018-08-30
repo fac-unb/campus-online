@@ -1,6 +1,8 @@
+import {graphql} from 'gatsby'
 import React, {Fragment} from 'react'
-import {mapProps} from 'recompose'
+import {mapProps, compose} from 'recompose'
 import flattenEditorialInfo from '../../fragments/EditorialInfo'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
@@ -39,13 +41,16 @@ export const Editorials = ({editorials}) =>
 		</Fragment>
 	))
 
-const enhance = mapProps(({data: {editorialList: {editorials = []}}}) => ({
-	editorials: editorials.map(({editorial}) => ({
-		...flattenEditorialInfo(editorial),
-		content: editorial.content,
-		excerpt: editorial.excerpt,
+const enhance = compose(
+	withLayout,
+	mapProps(({data: {editorialList: {editorials = []}}}) => ({
+		editorials: editorials.map(({editorial}) => ({
+			...flattenEditorialInfo(editorial),
+			content: editorial.content,
+			excerpt: editorial.excerpt,
+		})),
 	})),
-}))
+)
 
 export default enhance(Editorials)
 export const editorialsQuery = graphql`

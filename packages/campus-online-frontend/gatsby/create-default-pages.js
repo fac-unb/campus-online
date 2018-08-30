@@ -9,7 +9,6 @@ const query = createQuery('CreateDefaultPages')`
 	allMarkdownRemark {
 		pages: edges {
 			node {
-				id
 				fields { url: slug }
 				frontmatter { template }
 			}
@@ -17,17 +16,16 @@ const query = createQuery('CreateDefaultPages')`
 	}
 `
 
-module.exports = async ({boundActionCreators, graphql}) => {
-	const {createPage} = boundActionCreators
+module.exports = async ({graphql, actions: {createPage}}) => {
 	const {
 		allMarkdownRemark: {pages},
 	} = await query(graphql)
 
-	pages.forEach(({node: {id, fields, frontmatter}}) => {
+	pages.forEach(({node: {fields: {url}, frontmatter: {template}}}) => {
 		createPage({
-			path: fields.url,
-			context: {id},
-			component: resolveComponent(frontmatter.template),
+			path: url,
+			context: {url},
+			component: resolveComponent(template),
 		})
 	})
 }

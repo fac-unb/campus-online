@@ -1,5 +1,6 @@
 import React from 'react'
 import {colors} from '../constants'
+import {withLayout} from '../components/Layout'
 import MetaTags from '../components/MetaTags'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
@@ -20,4 +21,4 @@ const NotFoundPage = () => (
 	</div>
 )
 
-export default NotFoundPage
+export default withLayout(NotFoundPage)

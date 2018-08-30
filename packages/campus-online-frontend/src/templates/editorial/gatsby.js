@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby'
 import {map} from 'lodash/fp'
 import {mapProps} from 'recompose'
 import flattenEditorialInfo from '../../fragments/EditorialInfo'
@@ -14,8 +15,8 @@ const enhance = mapProps(({data: {editorial}}) => ({
 export default enhance(EditorialPage)
 
 export const pageQuery = graphql`
-	query EditorialByID($id: String!) {
-		editorial: markdownRemark(id: {eq: $id}) {
+	query EditorialByurl($url: String!) {
+		editorial: markdownRemark(fields: {slug: {eq: $url}}) {
 			...EditorialInfo
 			content: html
 			excerpt(pruneLength: 120)

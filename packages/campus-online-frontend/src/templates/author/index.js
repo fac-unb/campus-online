@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
 import Hero from '../../components/Hero'
@@ -21,4 +22,4 @@ const Author = ({name, semester, avatar, content, excerpt, posts}) => (
 	</Fragment>
 )
 
-export default Author
+export default withLayout(Author)

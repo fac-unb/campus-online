@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import {withRouter} from 'react-router'
+import withRouter from '../../utils/withRouter'
 import truncate from '../../utils/truncate'
 import {homepage} from '../../../package.json'
 
