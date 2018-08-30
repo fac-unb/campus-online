@@ -1,7 +1,7 @@
 [build]
-  publish = "public"
   command = "npm run build"
-  functions = "functions"
+  publish = "packages/campus-online-frontend/public"
+  functions = "packages/campus-online-functions/dist"
 
 [[headers]]
   for = "/assets/fonts/*"

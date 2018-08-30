@@ -1,6 +1,8 @@
 import {Component} from 'react'
-import windowSize from 'react-window-size'
+import _windowSize from 'react-window-size'
 import {breakpoints} from '../../constants'
+
+const windowSize = typeof window !== 'undefined' ? _windowSize : a => a
 
 class MediaQuery extends Component {
 	state = {visible: false}

@@ -1,0 +1,4 @@
+# this is just a stub to enable netlify-lambda to work
+
+[build]
+  functions = "dist"
