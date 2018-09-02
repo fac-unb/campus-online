@@ -1,5 +1,6 @@
 import React from 'react'
 import {colors} from '../../constants'
+import {withLayout} from '../../components/Layout'
 import Link from '../../components/StylableLink'
 import MetaTags from '../../components/MetaTags'
 import Navbar from '../../components/Navbar'
@@ -59,4 +60,4 @@ const TagPage = ({tag, posts, totalCount}) => (
 	</div>
 )
 
-export default TagPage
+export default withLayout(TagPage)
