@@ -99,3 +99,7 @@ th {
 img::selection {
 	background-color: rgba(125, 125, 125, 0.22);
 }
+
+html {
+	background: #1a1b1c;
+}
