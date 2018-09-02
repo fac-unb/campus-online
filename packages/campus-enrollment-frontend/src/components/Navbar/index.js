@@ -5,7 +5,9 @@ import Container from '../Container'
 import Anchor from './Anchor'
 import AuthButton from './AuthButton'
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+	padding: 1rem 0;
+`
 
 const Main = styled.div`
 	display: flex;
