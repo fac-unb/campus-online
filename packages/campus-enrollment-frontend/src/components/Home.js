@@ -1,50 +1,21 @@
-import React, {Fragment} from 'react'
-import {
-	Container, Box, Badge, Heading, Flex, Button, ButtonOutline,
-} from 'rebass'
+import React from 'react'
+import styled from 'styled-components'
+import {colors} from '../constants'
+import Navbar from './Navbar'
 
-import AuthState from './AuthState'
-
-const AuthButton = ({render, children = render}) => (
-	<AuthState
-		render={({isLoggedIn, action}) => children({
-			children: isLoggedIn ? 'logout' : 'log in',
-			onClick: action, disabled: !action,
-		})}
-	/>
-)
+const Wrapper = styled.div`
+	min-height: 100%;
+	min-height: 100vh;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background: ${colors.base03}
+`
 
 const Home = () => (
-	<Fragment>
-		<Box color='white' bg='blue'>
-			<Container py={3}>
-				<Flex
-					justifyContent='space-between'
-					alignItems='center'
-					flexWrap='wrap'
-				>
-					<Heading is='h2' my={3}>
-						Campus Online <Badge bg='white' color='blue'>admin</Badge>
-					</Heading>
-					<AuthButton render={
-						props => <ButtonOutline my={3} color='white' {...props}/>
-					}/>
-				</Flex>
-			</Container>
-		</Box>
-		<Flex px={4} py={5} alignItems='center'>
-			<Heading color='blue'>
-				Beep Beep Beep Beep Beep Beep Beep
-			</Heading>
-			<Box mx='auto'/>
-			<Button>
-				Beep
-			</Button>
-			<ButtonOutline ml={2}>
-				Boop
-			</ButtonOutline>
-		</Flex>
-	</Fragment>
+	<Wrapper>
+		<Navbar/>
+	</Wrapper>
 )
 
 export default Home
