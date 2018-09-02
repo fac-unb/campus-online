@@ -1,6 +1,6 @@
 # campus-online
 
-[![online][www-badge]][www-url] [![online][admin-badge]][admin-url] [![online][figma-badge]][figma-url]
+[![Build Status][travis-badge]][travis-url] [![online][www-badge]][www-url] [![cms][cms-badge]][cms-url] [![enrollment][enrollment-badge]][enrollment-url] [![figma][figma-badge]][figma-url]
 
 > website for fac-unb news lab
 
@@ -46,9 +46,13 @@ $ yarn build # outputs to ./public directory
 
 [kunst](https://kunst.com.br)
 
+[travis-badge]: https://travis-ci.com/fac-unb/campus-online.svg?branch=master
+[travis-url]: https://travis-ci.com/fac-unb/campus-online
 [www-badge]: https://img.shields.io/badge/netlify-online-brightgreen.svg
 [www-url]: https://campus.kunst.cloud/
-[admin-badge]: https://img.shields.io/badge/❖-cms-00C7B7.svg?colorA=00C7B7
-[admin-url]: https://campus.kunst.cloud/admin/
+[cms-badge]: https://img.shields.io/badge/❖-cms-00C7B7.svg?colorA=00C7B7
+[cms-url]: https://campus.kunst.cloud/admin/
+[enrollment-badge]: https://img.shields.io/badge/≡-enrollment-0067EE.svg?colorA=0067EE
+[enrollment-url]: https://matricula.campus.kunst.cloud/
 [figma-badge]: https://img.shields.io/badge/Ω-figma-444648.svg?colorA=242628
 [figma-url]: https://www.figma.com/file/M7qolUHcVVZiqcYh4XmsvV
