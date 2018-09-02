@@ -23,7 +23,7 @@ module.exports = async ({graphql, actions: {createPage, deletePage}}) => {
 		allMarkdownRemark: {posts},
 	} = await query(graphql)
 
-	posts.forEach(({/*prev, next,*/ post}) => {
+	posts.forEach(({post, prev, next}) => {
 		const {url} = post.fields
 		try {
 			deletePage(url)
@@ -34,7 +34,11 @@ module.exports = async ({graphql, actions: {createPage, deletePage}}) => {
 		createPage({
 			path: url,
 			component: path.resolve(`src/templates/blog-post/gatsby.js`),
-			context: {url, next: null, post: null}, // [TODO]: fix next prev
+			context: {
+				url: url,
+				prev: prev && prev.fields.url,
+				next: next && next.fields.url,
+			},
 		})
 	})
 }
