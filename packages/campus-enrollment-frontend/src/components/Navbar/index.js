@@ -27,7 +27,7 @@ const Navbar = ({links}) => (
 				<img alt='campus logo' src='/assets/images/logo-enroll.svg'/>
 				<Right>
 					{links.map(({href, label}) => (
-						<Anchor href={href}>{label}</Anchor>
+						<Anchor key={href} href={href}>{label}</Anchor>
 					))}
 					<AuthButton/>
 				</Right>
