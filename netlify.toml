@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run run:netlify"
   publish = "packages/campus-online-frontend/public"
   functions = "packages/campus-online-functions/dist"
 
