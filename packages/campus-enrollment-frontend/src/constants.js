@@ -4,10 +4,7 @@ import {mix} from 'polished'
 // Sizes [Grid, Container & Breakpoints]
 // ----------------------------------------------------
 
-export const containerWidth = {
-	default: 1160,
-	small: 900,
-}
+export const containerWidth = 960
 export const columns = 12
 export const breakpoints = {
 	xs: {width: 0, gutter: 1.0},
