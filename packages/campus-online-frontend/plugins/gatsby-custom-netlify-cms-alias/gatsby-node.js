@@ -1,4 +1,4 @@
-exports.onCreateWebpackConfig = ({actions: {setWebpackConfig}}, {package}) => {
-	if(!package || typeof package !== 'string') return
-	setWebpackConfig({resolve: {alias: {'netlify-cms': package}}})
+exports.onCreateWebpackConfig = ({actions: {setWebpackConfig}}, options) => {
+	if(!options.package || typeof options.package !== 'string') return
+	setWebpackConfig({resolve: {alias: {'netlify-cms': options.package}}})
 }
