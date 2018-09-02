@@ -16,25 +16,20 @@ export const Row = styled.div`
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	align-items: flex-start;
-	${mapBreakpoints(
-		({gutter}) => `
+	${mapBreakpoints(({gutter}) => `
 		margin-left: ${gutter / -2 + 'rem'};
 		margin-right: ${gutter / -2 + 'rem'};
-	`,
-	)};
+	`)};
 `
 
 export const Cell = styled.div`
 	display: block;
-	${mapBreakpoints(
-		({gutter}) => `
+	${mapBreakpoints(({gutter}) => `
 		padding-left: ${gutter / 2 + 'rem'};
 		padding-right: ${gutter / 2 + 'rem'};
-	`,
-	)} ${mapPropsBreakpoints(
-		value => `
+	`)}
+	${mapPropsBreakpoints(value => `
 		display: ${value > 0 ? 'inherit' : 'none'};
 		width: ${(value / columns || 1) * 100 + '%'};
-	`,
-	)};
+	`)};
 `

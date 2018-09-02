@@ -42,9 +42,7 @@ const Main = ({students}) => (
 			<Heading color={colors.base88} size={5} weight={500}>Alunos</Heading>
 			<Counter>{students.length}</Counter>
 		</TitleBar>
-		<TableWrapper>
-
-		</TableWrapper>
+		<TableWrapper/>
 	</Wrapper>
 )
 
