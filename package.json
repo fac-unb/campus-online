@@ -4,7 +4,9 @@
     "lint": "wsrun lint --exclude-missing",
     "build": "wsrun build --exclude-missing",
     "format": "wsrun format --exclude-missing",
-    "precommit": "wsrun precommit --exclude-missing"
+    "precommit": "wsrun precommit --exclude-missing",
+    "test": "wsrun test --exclude-missing",
+    "deploy": "wsrun build 'campus-enrollment-frontend' && firebase deploy"
   },
   "private": true,
   "workspaces": [
@@ -15,6 +17,7 @@
     "yarn": "^1"
   },
   "devDependencies": {
+    "firebase-tools": "^4.2.1",
     "husky": "^0.14.3",
     "wsrun": "^2.2.1"
   }

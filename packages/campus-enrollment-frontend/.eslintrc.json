@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "../../.eslintrc.json",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react/prop-types": 0
+  }
+}

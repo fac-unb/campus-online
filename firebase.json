@@ -1,0 +1,5 @@
+{
+  "database": {"rules": "packages/campus-enrollment-database/rules.json"},
+  "functions": {"source": "packages/campus-enrollment-functions"},
+  "hosting": {"public": "packages/campus-enrollment-frontend/build"}
+}
