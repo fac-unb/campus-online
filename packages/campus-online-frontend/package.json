@@ -20,7 +20,7 @@
     ]
   },
   "dependencies": {
-    "@leonardodino/netlify-cms": "^2.0.10-alpha.6",
+    "@leonardodino/netlify-cms": "2.0.10-alpha.8",
     "@reach/router": "^1.1.1",
     "deep-map": "^1.5.0",
     "gatsby": "^2.0.0-rc.4",
