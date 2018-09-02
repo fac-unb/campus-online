@@ -1,27 +1,25 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {StyleSheetManager} from 'styled-components'
-import resetCSS from '!raw!../reset.css'
-import fontsCSS from '!raw!../fonts.css'
-import styleCSS from '!raw!./index.css'
-import {Wrapper} from '../layouts'
+import {Wrapper} from '../components/Layout'
+import '../reset.css'
+import '../fonts.css'
 
-const css = [resetCSS, fontsCSS].join('\n')
+const styleCSS = `
+	.SplitPane.vertical .Resizer.vertical {width: 11px}
+	.Pane2 iframe {border-radius: 0}
+`
 
-class StyleSheetWrapper extends Component {
+class StyleSheetWrapper extends React.Component {
 	state = {$head: null}
 	injectPreviewCSS() {
-		const $iframe = document.querySelector('.nc-previewPane-frame')
+		const $iframe = document.querySelector('.Pane2 iframe')
 		const $head = $iframe.contentDocument.head
-		const $style = document.createElement('style')
-		$style.appendChild(document.createTextNode(css))
-		$head.appendChild($style)
 		this.setState(state => ({...state, $head}))
 	}
-	overideCSS() {
-		const $head = document.head
+	overideCSS(){
 		const $style = document.createElement('style')
 		$style.appendChild(document.createTextNode(styleCSS))
-		$head.appendChild($style)
+		document.head.appendChild($style)
 	}
 	componentDidMount() {
 		this.overideCSS()
@@ -43,7 +41,7 @@ const getDisplayName = WrappedComponent =>
 	WrappedComponent.displayName || WrappedComponent.name || 'Component'
 
 const withStyleSheet = WrappedComponent => {
-	return class WithStyleSheet extends Component {
+	return class WithStyleSheet extends React.Component {
 		static displayName = `WithStyleSheet(${getDisplayName(WrappedComponent)})`
 		render() {
 			return (
