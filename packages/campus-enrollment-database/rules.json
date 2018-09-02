@@ -1,0 +1,66 @@
+{
+  "rules": {
+    "netlify-subdomain": {
+      ".validate": "newData.isString()",
+      ".read": "root.child('tokens/'+auth.uid).isString()"
+    },
+    "tasks": {
+      "$task": {
+        ".read": "root.child('tokens/'+auth.uid).isString() && data.child('createdBy').val() === auth.uid",
+        ".validate": "newData.child('type').isString()",
+        "status": {
+          ".validate": "newData.val() === 'queue' || newData.val() === 'done' || newData.val() === 'error' || newData.val() === 'skipped'"
+        },
+        "createdBy": {".validate": "root.child('tokens/'+newData.val()).isString()"},
+        "createdAt": {".validate": "newData.isNumber()"},
+        "updatedAt": {".validate": "newData.isNumber()"}
+      }
+    },
+    "invite": {
+      ".read": "root.child('tokens/'+auth.uid).isString()",
+      "$sha256": {
+        ".read": "true",
+        ".write": "root.child('tokens/'+auth.uid).isString() && $sha256.length === 64 && $sha256 === $sha256.toLowerCase()",
+        ".validate": "!data.exists() && newData.hasChildren(['email'])",
+        "email": {
+          ".validate": "newData.isString() && newData.val().contains('@') && newData.val() === newData.val().toLowerCase()"
+        },
+        "full_name": {
+          ".validate": "newData.isString()"
+        },
+        "$other": {".validate": false}
+      }
+    },
+    "update": {
+      ".read": "root.child('tokens/'+auth.uid).isString()",
+      "$push": {
+        ".write": "root.child('tokens/'+auth.uid).isString() && newData.child('user_id').isString()",
+        "user_id": {
+          ".validate": "newData.isString()"
+        },
+        "email": {
+          ".validate": "newData.isString() && newData.val().contains('@') && newData.val() === newData.val().toLowerCase()"
+        },
+        "full_name": {
+          ".validate": "newData.isString()"
+        },
+        "$other": {".validate": false}
+      }
+    },
+    "retire": {
+      ".read": "root.child('tokens/'+auth.uid).isString()",
+      "$push": {
+        ".write": "root.child('tokens/'+auth.uid).isString()",
+        ".validate": "newData.child('user_id').isString()",
+        "user_id": {
+          ".validate": "newData.isString()"
+        }
+      }
+    },
+    "tokens": {
+      "$uid": {
+        ".validate": "newData.isString() || !newData.exists()"
+      }
+    }
+  }
+}

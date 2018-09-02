@@ -1,0 +1,27 @@
+{
+  "name": "campus-enrollment-frontend",
+  "version": "0.0.0-alpha",
+  "homepage": "https://matricula.campus.kunst.cloud/",
+  "private": true,
+  "scripts": {
+    "dev": "react-scripts start",
+    "lint": "eslint 'src'",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "dependencies": {
+    "firebase": "^5.3.1",
+    "invariant": "^2.2.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "rebass": "^2.1.0",
+    "redux": "^4.0.0",
+    "redux-implicit-oauth2": "^1.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reline": "^1.0.0-beta.3",
+    "styled-components": "^3.4.1"
+  }
+}
