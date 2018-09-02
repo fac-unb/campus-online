@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {colors} from '../../constants'
 import {Heading} from '../Text'
+import Table from '../Table'
 
 const Wrapper = styled.div`
 	margin-top: 4rem;
@@ -42,7 +43,9 @@ const Main = ({students}) => (
 			<Heading color={colors.base88} size={5} weight={500}>Alunos</Heading>
 			<Counter>{students.length}</Counter>
 		</TitleBar>
-		<TableWrapper/>
+		<TableWrapper>
+			<Table students={students}/>
+		</TableWrapper>
 	</Wrapper>
 )
 
