@@ -4,8 +4,6 @@ import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import {defaultTag} from '../../utils/react'
 
-const lineHeight = 2
-
 const pickColor = ({color}) => color ? (colors[color] || color) : 'currentColor'
 const pickWeight = ({weight}) => typeof weight === 'number' ? weight : 'inherit'
 
