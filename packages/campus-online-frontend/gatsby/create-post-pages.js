@@ -23,7 +23,7 @@ module.exports = async ({graphql, actions: {createPage, deletePage}}) => {
 		allMarkdownRemark: {posts},
 	} = await query(graphql)
 
-	posts.forEach(({prev, next, post}) => {
+	posts.forEach(({/*prev, next,*/ post}) => {
 		const {url} = post.fields
 		try {
 			deletePage(url)

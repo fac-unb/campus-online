@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": [
-    "eslint:recommended",
+    "../../.eslintrc.json",
     "plugin:react/recommended"
   ],
   "settings": {
