@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {canonicalURL} from '../../constants'
+import {above} from '../../utils/responsive'
 import Container from '../Container'
 import Anchor from './Anchor'
 import AuthButton from './AuthButton'
@@ -20,15 +21,25 @@ const Right = styled.div`
 	align-items: center;
 `
 
+const Links = styled.div`
+	display: none;
+	${above.md`
+		display: flex;
+		align-items: center;
+	`}
+`
+
 const Navbar = ({links}) => (
 	<Wrapper>
 		<Container>
 			<Main>
 				<img alt='campus logo' src='/assets/images/logo-enroll.svg'/>
 				<Right>
-					{links.map(({href, label}) => (
-						<Anchor key={href} href={href}>{label}</Anchor>
-					))}
+					<Links>
+						{links.map(({href, label}) => (
+							<Anchor key={href} href={href}>{label}</Anchor>
+						))}
+					</Links>
 					<AuthButton/>
 				</Right>
 			</Main>
