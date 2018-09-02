@@ -20,7 +20,7 @@
     ]
   },
   "dependencies": {
-    "@leonardodino/netlify-cms": "^1.8.1",
+    "@leonardodino/netlify-cms": "^2.0.10-alpha.6",
     "@reach/router": "^1.1.1",
     "deep-map": "^1.5.0",
     "gatsby": "^2.0.0-rc.4",
@@ -60,6 +60,8 @@
     "eslint-plugin-react": "^7.8.2",
     "gatsby-plugin-eslint": "^2.0.1",
     "lint-staged": "^7.1.2",
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "raw-loader": "^0.5.1",
+    "raw-text-loader": "^0.1.1"
   }
 }
