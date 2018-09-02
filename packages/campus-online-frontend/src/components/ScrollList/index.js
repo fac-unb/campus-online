@@ -8,6 +8,7 @@ import Link from '../StylableLink'
 const Wrapper = styled.div`
 	display: flex;
 	line-height: 1.5rem;
+	height: ${p => p.expanded ? 'auto' : '3.5rem'};
 	align-items: baseline;
 	margin-left: -1rem;
 	margin-right: -1rem;
@@ -30,20 +31,22 @@ const Title = styled(Link)`
 		left: 100%;
 		width: 3rem;
 		pointer-events: none;
+		transition: all 0.2s ease-out;
+		opacity: ${p => p.expanded ? 0 : 1};
 	}
 `
 
-// [TODO]: black magic scroll bars and dynamic shadows
 const List = styled.ul`
 	display: flex;
-	overflow: scroll;
+	overflow: scroll hidden;
+	height: 6rem;
 	flex: 1;
 	${p =>
-		p.expanded &&
-		`
+		p.expanded && `
+		height: auto;
 		overflow: initial;
 		flex-wrap: wrap;
-	`};
+	`}
 `
 
 const Item = styled(Link)`
@@ -98,8 +101,8 @@ const byLabel = ({label: _a}, {label: _b}) => {
 
 const ScrollList = enhance(
 	({title, url, list, style, className, expanded, onExpand}) => (
-		<Wrapper style={style} className={className}>
-			<Title to={url}>{title}</Title>
+		<Wrapper style={style} className={className} expanded={expanded}>
+			<Title to={url} expanded={expanded}>{title}</Title>
 			<List expanded={expanded}>
 				{list.sort(byLabel).map(({label, url}) => (
 					<li key={url}>
