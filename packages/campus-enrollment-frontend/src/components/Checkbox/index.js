@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+// [TODO]: styling
+// https://codepen.io/kenchen/pen/iCEeA
+
 const Wrapper = styled.label`
 	flex: 0;
 	flex-grow: 0;
