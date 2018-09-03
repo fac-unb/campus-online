@@ -23,7 +23,7 @@ const Inner = styled.div`
 	background: ${colors.base11};
 	width: 2.5rem;
 	height: 2.5rem;
-	border-radius: 50%;
+	border-radius: 0.25rem;
 	color: ${colors.base66};
 	display: flex;
 	align-items: center;
