@@ -41,7 +41,7 @@ const When = styled.div`
 
 const Line = ({name, mail, date}) => (
 	<Wrapper>
-		<Checkbox style={{flex: 0}}/>
+		<Checkbox style={{marginLeft: '0.5rem'}}/>
 		<Flex>
 			<Name>{name}</Name>
 			<Mail>{mail}</Mail>
