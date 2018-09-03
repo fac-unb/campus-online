@@ -1,7 +1,17 @@
 language: node_js
 script:
 - npm run lint
-- npm run build
+- npm run run:travis
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - packages/campus-enrollment-frontend/node_modules
+    - packages/campus-enrollment-functions/node_modules
+    - packages/campus-online-frontend/node_modules
+    - packages/campus-online-functions/node_modules
+git:
+  depth: 1
 deploy:
   skip_cleanup: true
   provider: firebase

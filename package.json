@@ -6,6 +6,8 @@
     "format": "wsrun format --exclude-missing",
     "precommit": "wsrun precommit --exclude-missing",
     "test": "wsrun test --exclude-missing",
+    "run:netlify": "wsrun build campus-online-frontend campus-online-functions",
+    "run:travis": "wsrun build campus-enrollment-frontend",
     "deploy": "wsrun build 'campus-enrollment-frontend' && firebase deploy"
   },
   "private": true,
