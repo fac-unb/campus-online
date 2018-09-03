@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import {colors} from '../../constants'
 import {Heading} from '../Text'
 import Table from '../Table'
+import BottomBar from '../BottomBar'
 
 const Wrapper = styled.div`
 	margin-top: 4rem;
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	position: relative;
 `
 
 const TitleBar = styled.div`
@@ -46,6 +48,7 @@ const Main = ({students}) => (
 		<TableWrapper>
 			<Table students={students}/>
 		</TableWrapper>
+		<BottomBar/>
 	</Wrapper>
 )
 

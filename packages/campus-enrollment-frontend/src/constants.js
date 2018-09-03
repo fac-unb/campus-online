@@ -37,7 +37,7 @@ export const colors = {
 	base03: mix(0.03, base, white),
 	sucess: '#00D1B2',
 	warning: '#FFDD57',
-	danger: '#FF3860',
+	danger: '#E82222',
 }
 
 // ----------------------------------------------------
