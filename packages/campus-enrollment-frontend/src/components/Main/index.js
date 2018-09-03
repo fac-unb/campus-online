@@ -38,7 +38,7 @@ const TableWrapper = styled.div`
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
 	padding-bottom: 4.5rem;
-	${above.md`padding: 2rem 2rem 5rem;`}
+	${above.md`padding: 1rem 2rem 5rem;`}
 `
 
 const Main = ({students}) => (
