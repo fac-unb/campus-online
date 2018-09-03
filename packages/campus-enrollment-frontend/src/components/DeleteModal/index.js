@@ -59,7 +59,7 @@ const DeleteModal = ({students, ...props}) => (
 				{students.map(student => <Line key={student.mail} {...student}/>)}
 			</List>
 			<Bottom>
-				<Cancel>Cancelar</Cancel>
+				<Cancel onClick={props.onChangeVisibility}>Cancelar</Cancel>
 				<Confirm icon='trash-2'>Remover</Confirm>
 			</Bottom>
 		</Wrapper>
