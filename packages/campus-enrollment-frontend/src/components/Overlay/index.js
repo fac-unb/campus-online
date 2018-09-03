@@ -17,7 +17,7 @@ const Overlay = styled.div`
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: ${rgba(colors.base, 0.88)};
+	background: ${rgba(colors.base22, 0.66)};
 	animation: ${opacity} 250ms ease-out;
 	${p =>
 		p.onClick &&

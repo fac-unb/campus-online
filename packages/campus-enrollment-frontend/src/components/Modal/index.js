@@ -2,6 +2,7 @@ import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import {withState, branch} from 'recompose'
 import {above} from '../../utils/responsive'
+import {colors} from '../../constants'
 import Portal from '../Portal'
 import Overlay from '../Overlay'
 import Fixed from '../Fixed'
@@ -62,7 +63,7 @@ const Close = styled.div.attrs({children: '×'})`
 	top: 0;
 	margin-right: 1rem;
 	font-size: 4rem;
-	color: white;
+	color: ${colors.base88};
 	user-select: none;
 	line-height: 1;
 	z-index: 0;
