@@ -74,14 +74,14 @@ const Button = styled.div`
 	}
 `
 
-const BottomBar = ({students}) => (
+const BottomBar = ({students, onClickButton}) => (
 	<Wrapper visible={(students.length > 0)}>
 		<Main>
 			<Left>
 				<Counter>{students.length}</Counter>
 				<Title>Alunos selecionados</Title>
 			</Left>
-			<Button>
+			<Button onClick={onClickButton}>
 				<Icon size={18} strokeWidth={1.875} icon='trash-2'/>
 				<ButtonText>Remover</ButtonText>
 			</Button>

@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import {withStateHandlers} from 'recompose'
 import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
 import {Heading} from '../Text'
 import Table from '../Table'
 import BottomBar from '../BottomBar'
 import InputLine from '../InputLine'
+import DeleteModal from '../DeleteModal'
 
 const Wrapper = styled.div`
 	margin-top: 4rem;
@@ -41,7 +43,7 @@ const TableWrapper = styled.div`
 	${above.md`padding: 1rem 2rem 5rem;`}
 `
 
-const Main = ({students}) => (
+const Main = ({students, isModalVisible, toggleModal}) => (
 	<Wrapper>
 		<TitleBar>
 			<Heading color={colors.base88} size={5} weight={500}>Alunos</Heading>
@@ -51,7 +53,12 @@ const Main = ({students}) => (
 			<InputLine/>
 			<Table students={students}/>
 		</TableWrapper>
-		<BottomBar/>
+		<BottomBar onClickButton={toggleModal}/>
+		<DeleteModal
+			students={students}
+			isVisible={isModalVisible}
+			onChangeVisibility={toggleModal}
+		/>
 	</Wrapper>
 )
 
@@ -63,4 +70,9 @@ Main.defaultProps = {
 	]
 }
 
-export default Main
+const enhance = withStateHandlers(
+	{isModalVisible: false},
+	{toggleModal: ({isModalVisible}) => () => ({isModalVisible: !isModalVisible})},
+)
+
+export default enhance(Main)
