@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
 import {Heading} from '../Text'
 import Table from '../Table'
@@ -33,10 +34,11 @@ const Counter = styled.div`
 const TableWrapper = styled.div`
 	background: ${colors.white};
 	flex: 1;
-	padding: 2rem 2rem 5rem;
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
 	overflow: hidden;
+	padding-bottom: 4.5rem;
+	${above.md`padding: 2rem 2rem 5rem;`}
 `
 
 const Main = ({students}) => (
