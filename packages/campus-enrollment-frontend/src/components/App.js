@@ -1,5 +1,4 @@
 import React from 'react'
-import {Provider as RebassProvider} from 'rebass'
 import {Provider as ReduxProvider} from 'react-redux'
 import {Provider as FirebaseProvider} from './Firebase'
 import store from '../store'
@@ -16,9 +15,7 @@ export default class App extends React.Component {
 		return (
 			<ReduxProvider store={isTest && overideStore || store}>
 				<FirebaseProvider value={firebase}>
-					<RebassProvider>
-						<Home/>
-					</RebassProvider>
+					<Home/>
 				</FirebaseProvider>
 			</ReduxProvider>
 		)

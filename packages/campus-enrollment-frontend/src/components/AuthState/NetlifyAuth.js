@@ -3,7 +3,7 @@ import {login, logout} from '../../reducers/auth'
 
 const config = {
 	url: 'https://app.netlify.com/authorize',
-	client: '07b77d90049181febc5fd7b52d9a873700248ee99bdb1ba594f7853b878e3c3e',
+	client: '3905bdb7e9bb641c2e5a5a8ae4b845e9a6181dcb2e8ee6337e226e11593a1325',
 	redirect: window.location.href,
 	width: 512, // Width, in pixels, of popup window. Optional, default: 400
 	height: 400 // Height, in pixels, of popup window. Optional, default: 400
