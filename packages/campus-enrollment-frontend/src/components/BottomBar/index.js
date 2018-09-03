@@ -9,7 +9,6 @@ const Wrapper = styled.div`
 	width: 100%;
 	bottom: 0;
 	display: flex;
-	padding: 0 1rem;
 	align-items: center;
 	justify-content: center;
 	user-select: none;
@@ -18,16 +17,16 @@ const Wrapper = styled.div`
 `
 
 const Main = styled.div`
-	max-width: 42rem;
+	position: fixed;
+	bottom: 0;
+	padding: 0 2rem;
+	max-width: 44rem;
 	margin-top: 4rem;
 	display: flex;
 	flex: 1;
 	align-items: stretch;
 	color: ${colors.white};
 	width: 100%;
-	overflow: hidden;
-	border-top-left-radius: 0.375rem;
-	border-top-right-radius: 0.375rem;
 `
 
 const Left = styled.div`
@@ -35,6 +34,7 @@ const Left = styled.div`
 	display: flex;
 	align-items: center;
 	flex: 1;
+	border-top-left-radius: 0.375rem;
 `
 
 const Counter = styled.div`
@@ -66,6 +66,7 @@ const Button = styled.div`
 	align-items: center;
 	padding: 0.75rem;
 	cursor: pointer;
+	border-top-right-radius: 0.375rem;
 	:hover{
 		${ButtonText}{
 			display: block;

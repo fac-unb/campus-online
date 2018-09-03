@@ -33,7 +33,7 @@ const Counter = styled.div`
 const TableWrapper = styled.div`
 	background: ${colors.white};
 	flex: 1;
-	padding: 2rem 2rem 4rem;
+	padding: 2rem 2rem 5rem;
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
 	overflow: hidden;
