@@ -35,6 +35,7 @@ export const colors = {
 	base11: mix(0.11, base, white),
 	base06: mix(0.06, base, white),
 	base03: mix(0.03, base, white),
+	blue: '#26BBF0',
 	sucess: '#00D1B2',
 	warning: '#FFDD57',
 	danger: '#E82222',
