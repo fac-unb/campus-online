@@ -5,6 +5,7 @@ import {colors} from '../../constants'
 import {Heading} from '../Text'
 import Table from '../Table'
 import BottomBar from '../BottomBar'
+import InputLine from '../InputLine'
 
 const Wrapper = styled.div`
 	margin-top: 4rem;
@@ -47,6 +48,7 @@ const Main = ({students}) => (
 			<Counter>{students.length}</Counter>
 		</TitleBar>
 		<TableWrapper>
+			<InputLine/>
 			<Table students={students}/>
 		</TableWrapper>
 		<BottomBar/>
