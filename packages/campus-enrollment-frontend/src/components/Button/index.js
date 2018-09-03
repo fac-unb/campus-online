@@ -30,8 +30,8 @@ const Main = styled.div`
 	${p => p.icon && `margin-right: 0.375rem`}
 `
 
-const Button = ({children, icon}) => (
-	<Wrapper>
+const Button = ({children, icon, ...props}) => (
+	<Wrapper {...props}>
 		{children && <Main icon={!!icon}>{children}</Main>}
 		{icon && <Icon size={14} strokeWidth={2.5} icon={icon}/>}
 	</Wrapper>
