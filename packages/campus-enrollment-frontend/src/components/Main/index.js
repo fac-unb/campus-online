@@ -36,7 +36,6 @@ const TableWrapper = styled.div`
 	flex: 1;
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
-	overflow: hidden;
 	padding-bottom: 4.5rem;
 	${above.md`padding: 2rem 2rem 5rem;`}
 `
