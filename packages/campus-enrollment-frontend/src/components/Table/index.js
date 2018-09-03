@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const Table = ({students}) => (
 	<Wrapper>
 		<Separator/>
-		{students.map(student => <Line {...student}/>)}
+		{students.map(student => <Line key={student.mail} {...student}/>)}
 	</Wrapper>
 )
 
