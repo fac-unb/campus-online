@@ -33,7 +33,7 @@ const Cancel = styled(Button)`
 	border: 0;
 	background: ${colors.white}
 	color: ${colors.base44};
-	:hover{
+	:hover, :focus{
 		background: ${colors.white};
 		color: ${colors.base88};
 	}
@@ -46,7 +46,7 @@ const Confirm = styled(Button)`
 	border: 0;
 	color: ${colors.white};
 	background: ${colors.danger};
-	:hover{
+	:hover, :focus{
 		background: ${colors.danger};
 	}
 `
