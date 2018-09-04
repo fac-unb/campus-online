@@ -8,6 +8,7 @@ import Table from '../Table'
 import BottomBar from '../BottomBar'
 import InputLine from '../InputLine'
 import DeleteModal from '../DeleteModal'
+import EmptyState from '../EmptyState'
 
 const Wrapper = styled.div`
 	margin-top: 4rem;
@@ -51,7 +52,10 @@ const Main = ({students, isModalVisible, toggleModal}) => (
 		</TitleBar>
 		<TableWrapper>
 			<InputLine/>
-			<Table students={students}/>
+			{students.length > 0
+				? <Table students={students}/>
+				: <EmptyState/>
+			}
 		</TableWrapper>
 		<BottomBar onClickButton={toggleModal}/>
 		<DeleteModal
