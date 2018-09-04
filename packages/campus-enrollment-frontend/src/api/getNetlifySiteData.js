@@ -1,3 +1,4 @@
+import invariant from 'invariant'
 import firebase from '../firebase'
 import {netlifyApi as http} from './http'
 
@@ -12,6 +13,7 @@ const getNetlifySubdomainFromFirebase = async () => {
 }
 
 const getNetlifySiteData = async ({token}) => {
+	invariant(token, 'getNetlifySiteData: missing token')
 	const subdomain = await getNetlifySubdomainFromFirebase()
 	const {site_id: siteId, identity_instance_id: identityId} = await http.get(
 		`/sites/${subdomain}.netlify.com`, {auth: {token}},
