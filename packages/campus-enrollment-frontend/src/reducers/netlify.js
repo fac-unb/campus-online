@@ -1,5 +1,4 @@
 import {createAction, handleActions} from 'redux-actions'
-import firebase from '../firebase'
 import * as api from '../api'
 
 // [PRIVATE_ACTIONS]
@@ -18,19 +17,29 @@ export default handleActions({
 	[clear]:   () => ({}),
 }, {})
 
+// [PRIVATE_THUNKS]
+const loadSiteData = () => async (dispatch, getState) => {
+	const {auth: {token}, netlify: {isLoading}} = getState()
+	if(isLoading || !token) return
+	dispatch(loading())
+	try{
+		const data = await api.getNetlifySiteData({token})
+		if(token === getState().auth.token) dispatch(replace(data))
+	}catch({message}){
+		if(token === getState().auth.token) dispatch(error(message))
+	}
+}
+
 // [MIDDLEWARE]
-export const middleware = store => {
-	firebase.auth().onAuthStateChanged(
-		async user => {
-			if(!user) return store.dispatch(clear())
-			store.dispatch(loading())
-			try{
-				const {auth: {token}} = store.getState()
-				store.dispatch(replace(await api.getNetlifySiteData({token})))
-			}catch({message}){
-				store.dispatch(error(message))
-			}
-		}
-	)
-	return next => action => next(action)
+export const middleware = ({dispatch, getState}) => {
+	// reason for setTimeout: https://github.com/reduxjs/redux/issues/1240
+	setTimeout(() => loadSiteData()(dispatch, getState))
+	return next => async action => {
+		const {auth: {token: token1}} = getState()
+		next(action)
+		const {auth: {token: token2}} = getState()
+		if(token1 && !token2) return dispatch(clear())
+		if(token1 === token2 || !token2) return
+		loadSiteData()(dispatch, getState)
+	}
 }
