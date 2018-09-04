@@ -71,6 +71,9 @@ const Main = ({students, isModalVisible, toggleModal}) => (
 
 Main.defaultProps = {
 	students: [
+		{name: 'Vitor Dino1', mail: 'vitor@dino1.com', date: '12/12/2017'},
+		{name: 'Vitor Dino2', mail: 'vitor@dino2.com', date: '12/12/2017'},
+		{name: 'Vitor Dino3', mail: 'vitor@dino3.com', date: '12/12/2017'},
 	]
 }
 

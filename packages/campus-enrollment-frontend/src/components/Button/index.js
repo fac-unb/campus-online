@@ -22,7 +22,7 @@ const Wrapper = styled.button`
 	}
 `
 
-const Main = styled.div`
+const Main = styled(({icon, ...props}) => <div {...props}/>)`
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	font-weight: 700;
