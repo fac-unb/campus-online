@@ -1,4 +1,5 @@
-const API_URL = 'https://us-east1-campus-unb.cloudfunctions.net'
+const FIREBASE_FUNCTIONS_URL = 'https://us-east1-campus-unb.cloudfunctions.net'
+const NETLIFY_API_URL = 'https://api.netlify.com/api/v1'
 
 const headersByMethod = {
 	'HEAD': {},
@@ -14,7 +15,7 @@ const headersByMethod = {
 const isString = value => typeof value === 'string'
 const JSONEncode = body => isString(body) ? body : JSON.stringify(body)
 
-const api = Object.keys(headersByMethod).reduce((api, method) => {
+const createApi = url => Object.keys(headersByMethod).reduce((api, method) => {
 	api[method.toLowerCase()] = async (path, {auth, raw, ...options} = {}) => {
 		if(typeof path !== 'string') throw new Error(`api.${method}: Missing Path`)
 		const body = JSONEncode(options.body)
@@ -23,7 +24,7 @@ const api = Object.keys(headersByMethod).reduce((api, method) => {
 			...options.headers,
 			...createAuth(auth),
 		})
-		const {href} = new URL(path, API_URL)
+		const {href} = new URL(path, url)
 		const response = await fetch(href, {...options, method, headers, body})
 		if(raw) return response
 		let json = {}
@@ -42,7 +43,8 @@ const api = Object.keys(headersByMethod).reduce((api, method) => {
 	return api
 }, {})
 
-export default api
+export const firebaseFunctions = createApi(FIREBASE_FUNCTIONS_URL)
+export const netlifyApi = createApi(NETLIFY_API_URL)
 
 const createAuth = ({username, password, token} = {}) => {
 	const key = 'Authorization'
