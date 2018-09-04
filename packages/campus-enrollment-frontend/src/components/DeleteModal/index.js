@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import {colors} from '../../constants'
 import {Heading} from '../Text'
 import Modal from '../Modal'
@@ -51,12 +52,12 @@ const Confirm = styled(Button)`
 	}
 `
 
-const DeleteModal = ({students, ...props}) => (
+const DeleteModal = ({selectedIds = [], ...props}) => (
 	<Modal style={{overflow: 'hidden'}} {...props}>
 		<Wrapper>
 			<Title size={3} weight={600}>Deseja remover os seguintes alunos?</Title>
 			<List>
-				{students.map(student => <Line key={student.mail} {...student}/>)}
+				{selectedIds.map(id => <Line key={id} id={id}/>)}
 			</List>
 			<Bottom>
 				<Cancel onClick={props.onChangeVisibility}>Cancelar</Cancel>
@@ -66,4 +67,7 @@ const DeleteModal = ({students, ...props}) => (
 	</Modal>
 )
 
-export default DeleteModal
+const mapStateToProps = ({students}) => ({selectedIds: students.selectedIds})
+const enhance = connect(mapStateToProps, null)
+
+export default enhance(DeleteModal)

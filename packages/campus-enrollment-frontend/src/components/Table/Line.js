@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
+import {toggle} from '../../reducers/students'
 import Checkbox from '../Checkbox'
 
 const Wrapper = styled.div`
@@ -10,6 +12,12 @@ const Wrapper = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 0 0.5rem;
+	${p => !p.disabled && `
+		cursor: pointer;
+		&:hover {
+			background-color: ${colors.base03};
+		}
+	`}
 `
 
 const Flex = styled.div`
@@ -40,15 +48,26 @@ const When = styled.div`
 	${above.md`padding: 1rem 0.5rem;`}
 `
 
-const Line = ({name, mail, date}) => (
-	<Wrapper>
-		<Checkbox style={{marginLeft: '0.5rem'}}/>
+const Line = ({name, email, date, selected, toggle}) => (
+	<Wrapper onClick={toggle}>
+		<Checkbox checked={selected} style={{marginLeft: '0.5rem'}}/>
 		<Flex>
 			<Name>{name}</Name>
-			<Mail>{mail}</Mail>
-			<When>{date}</When>
+			<Mail>{email}</Mail>
+			<When>{(new Date(date)).toLocaleDateString('pt-BR')}</When>
 		</Flex>
 	</Wrapper>
 )
 
-export default Line
+const mapStateToProps = ({students}, {id}) => ({
+	...students.byId[id],
+	selected: students.selectedIds.includes(id),
+})
+
+const mapDispatchToProps = (dispatch, {id}) => ({
+	toggle: () => dispatch(toggle(id)),
+})
+
+const enhance = connect(mapStateToProps, mapDispatchToProps)
+
+export default enhance(Line)

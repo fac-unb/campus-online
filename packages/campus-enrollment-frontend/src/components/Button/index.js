@@ -22,7 +22,10 @@ const Wrapper = styled.button`
 	}
 `
 
-const Main = styled(({icon, ...props}) => <div {...props}/>)`
+const Main = styled(
+	// eslint-disable-next-line no-unused-vars
+	({icon, ...props}) => <div {...props}/>
+)`
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	font-weight: 700;

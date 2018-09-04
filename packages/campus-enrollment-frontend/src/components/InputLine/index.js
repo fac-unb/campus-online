@@ -33,7 +33,7 @@ const InputLine = () => (
 				style={{fontWeight: 600}}
 			/>
 			<Input
-				name='mail'
+				name='email'
 				type='email'
 				placeholder='Email'
 			/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import {colors} from '../../constants'
 
 const Wrapper = styled.div`
@@ -15,15 +16,22 @@ const Name = styled.div`
 	font-weight: 600;
 `
 
-const Mail = styled.div`
+const Email = styled.div`
 	color: ${colors.base66};
 `
 
-const DeleteLine = ({name, mail}) => (
+const DeleteLine = ({name, email}) => (
 	<Wrapper>
 		<Name>{name}</Name>
-		<Mail>{mail}</Mail>
+		<Email>{email}</Email>
 	</Wrapper>
 )
 
-export default DeleteLine
+const mapStateToProps = ({students}, {id}) => ({
+	...students.byId[id],
+	selected: students.selectedIds.includes(id),
+})
+
+const enhace = connect(mapStateToProps, null)
+
+export default enhace(DeleteLine)

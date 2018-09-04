@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import {colors} from '../../constants'
 import Icon from '../Icon'
 
@@ -12,8 +13,6 @@ const Wrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 	user-select: none;
-	transition: 0.3s all;
-	${p => !p.visible && `transform: translateY(100%);`}
 `
 
 const Main = styled.div`
@@ -27,6 +26,8 @@ const Main = styled.div`
 	align-items: stretch;
 	color: ${colors.white};
 	width: 100%;
+	transition: 0.3s all;
+	transform: ${p => p.visible ? 'none' : 'translateY(100%)'};
 `
 
 const Left = styled.div`
@@ -74,12 +75,17 @@ const Button = styled.div`
 	}
 `
 
-const BottomBar = ({students, onClickButton}) => (
-	<Wrapper visible={(students.length > 0)}>
-		<Main>
+const BottomBar = ({selectedStudentCount, onClickButton}) => (
+	<Wrapper>
+		<Main visible={!!selectedStudentCount}>
 			<Left>
-				<Counter>{students.length}</Counter>
-				<Title>Alunos selecionados</Title>
+				<Counter>{selectedStudentCount || 1}</Counter>
+				<Title>
+					{selectedStudentCount > 1
+						? 'Alunos selecionados'
+						: 'Aluno selecionado'
+					}
+				</Title>
 			</Left>
 			<Button onClick={onClickButton}>
 				<Icon size={18} strokeWidth={1.875} icon='trash-2'/>
@@ -89,12 +95,10 @@ const BottomBar = ({students, onClickButton}) => (
 	</Wrapper>
 )
 
-BottomBar.defaultProps = {
-	students: [
-		{name: 'Vitor Dino', mail: 'vitor@dino.com', date: '12/12/2017'},
-		{name: 'Vitor Dino', mail: 'vitor@dino.com', date: '12/12/2017'},
-		{name: 'Vitor Dino', mail: 'vitor@dino.com', date: '12/12/2017'},
-	]
-}
+const mapStateToProps = ({students}) => ({
+	selectedStudentCount: students.selectedIds.length,
+})
 
-export default BottomBar
+const enhance = connect(mapStateToProps, null)
+
+export default enhance(BottomBar)

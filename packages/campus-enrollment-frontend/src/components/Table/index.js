@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import {colors} from '../../constants'
-import Separator from '../Separator'
+// import Separator from './Separator'
 import Line from './Line'
 
 const Wrapper = styled.div`
@@ -11,11 +12,14 @@ const Wrapper = styled.div`
 	border-top: 1px solid ${colors.base11}
 `
 
-const Table = ({students}) => (
+// [TODO]: implement separators
+const Table = ({studentIds = []}) => (
 	<Wrapper>
-		<Separator/>
-		{students.map(student => <Line key={student.mail} {...student}/>)}
+		{studentIds.map(id => <Line key={id} id={id}/>)}
 	</Wrapper>
 )
 
-export default Table
+const mapStateToProps = ({students}) => ({studentIds: students.allIds})
+const enhance = connect(mapStateToProps, null)
+
+export default enhance(Table)
