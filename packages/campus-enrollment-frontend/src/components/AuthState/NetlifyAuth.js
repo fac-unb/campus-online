@@ -1,6 +1,7 @@
 import {connect} from 'react-redux'
 import {login, logout} from '../../reducers/auth'
 
+/* globals process */
 const config = {
 	url: 'https://app.netlify.com/authorize',
 	client: process.env.REACT_APP_NETLIFY_CLIENT_ID,

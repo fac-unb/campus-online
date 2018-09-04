@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
 import Icon from '../Icon'
 import Input from '../Input'
