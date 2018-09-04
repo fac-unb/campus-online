@@ -24,7 +24,10 @@ const createApi = url => Object.keys(headersByMethod).reduce((api, method) => {
 			...options.headers,
 			...createAuth(auth),
 		})
-		const {href} = new URL(path, url)
+		const {href} = new URL(
+			path.replace(/^\//, ''),
+			url.replace(/([^/])$/, '$1/'),
+		)
 		const response = await fetch(href, {...options, method, headers, body})
 		if(raw) return response
 		let json = {}
