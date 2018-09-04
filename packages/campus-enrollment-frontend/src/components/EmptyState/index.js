@@ -10,10 +10,7 @@ const Wrapper = styled.div`
 	border-top: 2px dashed ${colors.base11};
 	border-bottom: 2px dashed ${colors.base11};
 	${above.md`
-		margin-top: 0.5rem;
 		padding: 2rem 1.5rem;
-		border: 2px dashed ${colors.base11};
-		border-radius: 0.5rem;
 	`}
 `
 

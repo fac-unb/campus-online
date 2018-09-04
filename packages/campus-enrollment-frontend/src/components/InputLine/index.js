@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import {above} from '../../utils/responsive'
+import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
 import Icon from '../Icon'
 import Input from '../Input'
@@ -9,7 +9,7 @@ import Button from '../Button'
 const Wrapper = styled.form`
 	display: flex;
 	align-items: center;
-	padding: 1rem 0;
+	padding: 1rem 0.5rem;
 `
 
 const Main = styled.div`
@@ -38,7 +38,9 @@ const InputLine = () => (
 				type='email'
 				placeholder='Email'
 			/>
-			<Button icon='corner-down-left'>Adicionar</Button>
+			<Button icon='corner-down-left' style={{marginRight: '0.25rem'}}>
+				Adicionar
+			</Button>
 		</Main>
 	</Wrapper>
 )

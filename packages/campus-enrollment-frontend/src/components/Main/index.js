@@ -38,10 +38,13 @@ const Counter = styled.div`
 const TableWrapper = styled.div`
 	background: ${colors.white};
 	flex: 1;
-	border-top-left-radius: 0.25rem;
-	border-top-right-radius: 0.25rem;
 	padding-bottom: 4.5rem;
-	${above.md`padding: 1rem 2rem 5rem;`}
+	margin: 0 -1rem;
+	${above.md`
+		margin: 0;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+	`}
 `
 
 const Main = ({students, isModalVisible, toggleModal}) => (
@@ -68,9 +71,6 @@ const Main = ({students, isModalVisible, toggleModal}) => (
 
 Main.defaultProps = {
 	students: [
-		{name: 'Vitor Dino', mail: 'vitor@dino.com', date: '12/12/2017'},
-		{name: 'Vitor Dino', mail: 'vitor@dino.com', date: '12/12/2017'},
-		{name: 'Vitor Dino', mail: 'vitor@dino.com', date: '12/12/2017'},
 	]
 }
 

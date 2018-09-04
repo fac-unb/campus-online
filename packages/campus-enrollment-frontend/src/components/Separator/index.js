@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.5rem;
+	padding: 0.5rem 1rem;
 	box-shadow: 0 1px 0 0 ${colors.base11}, 0 -1px 0 0 ${colors.base11};
 	position: sticky;
 	top: 0;

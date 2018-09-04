@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 	border-bottom: 1px solid ${colors.base11};
 	display: flex;
 	align-items: center;
+	padding: 0 0.5rem;
 `
 
 const Flex = styled.div`
