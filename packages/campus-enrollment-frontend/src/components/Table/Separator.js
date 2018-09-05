@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import {connect} from 'react-redux'
 import {colors} from '../../constants'
+import {select, unselect} from '../../reducers/students'
 import Checkbox from '../Checkbox'
 
 const Wrapper = styled.div`
@@ -12,6 +14,9 @@ const Wrapper = styled.div`
 	box-shadow: 0 1px 0 0 ${colors.base11}, 0 -1px 0 0 ${colors.base11};
 	position: sticky;
 	top: 0;
+	${p => !p.disabled && `
+		cursor: pointer;
+	`}
 `
 
 const Left = styled.div`
@@ -38,15 +43,31 @@ const Counter = styled.div`
 	border-radius: 0.125rem
 `
 
-
-const Separator = () => (
-	<Wrapper>
+const Separator = ({children, counter, checked, toggle}) => (
+	<Wrapper onClick={toggle}>
 		<Left>
-			<Checkbox/>
-			<Title>6 Meses atrás</Title>
+			<Checkbox checked={checked}/>
+			<Title>{children}</Title>
 		</Left>
-		<Counter>1/32</Counter>
+		{counter && <Counter>{counter}</Counter>}
 	</Wrapper>
 )
 
-export default Separator
+const mapStateToProps = ({students: {selectedIds}}, {studentIds}) => {
+	const selectedCount = studentIds.filter(id => selectedIds.includes(id)).length
+	return {
+		counter: selectedCount ? `${selectedCount}/${studentIds.length}` : null,
+		checked: selectedCount === studentIds.length,
+	}
+}
+
+const mapDispatchToProps = {select, unselect}
+
+const mergeProps = ({counter, checked}, {select, unselect}, props) => ({
+	children: props.children, counter, checked,
+	toggle: () => (checked ? unselect : select)(props.studentIds),
+})
+
+const enhance = connect(mapStateToProps, mapDispatchToProps, mergeProps)
+
+export default enhance(Separator)

@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {connect} from 'react-redux'
 import {colors} from '../../constants'
-// import Separator from './Separator'
+import timesince from '../../utils/timesince'
+import Separator from './Separator'
 import Line from './Line'
 
 const Wrapper = styled.div`
@@ -13,13 +14,28 @@ const Wrapper = styled.div`
 `
 
 // [TODO]: implement separators
-const Table = ({studentIds = []}) => (
+const Table = ({groups = {}}) => (
 	<Wrapper>
-		{studentIds.map(id => <Line key={id} id={id}/>)}
+		{Object.keys(groups).map(title => (
+			<React.Fragment key={title}>
+				<Separator studentIds={groups[title]}>{title}</Separator>
+				{groups[title].map(id => <Line key={id} id={id}/>)}
+			</React.Fragment>
+		))}
 	</Wrapper>
 )
 
-const mapStateToProps = ({students}) => ({studentIds: students.allIds})
+const mapStateToProps = ({students}) => ({
+	// this assumes allIds is ordered by descending date
+	groups: students.allIds
+		.reduce((obj, id) => {
+			const {date} = students.byId[id] || {}
+			if(!date) return obj
+			const title = timesince()(date)
+			return {...obj, [title]: [...(obj[title] || []), id]}
+		}, {})
+})
+
 const enhance = connect(mapStateToProps, null)
 
 export default enhance(Table)
