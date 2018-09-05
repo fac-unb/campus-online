@@ -4,8 +4,9 @@ import * as api from '../api'
 import * as netlify from './netlify'
 
 const castArray = v => Array.isArray(v) ? v : [v]
+const castList = v => v ? castArray(v) : []
 const getSortedByDateArray = byId => Object.keys(byId).sort(
-	(a, b) => new Date(byId[a].date) - new Date(byId[b].date)
+	(a, b) => new Date(byId[b].date) - new Date(byId[a].date)
 )
 
 const uniq = array => [...new Set(castArray(array))]
@@ -17,10 +18,10 @@ const initialState = {...idleState, isWaiting: true}
 
 // [ACTIONS]
 export const fetching = createAction('enrollment/students/fetching')
-export const receive  = createAction('enrollment/students/receive')
+export const receive  = createAction('enrollment/students/receive', castList)
 export const error    = createAction('enrollment/students/error')
-export const select   = createAction('enrollment/students/select')
-export const unselect = createAction('enrollment/students/unselect')
+export const select   = createAction('enrollment/students/select', castList)
+export const unselect = createAction('enrollment/students/unselect', castList)
 export const toggle   = createAction('enrollment/students/toggle')
 
 // [REDUCER]
@@ -29,8 +30,8 @@ const reducer = handleActions({
 	[netlify.error]: () => idleState,
 	[netlify.clear]: () => initialState,
 	[error]:         (state, {payload}) => ({...idleState, error: payload}),
-	[receive]:       (state, {payload}) => {
-		const students = castArray(payload || []).reduce(
+	[receive]:       (state, {payload: ids}) => {
+		const students = ids.reduce(
 			(obj, item) => (item || {}).id ? ({...obj, [item.id]: item}) : obj, {},
 		)
 		const byId = {...state.byId, ...students}
@@ -38,11 +39,11 @@ const reducer = handleActions({
 		const selectedIds = uniqSect(state.selectedIds, allIds)
 		return {...state, byId, allIds, selectedIds}
 	},
-	[select]: ({selectedIds, ...state}, {payload: id}) => ({...state,
-		selectedIds: uniqSect([...selectedIds, id], state.allIds),
+	[select]: ({selectedIds, ...state}, {payload: ids}) => ({...state,
+		selectedIds: uniqSect([...selectedIds, ...ids], state.allIds),
 	}),
-	[unselect]: ({selectedIds, ...state}, {payload: id}) => ({...state,
-		selectedIds: uniqSect(selectedIds.filter(a => a !== id), state.allIds),
+	[unselect]: ({selectedIds: selected, ...state}, {payload: ids}) => ({...state,
+		selectedIds: uniqSect(selected.filter(a => !ids.includes(a)), state.allIds),
 	}),
 	[toggle]: (state, {payload: id}) => (
 		reducer(state, state.selectedIds.includes(id) ? unselect(id) : select(id))
