@@ -31,6 +31,7 @@ const Main = styled(
 	font-weight: 700;
 	letter-spacing: 0.025rem;
 	${p => p.icon && `margin-right: 0.375rem`}
+	flex: 1;
 `
 
 const Button = ({children, icon, ...props}) => (

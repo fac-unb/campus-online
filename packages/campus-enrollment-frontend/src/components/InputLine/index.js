@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import {colors} from '../../constants'
-import Icon from '../Icon'
+import BaseIcon from '../Icon'
 import Input from '../Input'
-import Button from '../Button'
+import BaseButton from '../Button'
 
 const Wrapper = styled.form`
 	display: flex;
 	align-items: center;
-	padding: 1rem 0.5rem;
+	justify-content: space-between;
+	padding: 0.75rem;
 `
 
 const Main = styled.div`
@@ -17,29 +18,16 @@ const Main = styled.div`
 	justify-content: space-between;
 `
 
+const Icon = styled(BaseIcon)`margin-left: 0.25rem; margin-right: 0.75rem;`
+const AddButton = styled(BaseButton)`min-width: 7.5rem;`
+
 const InputLine = () => (
 	<Wrapper>
-		<Icon
-			icon='user-plus'
-			size={16}
-			color={colors.base66}
-			style={{margin: '0.5rem'}}
-		/>
+		<Icon icon='user-plus' size={16} color={colors.base66}/>
 		<Main>
-			<Input
-				name='name'
-				type='text'
-				placeholder='Nome'
-				style={{fontWeight: 600}}
-			/>
-			<Input
-				name='email'
-				type='email'
-				placeholder='Email'
-			/>
-			<Button icon='corner-down-left' style={{marginRight: '0.25rem'}}>
-				Adicionar
-			</Button>
+			<Input name='name' placeholder='Nome' style={{fontWeight: 600}}/>
+			<Input name='email' type='email' placeholder='Email'/>
+			<AddButton type='submit' icon='corner-down-left'>Adicionar</AddButton>
 		</Main>
 	</Wrapper>
 )

@@ -4,14 +4,13 @@ import {connect} from 'react-redux'
 import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import {toggle} from '../../reducers/students'
-import Checkbox from '../Checkbox'
+import BaseCheckbox from '../Checkbox'
 
 const Wrapper = styled.div`
 	line-height: 1.5rem;
 	border-bottom: 1px solid ${colors.base11};
 	display: flex;
 	align-items: center;
-	padding: 0 0.5rem;
 	${p => !p.disabled && `
 		cursor: pointer;
 		&:hover {
@@ -20,10 +19,15 @@ const Wrapper = styled.div`
 	`}
 `
 
+const Checkbox = styled(BaseCheckbox)`
+	margin-left: 1rem;
+	margin-right: 0.25rem;
+`
+
 const Flex = styled.div`
-	padding: 0.5rem;
+	padding: 0.75rem;
 	${above.md`
-		padding: 0;
+		padding: 1rem 0.75rem;
 		flex: 1;
 		display: flex;
 		align-items: center;
@@ -33,24 +37,28 @@ const Flex = styled.div`
 
 const Name = styled.div`
 	font-weight: 600;
-	${above.md`padding: 1rem 0.5rem;`}
+	${above.md`flex: 1 0;`}
 `
 
 const Mail = styled.div`
 	color: ${colors.base88};
-	${above.md`padding: 1rem 0.5rem;`}
+	${above.md`flex: 1 0;`}
 `
 
 const When = styled.div`
 	font-size: 0.875rem;
 	font-weight: 500;
 	color: ${colors.base44};
-	${above.md`padding: 1rem 0.5rem;`}
+	${above.md`
+		flex: 0 0;
+		text-align: right;
+		min-width: 7.5rem;
+	`}
 `
 
 const Line = ({name, email, date, selected, toggle}) => (
 	<Wrapper onClick={toggle}>
-		<Checkbox checked={selected} style={{marginLeft: '0.5rem'}}/>
+		<Checkbox checked={selected}/>
 		<Flex>
 			<Name>{name}</Name>
 			<Mail>{email}</Mail>
