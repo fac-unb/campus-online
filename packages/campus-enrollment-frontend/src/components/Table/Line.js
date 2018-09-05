@@ -56,8 +56,8 @@ const When = styled.div`
 	`}
 `
 
-const Line = ({name, email, date, selected, toggle}) => (
-	<Wrapper onClick={toggle}>
+const Line = ({name, email, date, selected, loading, toggle}) => (
+	<Wrapper disabled={loading} onClick={toggle}>
 		<Checkbox checked={selected}/>
 		<Flex>
 			<Name>{name}</Name>

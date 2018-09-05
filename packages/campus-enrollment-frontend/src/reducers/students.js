@@ -23,6 +23,16 @@ export const error    = createAction('enrollment/students/error')
 export const select   = createAction('enrollment/students/select', castList)
 export const unselect = createAction('enrollment/students/unselect', castList)
 export const toggle   = createAction('enrollment/students/toggle')
+export const loading  = createAction('enrollment/students/loading')
+export const invite   = ({email, name} = {}) => async dispatch => {
+	try{
+		const date = (new Date()).toISOString()
+		dispatch(loading({email, name, date}))
+		await api.inviteStudent({email, name})
+	}catch({message}){
+		dispatch(error(message))
+	}
+}
 
 // [REDUCER]
 const reducer = handleActions({
@@ -38,6 +48,11 @@ const reducer = handleActions({
 		const allIds = getSortedByDateArray(byId)
 		const selectedIds = uniqSect(state.selectedIds, allIds)
 		return {...state, byId, allIds, selectedIds}
+	},
+	[loading]: (state, {payload: {email, name, date}}) => {
+		const byId = {...state.byId, [email]: {email, name, date, loading: true}}
+		const allIds = getSortedByDateArray(byId)
+		return {...state, byId, allIds}
 	},
 	[select]: ({selectedIds, ...state}, {payload: ids}) => ({...state,
 		selectedIds: uniqSect([...selectedIds, ...ids], state.allIds),
