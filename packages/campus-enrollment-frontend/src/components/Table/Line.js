@@ -11,7 +11,9 @@ const Wrapper = styled.div`
 	border-bottom: 1px solid ${colors.base11};
 	display: flex;
 	align-items: center;
+	opacity: 0.66;
 	${p => !p.disabled && `
+		opacity: 1;
 		cursor: pointer;
 		&:hover {
 			background-color: ${colors.base03};
@@ -56,9 +58,9 @@ const When = styled.div`
 	`}
 `
 
-const Line = ({name, email, date, selected, loading, toggle}) => (
-	<Wrapper disabled={loading} onClick={toggle}>
-		<Checkbox checked={selected}/>
+const Line = ({name, email, date, selected, disabled, toggle}) => (
+	<Wrapper disabled={disabled} onClick={toggle}>
+		<Checkbox disabled={disabled} checked={selected}/>
 		<Flex>
 			<Name>{name}</Name>
 			<Mail>{email}</Mail>
@@ -70,6 +72,7 @@ const Line = ({name, email, date, selected, loading, toggle}) => (
 const mapStateToProps = ({students}, {id}) => ({
 	...students.byId[id],
 	selected: students.selectedIds.includes(id),
+	disabled: !!students.byId[id].loading,
 })
 
 const mapDispatchToProps = (dispatch, {id}) => ({

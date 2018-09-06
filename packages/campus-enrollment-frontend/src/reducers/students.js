@@ -55,10 +55,16 @@ const reducer = handleActions({
 		return {...state, byId, allIds}
 	},
 	[select]: ({selectedIds, ...state}, {payload: ids}) => ({...state,
-		selectedIds: uniqSect([...selectedIds, ...ids], state.allIds),
+		selectedIds: uniqSect(
+			[...selectedIds, ...ids],
+			state.allIds,
+		).filter(id => state.byId[id].id),
 	}),
 	[unselect]: ({selectedIds: selected, ...state}, {payload: ids}) => ({...state,
-		selectedIds: uniqSect(selected.filter(a => !ids.includes(a)), state.allIds),
+		selectedIds: uniqSect(
+			selected.filter(a => !ids.includes(a)),
+			state.allIds,
+		).filter(id => state.byId[id].id)
 	}),
 	[toggle]: (state, {payload: id}) => (
 		reducer(state, state.selectedIds.includes(id) ? unselect(id) : select(id))
