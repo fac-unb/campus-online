@@ -11,13 +11,19 @@ const Wrapper = styled.div`
 	border-bottom: 1px solid ${colors.base11};
 	display: flex;
 	align-items: center;
-	opacity: 0.66;
-	${p => !p.disabled && `
-		opacity: 1;
-		cursor: pointer;
-		&:hover {
-			background-color: ${colors.base03};
-		}
+	opacity: 1;
+	cursor: pointer;
+	&:hover {
+		background-color: ${colors.base03};
+	}
+	${p => p.disabled && `
+		opacity: 0.66;
+		pointer-events: none;
+	`}
+	${p => p.deleting && `
+		opacity: 0.44;
+		text-decoration: line-through;
+		text-decoration-color: ${colors.danger};
 	`}
 `
 
@@ -58,8 +64,8 @@ const When = styled.div`
 	`}
 `
 
-const Line = ({name, email, date, selected, disabled, toggle}) => (
-	<Wrapper disabled={disabled} onClick={toggle}>
+const Line = ({name, email, date, selected, disabled, deleting, toggle}) => (
+	<Wrapper disabled={disabled} deleting={deleting} onClick={toggle}>
 		<Checkbox disabled={disabled} checked={selected}/>
 		<Flex>
 			<Name>{name}</Name>
@@ -72,7 +78,8 @@ const Line = ({name, email, date, selected, disabled, toggle}) => (
 const mapStateToProps = ({students}, {id}) => ({
 	...students.byId[id],
 	selected: students.selectedIds.includes(id),
-	disabled: !!students.byId[id].loading,
+	disabled: !!(students.byId[id].loading || students.byId[id].retiring),
+	deleting: !!students.byId[id].retiring,
 })
 
 const mapDispatchToProps = (dispatch, {id}) => ({

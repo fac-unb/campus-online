@@ -1,5 +1,4 @@
 import {createAction, handleActions} from 'redux-actions'
-import {compose} from 'recompose'
 import * as api from '../api'
 import * as netlify from './netlify'
 
@@ -9,12 +8,20 @@ const getSortedByDateArray = byId => Object.keys(byId).sort(
 	(a, b) => new Date(byId[b].date) - new Date(byId[a].date)
 )
 
-const uniq = array => [...new Set(castArray(array))]
-const intersect = (array1, array2) => array1.filter(x => array2.includes(x))
-const uniqSect = compose(uniq, intersect)
+const isSelectable = ({byId, allIds}) => (id, index, array) => {
+	if(!allIds.includes(id)) return false
+	if(array.indexOf(id) !== index) return false
+	const student = byId[id]
+	if(!student) return false
+	if(!student.id) return false
+	if(student.loading) return false
+	if(student.retiring) return false
+	return true
+}
 
 const idleState = {byId: {}, allIds: [], selectedIds: [], isFetching: false}
 const initialState = {...idleState, isWaiting: true}
+
 
 // [ACTIONS]
 export const fetching = createAction('enrollment/students/fetching')
@@ -24,11 +31,21 @@ export const select   = createAction('enrollment/students/select', castList)
 export const unselect = createAction('enrollment/students/unselect', castList)
 export const toggle   = createAction('enrollment/students/toggle')
 export const loading  = createAction('enrollment/students/loading')
+export const retiring = createAction('enrollment/students/retiring', castList)
 export const invite   = ({email, name} = {}) => async dispatch => {
 	try{
 		const date = (new Date()).toISOString()
 		dispatch(loading({email, name, date}))
 		await api.inviteStudent({email, name})
+	}catch({message}){
+		dispatch(error(message))
+	}
+}
+
+export const retire = studentsIds => async dispatch => {
+	try{
+		dispatch(retiring(studentsIds))
+		await api.retireStudents(studentsIds)
 	}catch({message}){
 		dispatch(error(message))
 	}
@@ -46,7 +63,7 @@ const reducer = handleActions({
 		)
 		const byId = {...state.byId, ...students}
 		const allIds = getSortedByDateArray(byId)
-		const selectedIds = uniqSect(state.selectedIds, allIds)
+		const selectedIds = state.selectedIds.filter(isSelectable({byId, allIds}))
 		return {...state, byId, allIds, selectedIds}
 	},
 	[loading]: (state, {payload: {email, name, date}}) => {
@@ -54,17 +71,18 @@ const reducer = handleActions({
 		const allIds = getSortedByDateArray(byId)
 		return {...state, byId, allIds}
 	},
+	[retiring]: (state, {payload = []}) => {
+		const byId = castList(payload).reduce((byId, id) => (!byId[id] ? byId : ({
+			...byId, [id]: {...byId[id], retiring: true},
+		})), state.byId)
+		const selectedIds = state.selectedIds.filter(isSelectable({...state, byId}))
+		return {...state, byId, selectedIds}
+	},
 	[select]: ({selectedIds, ...state}, {payload: ids}) => ({...state,
-		selectedIds: uniqSect(
-			[...selectedIds, ...ids],
-			state.allIds,
-		).filter(id => state.byId[id].id),
+		selectedIds: [...selectedIds, ...ids].filter(isSelectable(state)),
 	}),
-	[unselect]: ({selectedIds: selected, ...state}, {payload: ids}) => ({...state,
-		selectedIds: uniqSect(
-			selected.filter(a => !ids.includes(a)),
-			state.allIds,
-		).filter(id => state.byId[id].id)
+	[unselect]: ({selectedIds: s, ...state}, {payload: ids}) => ({...state,
+		selectedIds: s.filter(a => !ids.includes(a)).filter(isSelectable(state)),
 	}),
 	[toggle]: (state, {payload: id}) => (
 		reducer(state, state.selectedIds.includes(id) ? unselect(id) : select(id))

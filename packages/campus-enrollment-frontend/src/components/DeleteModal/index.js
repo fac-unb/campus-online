@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {connect} from 'react-redux'
 import {colors} from '../../constants'
+import {retire} from '../../reducers/students'
 import {Heading} from '../Text'
 import Modal from '../Modal'
 import Button from '../Button'
@@ -52,7 +53,7 @@ const Confirm = styled(Button)`
 	}
 `
 
-const DeleteModal = ({selectedIds = [], ...props}) => (
+const DeleteModal = ({selectedIds = [], retireSelected, ...props}) => (
 	<Modal style={{overflow: 'hidden'}} {...props}>
 		<Wrapper>
 			<Title size={3} weight={600}>Deseja remover os seguintes alunos?</Title>
@@ -61,13 +62,21 @@ const DeleteModal = ({selectedIds = [], ...props}) => (
 			</List>
 			<Bottom>
 				<Cancel onClick={props.onChangeVisibility}>Cancelar</Cancel>
-				<Confirm icon='trash-2'>Remover</Confirm>
+				<Confirm icon='trash-2' onClick={retireSelected}>Remover</Confirm>
 			</Bottom>
 		</Wrapper>
 	</Modal>
 )
 
 const mapStateToProps = ({students}) => ({selectedIds: students.selectedIds})
-const enhance = connect(mapStateToProps, null)
+const mapDispatchToProps = {retire}
+const mergeProps = ({selectedIds}, {retire}, props) => ({...props, selectedIds,
+	retireSelected: () => {
+		retire(selectedIds)
+		props.onChangeVisibility(false)
+	},
+})
+
+const enhance = connect(mapStateToProps, mapDispatchToProps, mergeProps)
 
 export default enhance(DeleteModal)
