@@ -41,7 +41,7 @@ const TableWrapper = styled.div`
 const Main = ({hasEnrolledStudents, isModalVisible, toggleModal}) => (
 	<Wrapper>
 		<TitleBar>
-			<Heading color={colors.base88} size={5} weight={500}>Alunos</Heading>
+			<Heading color={colors.base88} size={5} weight={700}>Alunos</Heading>
 			<Counter/>
 		</TitleBar>
 		<TableWrapper>

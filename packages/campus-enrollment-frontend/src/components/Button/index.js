@@ -5,6 +5,7 @@ import Icon from '../Icon'
 
 const Wrapper = styled.button`
 	appearance: none;
+	user-select: none;
 	display: flex;
 	margin: 0;
 	padding: 0.5rem 0.625rem;

@@ -6,6 +6,7 @@ import {select, unselect} from '../../reducers/students'
 import Checkbox from '../Checkbox'
 
 const Wrapper = styled.div`
+	user-select: none;
 	background: ${colors.base06};
 	display: flex;
 	align-items: center;

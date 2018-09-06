@@ -43,4 +43,4 @@ export const Heading = styled(Paragraph.withComponent(defaultTag('h2')))`
 		line-height: ${p => sizes[p.size+2].lineHeight};
 	`}
 `
-Heading.defaultProps = {size: 4, weight: 300}
+Heading.defaultProps = {size: 4, weight: 500}

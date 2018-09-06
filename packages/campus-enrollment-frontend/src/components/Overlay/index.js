@@ -19,6 +19,7 @@ const Overlay = styled.div`
 	height: 100%;
 	background: ${rgba(colors.base22, 0.66)};
 	animation: ${opacity} 250ms ease-out;
+	-webkit-backdrop-filter: blur(0.25rem);
 	${p =>
 		p.onClick &&
 		`
