@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
 const Main = styled.div`
 	display: flex;
+	user-select: none;
 	align-items: center;
 	justify-content: space-between;
 `

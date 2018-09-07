@@ -6508,6 +6508,10 @@ firebase-functions@^2.0.2:
     jsonwebtoken "^8.2.1"
     lodash "^4.6.1"
 
+firebase-key@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/firebase-key/-/firebase-key-2.0.1.tgz#5f1fe462c011c7f944f2f0f489c838dd1ed162ef"
+
 firebase-tools@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-4.2.1.tgz#37974639ba24ec5feed9879289d5bb50df989c6c"
@@ -9987,6 +9991,10 @@ lodash.clonedeep@^4.5.0:
 lodash.cond@^4.3.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/lodash.cond/-/lodash.cond-4.5.2.tgz#f471a1da486be60f6ab955d17115523dd1d255d5"
+
+lodash.curry@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.curry/-/lodash.curry-4.1.1.tgz#248e36072ede906501d75966200a86dab8b23170"
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -13493,6 +13501,19 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
+reduce-reducers@^0.1.0:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.1.5.tgz#ff77ca8068ff41007319b8b4b91533c7e0e54576"
+
+redux-actions@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/redux-actions/-/redux-actions-2.6.1.tgz#42c06e94739fbe6db35db3605abb105bdb3724d8"
+  dependencies:
+    invariant "^2.2.1"
+    lodash.camelcase "^4.3.0"
+    lodash.curry "^4.1.1"
+    reduce-reducers "^0.1.0"
+
 redux-implicit-oauth2@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/redux-implicit-oauth2/-/redux-implicit-oauth2-1.2.1.tgz#49a14f5c6b9fddc6e463766c71aee049e71f2819"
@@ -15520,6 +15541,10 @@ timers-ext@^0.1.5:
   dependencies:
     es5-ext "~0.10.14"
     next-tick "1"
+
+timesince@^0.1.0-alpha.0:
+  version "0.1.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/timesince/-/timesince-0.1.0-alpha.0.tgz#00b1618c2ec7a3bc659add539103d529c0fd4c5a"
 
 timsort@^0.3.0:
   version "0.3.0"

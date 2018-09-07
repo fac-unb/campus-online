@@ -1,5 +1,5 @@
 import invariant from 'invariant'
-import http from './http'
+import {firebaseFunctions as http} from './http'
 
 const getFirebaseToken = async token => {
 	invariant(token, 'getFirebaseToken: input token is missing')

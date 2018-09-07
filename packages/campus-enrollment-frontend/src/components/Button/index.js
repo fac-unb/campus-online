@@ -5,6 +5,7 @@ import Icon from '../Icon'
 
 const Wrapper = styled.button`
 	appearance: none;
+	user-select: none;
 	display: flex;
 	margin: 0;
 	padding: 0.5rem 0.625rem;
@@ -22,12 +23,16 @@ const Wrapper = styled.button`
 	}
 `
 
-const Main = styled.div`
+const Main = styled(
+	// eslint-disable-next-line no-unused-vars
+	({icon, ...props}) => <div {...props}/>
+)`
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 0.025rem;
 	${p => p.icon && `margin-right: 0.375rem`}
+	flex: 1;
 `
 
 const Button = ({children, icon, ...props}) => (

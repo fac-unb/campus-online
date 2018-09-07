@@ -37,10 +37,10 @@ export const Paragraph = styled(
 `
 Paragraph.defaultProps = {size: 2}
 
-export const Heading = Paragraph.withComponent(defaultTag('h2')).extend`
+export const Heading = styled(Paragraph.withComponent(defaultTag('h2')))`
 	${above.xg`
 		font-size: ${p => sizes[p.size+2].fontSize};
 		line-height: ${p => sizes[p.size+2].lineHeight};
 	`}
 `
-Heading.defaultProps = {size: 4, weight: 300}
+Heading.defaultProps = {size: 4, weight: 500}

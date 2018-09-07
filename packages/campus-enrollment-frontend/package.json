@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "firebase": "^5.3.1",
+    "firebase-key": "^2.0.1",
     "invariant": "^2.2.4",
     "polished": "^2.0.3",
     "react": "^16.4.2",
@@ -19,10 +20,12 @@
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
     "redux-implicit-oauth2": "^1.2.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "reline": "^1.0.0-beta.3",
-    "styled-components": "^3.4.1"
+    "styled-components": "^3.4.1",
+    "timesince": "^0.1.0-alpha.0"
   }
 }

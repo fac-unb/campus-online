@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {withStateHandlers} from 'recompose'
+import {connect} from 'react-redux'
+import {compose, withStateHandlers} from 'recompose'
 import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
 import {Heading} from '../Text'
@@ -9,6 +10,7 @@ import BottomBar from '../BottomBar'
 import InputLine from '../InputLine'
 import DeleteModal from '../DeleteModal'
 import EmptyState from '../EmptyState'
+import Counter from '../Counter'
 
 const Wrapper = styled.div`
 	margin-top: 4rem;
@@ -24,17 +26,6 @@ const TitleBar = styled.div`
 	margin: 1rem 0;
 `
 
-const Counter = styled.div`
-	font-size: 0.875rem;
-	font-weight: 600;
-	line-height: 1rem;
-	padding: 0.5rem 0.75rem;
-	color: ${colors.white};
-	background: ${colors.base66};
-	border-radius: 0.25rem;
-	margin-left: 0.5rem;
-`
-
 const TableWrapper = styled.div`
 	background: ${colors.white};
 	flex: 1;
@@ -47,36 +38,31 @@ const TableWrapper = styled.div`
 	`}
 `
 
-const Main = ({students, isModalVisible, toggleModal}) => (
+const Main = ({hasEnrolledStudents, isModalVisible, toggleModal}) => (
 	<Wrapper>
 		<TitleBar>
-			<Heading color={colors.base88} size={5} weight={500}>Alunos</Heading>
-			<Counter>{students.length}</Counter>
+			<Heading color={colors.base88} size={5} weight={700}>Alunos</Heading>
+			<Counter/>
 		</TitleBar>
 		<TableWrapper>
 			<InputLine/>
-			{students.length > 0
-				? <Table students={students}/>
-				: <EmptyState/>
-			}
+			{hasEnrolledStudents ? <Table/> : <EmptyState/>}
 		</TableWrapper>
 		<BottomBar onClickButton={toggleModal}/>
-		<DeleteModal
-			students={students}
-			isVisible={isModalVisible}
-			onChangeVisibility={toggleModal}
-		/>
+		<DeleteModal isVisible={isModalVisible} onChangeVisibility={toggleModal}/>
 	</Wrapper>
 )
 
-Main.defaultProps = {
-	students: [
-	]
-}
+const mapStateToProps = ({students: {allIds, byId}}) => ({
+	hasEnrolledStudents: !!allIds.find(id => byId[id].status === 'enrolled'),
+})
 
-const enhance = withStateHandlers(
-	{isModalVisible: false},
-	{toggleModal: ({isModalVisible}) => () => ({isModalVisible: !isModalVisible})},
+const enhance = compose(
+	withStateHandlers(
+		{isModalVisible: false},
+		{toggleModal: state => () => ({isModalVisible: !state.isModalVisible})},
+	),
+	connect(mapStateToProps, null),
 )
 
 export default enhance(Main)
