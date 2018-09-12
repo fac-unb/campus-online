@@ -6,7 +6,9 @@ date: '2018-05-23'
 editorial:
   slug: /editorials/2018-1-educacao/
   title: Educação
-author: ''
+author:
+  slug: /authors/2018-1-rebeca-borges/
+  title: Rebeca Borges
 semester: 2018/1
 tags:
   - universidade
