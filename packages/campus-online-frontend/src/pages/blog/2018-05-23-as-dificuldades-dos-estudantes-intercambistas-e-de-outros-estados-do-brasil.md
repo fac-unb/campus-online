@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: As dificuldades dos estudantes intercambistas e de outros estados do Brasil
-cover: /uploads/bce-2.jpg
+cover: /uploads/capa-rebeca-768x512.jpg
 date: '2018-05-23'
 editorial:
   slug: /editorials/2018-1-educacao/
