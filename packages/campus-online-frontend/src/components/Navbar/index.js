@@ -181,7 +181,7 @@ const LinkItem = ({to, label, shadow, dark, dropdownItems = []}) => (
 		<Anchor shadow={shadow} dark={dark} to={to}>
 			{label}
 		</Anchor>
-		{dropdownItems.length > 0 && <Dropdown dropdownItems={dropdownItems} />}
+		{!!dropdownItems.length > 0 && <Dropdown dropdownItems={dropdownItems} />}
 	</li>
 )
 

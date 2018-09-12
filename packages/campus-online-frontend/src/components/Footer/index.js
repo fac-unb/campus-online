@@ -148,7 +148,7 @@ const Footer = () => (
 					<LinkSection title="Links">
 						<LinkList>
 							{/* {JSON.stringify(links)} */}
-							{links.length &&
+							{!!links.length > 0 &&
 								links.map(link => (
 									<LinkItem key={link.url} to={link.url}>
 										{link.label}

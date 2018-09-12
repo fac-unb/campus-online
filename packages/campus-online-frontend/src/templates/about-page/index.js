@@ -23,7 +23,7 @@ const AboutPage = ({title, items, content}) => (
 		/>
 		<AboutHero style={{marginTop: '7rem'}} />
 		<Container>
-			{items.length && <Items items={items} xs={12} />}
+			{!!items.length > 0 && <Items items={items} xs={12} />}
 			{content && (
 				<section style={{margin: '2rem 0 8rem'}}>
 					<Row>

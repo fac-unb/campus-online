@@ -53,7 +53,7 @@ const BlogPost = ({
 					<Cell xs={0} lg={1} />
 					<Cell xs={12} lg={3} style={{position: 'sticky', top: '6rem'}}>
 						<div style={{width: '100%'}}>
-							{tags.length && (
+							{!!tags.length > 0 && (
 								<Fragment>
 									<SideSection title="Tags" to="/tags" count={tags} />
 									<Tags tags={tags} style={{marginBottom: '3em'}} />
