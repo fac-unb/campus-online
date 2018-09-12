@@ -1,0 +1,1 @@
+cp packages/campus-online-emails/public/* packages/campus-online-frontend/public/emails

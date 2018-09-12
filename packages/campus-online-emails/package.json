@@ -1,0 +1,22 @@
+{
+  "name": "campus-mail",
+  "version": "0.0.0",
+  "description": "pug + mjml workflow to export campus-online mails",
+  "author": "Vitor Dino <vitor@kunstdesign.com.br>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp default",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-mjml": "3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "mjml": "4.1.2"
+  }
+}

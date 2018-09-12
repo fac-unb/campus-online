@@ -3,6 +3,7 @@
     "dev": "wsrun dev --exclude-missing",
     "lint": "wsrun lint --exclude-missing",
     "build": "wsrun build --exclude-missing",
+    "post-build": "chmod +x ./scripts/copy-emails",
     "format": "wsrun format --exclude-missing",
     "precommit": "wsrun precommit --exclude-missing",
     "test": "wsrun test --exclude-missing",
