@@ -3,11 +3,11 @@
     "dev": "wsrun dev --exclude-missing",
     "lint": "wsrun lint --exclude-missing",
     "build": "wsrun build --exclude-missing",
-    "post-build": "chmod +x ./scripts/copy-emails",
     "format": "wsrun format --exclude-missing",
     "precommit": "wsrun precommit --exclude-missing",
     "test": "wsrun test --exclude-missing",
-    "run:netlify": "wsrun build campus-online-frontend campus-online-functions",
+    "build-emails": "cd packages/campus-online-emails && npm run build",
+    "run:netlify": "wsrun build campus-online-frontend campus-online-functions && npm run build-emails && ./scripts/copy-emails",
     "run:travis": "wsrun build campus-enrollment-frontend",
     "deploy": "wsrun build 'campus-enrollment-frontend' && firebase deploy"
   },

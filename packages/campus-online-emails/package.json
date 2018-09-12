@@ -6,7 +6,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp default",
-    "build": "gulp build"
+    "build": "gulp email"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

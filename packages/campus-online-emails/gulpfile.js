@@ -8,13 +8,13 @@ var pug = require('gulp-pug')
 var rename = require('gulp-rename')
 var util = require('gulp-util')
 
-gulp.task('email', function() {
-	gulp.src('./src/views/templates/**/*.pug')
+gulp.task('email', function(){
+	return gulp.src('./src/views/templates/**/*.pug')
 		.pipe(pug({pretty: true}))
 		.pipe(rename({extname: '.mjml'}))
 		.pipe(mjml())
 		.pipe(htmlmin({collapseWhitespace: true}))
-		.pipe(gulp.dest('./public/'))
+		.pipe(gulp.dest(`${__dirname}/public/`))
 })
 
 gulp.task('browser-sync', function() {
