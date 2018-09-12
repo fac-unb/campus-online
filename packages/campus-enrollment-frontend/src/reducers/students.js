@@ -91,8 +91,38 @@ const reducer = handleActions({
 
 export default reducer
 
+const isEmail = string => typeof string === 'string' && string.includes('@')
+const unquote = string => string.trim().replace(/^["']+|['"]$/, '')
+
+/* eslint-disable no-console */
+const inviteAll = multiline => dispatch => {
+	multiline.trim().replace(/\n+/g, '§').split(/§/).forEach((line, i) => {
+			const entries = line.trim().replace(/[\t;,]+\s*/g, '§').split(/§/)
+			if(entries.length !== 2){
+				return console.info(`${i}: rejected "${line}", not 2 columns.`)
+			}
+			if(!entries.some(isEmail)){
+				return console.info(`${i}: rejected "${line}", must contain an "@".`)
+			}
+			const emailIndex = entries.findIndex(isEmail)
+			const nameIndex = Math.abs(emailIndex - 1)
+			const student = {
+				name: unquote(entries[nameIndex]),
+				email: unquote(entries[emailIndex]),
+			}
+			console.log(`${i}: inviting`, student)
+			dispatch(invite(student))
+		},
+		[],
+	)
+}
+/* eslint-enable */
+
 // [MIDDLEWARE]
 export const middleware = store => {
+	if(typeof window !== 'undefined'){
+		window.inviteAll = string => inviteAll(string)(store.dispatch)
+	}
 	// [TODO]: handle firebase user tasks
 	return next => async action => {
 		next(action)
