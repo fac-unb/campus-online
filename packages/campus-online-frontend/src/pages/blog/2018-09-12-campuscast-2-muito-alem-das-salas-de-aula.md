@@ -2,7 +2,7 @@
 template: blog-post
 title: 'Campuscast #2- Muito além das salas de aula'
 cover: /uploads/bsa-n.jpg
-date: '2018-09-12'
+date: '2018-05-21'
 editorial: ''
 author:
   slug: /authors/2018-1-victor-farias/
