@@ -240,7 +240,7 @@ const Navbar = ({
 
 Navbar.defaultProps = {
 	links: [
-		{href: '/blog', label: 'Matérias'},
+		{href: '/materias', label: 'Matérias'},
 		{href: '/about', label: 'Sobre'},
 		{href: '/contact', label: 'Contato'},
 	],

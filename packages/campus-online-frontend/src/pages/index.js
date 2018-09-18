@@ -21,7 +21,7 @@ const PageComponent = ({posts: [hero, ...posts]}) => (
 				<StoriesTitle
 					title="Publicações recentes"
 					label="Ver todas"
-					url="/blog"
+					url="/materias"
 				/>
 				<CardRow>
 					{posts.map((post, index) => (

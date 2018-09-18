@@ -139,7 +139,7 @@ const Footer = () => (
 				<Right xs={12} md={8} lg={6}>
 					<LinkSection title="Seções">
 						<LinkList>
-							<LinkItem to="/blog">Matérias</LinkItem>
+							<LinkItem to="/materias">Matérias</LinkItem>
 							<LinkItem to="/authors">Alunos</LinkItem>
 							<LinkItem to="/editorias">Editorias</LinkItem>
 							<LinkItem to="/tags">Tags</LinkItem>
