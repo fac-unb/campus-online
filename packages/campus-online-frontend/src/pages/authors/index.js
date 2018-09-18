@@ -44,7 +44,7 @@ export default enhance(AuthorsPage)
 export const authorsPageQuery = graphql`
 	query AuthorsQuery {
 		authorList: allMarkdownRemark(
-			sort: {order: DESC, fields: [frontmatter___title]}
+			sort: {order: DESC, fields: [frontmatter___semester, frontmatter___title]}
 			filter: {frontmatter: {template: {eq: "author"}}}
 		) {
 			authors: edges {
