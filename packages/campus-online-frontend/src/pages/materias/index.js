@@ -42,8 +42,8 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 				<section style={{marginBottom: '6rem'}}>
 					<Editorials editorials={editorials} style={{marginBottom: '2rem'}} />
 					<ScrollList
-						title="Alunos"
-						url="/authors"
+						title="Repórteres"
+						url="/reporteres"
 						list={authors.map(enhanceAuthor)}
 					/>
 					<ScrollList title="Tags" url="/tags" list={tags.map(enhanceTag)} />

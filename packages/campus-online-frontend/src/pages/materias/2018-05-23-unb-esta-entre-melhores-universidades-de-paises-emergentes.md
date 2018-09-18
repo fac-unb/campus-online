@@ -7,7 +7,7 @@ editorial:
   slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-rebeca-borges/
+  slug: /reporteres/2018-1-rebeca-borges/
   title: Rebeca Borges
 semester: 2018/1
 tags:

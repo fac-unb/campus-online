@@ -39,7 +39,7 @@ collections:
 
   - name: authors
     label: "Repórteres"
-    folder: "packages/campus-online-frontend/src/pages/authors"
+    folder: "packages/campus-online-frontend/src/pages/reporteres"
     create: true
     extension: "md"
     format: "yaml-frontmatter"

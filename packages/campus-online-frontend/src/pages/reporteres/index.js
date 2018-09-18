@@ -13,9 +13,9 @@ import AuthorCard from '../../components/AuthorCard'
 const AuthorsPage = ({authors}) => (
 	<React.Fragment>
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-		<Hero title="Autores" sub={`${authors.length} autores no total`} />
+		<Hero title="Repórteres" sub={`${authors.length} repórteres no total`} />
 		<Container>
-			<MetaTags title="Autores" />
+			<MetaTags title="Repórteres" />
 			<section style={{padding: '6rem 0 8rem', overflow: 'hidden'}}>
 				<div style={{display: 'flex', flexWrap: 'wrap', margin: '0 -2rem'}}>
 					{authors.map(author => (

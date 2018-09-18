@@ -7,7 +7,7 @@ editorial:
   slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-hallana-moreira/
+  slug: /reporteres/2018-1-hallana-moreira/
   title: Hallana Moreira
 semester: 2018/1
 tags:

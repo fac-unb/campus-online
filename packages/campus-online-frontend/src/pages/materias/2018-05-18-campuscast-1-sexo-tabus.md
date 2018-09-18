@@ -7,7 +7,7 @@ editorial:
   slug: /editorias/2018-1-tabu/
   title: Tabu
 author:
-  slug: /authors/2018-1-victor-farias/
+  slug: /reporteres/2018-1-victor-farias/
   title: Victor Farias
 semester: 2018/1
 tags:

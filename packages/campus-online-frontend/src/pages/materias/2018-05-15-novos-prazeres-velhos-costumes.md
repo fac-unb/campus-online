@@ -9,7 +9,7 @@ editorial:
   slug: /editorias/2018-1-tabu/
   title: Tabu
 author:
-  slug: /authors/2018-1-thalyta-guerra/
+  slug: /reporteres/2018-1-thalyta-guerra/
   title: Thalyta Guerra
 semester: 2018/1
 tags:

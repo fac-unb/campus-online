@@ -5,7 +5,7 @@ cover: /uploads/cannabis_sativa_leaf_dorsal_aspect_2012_01_23_0830.jpg
 date: '2018-07-03'
 editorial: ''
 author:
-  slug: /authors/2018-1-victor-farias/
+  slug: /reporteres/2018-1-victor-farias/
   title: Victor Farias
 semester: 2018/1
 featured: false

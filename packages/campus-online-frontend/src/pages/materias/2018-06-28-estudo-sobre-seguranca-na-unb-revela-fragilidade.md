@@ -7,7 +7,7 @@ editorial:
   slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-luisa-guimaraes/
+  slug: /reporteres/2018-1-luisa-guimaraes/
   title: Luísa Guimarães
 semester: 2018/1
 tags:

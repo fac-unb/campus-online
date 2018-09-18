@@ -140,7 +140,7 @@ const Footer = () => (
 					<LinkSection title="Seções">
 						<LinkList>
 							<LinkItem to="/materias">Matérias</LinkItem>
-							<LinkItem to="/authors">Alunos</LinkItem>
+							<LinkItem to="/reporteres">Repórteres</LinkItem>
 							<LinkItem to="/editorias">Editorias</LinkItem>
 							<LinkItem to="/tags">Tags</LinkItem>
 						</LinkList>

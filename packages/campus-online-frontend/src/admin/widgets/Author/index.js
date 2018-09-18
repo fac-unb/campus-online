@@ -10,7 +10,7 @@ function isValid() {
 	const error = {
 		type: 'CUSTOM',
 		error: true,
-		message: field.get('error') || 'precisa ser um autor válido',
+		message: field.get('error') || 'precisa ser um repórter válido',
 	}
 
 	if (typeof value === 'string' && value !== '') return error
