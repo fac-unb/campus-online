@@ -60,7 +60,7 @@ const Anchor = styled(Link)`
 const StoriesTitle = ({title, label, url, dark, style}) => (
 	<Wrapper dark={dark} style={style}>
 		<Title>{title}</Title>
-		<Anchor to={url}>{label}</Anchor>
+		{url && <Anchor to={url}>{label}</Anchor>}
 	</Wrapper>
 )
 
