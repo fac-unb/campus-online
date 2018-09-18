@@ -242,7 +242,7 @@ Navbar.defaultProps = {
 	links: [
 		{href: '/materias', label: 'Matérias'},
 		{href: '/sobre', label: 'Sobre'},
-		{href: '/contact', label: 'Contato'},
+		{href: '/contato', label: 'Contato'},
 	],
 }
 
