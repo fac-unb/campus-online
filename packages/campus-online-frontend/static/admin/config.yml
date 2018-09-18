@@ -104,5 +104,5 @@ collections:
             widget: "list"
             fields:
               - {label: "Título", name: "title", widget: string}
-              - {label: "Texto", name: "text", widget: string}
+              - {label: "Texto", name: "text", widget: text}
           - {label: "Corpo de texto", name: "body", widget: "markdown", required: false}
