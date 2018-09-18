@@ -6,7 +6,9 @@ date: '2018-06-28'
 editorial:
   slug: /editorials/2018-1-educacao/
   title: Educação
-author: ''
+author:
+  slug: /authors/2018-1-luisa-guimaraes/
+  title: Luísa Guimarães
 semester: 2018/1
 tags:
   - educação
