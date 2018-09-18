@@ -141,7 +141,7 @@ const Footer = () => (
 						<LinkList>
 							<LinkItem to="/blog">Matérias</LinkItem>
 							<LinkItem to="/authors">Alunos</LinkItem>
-							<LinkItem to="/editorials">Editorias</LinkItem>
+							<LinkItem to="/editorias">Editorias</LinkItem>
 							<LinkItem to="/tags">Tags</LinkItem>
 						</LinkList>
 					</LinkSection>

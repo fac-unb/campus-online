@@ -4,7 +4,7 @@ title: UnB está entre melhores universidades de países emergentes
 cover: /uploads/bsa-n.jpg
 date: '2018-05-23'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
   slug: /authors/2018-1-rebeca-borges/

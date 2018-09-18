@@ -56,7 +56,7 @@ collections:
 
   - name: editorials
     label: "Editorias"
-    folder: "packages/campus-online-frontend/src/pages/editorials"
+    folder: "packages/campus-online-frontend/src/pages/editorias"
     create: true
     extension: "md"
     format: "yaml-frontmatter"

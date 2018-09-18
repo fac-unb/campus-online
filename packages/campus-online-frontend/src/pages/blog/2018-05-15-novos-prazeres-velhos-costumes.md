@@ -6,7 +6,7 @@ title: >-
 cover: /uploads/novos-prazeres-velhos-costumes.jpg
 date: '2018-05-14'
 editorial:
-  slug: /editorials/2018-1-tabu/
+  slug: /editorias/2018-1-tabu/
   title: Tabu
 author:
   slug: /authors/2018-1-thalyta-guerra/
