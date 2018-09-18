@@ -17,29 +17,30 @@ const Wrapper = styled.div`
 	flex: 1;
 	flex-direction: column;
 	overflow: hidden;
-	min-height: 100vh;
 `
 
 const MapWrapper = styled.div`
 	position: absolute;
 	top: 0;
 	flex: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 `
 
 const Map = styled(UnstyledMap)`
 	margin-top: 0;
 	width: 100vw;
-	height: 100vh;
-	opacity: 0.44;
+	flex: 1;
 `
 
 const Main = styled.div`
 	display: inline-block;
 	display: inline-flex;
 	flex-direction: column;
-	margin: 4rem 0;
+	margin: 8rem 0;
 	padding: 1rem 2rem 1rem 0;
-	z-index: 3;
+	z-index: 2;
 	position: relative;
 	background: ${colors.base};
 	color: ${colors.base03};
@@ -81,10 +82,9 @@ const SuccessPage = () => (
 		</MapWrapper>
 		<Container>
 			<Main>
-				<div>
-					{/* <Icon icon="message-square" size={48} strokeWidth={0.875} /> */}
+				<div style={{fontSize: '1.5em', marginBottom: '0.25em'}}>
+					<h1>Mensagem enviada com sucesso!</h1>
 				</div>
-				<Text style={{margin: '0'}}><h1>Mensagem enviada com sucesso!</h1></Text>
 				<Link to="/">Voltar para Home</Link>
 			</Main>
 		</Container>
