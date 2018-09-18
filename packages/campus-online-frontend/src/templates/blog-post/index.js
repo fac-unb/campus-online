@@ -70,7 +70,7 @@ const BlogPost = ({
 							{isPlainObject(author) && (
 								<Fragment>
 									<SideSection title="Autor" to="/authors" />
-									<AuthorCard {...author} small />
+									<AuthorCard {...author} size='small' />
 								</Fragment>
 							)}
 						</div>

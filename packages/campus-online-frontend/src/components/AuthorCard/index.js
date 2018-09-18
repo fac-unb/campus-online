@@ -47,10 +47,10 @@ const Title = styled.div`
 	`};
 `
 
-const AuthorCard = ({url, name, avatar, small, style, dark, className}) => (
+const AuthorCard = ({url, name, avatar, size, style, dark, className}) => (
 	<Wrapper to={url} style={style} className={className} dark={dark}>
-		<Avatar avatar={avatar} name={name} small={small} dark={dark} />
-		{name && <Title small={small}>{name}</Title>}
+		<Avatar avatar={avatar} name={name} size={size} dark={dark} />
+		{name && <Title small={size === 'small'}>{name}</Title>}
 	</Wrapper>
 )
 
