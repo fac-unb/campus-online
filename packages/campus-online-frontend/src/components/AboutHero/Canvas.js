@@ -4,7 +4,9 @@ import Container from '../Container'
 
 const Wrapper = styled.div`
 	overflow: hidden;
-	position: relative;
+	position: absolute;
+	height: 100%;
+	width: 100%;
 `
 
 const HtmlCanvas = styled.canvas`
@@ -136,12 +138,10 @@ class CanvasComponent extends React.Component {
 	}
 	static defaultProps = {background: '#ffffff'}
 	render() {
-		const {children, ...props} = this.props
 		return (
 			<Wrapper innerRef={this.wrapper}>
 				<Container innerRef={this.container} />
-				<HtmlCanvas innerRef={this.canvas} {...props} />
-				{children}
+				<HtmlCanvas innerRef={this.canvas} {...this.props} />
 			</Wrapper>
 		)
 	}
