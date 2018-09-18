@@ -9,8 +9,9 @@ import Text from '../../components/Text'
 import Content from '../../components/Content'
 import AboutHero from '../../components/AboutHero'
 import Items from '../../components/Items'
+import AuthorCard from '../../components/AuthorCard'
 
-const AboutPage = ({title, items, content}) => (
+const AboutPage = ({title, items, content, authors}) => (
 	<div style={{overflowX: 'hidden', position: 'relative'}}>
 		<MetaTags title={title} />
 		<Navbar
@@ -25,7 +26,7 @@ const AboutPage = ({title, items, content}) => (
 		<Container>
 			{!!items.length > 0 && <Items items={items} xs={12} />}
 			{content && (
-				<section style={{margin: '2rem 0 8rem'}}>
+				<section style={{margin: '2rem 0'}}>
 					<Row>
 						<Cell xs={12} lg={8}>
 							<Text>
@@ -35,6 +36,17 @@ const AboutPage = ({title, items, content}) => (
 					</Row>
 				</section>
 			)}
+			<section style={{padding: '2rem 0 8rem', overflow: 'hidden'}}>
+				<Row>
+					{authors.map(author => (
+							<Cell xs={12} sm={6} md={4} lg={3}>
+								<div key={author.url} style={{padding: '1rem 0'}}>
+									<AuthorCard {...author} />
+								</div>
+							</Cell>
+					))}
+				</Row>
+			</section>
 		</Container>
 	</div>
 )
