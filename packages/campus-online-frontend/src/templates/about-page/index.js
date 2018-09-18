@@ -39,8 +39,8 @@ const AboutPage = ({title, items, content, authors}) => (
 			<section style={{padding: '2rem 0 8rem', overflow: 'hidden'}}>
 				<Row>
 					{authors.map(author => (
-							<Cell xs={12} sm={6} md={4} lg={3}>
-								<div key={author.url} style={{padding: '1rem 0'}}>
+							<Cell key={author.url} xs={12} sm={6} md={4} lg={3}>
+								<div style={{padding: '1rem 0'}}>
 									<AuthorCard {...author} />
 								</div>
 							</Cell>
