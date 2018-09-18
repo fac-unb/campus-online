@@ -4,19 +4,17 @@ export const fragment = graphql`
 	fragment AuthorInfo on MarkdownRemark {
 		frontmatter {
 			name: title
+			semester
 			avatar: image {
-				large: childImageSharp {
-					resolutions(width: 88, height: 88) {
-						...GatsbyImageSharpResolutions_noBase64
+				childImageSharp {
+					large: fixed(width: 88, height: 88, quality: 100, cropFocus: NORTH) {
+						...GatsbyImageSharpFixed_noBase64
 					}
-				}
-				small: childImageSharp {
-					resolutions(width: 32, height: 32) {
-						...GatsbyImageSharpResolutions_noBase64
+					small: fixed(width: 32, height: 32, quality: 100, cropFocus: NORTH) {
+						...GatsbyImageSharpFixed_noBase64
 					}
 				}
 			}
-			semester
 		}
 		fields {
 			url: slug
