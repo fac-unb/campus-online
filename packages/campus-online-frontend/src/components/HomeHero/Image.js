@@ -13,13 +13,8 @@ const ImageWrapper = styled(GatsbyImage)`
 	}
 `
 
-const Image = ({image, className, position = 'relative'}) => (
-	<ImageWrapper
-		{...image}
-		outerWrapperClassName={className}
-		style={{position}}
-		position={position}
-	/>
+const Image = ({image, position = 'relative'}) => (
+	<ImageWrapper {...image} style={{position}} position={position} />
 )
 
 export default Image

@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {get} from 'lodash/fp'
 import {colors} from '../../constants'
 import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
@@ -22,6 +23,15 @@ const isPlainObject = value => {
 	return true
 }
 
+
+const getCoverImageSrc = cover => {
+	if(!cover) return null
+	if(typeof cover === 'string') return cover
+	if(typeof cover.image === 'string') return cover.image
+	if(typeof cover.src === 'string') return cover.src
+	return get('image.sizes.src')(cover) || null
+}
+
 const BlogPost = ({
 	content,
 	excerpt,
@@ -40,7 +50,7 @@ const BlogPost = ({
 			<MetaTags
 				title={title}
 				description={headline ? headline : excerpt}
-				image={cover}
+				image={getCoverImageSrc(cover)}
 			/>
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
 			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />

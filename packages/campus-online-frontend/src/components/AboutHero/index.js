@@ -1,20 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 import {colors} from '../../constants'
 import Container from '../Container'
 import MediaQuery from '../MediaQuery'
 import Canvas from './Canvas'
 import Letters from './Letters'
 
-const Wrapper = ({children, background}) => (
-	<MediaQuery above="md">
-		{desktop =>
-			desktop ? <Canvas background={background}>{children}</Canvas> : children
-		}
-	</MediaQuery>
-)
+const Wrapper = styled.div`
+	overflow: hidden;
+	position: relative;
+`
 
 const AboutHero = ({style, background}) => (
-	<Wrapper background={background}>
+	<Wrapper>
+		<MediaQuery above='md'><Canvas background={background}/></MediaQuery>
 		<Container style={style}>
 			<Letters />
 		</Container>
