@@ -94,7 +94,7 @@ collections:
 
       - name: about
         label: "Sobre"
-        file: "packages/campus-online-frontend/src/pages/about/index.md"
+        file: "packages/campus-online-frontend/src/pages/sobre/index.md"
         extension: "md"
         format: "yaml-frontmatter"
         fields:
