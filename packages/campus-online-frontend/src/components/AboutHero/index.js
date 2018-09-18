@@ -11,11 +11,13 @@ const Wrapper = styled.div`
 	position: relative;
 `
 
-const AboutHero = ({style, background}) => (
+const AboutHero = ({style, contact, color, background}) => (
 	<Wrapper>
-		<MediaQuery above='md'><Canvas background={background}/></MediaQuery>
+		<MediaQuery above='md'>
+			<Canvas contact={contact} color={color} background={background}/>
+		</MediaQuery>
 		<Container style={style}>
-			<Letters />
+			<Letters contact={contact} />
 		</Container>
 	</Wrapper>
 )

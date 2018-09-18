@@ -7,6 +7,7 @@ const Wrapper = styled.div`
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	${p => p.contact && `opacity: 0.06;`}
 `
 
 const HtmlCanvas = styled.canvas`
@@ -68,7 +69,7 @@ const render = ({width, height, ratio, mouse, grid, gridOffset}) => {
 	return dots
 }
 
-const loop = ({width, height, ratio, mouse, grid, gridOffset, ctx}) => {
+const loop = ({color, width, height, ratio, mouse, grid, gridOffset, ctx}) => {
 	const result = render({width, height, ratio, mouse, grid, gridOffset})
 	ctx.clearRect(0, 0, width, height)
 	ctx.fillStyle = color
@@ -118,7 +119,7 @@ class CanvasComponent extends React.Component {
 			x: (pageX - canvasOffset.x) * ratio,
 			y: (pageY - canvasOffset.y) * ratio,
 		}
-		loop({width, height, ratio, mouse, grid, gridOffset, ctx})
+		loop({color, width, height, ratio, mouse, grid, gridOffset, ctx})
 	}
 	componentDidMount() {
 		const {current: canvas} = this.canvas
@@ -136,10 +137,13 @@ class CanvasComponent extends React.Component {
 		window.removeEventListener('resize', this.onResize)
 		window.removeEventListener('mousemove', this.onMouseMove)
 	}
-	static defaultProps = {background: '#ffffff'}
+	static defaultProps = {
+		background: '#ffffff',
+		color: 'rgba(230, 230, 230, 1)',
+	}
 	render() {
 		return (
-			<Wrapper innerRef={this.wrapper}>
+			<Wrapper innerRef={this.wrapper} {...this.props}>
 				<Container innerRef={this.container} />
 				<HtmlCanvas innerRef={this.canvas} {...this.props} />
 			</Wrapper>
