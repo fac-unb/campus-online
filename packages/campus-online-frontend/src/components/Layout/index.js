@@ -19,6 +19,8 @@ export const Wrapper = styled.div`
 const Inner = styled.div`
 	flex: 1 0 auto;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 `
 
 const Layout = ({children}) => (
