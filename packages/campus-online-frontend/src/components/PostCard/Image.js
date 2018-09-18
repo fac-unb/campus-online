@@ -1,15 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {mapProps} from 'recompose'
 import GatsbyImage from 'gatsby-image'
 import {above} from '../../utils/responsive'
 import {maxHeight} from './constants'
-
-const outerWrapper = mapProps(({className, ...props}) => ({
-	...props,
-	outerWrapperClassName: className,
-	style: {position: 'absolute'},
-}))
 
 const Inner = styled(GatsbyImage)`
 	display: block;
@@ -29,16 +22,8 @@ const Inner = styled(GatsbyImage)`
 	}
 `
 
-const Outer = styled(outerWrapper(Inner))`
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	position: absolute !important;
-`
-
 const Image = ({image, position = 'absolute', dark}) => (
-	<Outer {...image} dark={dark} style={{position}} position={position} />
+	<Inner {...image} dark={dark} style={{position}} position={position} />
 )
 
 export default Image
