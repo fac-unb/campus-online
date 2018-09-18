@@ -6,6 +6,7 @@ module.exports = {
 		'MarkdownRemark.fields.posts': 'MarkdownRemark',
 	},
 	plugins: [
+		'gatsby-plugin-netlify-cache',
 		'gatsby-plugin-lodash',
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-react-helmet',
