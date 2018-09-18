@@ -52,6 +52,7 @@ const Wrapper = styled.div`
 	letter-spacing: 0.1em;
 	font-size: 0.875rem;
 	user-select: none;
+	flex-shrink: 0;
 	${p => sizeOverride[p.size] || ''}
 `
 
