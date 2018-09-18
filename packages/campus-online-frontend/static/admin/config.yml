@@ -74,6 +74,7 @@ collections:
     editor:
       preview: false
     files:
+
       - name: "general"
         label: "Geral"
         file: "packages/campus-online-frontend/src/siteMetadata.json"
@@ -89,3 +90,19 @@ collections:
             fields:
               - {label: "Nome", name: "label", widget: string}
               - {label: "Link", name: "url", widget: string}
+
+      - name: "about"
+        label: "Sobre"
+        file: "packages/campus-online-frontend/src/pages/about/index.md"
+        extension: "md"
+        format: "yaml-frontmatter"
+        fields:
+          - {label: "Template", name: "template", widget: "hidden", default: "about-page"}
+          - {label: "Título da página", name: "title", widget: "string", required: true}
+          - label: "Itens"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Título", name: "title", widget: string}
+              - {label: "Texto", name: "text", widget: string}
+          - {label: "Corpo de texto", name: "body", widget: "markdown", required: false}

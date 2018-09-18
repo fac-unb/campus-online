@@ -30,7 +30,7 @@ export const aboutPageQuery = graphql`
 				title
 				items {
 					title
-					body
+					text
 				}
 			}
 		}

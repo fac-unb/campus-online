@@ -16,7 +16,7 @@ const Items = ({items}) => (
 		<Row>
 			{items.map(item => (
 				<Cell key={item.title} xs={12} md={6} lg={4}>
-					<Item title={item.title} body={item.body} />
+					<Item title={item.title} text={item.text} />
 				</Cell>
 			))}
 		</Row>

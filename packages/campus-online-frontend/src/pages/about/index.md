@@ -2,23 +2,23 @@
 template: about-page
 title: Sobre
 items:
-  - body:
+  - text:
       Maecenas faucibus mollis interdum. Duis mollis, est non commodo
       luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     title: lorem
-  - body:
+  - text:
       Maecenas faucibus mollis interdum. Duis mollis, est non commodo
       luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     title: ipsum
-  - body:
+  - text:
       Maecenas faucibus mollis interdum. Duis mollis, est non commodo
       luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     title: dolor
-  - body:
+  - text:
       Maecenas faucibus mollis interdum. Duis mollis, est non commodo
       luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     title: sit
-  - body:
+  - text:
       Maecenas faucibus mollis interdum. Duis mollis, est non commodo
       luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     title: amet

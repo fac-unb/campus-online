@@ -34,10 +34,10 @@ const Body = styled.div`
 	`};
 `
 
-const Item = ({title, body}) => (
+const Item = ({title, text}) => (
 	<Wrapper>
 		{title && <Title>{title}</Title>}
-		{body && <Body>{body}</Body>}
+		{text && <Body>{text}</Body>}
 	</Wrapper>
 )
 
