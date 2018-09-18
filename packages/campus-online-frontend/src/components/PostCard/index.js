@@ -269,7 +269,7 @@ const PostCard = ({
 								{date && <PostDate>{format.postDate(date)}</PostDate>}
 							</Meta>
 							{title && <Title>{title}</Title>}
-							{author && <Author small {...author} dark={dark} />}
+							{author && <Author size='small' {...author} dark={dark} />}
 						</Text>
 					</PostContent>
 				</Inset>

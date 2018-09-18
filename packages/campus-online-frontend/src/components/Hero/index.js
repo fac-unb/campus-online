@@ -60,16 +60,7 @@ const AvatarWrapper = styled.div`
 	`};
 `
 
-const HeroAvatar = styled(Avatar)`
-	width: 4rem;
-	height: 4rem;
-	font-size: 1rem;
-	${above.md`
-		width: 5.5rem;
-		height: 5.5rem;
-		font-size: 1.25rem;
-	`};
-`
+const HeroAvatar = props => <Avatar {...props} dark size='large'/>
 
 const TextWrapper = styled.div``
 
@@ -158,7 +149,7 @@ const Hero = ({
 			<ContentWrapper>
 				{author && (
 					<AvatarWrapper>
-						<HeroAvatar name={author.name} avatar={author.avatar} dark={true} />
+						<HeroAvatar name={author.name} avatar={author.avatar} />
 					</AvatarWrapper>
 				)}
 				<TextWrapper>

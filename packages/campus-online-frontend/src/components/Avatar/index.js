@@ -1,7 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import GatsbyImage from 'gatsby-image'
 import {colors} from '../../constants'
+import {above} from '../../utils/responsive'
 
 const initials = name =>
 	(name.includes(' ')
@@ -14,6 +15,25 @@ const initials = name =>
 	).toUpperCase()
 
 const getBackgroundColor = p => (p.dark ? colors.base88 : colors.base11)
+
+const sizeOverride = {
+	small: css`
+		margin-right: 0.75rem;
+		width: 2rem;
+		height: 2rem;
+		font-size: 0.75rem;
+	`,
+	large: css`
+		width: 4rem;
+		height: 4rem;
+		font-size: 1rem;
+		${above.md`
+			width: 5.5rem;
+			height: 5.5rem;
+			font-size: 1.25rem;
+		`}
+	`,
+}
 
 const Wrapper = styled.div`
 	display: flex;
@@ -32,14 +52,7 @@ const Wrapper = styled.div`
 	letter-spacing: 0.1em;
 	font-size: 0.875rem;
 	user-select: none;
-	${p =>
-		p.small &&
-		`
-		margin-right: 0.75rem;
-		width: 2rem;
-		height: 2rem;
-		font-size: 0.75rem;
-	`};
+	${p => sizeOverride[p.size] || ''}
 `
 
 const UnstyledImage = ({src, fixed, ...props}) => {
@@ -58,21 +71,20 @@ const Image = styled(UnstyledImage)`
 	flex: 1;
 `
 
-const getProps = ({avatar, small, dark} = {}) => {
+const getProps = ({avatar, size = 'medium', dark} = {}) => {
 	if (!avatar) return null
 	if (typeof avatar === 'string') return {src: avatar}
 	if (avatar.childImageSharp) {
-		const size = small ? 'small' : 'large'
 		const fixed = avatar.childImageSharp[size]
 		if (fixed) return {fixed, backgroundColor: getBackgroundColor({dark})}
 	}
 	return null
 }
 
-const Avatar = ({avatar, dark, small, name = null, ...props}) => {
-	const avatarProps = getProps({avatar, small, dark})
+const Avatar = ({avatar, dark, size, name = null, ...props}) => {
+	const avatarProps = getProps({avatar, size, dark})
 	return (
-		<Wrapper dark={dark} small={small} {...props}>
+		<Wrapper dark={dark} size={size} {...props}>
 			{avatarProps ? <Image {...avatarProps} /> : name && initials(name)}
 		</Wrapper>
 	)

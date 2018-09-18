@@ -7,10 +7,13 @@ export const fragment = graphql`
 			semester
 			avatar: image {
 				childImageSharp {
-					large: fixed(width: 88, height: 88, quality: 100, cropFocus: NORTH) {
+					small: fixed(width: 32, height: 32, quality: 100, cropFocus: NORTH) {
 						...GatsbyImageSharpFixed_noBase64
 					}
-					small: fixed(width: 32, height: 32, quality: 100, cropFocus: NORTH) {
+					medium: fixed(width: 48, height: 48, quality: 100, cropFocus: NORTH) {
+						...GatsbyImageSharpFixed_noBase64
+					}
+					large: fixed(width: 88, height: 88, quality: 100, cropFocus: NORTH) {
 						...GatsbyImageSharpFixed_noBase64
 					}
 				}
