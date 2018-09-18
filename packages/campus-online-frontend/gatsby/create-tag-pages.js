@@ -19,7 +19,7 @@ module.exports = async ({graphql, actions: {createPage, deletePage}}) => {
 	} = await query(graphql)
 
 	const tags = posts.reduce(
-		(tags, {post}) => _.uniq([...tags, ...post.frontmatter.tags]),
+		(tags, {post}) => _.uniq([...tags, ...(post.frontmatter.tags || [])]),
 		[],
 	)
 

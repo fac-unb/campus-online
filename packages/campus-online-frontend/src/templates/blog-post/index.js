@@ -14,6 +14,14 @@ import SideSection from '../../components/SideSection'
 import {CardRow} from '../../components/CardGrid'
 import PostCard from '../../components/PostCard'
 
+const isPlainObject = value => {
+	if(!value) return false
+	if(value === null) return false
+	if(typeof value !== 'object') return false
+	if(Array.isArray(value)) return false
+	return true
+}
+
 const BlogPost = ({
 	content,
 	excerpt,
@@ -53,13 +61,13 @@ const BlogPost = ({
 					<Cell xs={0} lg={1} />
 					<Cell xs={12} lg={3} style={{position: 'sticky', top: '6rem'}}>
 						<div style={{width: '100%'}}>
-							{!!tags.length > 0 && (
+							{Array.isArray(tags) && tags.length > 0 && (
 								<Fragment>
 									<SideSection title="Tags" to="/tags" count={tags} />
 									<Tags tags={tags} style={{marginBottom: '3em'}} />
 								</Fragment>
 							)}
-							{author && (
+							{isPlainObject(author) && (
 								<Fragment>
 									<SideSection title="Autor" to="/authors" />
 									<AuthorCard {...author} small />
@@ -69,8 +77,8 @@ const BlogPost = ({
 					</Cell>
 				</Row>
 				<CardRow style={{paddingTop: '3rem'}}>
-					{prev && <PostCard {...prev} size={0} />}
-					{next && <PostCard {...next} size={0} />}
+					{isPlainObject(prev) && <PostCard {...prev} size={0} />}
+					{isPlainObject(next) && <PostCard {...next} size={0} />}
 				</CardRow>
 			</Container>
 		</Fragment>
