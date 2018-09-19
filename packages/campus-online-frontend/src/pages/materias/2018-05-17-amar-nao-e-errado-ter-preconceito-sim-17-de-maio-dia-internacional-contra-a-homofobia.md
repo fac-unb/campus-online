@@ -6,8 +6,8 @@ title: >-
 cover: /uploads/img-20180517-wa0100.jpg
 date: '2018-05-17'
 editorial:
-  slug: /editorias/2018-1-educacao/
-  title: Educação
+  slug: /editorials/editorial/
+  title: Opinião
 author:
   slug: /reporteres/2018-1-caroline-zampiron/
   title: Caroline Zampiron
@@ -18,7 +18,9 @@ tags:
   - amor
   - preconceito
 featured: false
-headline: '“Dirigi a palavra a uma senhora que se encontrava sentada perto de mim. Disse-lhe: “Nossa! Está quente, né?”'
+headline: >-
+  “Dirigi a palavra a uma senhora que se encontrava sentada perto de mim.
+  Disse-lhe: “Nossa! Está quente, né?”
 ---
 
 > A senhora nada respondeu. Em seguida, ela pegou sua bolsa do mesmo cubo onde tivera eu deixado meus babados. A pobre talvez tenha pensado que representasse uma ameaça a seu patrimônio ou a sua moral de latrina. Fiquei chocado! Mentira! Já me acostumei. Afinal, cresci alvejado por bastantes gentalhas! Homofobia e inveja não são coisas que me são estranhas.”

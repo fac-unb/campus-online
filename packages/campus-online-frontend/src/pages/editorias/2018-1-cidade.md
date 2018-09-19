@@ -1,6 +1,7 @@
 ---
 template: editorial
 title: Cidade
-color: '#2D9CDB'
-semester: '2018/1'
+color: '#5B111E'
+semester: 2018/1
 ---
+

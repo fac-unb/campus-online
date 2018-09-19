@@ -1,6 +1,6 @@
 ---
 template: author
-title: Átila Lima
+title: Atila Lima
 semester: 2018/2
 image: /uploads/img_2403-2.jpg
 ---
