@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: 'Campuscast #4 - Desafios da mobilidade urbana na UnB'
+title: 'Campuscast #4 – Desafios da mobilidade urbana na UnB'
 cover: /uploads/campus4-748x374.png
 date: '2018-06-16'
 editorial:
