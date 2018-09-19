@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: A greve nas estradas
+title: Editorial - A greve nas estradas
 cover: >-
   /uploads/grevecaminhoneirosestrada1200-ce3b6540be84d218980fff7c9d0d8c44-1200x600.jpg
 date: '2018-05-30'
