@@ -8,7 +8,8 @@ editorial:
   title: CampusCast
 semester: 2018/1
 tags:
-  - ''
+  - campuscast
+  - saúde mental
 featured: false
 ---
 O assunto do Campuscast #3 foi um pouco mais sério, mas também de grande importância: Saúde mental na universidade.
