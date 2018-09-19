@@ -11,7 +11,7 @@ author:
   title: Luísa Guimarães
 semester: 2018/1
 tags:
-  - ''
+  - segurança
 featured: true
 headline: >-
   48,4% da comunidade acadêmica se sente insegura nas dependências da
