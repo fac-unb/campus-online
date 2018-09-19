@@ -10,6 +10,11 @@ author:
   slug: /authors/2018-2-mariah-aquino/
   title: Mariah Aquino
 semester: 2018/2
+tags:
+  - Campus Online
+  - unb
+  - fac
+  - jornalismo Unb
 featured: true
 headline: >-
   Entre as novidades da turma deste semestre, o número de WhatsApp para receber
