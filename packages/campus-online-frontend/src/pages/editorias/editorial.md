@@ -1,7 +1,7 @@
 ---
 template: editorial
 title: Editorial
-color: '#800000'
+color: '#CD853F'
 semester: 2018/2
 ---
 
