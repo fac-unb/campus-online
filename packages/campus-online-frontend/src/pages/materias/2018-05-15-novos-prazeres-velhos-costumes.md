@@ -6,8 +6,8 @@ title: >-
 cover: /uploads/novos-prazeres-velhos-costumes.jpg
 date: '2018-05-14'
 editorial:
-  slug: /editorias/2018-1-tabu/
-  title: Tabu
+  slug: /editorials/2018-1-educacao/
+  title: Educação
 author:
   slug: /reporteres/2018-1-thalyta-guerra/
   title: Thalyta Guerra
@@ -18,9 +18,11 @@ tags:
   - prevenção
   - sexo
 featured: false
-headline: 'Jovens e adolescentes no início da vida sexual cometem excessos e acabam esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as devidas orientações.'
+headline: >-
+  Jovens e adolescentes no início da vida sexual cometem excessos e acabam
+  esquecendo dos métodos de prevenção. Muitos chegam na Universidade sem as
+  devidas orientações.
 ---
-
 Falar sobre sexo não é uma coisa tão natural para muita gente, mas que deveria ser diferente. O conceito de sexualidade está muito mais relacionado à orientação sexual do que com o sexo propriamente dito. O ato sexual é uma das formas de prazer que o corpo necessita, e para isso, é extremamente importante o cuidado com a saúde do seu corpo no que diz respeito à vida sexual.
 
 A falta de informação e diálogo com a família contribui para que muitos jovens, ao chegar na universidade, não estejam preparados para o que vão encontrar. É diante dessa curiosidade de conhecer os prazeres da vida que adolescentes cometem excessos que acabam por influenciar na vida sexual.
