@@ -19,7 +19,7 @@ Em 2018 já foram quase 500 demissões de trabalhadores terceirizados. São func
 
 Mauro é morador de Planaltina de Goiás e conta que a sua situação é semelhante à da maioria dos terceirizados que foram mandados embora: pessoas de baixa renda e moradores da periferia, fatores que dificultam bastante o retorno ao mercado de trabalho. “Com essa crise está muito complicado arrumar outro serviço. Na minha vida eu só tenho experiência de portaria mesmo”, conta dona Raimunda Marques dos Santos, 48 anos, moradora do Paranoá, que foi porteira durante oito anos do Pavilhão João Calmon e uma das desligadas durante a crise orçamentária da instituição. A ex-servidora afirma ter curso de vigilante, assim como Lucimone Gonçalves Lima, 47, ex porteira da Faculdade de Arquitetura e Urbanismo (FAU).
 
-Saiba mais sobre os terceirizados
+[Saiba mais sobre os terceirizados](https://campus.kunst.cloud/materias/2018-05-21-a-situacao-dos-terceirizados-o-que-vai-acontecer-daqui-para-frente/)
 
 Ambas reclamam ter recebido somente a rescisão até o momento. “A empresa falou que o valor do aviso prévio veio junto com a rescisão, mas o valor recebido não condiz com a realidade”, conta Lucimone, que afirma que só recebeu R$ 1999,79 até o momento e que está acionando o advogado para resolver a situação. A empresa onde as duas trabalhavam é a Servite, do ramo de limpeza e portaria, contratada pela UnB.
 
