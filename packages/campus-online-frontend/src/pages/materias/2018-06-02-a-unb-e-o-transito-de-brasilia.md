@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: A UnB e o trânsito de Brasília
+title: Editorial - A UnB e o trânsito de Brasília
 cover: /uploads/260116_educacao1.jpg
 date: '2018-06-02'
 editorial:
