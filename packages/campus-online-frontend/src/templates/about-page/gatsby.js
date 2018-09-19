@@ -50,7 +50,7 @@ export const aboutPageQuery = graphql`
 			}
 		}
 		authorList: allMarkdownRemark(
-			sort: {order: DESC, fields: [frontmatter___title]}
+			sort: {order: ASC, fields: [frontmatter___title]}
 			filter: {frontmatter: {template: {eq: "author"}, semester:{eq: "2018/2"}}}
 		) {
 			authors: edges {
