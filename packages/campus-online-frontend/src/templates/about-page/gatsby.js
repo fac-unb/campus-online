@@ -14,7 +14,6 @@ AboutPage.propTypes = {
 		markdownRemark: PropTypes.shape({
 			frontmatter: PropTypes.shape({
 				title: PropTypes.string,
-				items: PropTypes.array,
 			}).isRequired,
 			html: PropTypes.node.isRequired,
 		}),
@@ -43,10 +42,6 @@ export const aboutPageQuery = graphql`
 			html
 			frontmatter {
 				title
-				items {
-					title
-					text
-				}
 			}
 		}
 		authorList: allMarkdownRemark(

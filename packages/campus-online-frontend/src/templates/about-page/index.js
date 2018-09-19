@@ -8,10 +8,9 @@ import {Row, Cell} from '../../components/Grid'
 import Text from '../../components/Text'
 import Content from '../../components/Content'
 import AboutHero from '../../components/AboutHero'
-import Items from '../../components/Items'
 import AuthorCard from '../../components/AuthorCard'
 
-const AboutPage = ({title, items, content, authors}) => (
+const AboutPage = ({title, content, authors}) => (
 	<div style={{overflowX: 'hidden', position: 'relative'}}>
 		<MetaTags title={title} />
 		<Navbar
@@ -24,7 +23,6 @@ const AboutPage = ({title, items, content, authors}) => (
 		/>
 		<AboutHero style={{marginTop: '7rem'}} />
 		<Container>
-			{!!items.length > 0 && <Items items={items} xs={12} />}
 			{content && (
 				<section style={{margin: '2rem 0'}}>
 					<Row>
