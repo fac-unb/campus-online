@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: 'CampusCast #1 — Sexo & tabus'
+title: 'CampusCast #1 – Sexo & tabus'
 cover: /uploads/campuscast-1.png
 date: '2018-05-18'
 editorial:
