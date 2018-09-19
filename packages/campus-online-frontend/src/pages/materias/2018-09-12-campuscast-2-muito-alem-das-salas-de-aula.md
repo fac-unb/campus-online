@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: 'Campuscast #2- Muito além das salas de aula'
-cover: /uploads/bsa-n.jpg
+title: 'Campuscast #2 – Muito além das salas de aula'
+cover: /uploads/campuscast-2-300x142.png
 date: '2018-05-21'
 editorial: ''
 author:
@@ -9,10 +9,9 @@ author:
   title: Victor Farias
 semester: 2018/1
 tags:
-  - campus
   - campuscast
 featured: false
-headline: Confira a segunda edição do CampusCast
+headline: ''
 ---
 No Campuscast #2, convidamos três alunas da UnB para conversar sobre projetos universitários que amplificam o conhecimento recebido nas salas de aula, por meio de atividades extracurriculares, como viagens e práticas empreendedoras.
 
