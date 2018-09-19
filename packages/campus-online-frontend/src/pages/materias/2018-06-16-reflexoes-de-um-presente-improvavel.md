@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Reflexões de um presente improvável
+title: Editorial - Reflexões de um presente improvável
 cover: /uploads/111020121033271802711895.jpg
 date: '2018-06-16'
 editorial:
