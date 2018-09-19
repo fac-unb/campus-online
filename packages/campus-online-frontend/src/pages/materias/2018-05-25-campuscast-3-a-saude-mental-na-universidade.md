@@ -14,8 +14,6 @@ featured: false
 ---
 O assunto do Campuscast #3 foi um pouco mais sério, mas também de grande importância: Saúde mental na universidade.
 
-
-
 Nossos convidados deste programa foram Lucas Oliveira Rocha, estudante do oitavo semestre de psicologia, que atualmente realiza trabalhos no Caep (Centro de Atendimento e Estudos Psicológicos) Itinerante, e Fernando Silva da Silveira, membro da Liga Clínica Médica da Medicina e ex-presidente da Liga de Psiquiatria da UnB.
 
-https://soundcloud.com/user-834963405/campuscast-2-saude-mental-na-universidade
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/448827501&amp;color=d23125"></iframe>
