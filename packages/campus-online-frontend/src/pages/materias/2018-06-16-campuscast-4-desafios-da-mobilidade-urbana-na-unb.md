@@ -14,7 +14,7 @@ tags:
   - campuscast
   - mobilidade urbana
   - unb
-featured: false
+featured: true
 ---
 No episódio #4 do Campuscast, decidimos conversar com universitários sobre mobilidade urbana na UnB. Para isso, convidamos três estudantes que utilizam meios de transporte diferentes para chegar à universidade – carro, ônibus e bicicleta.
 
