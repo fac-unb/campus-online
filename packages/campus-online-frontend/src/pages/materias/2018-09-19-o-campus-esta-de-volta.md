@@ -11,9 +11,9 @@ author:
   title: Mariah Aquino
 semester: 2018/2
 featured: true
-headline: A turma 2/2018 inicia seus trabalhos
+headline: 'Entre as novidades da turma desse semestre, está um número de WhatsApp'
 ---
-O Campus Online é o jornal laboratório dos alunos de jornalismo da Universidade de Brasília (UnB). A cada semestre, uma nova turma toma as rédeas do Campus. Conheça aqui os repórteres: https://campus.kunst.cloud/reporteres. \
+O Campus Online é o jornal laboratório dos alunos de jornalismo da Universidade de Brasília (UnB). A cada semestre, uma nova turma toma as rédeas do Campus. Conheça aqui nossos repórteres: https://campus.kunst.cloud/reporteres. \
 \
 Seguiremos com a cobertura dos principais acontecimentos da universidade, de modo preciso e ágil, como a prática jornalística precisa ser.
 
