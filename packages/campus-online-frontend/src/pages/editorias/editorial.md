@@ -1,7 +1,7 @@
 ---
 template: editorial
 title: Opinião
-color: '#CD853F'
+color: '#DE8D2E'
 semester: 2018/2
 ---
 
