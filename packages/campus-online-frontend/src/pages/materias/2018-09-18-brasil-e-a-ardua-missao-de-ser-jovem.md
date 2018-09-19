@@ -2,7 +2,7 @@
 template: blog-post
 title: Brasil e a árdua missão de ser jovem
 cover: /uploads/img_2342-768x512.jpg
-date: '2018-09-18'
+date: '2018-05-17'
 editorial:
   slug: /editorials/editorial/
   title: Editorial
