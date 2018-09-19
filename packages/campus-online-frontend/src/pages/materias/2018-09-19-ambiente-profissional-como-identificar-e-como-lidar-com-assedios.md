@@ -2,7 +2,7 @@
 template: blog-post
 title: 'Ambiente profissional: como identificar e como lidar com assédios'
 cover: /uploads/dano-moral-e-assedio-moral-968x506.jpg
-date: '2018-09-19'
+date: '2018-09-23'
 editorial:
   slug: /editorials/2018-1-universidade/
   title: Comportamento
