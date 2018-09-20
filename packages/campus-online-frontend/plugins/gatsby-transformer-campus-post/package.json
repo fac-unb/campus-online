@@ -1,8 +1,8 @@
 {
   "name": "gatsby-transformer-campus-post",
   "version": "0.0.0-alpha",
-  "description": "Gatsby Transformer for moeda FAQ, extends MoedaDocuments",
+  "description": "Gatsby Transformer for campus posts, extends MarkdownRemark",
   "main": "index.js",
-  "author": "Startaê Team <hi@startae.com.br>",
+  "author": "Leonardo Dino",
   "private": true
 }

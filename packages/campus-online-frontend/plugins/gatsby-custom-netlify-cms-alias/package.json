@@ -3,6 +3,6 @@
   "version": "0.0.0-alpha",
   "description": "Gatsby Plugin for custom netlify-cms package",
   "main": "index.js",
-  "author": "Startaê Team <hi@startae.com.br>",
+  "author": "Leonardo Dino",
   "private": true
 }
