@@ -2,7 +2,7 @@
 template: blog-post
 title: Saúde mental não é brincadeira
 cover: /uploads/img-20180606-wa0057-748x421.jpg
-date: '2018-09-19'
+date: '2018-06-07'
 editorial:
   slug: /editorials/2018-1-educacao/
   title: Educação
