@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+  squash_merges: true
 
 publish_mode: editorial_workflow
 
@@ -8,7 +9,7 @@ slug:
   encoding: "ascii"
   clean_accents: true
 
-display_url: https://campus.kunst.cloud
+display_url: https://campus.fac.unb.br
 media_folder: packages/campus-online-frontend/static/uploads
 public_folder: /uploads
 
