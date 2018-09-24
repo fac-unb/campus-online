@@ -17,7 +17,7 @@ headline: >-
   O conjunto de dados é uma das poucas alternativas para encontrar trabalhos
   escritos em português na área
 ---
-A Universidade de Brasília conta com uma base de dados com cerca de 13 mil registros na área de Ciência da Informação. Conhecida como ABCDM, o projeto mantido por professores e alunos da Faculdade de Ciência da Informação (FCI) da UnB pretende ser fonte de literatura em língua portuguesa desse campo de conhecimento.
+A Universidade de Brasília conta com uma base de dados com cerca de 13 mil registros na área de Ciência da Informação. Conhecido como ABCDM (sigla para Arquivologia, Biblioteconomia, Ciência da Informação, Documentação e Museologia), o projeto mantido por professores e alunos da Faculdade de Ciência da Informação (FCI) da UnB pretende ser fonte de literatura em língua portuguesa desse campo de conhecimento.
 
 Criada em 2001, a base foi apresentada mais uma vez nesta segunda-feira (24), na própria FCI, para quatro alunos presentes, durante a Semana Universitária 2018. Segundo o professor doutor em Ciência da Informação pela UnB Jayme Vilan Filho,  que é um dos resposáveis pelo projeto, a ferramenta foi criada para suprir a ausência de bases de dados sobre o tema. 
 
