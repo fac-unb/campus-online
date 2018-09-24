@@ -4,10 +4,10 @@ title: 'Manual do estudante politizado: um guia básico para você entender a Un
 cover: /uploads/vic-748x421.jpeg
 date: '2018-06-14'
 editorial:
-  slug: /editorials/politica/
+  slug: /editorias/politica/
   title: Política
 author:
-  slug: /authors/2018-1-victor-farias/
+  slug: /reporteres/2018-1-victor-farias/
   title: Victor Farias
 semester: 2018/1
 featured: false

@@ -6,10 +6,10 @@ title: >-
 cover: /uploads/img-20180601-wa0018-212x300.jpg
 date: '2018-06-02'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-hallana-moreira/
+  slug: /reporteres/2018-1-hallana-moreira/
   title: Hallana Moreira
 semester: 2018/1
 tags:

@@ -4,10 +4,10 @@ title: Editorial - A nova missão da Semana Universitária
 cover: /uploads/img_2483.jpg
 date: '2018-09-24'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Opinião
 author:
-  slug: /authors/2018-2-gabriel-ponte/
+  slug: /reporteres/2018-2-gabriel-ponte/
   title: Gabriel Ponte
 semester: 2018/2
 tags:

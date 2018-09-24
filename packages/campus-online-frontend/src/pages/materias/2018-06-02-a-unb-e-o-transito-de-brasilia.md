@@ -4,7 +4,7 @@ title: Editorial - A UnB e o trânsito de Brasília
 cover: /uploads/260116_educacao1.jpg
 date: '2018-06-02'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Editorial
 semester: 2018/1
 featured: false

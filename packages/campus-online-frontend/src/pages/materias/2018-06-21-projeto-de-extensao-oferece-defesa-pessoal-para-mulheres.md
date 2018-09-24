@@ -4,10 +4,10 @@ title: Projeto de extensão oferece defesa pessoal para mulheres
 cover: /uploads/ultimo.jpg
 date: '2018-06-21'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Comportamento
 author:
-  slug: /authors/2018-1-john-anders/
+  slug: /reporteres/2018-1-john-anders/
   title: John Anders
 semester: 2018/1
 tags:
@@ -36,4 +36,5 @@ O competidor de Muay Thai e professor Thalisson Araujo do projeto de extensão e
 
 As aulas acontecem todas terças-feiras e quintas-feiras das 16 horas até as 17 horas no Campus Planaltina da Universidade de Brasília. A taxa mensal é de 35 reais.
 
-**Contato:** Professor Thalisson Araujo (61) 99382-9492.
+**Contato:** Professor Thalisson Araujo (61) 99382-9492
+.

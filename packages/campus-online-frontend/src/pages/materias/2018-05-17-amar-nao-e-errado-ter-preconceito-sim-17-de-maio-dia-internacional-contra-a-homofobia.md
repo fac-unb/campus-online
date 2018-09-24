@@ -6,7 +6,7 @@ title: >-
 cover: /uploads/img-20180517-wa0100.jpg
 date: '2018-05-17'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Opinião
 author:
   slug: /reporteres/2018-1-caroline-zampiron/

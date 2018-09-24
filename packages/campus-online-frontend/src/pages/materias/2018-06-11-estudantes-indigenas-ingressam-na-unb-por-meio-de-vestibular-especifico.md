@@ -4,10 +4,10 @@ title: Estudantes indígenas ingressam na UnB por meio de vestibular específico
 cover: /uploads/img-20180611-wa0085-748x421.jpg
 date: '2018-06-11'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Comportamento
 author:
-  slug: /authors/2018-1-rebeca-borges/
+  slug: /reporteres/2018-1-rebeca-borges/
   title: Rebeca Borges
 semester: 2018/1
 tags:
@@ -31,7 +31,8 @@ A coordenadora também ressalta que a prova aplicada nos pólos tem os mesmos pr
 
 ![Thaine Rinalda Pereira Alves, estudante indígena, do 1º semestre de Administração na UnB.](/uploads/img-20180611-wa0088.jpg)
 
-Conheça a história de Thaine Alves e Patrícia da Silva, estudantes indígenas na UnB:
+Conheça a história de Thaine Alves e Patrícia da Silva, estudantes indígenas na UnB
+:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wj_rHToR8J4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

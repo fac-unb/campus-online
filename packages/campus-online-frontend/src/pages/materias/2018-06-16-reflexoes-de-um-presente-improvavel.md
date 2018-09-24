@@ -4,7 +4,7 @@ title: Editorial - Reflexões de um presente improvável
 cover: /uploads/111020121033271802711895.jpg
 date: '2018-06-16'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Editorial
 semester: 2018/1
 featured: false

@@ -4,10 +4,10 @@ title: Consumo de bebida alcoólica afeta universitários
 cover: /uploads/thalyta-foto-748x421.jpeg
 date: '2018-06-11'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Comportamento
 author:
-  slug: /authors/2018-1-thalyta-guerra/
+  slug: /reporteres/2018-1-thalyta-guerra/
   title: Thalyta Guerra
 semester: 2018/1
 tags:

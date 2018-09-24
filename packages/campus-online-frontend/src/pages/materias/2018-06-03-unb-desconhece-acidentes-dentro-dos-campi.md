@@ -4,10 +4,10 @@ title: UnB desconhece acidentes dentro dos campi
 cover: /uploads/5-1024x576.jpeg
 date: '2018-06-03'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-ana-isabel-mansur/
+  slug: /reporteres/2018-1-ana-isabel-mansur/
   title: Ana Isabel Mansur
 semester: 2018/1
 tags:

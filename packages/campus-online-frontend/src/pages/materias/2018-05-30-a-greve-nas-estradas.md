@@ -5,10 +5,10 @@ cover: >-
   /uploads/grevecaminhoneirosestrada1200-ce3b6540be84d218980fff7c9d0d8c44-1200x600.jpg
 date: '2018-05-30'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Editorial
 author:
-  slug: /authors/2018-1-naum-carlos/
+  slug: /reporteres/2018-1-naum-carlos/
   title: Naum Carlos
 semester: 2018/1
 featured: false

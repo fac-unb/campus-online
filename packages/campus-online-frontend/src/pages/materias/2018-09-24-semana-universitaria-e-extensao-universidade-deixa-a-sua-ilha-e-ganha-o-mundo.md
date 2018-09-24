@@ -6,10 +6,10 @@ title: >-
 cover: /uploads/ae12c87f-baba-402f-9e1d-6d4986391626.jpg
 date: '2018-09-24'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-naum-carlos/
+  slug: /reporteres/2018-1-naum-carlos/
   title: Naum Carlos
 semester: 2018/2
 featured: false

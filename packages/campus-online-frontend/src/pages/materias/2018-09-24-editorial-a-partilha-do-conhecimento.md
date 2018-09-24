@@ -4,10 +4,10 @@ title: Editorial - A partilha do conhecimento
 cover: /uploads/10062009_jardimicc_isabelalyrio.jpg
 date: '2018-09-24'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Opinião
 author:
-  slug: /authors/2018-1-naum-carlos/
+  slug: /reporteres/2018-1-naum-carlos/
   title: Naum Carlos
 semester: 2018/2
 tags:

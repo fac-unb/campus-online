@@ -4,10 +4,10 @@ title: Estudante é assassinado na universidade
 cover: /uploads/35924491_1665786553517321_71929917545119744_o-748x421.jpg
 date: '2018-06-24'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Comportamento
 author:
-  slug: /authors/2018-1-ursula-barbosa/
+  slug: /reporteres/2018-1-ursula-barbosa/
   title: Úrsula Barbosa
 semester: 2018/1
 tags:

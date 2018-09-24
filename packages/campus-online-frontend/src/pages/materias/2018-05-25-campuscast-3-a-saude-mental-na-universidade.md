@@ -4,7 +4,7 @@ title: 'Campuscast #3 – A Saúde Mental na Universidade'
 cover: /uploads/campuscast-3-1024x483.png
 date: '2018-05-25'
 editorial:
-  slug: /editorials/2018-1-tabu/
+  slug: /editorias/2018-1-tabu/
   title: CampusCast
 semester: 2018/1
 tags:

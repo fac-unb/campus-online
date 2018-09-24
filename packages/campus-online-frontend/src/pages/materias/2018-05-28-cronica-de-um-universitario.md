@@ -4,10 +4,10 @@ title: Crônica de um universitário
 cover: /uploads/img-20180528-wa0043-768x512.jpg
 date: '2018-05-28'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Opinião
 author:
-  slug: /authors/2018-1-naum-carlos/
+  slug: /reporteres/2018-1-naum-carlos/
   title: Naum Carlos
 semester: 2018/1
 featured: false

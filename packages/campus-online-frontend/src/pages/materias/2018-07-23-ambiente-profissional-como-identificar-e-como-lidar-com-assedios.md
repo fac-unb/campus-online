@@ -4,10 +4,10 @@ title: 'Ambiente profissional: como identificar e como lidar com assédios'
 cover: /uploads/assedio-moral1465591017.jpg
 date: '2018-07-23'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Comportamento
 author:
-  slug: /authors/2018-1-thalyta-guerra/
+  slug: /reporteres/2018-1-thalyta-guerra/
   title: Thalyta Guerra
 semester: 2018/1
 featured: false
@@ -32,27 +32,31 @@ Para o assédio moral não existem proteções jurídicas. Entretanto, algumas c
 
 
 
-**Assédio Sexual**
+**Assédio Sexual
+**
 
 Este tipo de violência surge concomitantemente à inserção da mulher no mercado de trabalho. Tem como objetivo a intimidação e tentativa de prova de que o espaço não pertence a elas. O assédio sexual no âmbito trabalhista pode ser de dois tipos: por chantagem, quando o assediador diz à vítima que, caso ela não atenda ao pedido, será punida ou perderá o emprego – neste caso, a ocorrência será sempre de alguém em posição hierárquica superior – e por intimidação ou ambiental, o qual pode ocorrer em grupo ou individualmente, e em níveis estruturais distintos.
 
-A sociedade ainda é conivente com assédios sexuais. Fora do que concerne o ambiente de trabalho, o caso dos torcedores brasileiros que hostilizaram uma mulher russa na copa ganha espaço na mídia mundial. Boris Casoy, jornalista âncora do jornal da “RedeTV! News”, diz que o ocorrido durante o mundial não passa de uma molecagem, nada comparado à um crime. O que é controverso, visto que o assédio sexual pode ser enquadrado como danos morais e materiais, este último, contendo provas de que o ocorrido teria causado prejuízo de saúde física ou psicológica à vítima.
+A sociedade ainda é conivente com assédios sexuais. Fora do que concerne o ambiente de trabalho, o caso dos torcedores brasileiros que hostilizaram uma mulher russa na copa ganha espaço na mídia mundial. Boris Casoy, jornalista âncora do jornal da “RedeTV! News”, diz que o ocorrido durante o mundial não passa de uma molecagem, nada comparado à um crime. O que é controverso, visto que o assédio sexual pode ser enquadrado como danos morais e materiais, este último, contendo provas de que o ocorrido teria causado prejuízo de saúde física ou psicológica à vítima.
 
 
 
 Esse tipo de declaração hostil e pública expõe a vulnerabilidade em que mulheres ainda se encontram dentro da estrutura social, familiar, política e de trabalho. Oferecer-se como testemunha, ajudar na denúncia, colher provas em áudio e imagem, averiguar se a violência ocorre com as demais colegas e construir redes de apoio são medidas que podem partir das testemunhas. O silêncio não é tido como consentimento, as entidades de apoio entendem que o medo pode, muitas vezes, calar quem sofre a violência. O assédio é a insistência, a repetição de atitudes que ferem a integridade sexual e humana. Entretanto, caso tenha ocorrido um episódio específico em que a pessoa se sinta agredida, esta poderá tomar as atitudes cabíveis.
 
-**Assédio Moral**
+**
+Assédio Moral
+**
 
 O assédio sexual pode se transformar em assédio moral, uma vez que a vítima tenha reagido repulsivamente às atitudes verbais ou físicas de cunho sexual. Desta maneira, o agressor, ferido, reage de modo a tentar diminuir e atingir psicologicamente sua vítima. Privar o contratado de pagamentos, ou ressarcimento, de verba oriunda de sonegação de direitos, como o registro da Carteira de Trabalho e horas extras, também pode ser enquadrado como assédio moral.
 
-Perseguições dentro ou fora do expediente acontecem de diversas maneiras, desde a invenção de apelidos desagradáveis, até o ato de ignorar pedidos, conversas ou a presença do contratado. A violência pode partir de um grupo ou de uma relação interpessoal. Passar po isso é profundamente traumático para quem sofre e, geralmente, desencadeia em problemas psicológicos, físicos tratados com remédios terapêuticos.
+Perseguições dentro ou fora do expediente acontecem de diversas maneiras, desde a invenção de apelidos desagradáveis, até o ato de ignorar pedidos, conversas ou a presença do contratado. A violência pode partir de um grupo ou de uma relação interpessoal. Passar po isso é profundamente traumático para quem sofre e, geralmente, desencadeia em problemas psicológicos, físicos tratados com remédios terapêuticos.
 
 É possível identificar algumas condutas que podem ser caracterizadas como assédio moral, que geram situações humilhantes e constrangedoras para a vítima. Sendo elas: desaprovação a qualquer comportamento, críticas recorrentes em relação à sua capacidade profissional, comunicações incorretas ou incompletas quanto às tarefas, isolamento, descrédito e espalhar rumores ou boatos sobre a sua vida pessoal ou profissional.
 
 
 
-**Denúncia**
+**Denúncia
+**
 
 
 
@@ -68,7 +72,8 @@ A recomendação é que o caso seja levado a superiores e ao canal de Ouvidoria 
 
 
 
-**Falsa denúncia**
+**Falsa denúncia
+**
 
 
 
@@ -78,7 +83,8 @@ As identificações de assédio moral em atitudes comuns do ambiente de trabalho
 
 A mesma jurisdição que trabalha pelas acusações de assédio tutela pelas falsas acusações. O que impede, que aqueles que forem acusados injustamente – quando não há espécie de provas suficientes – possam ser vexados ou ridicularizados. Os crimes, que ocorrem neste caso, são os de calúnia, difamação e injúria.
 
-****
+**
+**
 
 ****
 

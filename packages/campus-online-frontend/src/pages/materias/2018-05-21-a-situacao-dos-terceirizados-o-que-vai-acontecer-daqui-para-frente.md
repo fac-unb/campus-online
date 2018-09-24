@@ -4,10 +4,10 @@ title: 'A situação dos terceirizados: O que vai acontecer daqui para frente'
 cover: /uploads/roma-768x576.jpg
 date: '2018-05-21'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-joao-guilherme-romariz/
+  slug: /reporteres/2018-1-joao-guilherme-romariz/
   title: João Guilherme Romariz
 semester: 2018/1
 tags:

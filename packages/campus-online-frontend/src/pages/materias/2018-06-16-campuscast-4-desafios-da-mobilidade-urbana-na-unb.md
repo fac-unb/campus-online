@@ -4,10 +4,10 @@ title: 'Campuscast #4 – Desafios da mobilidade urbana na UnB'
 cover: /uploads/campus4-748x374.png
 date: '2018-06-16'
 editorial:
-  slug: /editorials/2018-1-tabu/
+  slug: /editorias/2018-1-tabu/
   title: CampusCast
 author:
-  slug: /authors/2018-1-victor-farias/
+  slug: /reporteres/2018-1-victor-farias/
   title: Victor Farias
 semester: 2018/1
 tags:
@@ -24,7 +24,7 @@ Os entrevistados foram Gino Luchese, do curso de engenharia ambiental, Rafael Ce
 
 
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/458578914&amp;color=d23125"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/458578914&amp;color=d23125"></iframe>
 
 
 

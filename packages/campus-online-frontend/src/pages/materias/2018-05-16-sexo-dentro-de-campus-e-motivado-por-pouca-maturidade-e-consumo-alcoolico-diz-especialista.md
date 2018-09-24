@@ -6,10 +6,10 @@ title: >-
 cover: /uploads/bce-2.jpg
 date: '2018-05-16'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-robson-g-rodrigues/
+  slug: /reporteres/2018-1-robson-g-rodrigues/
   title: Robson G. Rodrigues
 semester: 2018/1
 tags:

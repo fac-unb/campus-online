@@ -4,10 +4,10 @@ title: Pesquisa mostra relação entre esgotos e consumo de cocaína no DF
 cover: /uploads/img-20180608-wa0010-748x421.jpg
 date: '2018-06-11'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Comportamento
 author:
-  slug: /authors/2018-1-sandra-silva/
+  slug: /reporteres/2018-1-sandra-silva/
   title: Sandra Silva
 semester: 2018/1
 featured: false
@@ -24,7 +24,7 @@ Líder no consumo de cocaína está Asa Norte, Lago Norte e Varjão. O gráfico 
 
 O estudo também foi feito durante a Copa do Mundo de 2014, quando Brasília sediou dois jogos do Brasil em dois finais de semana. A intenção era comprovar se o clima festivo realmente influencia no consumo desses entorpecentes. E a hipótese se confirmou: o consumo de drogas teve um salto significativo. “Quando as pessoas estão consumindo álcool e festejando a tendência para haver consumo é muito grande” explica Fernando Sodré, professor do Instituto de Química da UnB e também integrante do AQQUA.
 
-Quando o usuário a consome juntamente com bebidas alcóolicas, o corpo metaboliza o cocaetileno. Os pesquisadores estão trabalhando para rastrear essa substância nas amostras de esgoto a fim de conseguir entender se o maior consumo dos entorpecentes acontece casualmente em festas ou é feito por usuários viciados.
+Quando o usuário a consome juntamente com bebidas alcóolicas, o corpo metaboliza o cocaetileno. Os pesquisadores estão trabalhando para rastrear essa substância nas amostras de esgoto a fim de conseguir entender se o maior consumo dos entorpecentes acontece casualmente em festas ou é feito por usuários viciados.
 
 
 

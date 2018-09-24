@@ -4,10 +4,10 @@ title: Intercampi em crise
 cover: /uploads/foto-de-capa.png
 date: '2018-09-20'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-2-matheus-godois/
+  slug: /reporteres/2018-2-matheus-godois/
   title: Matheus Godois
 semester: 2018/2
 tags:

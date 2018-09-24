@@ -6,7 +6,7 @@ title: >-
 cover: /uploads/novos-prazeres-velhos-costumes.jpg
 date: '2018-05-14'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
   slug: /reporteres/2018-1-thalyta-guerra/

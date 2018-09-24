@@ -4,10 +4,10 @@ title: Os dilemas da política de Cotas
 cover: /uploads/ho1-748x421.jpg
 date: '2018-06-14'
 editorial:
-  slug: /editorials/editorial/
+  slug: /editorias/editorial/
   title: Opinião
 author:
-  slug: /authors/2018-1-hallana-moreira/
+  slug: /reporteres/2018-1-hallana-moreira/
   title: Hallana Moreira
 semester: 2018/1
 featured: false

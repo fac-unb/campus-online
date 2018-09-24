@@ -4,7 +4,7 @@ title: 'Campuscast #5 – Criminalização e consumo da maconha'
 cover: /uploads/cannabis_sativa_leaf_dorsal_aspect_2012_01_23_0830.jpg
 date: '2018-07-03'
 editorial:
-  slug: /editorials/2018-1-tabu/
+  slug: /editorias/2018-1-tabu/
   title: CampusCast
 author:
   slug: /reporteres/2018-1-victor-farias/

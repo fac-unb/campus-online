@@ -4,10 +4,10 @@ title: O Campus está de volta!
 cover: /uploads/whatsapp-image-2018-09-18-at-20.25.01.jpeg
 date: '2018-09-19'
 editorial:
-  slug: /editorials/2018-1-universidade/
+  slug: /editorias/2018-1-universidade/
   title: Universidade
 author:
-  slug: /authors/2018-2-mariah-aquino/
+  slug: /reporteres/2018-2-mariah-aquino/
   title: Mariah Aquino
 semester: 2018/2
 tags:

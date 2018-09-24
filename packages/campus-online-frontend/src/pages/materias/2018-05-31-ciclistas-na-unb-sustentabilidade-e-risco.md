@@ -4,10 +4,10 @@ title: 'Ciclistas na UnB: sustentabilidade e risco'
 cover: /uploads/img-20180531-wa0056-225x300.jpg
 date: '2018-05-31'
 editorial:
-  slug: /editorials/2018-1-educacao/
+  slug: /editorias/2018-1-educacao/
   title: Educação
 author:
-  slug: /authors/2018-1-iane-almeida/
+  slug: /reporteres/2018-1-iane-almeida/
   title: Iane Almeida
 semester: 2018/1
 tags:
@@ -24,9 +24,10 @@ São muitas as tecnologias como _smartphones_, antibióticos, técnicas cirúrgi
 
 Nestas circunstâncias, devemos pensar em como manter a vida e com qualidade. Não vamos aqui discutir as diversas abordagens sobre sustentabilidade. Porém, atrelamos este conceito à relação entre desenvolvimento e manutenção e promoção da vida, em uma abordagem que é humanista, ao falarmos sobre os ciclistas na Universidade de Brasília (UnB). Para o professor e pesquisador do Departamento de Engenharia Civil e Ambiental da UnB, Pastor Willy Gonzales Taco, o trânsito é uma expressão da cultura.
 
- 
+ 
 
-**Mas então o que fazer se nossa cultura é a do risco?**
+**Mas então o que fazer se nossa cultura é a do risco?
+**
 
 Trata-se então de mudar nossa de forma de pensar e agir no mundo, modificando a cultura. Há conflito por toda a parte. São as pessoas nas cidades cujos espaços não estão tão adequados, os meios de transportes utilizados e a problemática instaurada quanto à produção de alimentos, energia, saúde e organização da vida. São pedestres, ciclistas e motoristas, todos no mesmo espaço. E para que possa existir a sustentabilidade é necessário antes de tudo que as pessoas se respeitem.
 
@@ -36,13 +37,15 @@ O especialista, Pastor Willy Gonzales Taco, nos esclarece que os meios de transp
 
 
 
-** A realidade dos ciclistas**
+** A realidade dos ciclistas
+**
 
-Pastor Willy Gonzales Taco revela que apenas 10% dos alunos vem para a universidade a pé ou de bicicleta. Destaca que o uso das bikes aumentou significativamente devido à implantação de ciclovias e de bicicletário compartilhado. Apesar disso, os conflitos entre ciclistas, pedestres e motoristas de carros e ônibus permanece. A questão é bastante complexa. Devemos refletir sobre quem está dirigindo, se este motorista está atento ao trânsito ou se está usando o celular. “No campus muitos dirigem falando ao celular”. O pesquisador questiona as causas dos acidentes com ciclistas ocorridos no campus.
+Pastor Willy Gonzales Taco revela que apenas 10% dos alunos vem para a universidade a pé ou de bicicleta. Destaca que o uso das bikes aumentou significativamente devido à implantação de ciclovias e de bicicletário compartilhado. Apesar disso, os conflitos entre ciclistas, pedestres e motoristas de carros e ônibus permanece. A questão é bastante complexa. Devemos refletir sobre quem está dirigindo, se este motorista está atento ao trânsito ou se está usando o celular. “No campus muitos dirigem falando ao celular”. O pesquisador questiona as causas dos acidentes com ciclistas ocorridos no campus.
 
 
 
-[Veja vídeo do DETRAN em parceria com a UnB ](https://www.facebook.com/oficialUnB/videos/vb.187578724620204/1827417000636360/?type=2&theater)
+[Veja vídeo do DETRAN em parceria com a UnB 
+](https://www.facebook.com/oficialUnB/videos/vb.187578724620204/1827417000636360/?type=2&theater)
 
 
 
@@ -66,11 +69,13 @@ O grafiteiro, rapper do Extrema Função e artista plástico, Cleiniston, usa as
 
  
 
-**Projetos**
+**Projetos
+**
 
-**Na UnB** – Quando o assunto é pedalar, temos na UnB o Coletivo Bicicleta Livre que é um projeto de extensão, iniciado em 2007, com o objetivo de incentivar a utilização da bicicleta no campus. No princípio, foi implementado um sistema de bicicletas comunitárias para facilitar um deslocamento sustentável a partir da doação e conserto de bikes.
+**
+Na UnB** – Quando o assunto é pedalar, temos na UnB o Coletivo Bicicleta Livre que é um projeto de extensão, iniciado em 2007, com o objetivo de incentivar a utilização da bicicleta no campus. No princípio, foi implementado um sistema de bicicletas comunitárias para facilitar um deslocamento sustentável a partir da doação e conserto de bikes.
 
-**No Distrito Federal** – Há também o projeto + Bikes do Governo do Distrito Federal que na verdade também é um sistema compartilhado de bicicletas. Neste mês foram inauguradas mais 2 estações de bicicletas compartilhadas na Asa Norte que apresenta muitos estudantes usuários do serviço. Próximo à UnB, nas quadras 408/409, de acordo com a Secretaria de Mobilidade há uma grande procura pelas bikes.
+**No Distrito Federal** – Há também o projeto + Bikes do Governo do Distrito Federal que na verdade também é um sistema compartilhado de bicicletas. Neste mês foram inauguradas mais 2 estações de bicicletas compartilhadas na Asa Norte que apresenta muitos estudantes usuários do serviço. Próximo à UnB, nas quadras 408/409, de acordo com a Secretaria de Mobilidade há uma grande procura pelas bikes.
 
 
 
