@@ -7,10 +7,8 @@ editorial:
   slug: /editorias/2018-1-universidade/
   title: Universidade
 author:
-  slug: /reporteres/2018-1-daniele-brandao/
+  slug: /authors/2018-1-daniele-brandao/
   title: Daniele Brandão
-authors:
-  - abc
 semester: 2018/1
 tags:
   - orçamento
