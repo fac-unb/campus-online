@@ -31,13 +31,11 @@ Mais para o fim do evento, a supervisora Myrian apresentou as medidas que o TJDF
 
 ![Alunos acompanhando a fala das especialistas. (Foto: Ana Luisa Padilha)](/uploads/whatsapp-image-2018-09-24-at-22.09.42.jpeg)
 
-
-
 ## Projeto de extensão Maria da Penha: Atenção e Proteção
 
 Coordenadora desde o início do projeto, há 11 anos, a professora Ela Wiecko conta que a iniciativa partiu de alunas e que nele fornecem assistência jurídica e psicológica a mulheres que sofrem com a violência doméstica na Ceilândia. Ela frisa a importância de respeitar o tempo da vítima para empoderá-la e ouvi-la. A partir de uma perspectiva interdisciplinar entre direito e psicologia, os alunos participantes tentam dar mais suporte às mulheres, uma vez que o sistema judiciário muitas vezes faz a revitimização.
 
-O projeto Maria da Penha ocorre aos sábados na Ceilândia. O estudante do nono semestre de Direito Anderson Silva participa há três anos e julga que é muito importante os homens também conhecerem a Lei e refletirem sobre ela. “A Lei serve para resguardar as mulheres, antes elas ficavam a mercê (nessas situações)”. Os interessados podem acessar o site projetomariadapenha.wordpress.com/.
+O projeto Maria da Penha ocorre aos sábados na Ceilândia. O estudante do nono semestre de Direito Anderson Silva participa há três anos e julga que é muito importante os homens também conhecerem a Lei e refletirem sobre ela. “A Lei serve para resguardar as mulheres, antes elas ficavam a mercê (nessas situações)”. Os interessados podem acessar o site https://projetomariadapenha.wordpress.com/.  
 
 O evento faz parte da ação 12 anos da Lei Maria da Penha e 11 anos do projeto de extensão continuada Maria da Penha: Atenção e Proteção que vai até esta terça-feira (25). A segunda mesa “Psicologia e o Enfrentamento à Violência Doméstica e Familiar contra a Mulher” começará às 9h no Auditório Joaquim Nabuco na Faculdade de Direito da UnB.  
 
