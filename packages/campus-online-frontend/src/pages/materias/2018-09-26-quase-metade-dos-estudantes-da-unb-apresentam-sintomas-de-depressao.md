@@ -18,7 +18,7 @@ tags:
 featured: false
 headline: >-
   Estudo sobre saúde mental acende alerta amarelo. Além de depressão, alunos
-  também enfrentam ansiedade e transtornos alimentares.
+  também enfrentam ansiedade e transtornos alimentares
 ---
 Pesquisa realizada em julho com estudantes da UnB mostrou que quase metade dos participantes apresentam sintomas de depressão. O estudo inédito, feito pela Comissão de Saúde Mental, contou com a participação de 4.026 estudantes que responderam cinco perguntas abertas e anônimas sobre temas ligados à universidade. Quase metade dos alunos afirmou sofrer com depressão e ansiedade e 12% apresentaram indícios de distúrbios alimentares. Termos como “prazos”, “ciência”, “aula”, “professor”, “cálculo” e “monografia” aparecem como as principais fontes de sofrimento dos alunos. 
 
