@@ -24,11 +24,10 @@ headline: >-
 ---
 Como entender meu sofrimento psíquico? Esta foi a pergunta que norteou o  debate sobre Vivências Psíquicas promovido pelo [Instituto de Química (IQ)](http://www.iq.unb.br/) na tarde desta segunda-feira (24), no auditório Lauro Mohry. A palestra buscou trazer luz ao debate sobre o que é o sofrimento psíquico humano, compreendendo-o não como uma doença, mas como uma necessidade de autocuidado para que o indivíduo sinta-se mais preparado a enfrentar as adversidades da vida. O objetivo da atividade foi situar a vivência psíquica como um processo pessoal, de cada um, do que é ser e estar no mundo.
 
-A palestra foi ministrada pelo professor do Instituto de Psicologia da Universidade de Brasília (UnB) Dr.Ileno Izídio da Costa. Segundo ele, o sofrimento é algo que é parte do ser humano, e que cada um deve desenvolver seus meios para
- lidar com estes problemas internos. Na ocasião, ele destacou que é preciso resgatar a capacidade de cuidar um dos outros, respeitar e se responsabilizar pelo sofrimento do outro. Nesse sentido, as relações familiares estão diretamente ligadas ao modo em que o ser humano constrói outros tipos de relações. Ele explicou também que as relações se tornaram “líquidas”, ressaltando que a inversão de valores contribui para a
+A palestra foi ministrada pelo professor do Instituto de Psicologia da Universidade de Brasília (UnB) Dr.Ileno Izídio da Costa. Segundo ele, o sofrimento é algo que é parte do ser humano, e que cada um deve desenvolver seus meios para lidar com estes problemas internos. Na ocasião, ele destacou que é preciso resgatar a capacidade de cuidar um dos outros, respeitar e se responsabilizar pelo sofrimento do outro. Nesse sentido, as relações familiares estão diretamente ligadas ao modo em que o ser humano constrói outros tipos de relações. Ele explicou também que as relações se tornaram “líquidas”, ressaltando que a inversão de valores contribui para a
  discriminação e desconsideração do que é cuidar do próximo e se enxergar um ao outro como seres humanos.
 
-![](/uploads/whatsapp-image-2018-09-24-at-21.35.26.jpeg)
+![null](/uploads/whatsapp-image-2018-09-24-at-21.35.26.jpeg)
 
 Mas o que são os sofrimentos psíquicos? Psíquico não é apenas psicológico,
  mas sim uma integração entre o próprio corpo, as relações, o sentido da vida e a
@@ -49,14 +48,14 @@ Mas o que são os sofrimentos psíquicos? Psíquico não é apenas psicológico,
  na universidade e afirmou que “aqui (UnB) a gente não só estuda, precisamos nos
  cuidar mais”. Para ele é possível evitar nove entre dez casos de tentativas de suicídio;
  escutar e acolher melhor as relações são alguns dos caminhos sugeridos pelo
- palestrante. Para ele é preciso tornar tornar o ambiente acadêmico e profissional mais
+ palestrante. Para ele é preciso tornar o ambiente acadêmico e profissional mais
  humano e assim como transformar a universidade em um ambiente mais acolhedor. O
  professor e doutor também defende o acontecimento de mais diálogos e outras ações
  referentes à qualidade de vida e saúde mental, pois, em suas palavras, eles são
  extremamente importantes para que todos possam repensar a qualidade das relações
  na universidade, de toda a unidade, incluindo estudantes, professores e servidores.
 
-Jessé Vanzella, 22 anos e graduanda do sétimo semestre do curso de
+Jessé Vanzella, 22 anos e graduando do sétimo semestre do curso de
  Engenharia Química, disse que muitas vezes as pessoas estão mais preocupadas com o
  trabalho, com os estudos, do que com a própria saúde, sendo que, na verdade deveria
  ser ao contrário. “O nosso rendimento acadêmico é consequência da nossa saúde
