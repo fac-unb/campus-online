@@ -38,7 +38,7 @@ A Unb oferece atendimento psicológico aos estudantes através do Centro de Aten
 
 Rodas de conversa e acolhimento são realizadas pela Diretoria da Diversidade (DIV) da UnB. Em parceria com diferentes departamentos e serviços de apoio, os encontros são realizados com a presença de profissionais especializados em relações sociais e sofrimento psíquico.
 
-**Semana Universitária tem dia dedicado à saúde mental**
+**Semana Universitária tem dia dedicado à saúde mental**
 
 A semana universitária na UnB acontece entre os dias 24 e 28 de setembro e hoje, quarta-feira 26, é um dia dedicado à saúde mental. Serão oferecidas atividades gratuitas e abertas à comunidade para promover o bem-estar, com sessões de tai chi chuan, biodança, meditação, automassagem, ioga, palestras e rodas de conversa completam a programação.
 
