@@ -30,7 +30,7 @@ M. iniciou tratamento aos 18 anos, chegou a tomar antidepressivos e melhorou por
 
 “Comecei a conversar mais, aos poucos, com uma grande amiga. Ela me escutou bastante e, pela primeira vez, senti que podia falar sobre meus problemas sem medo”, disse M. “Outro fator importante foi uma tia minha, que é psicóloga e percebeu como eu estava. Ela marcou uma consulta pra mim com um psiquiatra que ela conhecia e confiava”.
 
-O tratamento não trouxe efeitos imediatos. Foi preciso de muitas sessões e testar alguns remédios até M. apresentar melhoras. Entretanto, com o tempo, seu quadro foi se estabilizando e, com isso, sua motivação para fazer as coisas simples do dia a dia foi se reestabelecendo.
+O tratamento não trouxe efeitos imediatos. Foi preciso de muitas sessões e testar alguns remédios até M. apresentar melhoras. Entretanto, com o tempo, seu quadro foi se estabilizando e, com isso, sua motivação para fazer as coisas simples do dia a dia foi se restabelecendo.
 
 “É difícil dizer o motivo que me fez procurar ajuda. Depressão é uma doença que vai te destruindo sem deixar resquícios”, continuou M. “Eu gostaria de poder dizer pras pessoas que elas não são definidas pela doença que elas têm, que tudo sempre pode melhorar. Acho que por isso optei por fazer Psicologia.”
 
@@ -38,7 +38,9 @@ O tratamento não trouxe efeitos imediatos. Foi preciso de muitas sessões e tes
 
 Hoje M. ainda toma antidepressivos e envia relatórios semanais para seu psiquiatra, contando como foi sua semana. “Pela primeira vez em muito tempo me sinto bem. Depois de anos passando o que eu passei, tudo que quero é poder ajudar os outros como me ajudaram”, declarou. 
 
-A Unb oferece atendimento psicológico aos estudantes através do Centro de Atendimento e Estudos Psicológicos (Caep). Ele é vinculado ao Instituto de Psicologia (IP) e sediado em espaço próprio. Os atendimentos acontecem não só para alunos de graduação e pós-graduação, como também para a comunidade externa de baixa renda. Por dia, são realizados o máximo de 264 atendimentos. Os agendamentos são feitos sempre às segundas-feiras, pelo telefone (61) 3107 1680. 
+## Tratamento psicológico e acolhimento na universidade
+
+A UnB oferece atendimento psicológico aos estudantes através do Centro de Atendimento e Estudos Psicológicos (Caep). Ele é vinculado ao Instituto de Psicologia (IP) e sediado em espaço próprio. Os atendimentos acontecem não só para alunos de graduação e pós-graduação, como também para a comunidade externa de baixa renda. Por dia, são realizados o máximo de 264 atendimentos. Os agendamentos são feitos sempre às segundas-feiras, pelo telefone (61) 3107 1680. 
 
 Rodas de conversa e acolhimento são realizadas pela Diretoria da Diversidade (DIV) da UnB. Em parceria com diferentes departamentos e serviços de apoio, os encontros são realizados com a presença de profissionais especializados em relações sociais e sofrimento psíquico.
 
@@ -46,4 +48,4 @@ Rodas de conversa e acolhimento são realizadas pela Diretoria da Diversidade (D
 
 A semana universitária na UnB acontece entre os dias 24 e 28 de setembro e hoje, quarta-feira 26, é um dia dedicado à saúde mental. Serão oferecidas atividades gratuitas e abertas à comunidade para promover o bem-estar, com sessões de tai chi chuan, biodança, meditação, automassagem, ioga, palestras e rodas de conversa completam a programação.
 
-O monge Sato, Ademar Kyotoshi Sato, participará de uma roda de conversa e meditação. O diálogo abordará as fases da vida e resiliência para viver as dores e alegrias de cada etapa, a partir da filosofia budista. A atividade acontece às 9h, na Sala BT 522, no ICC Norte.
+Nesta terça-feira (25), o monge  Ademar Kyotoshi Sato participou de uma roda de conversa e meditação no ICC Norte. O diálogo abordou as fases da vida e resiliência para viver as dores e alegrias de cada etapa, a partir da filosofia budista.
