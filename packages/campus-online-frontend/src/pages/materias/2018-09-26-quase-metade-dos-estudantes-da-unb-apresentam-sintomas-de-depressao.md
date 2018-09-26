@@ -34,6 +34,8 @@ O tratamento não trouxe efeitos imediatos. Foi preciso de muitas sessões e tes
 
 “É difícil dizer o motivo que me fez procurar ajuda. Depressão é uma doença que vai te destruindo sem deixar resquícios”, continuou M. “Eu gostaria de poder dizer pras pessoas que elas não são definidas pela doença que elas têm, que tudo sempre pode melhorar. Acho que por isso optei por fazer Psicologia.”
 
+> "Depressão é uma doença que vai te destruindo sem deixar resquícios”
+
 Hoje M. ainda toma antidepressivos e envia relatórios semanais para seu psiquiatra, contando como foi sua semana. “Pela primeira vez em muito tempo me sinto bem. Depois de anos passando o que eu passei, tudo que quero é poder ajudar os outros como me ajudaram”, declarou. 
 
 A Unb oferece atendimento psicológico aos estudantes através do Centro de Atendimento e Estudos Psicológicos (Caep). Ele é vinculado ao Instituto de Psicologia (IP) e sediado em espaço próprio. Os atendimentos acontecem não só para alunos de graduação e pós-graduação, como também para a comunidade externa de baixa renda. Por dia, são realizados o máximo de 264 atendimentos. Os agendamentos são feitos sempre às segundas-feiras, pelo telefone (61) 3107 1680. 
