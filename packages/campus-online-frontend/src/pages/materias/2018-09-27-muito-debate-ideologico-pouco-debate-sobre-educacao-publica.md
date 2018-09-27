@@ -14,7 +14,7 @@ tags:
   - debate
   - GDF
   - candidatos
-featured: false
+featured: true
 headline: >-
   Em evento na Faculdade de Comunicação (FAC), estavam presentes apenas quatro
   dos onze candidatos ao cargo de governador do Distrito Federal
