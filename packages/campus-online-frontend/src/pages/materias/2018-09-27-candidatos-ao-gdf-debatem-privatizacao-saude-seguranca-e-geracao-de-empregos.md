@@ -54,78 +54,42 @@ Nos períodos de réplica e tréplica, Alexandre Guerra defendeu o liberalismo e
 
 A segunda pergunta da manhã, feita por Renan e direcionada à Antônio Guillen, foi direta:
 
-“Qual a diferença entre vocês e os governos golpistas?”. Em tom calmo, o candidato do PSTU disse que o partido foi contra o impeachment, mas que não defende o Partido dos
- Trabalhadores (PT). Segundo ele, há um desgaste ao PT, visto que o partido não segue o que
- prega. Ao abordar esse ponto, citou que o PT, ao partilhar a Petrobras, privatizou-a, o que vai
- contra os princípios inicialmente adotados pelo Partido dos Trabalhadores. Por fim, afirmou
- que, em um cenário ideal, a melhor escolha frente à disputa entre PT e Temer ra a convocação
- imediata de novas eleições.
+“Qual a diferença entre vocês e os governos golpistas?”. Em tom calmo, o candidato do PSTU disse que o partido foi contra o impeachment, mas que não defende o Partido dos Trabalhadores (PT). Segundo ele, há um desgaste ao PT, visto que o partido não segue o que prega. Ao abordar esse ponto, citou que o PT, ao partilhar a Petrobras, privatizou-a, o que vai contra os princípios inicialmente adotados pelo Partido dos Trabalhadores. Por fim, afirmou que, em um cenário ideal, a melhor escolha frente à disputa entre PT e Temer seria a convocação imediata de novas eleições.
 
-Na réplica, Renan Rosa falou que o discurso de corrupção é pretexto para depor contra os
- governos. Concluiu dizendo que o candidato do PSTU deveria defender o Lula.
+Na réplica, Renan Rosa falou que o discurso de corrupção é pretexto para depor contra os governos. Concluiu dizendo que o candidato do PSTU deveria defender o Lula.
 
-Concluindo essa etapa das perguntas, na tréplica, Antônio Guillen afirmou que a esquerda
- precisa de coragem e acusou o ex-presidente Lula e o atual presidenciável Fernando Haddad
- de serem capitalistas e corruptos.
+Concluindo essa etapa das perguntas, na tréplica, Antônio Guillen afirmou que a esquerda precisa de coragem e acusou o ex-presidente Lula e o atual presidenciável Fernando Haddad de serem capitalistas e corruptos.
 
-A penúltima pergunta, feita por Guillen, foi também em confronto ao partido representado
- pela candidata. “Por que o PSOL recuou no projeto de pagamento da dívida pública?”,
- questionou.
+A penúltima pergunta, feita por Guillen, foi também em confronto ao partido representado pela candidata. “Por que o PSOL recuou no projeto de pagamento da dívida pública?”, questionou.
 
-Fátima mostrou-se desapontada com a indagação e desabafou que esperava uma pergunta
- referente ao Distrito Federal. Afirmou que o questionamento não é verdadeiro e acrescentou
- que uma das propostas de seu possível governo é a instalação de auditorias de todas as contas
- públicas.
+Fátima mostrou-se desapontada com a indagação e desabafou que esperava uma pergunta referente ao Distrito Federal. Afirmou que o questionamento não é verdadeiro e acrescentou que uma das propostas de seu possível governo é a instalação de auditorias de todas as contas públicas.
 
 Na réplica e tréplica, os candidatos debateram sobre o plano de governo de Guilherme Boulos,
  candidato à Presidência pelo PSOL.
 
-Encerrando o ciclo, Fátima Sousa perguntou se haveria espaço para a comunicação pública em
- um possível governo de Alexandre Guerra.
+Encerrando o ciclo, Fátima Sousa perguntou se haveria espaço para a comunicação pública em um possível governo de Alexandre Guerra.
 
-O candidato afirmou que sim, e destacou que para que a sociedade participe dos projetos é
- necessário que haja uma comunicação de qualidade.
+O candidato afirmou que sim, e destacou que para que a sociedade participe dos projetos é necessário que haja uma comunicação de qualidade.
 
-Na réplica, a candidata do PSOL perguntou a opinião do candidato acerca da comunicação
- pública, mais especificamente das rádios comunitárias e TV estatal. Respondendo aos
- questionamentos, Alexandre afirmou que a comunicação deve ser usada em função do
- cidadão, mas que não apoia a comunicação comunitária e a televisão estatal. Segundo ele,
- esse tipo de comunicação gera mais prejuízo para o Estado do que retorno para o cidadão.
+Na réplica, a candidata do PSOL perguntou a opinião do candidato acerca da comunicação pública, mais especificamente das rádios comunitárias e TV estatal. Respondendo aos questionamentos, Alexandre afirmou que a comunicação deve ser usada em função do cidadão, mas que não apoia a comunicação comunitária e a televisão estatal. Segundo ele, esse tipo de comunicação gera mais prejuízo para o Estado do que retorno para o cidadão.
 
 ## Perguntas do público
 
-A primeira etapa das perguntas abordou três pontos principais: Estádio Nacional Mané
- Garrincha, racismo e saúde. Todos os candidatos, em um período de 5 minutos, responderam aos
- três questionamentos de uma só vez.
+A primeira etapa das perguntas abordou três pontos principais: Estádio Nacional Mané Garrincha, racismo e saúde. Todos os candidatos, em um período de 5 minutos, responderam aos três questionamentos de uma só vez.
 
-Alexandre Guerra, em seu turno, afirmou que pretende privatizar o Mané Garrincha, combater
- o preconceito, além da privatização e despolitização da saúde. “A gente deveria pensar menos
- no corporativismo e em ideologias, e pensar mais no paciente que está morrendo”, concluiu o candidato.
+Alexandre Guerra, em seu turno, afirmou que pretende privatizar o Mané Garrincha, combater o preconceito, além da privatização e despolitização da saúde. “A gente deveria pensar menos no corporativismo e em ideologias, e pensar mais no paciente que está morrendo”, concluiu o candidato.
 
-Fátima Sousa, que foi a segunda a responder às perguntas porque teria que se ausentar do
- debate, não citou o Mané Garrincha, mas prometeu o combate ao racismo, principalmente
- contra as mulheres, e a implementação do Sistema único de Saúde (SUS) no DF. O objetivo da
- candidata do PSOL é “transformar a cidade em um canteiro de saúde”.
+Fátima Sousa, que foi a segunda a responder às perguntas porque teria que se ausentar do debate, não citou o Mané Garrincha, mas prometeu o combate ao racismo, principalmente contra as mulheres, e a implementação do Sistema único de Saúde (SUS) no DF. O objetivo da candidata do PSOL é “transformar a cidade em um canteiro de saúde”.
 
-Renan Rosa, por sua vez, fugiu aos temas que deveriam ser discutidos. Em seu tempo,
- defendeu a estatização do ensino, o fim do vestibular e o consequente livre acesso à educação
- pública.
+Renan Rosa, por sua vez, fugiu aos temas que deveriam ser discutidos. Em seu tempo, defendeu a estatização do ensino, o fim do vestibular e o consequente livre acesso à educação pública.
 
-Antônio Guillen, fechando a primeira etapa das perguntas, também defendeu o combate ao
- racismo, ao feminicídio e à homofobia. Pregou ainda a reparação ao povo afrodescendente e
- apoio aos quilombos. Sobre o Mané Garrincha, o candidato afirmou que, caso eleito, não irá
- entrega-lo à inciativa privada e usará o local a serviço do povo.
+Antônio Guillen, fechando a primeira etapa das perguntas, também defendeu o combate ao racismo, ao feminicídio e à homofobia. Pregou ainda a reparação ao povo afrodescendente e apoio aos quilombos. Sobre o Mané Garrincha, o candidato afirmou que, caso eleito, não irá entrega-lo à inciativa privada e usará o local a serviço do povo.
 
-A segunda rodada de perguntas tratou de outros três temas: problemas sociais, calote da
- dívida pública e privatização das universidades públicas.
+A segunda rodada de perguntas tratou de outros três temas: problemas sociais, calote da dívida pública e privatização das universidades públicas.
 
-Alexandre Guerra, novamente iniciando a rodada, falou que seu governo tratará de aspectos
- sociais e liberdade econômica, além de gerar empregos e apoiar o assistencialismo. Afirmou
- ainda que o calote gera dívidas, juros e problemas econômicos e, portanto, não apoia a ação.
+Alexandre Guerra, novamente iniciando a rodada, falou que seu governo tratará de aspectos sociais e liberdade econômica, além de gerar empregos e apoiar o assistencialismo. Afirmou ainda que o calote gera dívidas, juros e problemas econômicos e, portanto, não apoia a ação.
 
-Sobre a privatização do ensino público, argumentou que o assunto não cabe ao governo do
- Distrito Federal, mas lembrou que João Amoêdo, candidato à Presidência pelo Novo, defende
- essa medida.
+Sobre a privatização do ensino público, argumentou que o assunto não cabe ao governo do Distrito Federal, mas lembrou que João Amoêdo, candidato à Presidência pelo Novo, defende essa medida.
 
 O candidato do PCO defendeu que o ensino deve ser público e a educação, em geral, estatizada. Criticou a atuação dos banqueiros e afirmou que “tem que dar calote em banqueiro sim”. Por fim, defendeu novamente a estatização da economia.
 
