@@ -40,3 +40,5 @@ Sobre educação, o único momento em que se posicionou sobre o assunto foi quan
 O quarto candidato presente era Renan Rosa, do PCO. Segundo ele, o país vivencia um golpe e os latino-americanos estão inserido em uma situação imperialista, encabeçada pelos norte-americanos. Ele comentou também sobre a operação Lava Jato perseguir a esquerda brasileira e sobre a Emenda Constitucional 95/2016,  do teto dos gastos públicos, a qual ele afirmou ser a responsável pelo sucateamento das universidades públicas. 
 
 O integrante do PCO afirmou  que é a favor do ensino público e do livre acesso às instituições de ensino superior. Ainda complementou a opinião elogiando a UnB. “O ensino na Universidade de Brasília é superior ao de qualquer universidade particular por aí”, destacou.
+
+_Edição de Thays Martins_
