@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: 'Muito debate ideológico, pouco debate sobre educação pública'
+cover: /uploads/dsc_0011.jpg
 date: '2018-09-27'
 editorial:
   slug: /editorias/politica/
@@ -19,8 +20,6 @@ headline: >-
   dos onze candidatos ao cargo de governador do Distrito Federal
 ---
 Nesta quinta-feira (27), no auditório Pompeu de Souza, localizado no ICC Norte, ocorreu  o “Painel com Candidatos ao GDF”, promovido pela Faculdade de Comunicação da UnB. Compareceram ao evento Alexandre Guerra (NOVO), Fátima Sousa (PSOL), Guillen (PSTU) e Renan Rosa (PCO). 
-
-![]()
 
 O debate foi dividido em três blocos: no primeiro, os candidatos apresentaram um pouco das propostas de governo; depois cada um teve a chance de fazer uma pergunta para outro; e por fim foram lidas indagações do público presente no auditório. Talvez por uma questão de sorte ou de falta do que perguntar sobre o assunto educação, este ficou em segundo plano enquanto os ataques sobre divergências ideológicas imperaram no debate.
 
