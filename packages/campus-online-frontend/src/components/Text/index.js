@@ -100,6 +100,7 @@ const Text = styled.div`
 	.md-figure {
 		display: block;
 		margin: 3em 0;
+		background: ${colors.base06};
 	}
 
 	.md-figure-caption {
@@ -108,8 +109,6 @@ const Text = styled.div`
 		padding: 0.25rem 0.675rem;
 		font-family: ${fonts.sans};
 		font-weight: 500;
-		background: #333;
-		color: white;
 		background: ${colors.base06};
 		color: ${colors.base66};
 	}
