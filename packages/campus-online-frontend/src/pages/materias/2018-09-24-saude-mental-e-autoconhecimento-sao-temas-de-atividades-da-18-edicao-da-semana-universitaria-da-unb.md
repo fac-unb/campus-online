@@ -27,7 +27,7 @@ Como entender meu sofrimento psíquico? Esta foi a pergunta que norteou o  debat
 A palestra foi ministrada pelo professor do Instituto de Psicologia da Universidade de Brasília (UnB) Dr.Ileno Izídio da Costa. Segundo ele, o sofrimento é algo que é parte do ser humano, e que cada um deve desenvolver seus meios para lidar com estes problemas internos. Na ocasião, ele destacou que é preciso resgatar a capacidade de cuidar um dos outros, respeitar e se responsabilizar pelo sofrimento do outro. Nesse sentido, as relações familiares estão diretamente ligadas ao modo em que o ser humano constrói outros tipos de relações. Ele explicou também que as relações se tornaram “líquidas”, ressaltando que a inversão de valores contribui para a
  discriminação e desconsideração do que é cuidar do próximo e se enxergar um ao outro como seres humanos.
 
-![null](/uploads/whatsapp-image-2018-09-24-at-21.35.26.jpeg)
+![](/uploads/whatsapp-image-2018-09-24-at-21.35.26.jpeg)
 
 Mas o que são os sofrimentos psíquicos? Psíquico não é apenas psicológico,
  mas sim uma integração entre o próprio corpo, as relações, o sentido da vida e a

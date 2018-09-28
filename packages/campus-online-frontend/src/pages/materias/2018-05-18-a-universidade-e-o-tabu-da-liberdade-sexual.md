@@ -31,9 +31,9 @@ Alguns estudantes da UnB contaram suas experiências no ambiente universitário,
 
 
 
-![Gabriel de Araújo tinha a sexualidade como um tabu.](/uploads/gabriel-araujo-1024x683.jpg)
+![Gabriel de Araújo tinha a sexualidade como um tabu](/uploads/gabriel-araujo-1024x683.jpg)
 
-“Eu negava muito a minha sexualidade e me reprimia. Sempre associava a questão das sexualidades diversas da normativa heterossexual como coisas ruins que eu deveria fugir”, relata o estudante de direito Gabriel de Araújo “A vivência na academia me possibilitou desmistificar algumas coisas e falar de assuntos que para mim eram tabus. Nisso, eu desconstruí muita coisa que eu tinha como verdade e sequer questionava, como a minha própria sexualidade”.  
+“Eu negava muito a minha sexualidade e me reprimia. Sempre associava a questão das sexualidades diversas da normativa heterossexual como coisas ruins que eu deveria fugir”, relata o estudante de direito Gabriel de Araújo “A vivência na academia me possibilitou desmistificar algumas coisas e falar de assuntos que para mim eram tabus. Nisso, eu desconstruí muita coisa que eu tinha como verdade e sequer questionava, como a minha própria sexualidade”.
 
 
 

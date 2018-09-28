@@ -57,9 +57,10 @@ No caso do HIV, existe a PEP (Profilaxia Pós- Exposição ao HIV). É uma medid
 
 A PEP é composta por medicamentos antirretrovirais que agem evitando a sobrevivência e a multiplicação do HIV no organismo e, por isso, deve ser iniciada o mais rápido possível, preferencialmente nas 2 (duas) primeiras horas após a exposição ao vírus e no máximo em até 72 horas. Os medicamentos são oferecidos gratuitamente pelo SUS e, no Polo de Prevenção da UnB, são feitos a transferência do paciente para a Unidade de Saúde mais próxima.
 
-![A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)](/uploads/novos-prazeres-velhos-costumes.jpg)
+![Foto: Thifany Batista](/uploads/novos-prazeres-velhos-costumes.jpg)
 
-> A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis. O resultado ficou pronto em apenas 10 minutos. (Foto: Thifany Batista)
+> A repórter Thalyta Guerra fez o teste rápido de HIV e Sífilis.
+> O resultado ficou pronto em apenas 10 minutos.
 
 ## Qual a diferença entre o HIV e Aids?
 

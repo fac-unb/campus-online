@@ -23,6 +23,6 @@ Mauro é morador de Planaltina de Goiás e conta que a sua situação é semelha
 
 Ambas reclamam ter recebido somente a rescisão até o momento. “A empresa falou que o valor do aviso prévio veio junto com a rescisão, mas o valor recebido não condiz com a realidade”, conta Lucimone, que afirma que só recebeu R$ 1999,79 até o momento e que está acionando o advogado para resolver a situação. A empresa onde as duas trabalhavam é a Servite, do ramo de limpeza e portaria, contratada pela UnB.
 
-Apesar da conjuntura econômica não estar favorável, Lucimone não perde o otimismo: “Estamos passando por um momento muito difícil, mas nada é impossível”, declara a moradora de Ceilândia Sul, que ainda conta acumular experiência de vigilância e segurança enquanto trabalhava na universidade, apesar de no contrato indicar somente o serviço de porteira.  
+Apesar da conjuntura econômica não estar favorável, Lucimone não perde o otimismo: “Estamos passando por um momento muito difícil, mas nada é impossível”, declara a moradora de Ceilândia Sul, que ainda conta acumular experiência de vigilância e segurança enquanto trabalhava na universidade, apesar de no contrato indicar somente o serviço de porteira.
 
-![null](/uploads/foto-n.jpeg)
+![](/uploads/foto-n.jpeg)

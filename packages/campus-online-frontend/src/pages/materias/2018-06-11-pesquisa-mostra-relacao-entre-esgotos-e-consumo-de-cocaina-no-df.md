@@ -20,7 +20,7 @@ A partir da análise dessas amostras de esgoto é possível encontrar cocaína p
 
 Líder no consumo de cocaína está Asa Norte, Lago Norte e Varjão. O gráfico abaixo indica o consumo semanal em dose dia.
 
-![Arte : Filliphi da Costa.](/uploads/po-s.png)
+![Arte: Filliphi da Costa](/uploads/po-s.png)
 
 O estudo também foi feito durante a Copa do Mundo de 2014, quando Brasília sediou dois jogos do Brasil em dois finais de semana. A intenção era comprovar se o clima festivo realmente influencia no consumo desses entorpecentes. E a hipótese se confirmou: o consumo de drogas teve um salto significativo. “Quando as pessoas estão consumindo álcool e festejando a tendência para haver consumo é muito grande” explica Fernando Sodré, professor do Instituto de Química da UnB e também integrante do AQQUA.
 
