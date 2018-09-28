@@ -1,6 +1,8 @@
 ---
 template: blog-post
-title: 'Candidatos ao GDF debatem privatização, saúde, segurança e geração de empregos'
+title: >-
+  Candidatos ao GDF na FAC:  debate discute privatização, saúde, segurança e
+  promoção de empregos
 date: '2018-09-27'
 editorial:
   slug: /editorias/politica/
