@@ -88,12 +88,30 @@ const Text = styled.div`
 
 	img {
 		width: 100%;
+		display: block;
 	}
 
 	ul {
 		li {
 			list-style: circle;
 		}
+	}
+
+	.md-figure {
+		display: block;
+		margin: 3em 0;
+	}
+
+	.md-figure-caption {
+		margin-top: 0;
+		font-size: 0.875rem;
+		padding: 0.25rem 0.675rem;
+		font-family: ${fonts.sans};
+		font-weight: 500;
+		background: #333;
+		color: white;
+		background: ${colors.base06};
+		color: ${colors.base66};
 	}
 `
 

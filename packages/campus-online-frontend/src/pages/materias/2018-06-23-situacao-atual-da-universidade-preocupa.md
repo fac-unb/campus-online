@@ -26,7 +26,7 @@ Por ser um órgão de ensino e pesquisa conceituado internacionalmente assim com
 
 No primeiro semestre de 2018, a situação financeira da UnB foi o motor de um protesto feito diante do edifício do Ministério da Educação, seguido de um ato-ocupação no prédio do Fundo Nacional de Desenvolvimento da Educação (FNDE) e da ocupação do prédio da Reitoria, além da greve estudantil e dos servidores.
 
-![A reitora Márcia Abrahão em evento de celebração dos 12 anos da UnB de Planaltina (FUP). À esquerda, o diretor da FUP, Marcelo Bizerril.](/uploads/img-20180517-wa0058-1.jpg)
+![A reitora Márcia Abrahão em evento de celebração dos 12 anos da UnB de Planaltina (FUP). À esquerda, o diretor da FUP, Marcelo Bizerril](/uploads/img-20180517-wa0058-1.jpg)
 
 Claro que os problemas não começaram no segundo semestre de 2016 – exatamente o momento em que a professora Márcia Abrahão, do Instituto de Geociências, foi eleita reitora tendo como vice o professor Enrique Huelva, do Instituto de Letras. As dificuldades orçamentárias da UnB vêm de outras épocas e foi por isso que a gestão então recém-empossada fez uma auditoria interna nas contas da instituição. Com os resultados dessa auditoria, surgiu a necessidade de revisar contratos com as empresas que prestam serviços para a Fundação Universidade de Brasília; além disso, a verba extra que deixou de ser liberada pelo MEC em 2017 influenciou negativamente, como a reitora Márcia fala no áudio a seguir.
 

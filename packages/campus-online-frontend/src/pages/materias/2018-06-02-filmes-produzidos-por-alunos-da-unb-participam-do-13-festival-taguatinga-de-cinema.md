@@ -26,7 +26,7 @@ Os participantes do Festival contam um pouco sobre a importância dos temas retr
 
 A ideia começou através de um incômodo perante a insegurança das mulheres no campus e do questionamento de como a Universidade lida com os inúmeros casos de assédio. “Estávamos muito revoltadas com alguns casos que aconteciam dentro da UnB e não eram resolvidos. Sentimos que precisava ter mais conteúdo sobre esse assunto. Uma das coisas que percebemos é que a Instituição não faz o suficiente devido a burocracia. Então, quem tem se organizado e lutado mais por isso são as próprias alunas. Por isso o nome do filme é “Nós por Nós”, afirma Isabela Graton.
 
-![Isabela Graton, estudante da UnB.](/uploads/20180601_135706-1024x575.jpg)
+![Isabela Graton, estudante da UnB](/uploads/20180601_135706-1024x575.jpg)
 
 Apesar de ser a primeira produção do grupo, o curta já foi exibido em todos os Campi durante a Semana da Mulher, e foi premiado como melhor curta pelo Festival do Paranoá em Abril deste ano. Agora, a produção ganha mais visibilidade participando do Festival. “Eu fiquei muito feliz porque a gente passou para a próxima fase. E mesmo que não seja o mais votado, eles exibem no site para que as pessoas votem e isso deu mais visibilidade”, conta a aluna.
 
@@ -38,10 +38,10 @@ Isabela acredita que a produção audiovisual possui um grande valor pedagógico
 
 Daniel contou que a equipe estava bem estruturada e que se empenhou bastante no trabalho, o que gerou uma resposta positiva do público. “Os atores que escolhemos foram sensacionais e se adequaram muito bem aos papéis. Recebemos um feedback muito positivo do pessoal que assistiu”, afirma. Os estudantes pretendem levar as produções adiante e inscrever os filmes para outros Festivais como o de Brasília e o Festival Universitário.
 
-![Estudante da UnB, Daniel Madeira.](/uploads/20180601_221637-1024x963.jpg)
+![Estudante da UnB, Daniel Madeira](/uploads/20180601_221637-1024x963.jpg)
 
 A votação online do Festival Taguatinga está aberta até o dia 7 de junho. Para participar, acesse o [site](https://festivaltaguatinga.com.br/) e vote em quantos filmes quiser. Os quatro mais votados serão exibidos na Mostra Competitiva, entre 22 e 25 de agosto, no Complexo Cultural Teatro da Praça. Além disso, 24 filmes serão selecionados pelo Júri Oficial para disputar as categorias: Prêmio de Melhor Filme pelo Júri Oficial e Prêmio de Melhor Filme pelo Júri Popular, onde receberão R$ 3 mil e o Prêmio de Inovação de Linguagem pelo Júri Oficial, que garantirá R$ 2 mil.
 
-![null](/uploads/img-20180601-wa0030.jpg)
+![](/uploads/img-20180601-wa0030.jpg)
 
-![null](/uploads/img-20180601-wa0028.jpg)
+![](/uploads/img-20180601-wa0028.jpg)

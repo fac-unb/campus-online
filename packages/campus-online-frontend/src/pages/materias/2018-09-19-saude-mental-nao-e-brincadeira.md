@@ -14,4 +14,4 @@ tags:
   - saúde mental
 featured: false
 ---
-![null](/uploads/img-20180606-wa0057.jpg)
+![](/uploads/img-20180606-wa0057.jpg)

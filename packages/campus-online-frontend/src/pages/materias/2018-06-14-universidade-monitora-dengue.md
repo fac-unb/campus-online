@@ -29,7 +29,7 @@ A coleta dos mosquitos para a pesquisa foi realizada utilizando aspiradores elé
 
 No total foram capturados 898 mosquitos. Destes, 105 eram o mosquito da dengue e 793 eram pernilongos.  A maior frequência destes últimos se deu principalmente no mês de janeiro. A partir de fevereiro, a densidade de mosquitos aspirados foi menor que 1. Com a pesquisa, foi identificado um maior número de_ Aegypti_ nos banheiros, enquanto os _Pernilongos_  foram encontrados mais nas salas de aula. O monitoramento preliminar do projeto na UnB foi feito na FM entre dezembro de 2017 e março de 2018.
 
-![Arte: Thifany Batista.](/uploads/img-nat.jpeg)
+![Arte: Thifany Batista](/uploads/img-nat.jpeg)
 
 
 

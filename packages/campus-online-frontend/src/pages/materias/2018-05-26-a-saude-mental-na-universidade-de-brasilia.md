@@ -43,10 +43,7 @@ Porém, alguns setores nem possuem espaço nesses cálculos. De acordo com uma m
 
 ![](/uploads/img-thif.jpg)
 
-## \
-E por que isso acontece?
-
-## 
+## E por que isso acontece?
 
 Antes de analisar essas estatísticas, é preciso entender o que é essa pressão, que aparece em muitos desabafos de alunos da UnB*. Alguns estudantes aceitaram conversar com a gente sobre a rotina na Universidade que acarreta em diversas situações de fragilidade emocional. Vários deles mostram que a situação se repete e é algo vivido em comum por muitos jovens universitários.
 

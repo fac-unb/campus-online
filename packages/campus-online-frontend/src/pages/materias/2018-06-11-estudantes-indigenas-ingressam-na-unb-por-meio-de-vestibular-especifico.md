@@ -29,15 +29,14 @@ O projeto oferece 1% de vagas suplementares de diversos cursos, como Medicina, E
 
 A coordenadora também ressalta que a prova aplicada nos pólos tem os mesmos princípios de outros vestibulares oferecidos pela UnB. “Não há diferenciação de conteúdo e nem de prova \[em comparação ao vestibular comum]. Eles fazem uma prova com todas as disciplinas, e uma redação, como todos os estudantes da universidade. Eles concorrem entre eles, mas é tão ou mais disputado quanto o vestibular comum, porque o número de inscritos é muito grande.”, explica. No primeiro convênio do programa, entre 2004 e 2013, a UnB realizou sete vestibulares específicos, pelos quais ingressaram 109 alunos de comunidades indígenas. O segundo convênio, que ocorreu entre 2015 e 2017, contou com uma avaliação. Até o fim de 2018, a UnB receberá 46 estudantes indígenas para cursos de graduação e 25 para pós-graduação.
 
-![Thaine Rinalda Pereira Alves, estudante indígena, do 1º semestre de Administração na UnB.](/uploads/img-20180611-wa0088.jpg)
+![Thaine Rinalda Pereira Alves, estudante indígena, do 1º semestre de Administração na UnB](/uploads/img-20180611-wa0088.jpg)
 
 Conheça a história de Thaine Alves e Patrícia da Silva, estudantes indígenas na UnB
 :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wj_rHToR8J4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## \
-Quebra de barreiras
+## Quebra de barreiras
 
 Cláudia Renault explica que o acolhimento desses alunos na universidade conta com apoio da Maloca. A instituição auxilia os estudantes indígenas na superação de barreiras como o idioma, as dificuldades acadêmicas e a convivência com outros estudantes.“A proposta do espaço é acompanhar e acolher os estudantes além de articular, com professores e coordenadores, estratégias para viabilizar uma permanência mais tranquila desses indígenas”, garante.
 
