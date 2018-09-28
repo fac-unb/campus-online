@@ -53,7 +53,8 @@
     "react-mapbox-gl": "^3.9.2",
     "react-window-size": "^1.2.0",
     "recompose": "^0.27.1",
-    "styled-components": "^3.4.8"
+    "styled-components": "^3.4.8",
+    "unist-util-visit": "^1.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",

@@ -1,0 +1,11 @@
+{
+  "name": "gatsby-remark-image-title",
+  "version": "0.0.0-alpha",
+  "description": "append image alt as a blockquote",
+  "main": "index.js",
+  "author": "Leonardo Dino",
+  "private": true,
+  "dependencies": {
+    "unist-util-visit": "^1.4.0"
+  }
+}
