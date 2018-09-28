@@ -32,7 +32,7 @@ Um estudante de 23 anos que preferiu não identificar nome ou curso, conta já t
 
 ![Foto: Caroline Zampiron](/uploads/bsa-n.jpg)
 
-> O local já foi utilizado para sexo entre alunos da UnB após festa no campus. (Foto: Caroline Zampiron)
+> O local já foi utilizado para sexo entre alunos da UnB após festa no campus.
 
 Atrás do BSA Norte, por outro lado, não pesa à consciência do jovem não identificado. “Foi próximo a um happy hour em que fui. Estava bêbado. Não iria atrapalhar em nada, porque era vazio. Não corria risco de ser flagrado, então não me arrependo”, conta. Chamados Happy Hours, as festas que ocorrem na UnB levam muitos jovens, incentivados pela bebida alcoólica, a transar dentro do campus. Quando a prática é estimulada pelo consumo alcoólico, a coisa pode ser pior. O risco do não uso de preservativo e da concessão impensada aumentam com a cognição alterada. Para o especialista, “sem a censura, já que o álcool vai para o sistema nervoso central aumentando o sentimento de euforia e de liberdade, o sexo fica mais fácil”.
 
