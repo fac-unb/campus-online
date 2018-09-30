@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-remark-image-title",
+  "name": "gatsby-remark-null-image-alt",
   "version": "0.0.0-alpha",
-  "description": "append image alt as a blockquote",
+  "description": "remove null image alt",
   "main": "index.js",
   "author": "Leonardo Dino",
   "private": true,

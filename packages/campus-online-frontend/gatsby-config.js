@@ -46,7 +46,14 @@ module.exports = {
 			resolve: 'gatsby-transformer-remark',
 			options: {
 				plugins: [
-					'gatsby-remark-image-title',
+					'gatsby-remark-null-image-alt',
+					{
+						resolve: 'gatsby-remark-figure-caption',
+						options: {
+							figureClassName: 'md-figure',
+							captionClassName: 'md-figure-caption',
+						},
+					},
 					{
 						resolve: 'gatsby-remark-images',
 						options: {
