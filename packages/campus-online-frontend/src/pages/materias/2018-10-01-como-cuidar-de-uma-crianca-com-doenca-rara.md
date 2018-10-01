@@ -2,7 +2,7 @@
 template: blog-post
 title: Como cuidar de uma criança com doença rara
 cover: /uploads/img-20181001-wa0007.jpg
-date: '2018-10-01'
+date: '2018-09-29'
 editorial:
   slug: /editorias/2018-1-educacao/
   title: Educação
