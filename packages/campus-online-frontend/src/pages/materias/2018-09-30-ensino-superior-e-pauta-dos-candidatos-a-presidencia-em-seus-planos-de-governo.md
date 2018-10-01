@@ -170,6 +170,4 @@ Todos os candidatos pautaram a educação em seus planos de governo. Para ter ac
 
 O primeiro turno das eleições gerais de 2018 acontece no próximo domingo (7), das 8h às 17h (horário local de cada estado). Para votar, é necessário levar o título de eleitor acompanhado de um documento oficial com foto, ou baixar, no Google Play ou App Store, o aplicativo e-Título, que substitui esses documentos.
 
-
-
 **Gabriel Escobar e Jamile Vasconcelos**
