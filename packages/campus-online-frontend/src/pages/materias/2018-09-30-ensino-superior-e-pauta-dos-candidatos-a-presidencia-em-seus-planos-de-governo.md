@@ -31,7 +31,7 @@ O ensino superior e o tratamento dos candidatos com as universidades públicas s
 
 Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fala sobre o tema. A disposição dos presidenciáveis foi feita em ordem alfabética:
 
-## Álvaro Dias (PODE)
+## Álvaro Dias (Pode)
 
 ![](/uploads/alvaro-dias_poder360.jpg)
 
@@ -147,3 +147,5 @@ Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fal
 Todos os candidatos pautaram a educação em seus planos de governo. Para ter acesso aos documentos na íntegra, basta acessar a plataforma [DivulgaCandContas](http://divulgacandcontas.tse.jus.br/divulga/), disponibilizada pela Justiça Eleitoral.  
 
 O primeiro turno das eleições gerais de 2018 acontece no próximo domingo (7), das 8h às 17h (horário local de cada estado). Para votar, é necessário levar o título de eleitor acompanhado de um documento oficial com foto, ou baixar, no Google Play ou App Store, o aplicativo e-Título, que substitui esses documentos.
+
+**Por Gabriel Escobar e Jamile Vasconcelos**
