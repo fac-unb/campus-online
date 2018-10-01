@@ -3,6 +3,9 @@ template: blog-post
 title: Ensino Superior é pauta dos candidatos à Presidência em seus planos de governo
 cover: /uploads/28877757323_29aac81fc9_o.jpg
 date: '2018-09-30'
+editorial:
+  slug: /editorias/politica/
+  title: Política
 author:
   slug: /reporteres/2018-2-gabriel-escobar/
   title: Gabriel Escobar
@@ -16,43 +19,36 @@ tags:
   - ensino superior
   - universidade pública
   - UnB
-featured: false
+featured: true
 headline: >-
   Apesar da prioridade ser o ensino básico, o posicionamento quanto ao
   direcionamento de verbas e a privatização das universidades públicas são temas
   recorrentes
 ---
-As propostas para Educação dos presidenciáveis são mais direcionadas ao ensino básico, sobretudo com propostas que visam o aumento no número de creches, a ampliação no número de escolas com ensino integral, o desenvolvimento do cidadão desde a infância e a discussão sobre a melhor maneira de ensiná-los. Além disso, alguns dos candidatos divergem em relação à forma ideal de administração do ensino no país, se estatal ou privado.
+As propostas dos presidenciáveis para educação são mais direcionadas ao ensino básico, sobretudo com propostas que visam o aumento no número de creches, a ampliação no número de escolas com ensino integral, o desenvolvimento do cidadão desde a infância e a discussão sobre a melhor maneira de ensiná-los. Além disso, alguns dos candidatos divergem em relação à forma ideal de administração do ensino no país, se estatal ou privado.
 
 O ensino superior e o tratamento dos candidatos com as universidades públicas são pautas de interesse de todos os estudantes. Estar atento ao que cada um diz é tarefa fundamental no momento de escolha do voto e a consequente definição da administração do país.
 
 Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fala sobre o tema. A disposição dos presidenciáveis foi feita em ordem alfabética:
 
-
-
-**Álvaro Dias (PODE)**
+**Álvaro Dias (PODE)
+**
 
 •	Parceria com o setor privado;
 
-•	Projeto 200 gênios para Universidades;
+•	Projeto 200 gênios para Universidades.
 
-
-
-**Cabo Daciolo (Patriota)**
+**Cabo Daciolo (Patriota)
+**
 
 •	Investimento nas universidades federais;
 
-•	Novas universidades federais e novos campi;
+•	Novas universidades federais e novos _campi_.
 
+**Ciro Gomes (PDT)
+**
 
-
-**Ciro Gomes (PDT)**
-
-•	As universidades públicas deverão, além de ampliar a oferta de vagas e prosseguir
-
-com as políticas de cotas, estreitar seus laços com as políticas e ações no campo
-
-da educação básica e ciência, tecnologia e inovação;
+•	As universidades públicas deverão, além de ampliar a oferta de vagas e prosseguir com as políticas de cotas, estreitar seus laços com as políticas e ações no campo da educação básica e ciência, tecnologia e inovação;
 
 •	Manutenção da gratuidade nas universidades e institutos de ensino federais;
 
@@ -60,15 +56,9 @@ da educação básica e ciência, tecnologia e inovação;
 
 •	Aprimoramento do ProUni e FIES;
 
-•	Facilitação dos mecanismos para estabelecimento de convênios entre
+•	Facilitação dos mecanismos para estabelecimento de convênios entre universidades, institutos de pesquisa e empresas públicas e privadas;
 
-universidades, institutos de pesquisa e empresas públicas e privadas;
-
-•	Estímulo à associação entre universidades, institutos de pesquisa e empresas
-
-públicas e privadas para projetos de desenvolvimento e aplicação de
-
-tecnologias;
+•	Estímulo à associação entre universidades, institutos de pesquisa e empresas públicas e privadas para projetos de desenvolvimento e aplicação de tecnologias;
 
 •	Recuperação da política de bolsas de estudo para a graduação e pós-graduação;
 
@@ -76,19 +66,15 @@ tecnologias;
 
 •	Manutenção do ingresso da juventude negra em todas as universidades públicas através do sistema de cotas, assegurando via ações afirmativas a sua permanência nas instituições de ensino;
 
-•	Realização de investimentos nas Universidades Públicas Federais para ampliação de programas de ações afirmativas, assistência estudantil e permanência;
+•	Realização de investimentos nas Universidades Públicas Federais para ampliação de programas de ações afirmativas, assistência estudantil e permanência.
 
+**Eymael (DC)
+**
 
+•	Ampliação de vagas nos cursos superiores nas Universidades Federais, sobretudo em período noturno.
 
-**Eymael (DC)**
-
-•	Ampliação de vagas nos cursos superiores nas Universidades Federais, sobretudo em período noturno;
-
-
-
-**Fernando Haddad (PT)**
-
-
+**Fernando Haddad (PT)
+**
 
 •	Expandir matrículas no Ensino Superior, técnico e profissional;
 
@@ -96,25 +82,21 @@ tecnologias;
 
 •	Ampliar a participação das universidades, por meio de concessões, nas outorgas para o sistema público e privado de televisão e rádio;
 
-•	Será reforçada e renovada a Universidade Aberta do Brasil (UAB) e retomado o projeto
-
-Universidade em Rede dos Professores, assegurando o acesso direto dos professores e professoras concursados nas vagas disponíveis e ociosas na rede de Universidades e Institutos Federais de Educação Superior;
+•	Reforçar e renovar a Universidade Aberta do Brasil (UAB) e retomar o projeto Universidade em Rede dos Professores, assegurando o acesso direto dos professores e professoras concursados nas vagas disponíveis e ociosas na rede de Universidades e Institutos Federais de Educação Superior;
 
 •	Implementação da Universidade do Esporte, articulando ensino, pesquisa e extensão, visando a formação de profissionais de nível internacional voltados para toda a cadeia produtiva do esporte;
 
 •	Interiorização das Universidades;
 
-•	Cultura empreendedora;
+•	Cultura empreendedora.
 
+**Geraldo Alckmin (PSDB)
+**
 
+•	Estimular parcerias entre universidades e empresas.
 
-**Geraldo Alckmin (PSDB)**
-
-•	Estimular parcerias entre universidades e empresas;
-
-
-
-**Guilherme Boulos (PSOL)**
+**Guilherme Boulos (PSOL)
+**
 
 •	Convocar um plebiscito para rever a emenda do teto de gastos;
 
@@ -132,35 +114,33 @@ Universidade em Rede dos Professores, assegurando o acesso direto dos professore
 
 •	Apoiar, valorizar e viabilizar espaços de aprendizagem dos povos indígenas, quilombolas, camponeses, por meio de universidades populares e interculturais;
 
-•	Construção da primeira universidade indígena no Brasil;
+•	Construção da primeira universidade indígena no Brasil.
 
+**Henrique Meirelles (MDB)
+**
 
+•	Auxílio das universidades para identificação de prioridades nas obras com maior potencial de atraírem recursos privados.
 
-**Henrique Meirelles (MDB)**
-
-•	Auxílio das universidades para identificação de prioridades nas obras com maior potencial de atraírem recursos privados;
-
-
-
-**Jair Bolsonaro (PSL) **
+**Jair Bolsonaro (PSL) 
+**
 
 •	Universidade como geradora de avanços técnicos, buscando formas de elevar a produtividade, a riqueza e o bem-estar da população;
 
 •	Universidades como estimuladoras do empreendedorismo;
 
-•	Parceria entre universitários e empresas privadas a fim de transformarem ideias em produtos;
-
-****
-
-**João Amoêdo (Novo)**
-
-•	Defende mensalidades em universidades públicas;
-
-•	Melhor gestão, menos burocracia, novas fontes de recursos não-estatais e parceria com o setor privado voltado à pesquisa;
+•	Parceria entre universitários e empresas privadas a fim de transformarem ideias em produtos.
 
 
 
-**João Goulart Filho (PPL)**
+**João Amoêdo (Novo)
+**
+
+•	Instituir mensalidades em universidades públicas;
+
+•	Melhorar gestão, reduzir a burocracia, introduzir novas fontes de recursos não-estatais e parceria com o setor privado voltado à pesquisa.
+
+**João Goulart Filho (PPL)
+**
 
 •	Revogar a emenda do teto de gastos;
 
@@ -168,30 +148,26 @@ Universidade em Rede dos Professores, assegurando o acesso direto dos professore
 
 •	Ensino superior prioritariamente público;
 
-•	Elevar a taxa bruta de matrícula na educação superior em 50% até 2022;
+•	Elevar a taxa bruta de matrícula na educação superior em 50% até 2022.
 
-
-
-**Marina Silva (REDE)**
+**Marina Silva (Rede)
+**
 
 •	Ampliação do acesso ao ensino superior, mantendo a política de cotas;
 
 •	Ciência, tecnologia e inovação: universidades devem ser desafiadas a realizar; pesquisas que contribuam para a superação dos problemas sociais, ambientais e econômicos;
 
-•	Auxílio das universidades no desenvolvimento do Plano Nacional de Segurança
+•	Auxílio das universidades no desenvolvimento do Plano Nacional de Segurança;
 
 •	Colaboração universidade-empresa;
 
-•	Auxílio das universidades em projetos de assentamento rural;
+•	Auxílio das universidades em projetos de assentamento rural.
 
+**Vera Lucia (PSTU)
+**
 
+•	Estatização de universidades privadas.
 
-**Vera Lucia (PSTU)**
+Todos os candidatos pautaram a educação em seus planos de governo. Para ter acesso aos documentos na íntegra, basta acessar a plataforma [DivulgaCandContas](http://divulgacandcontas.tse.jus.br/divulga/), disponibilizada pela Justiça Eleitoral.
 
-•	Estatização de universidades privadas;
-
-
-
-Todos os candidatos pautaram a Educação em seus planos de governo. Para ter acesso aos documentos na íntegra, basta acessar a plataforma DivulgaCandContas, disponibilizada pela Justiça Eleitoral.
-
-O primeiro turno das eleições gerais de 2018 acontecem no próximo domingo (7), das 8h às 18h. Para votar, é necessário levar o título de eleitor acompanhado de um documento oficial com foto, ou baixar, no Google Play ou App Store, o aplicativo e-Título, que substitui esses documentos.
+O primeiro turno das eleições gerais de 2018 acontece no próximo domingo (7), das 8h às 17h (horário local de cada estado). Para votar, é necessário levar o título de eleitor acompanhado de um documento oficial com foto, ou baixar, no Google Play ou App Store, o aplicativo e-Título, que substitui esses documentos.
