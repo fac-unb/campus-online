@@ -2,7 +2,7 @@
 template: blog-post
 title: Como cuidar de uma criança com doença rara
 cover: /uploads/img-20181001-wa0007.jpg
-date: '2018-10-01'
+date: '2018-09-29'
 editorial:
   slug: /editorias/2018-1-educacao/
   title: Educação
@@ -13,7 +13,7 @@ semester: 2018/2
 featured: false
 headline: >-
   Mulheres discutiram as dificuldades dos portadores de doenças raras e de quem
-  os cercam em evento na Semana Universitária da UnB
+  os cerca em evento na Semana Universitária da UnB
 ---
 Ter uma doença rara é um desafio maior do que se pode imaginar. As dificuldades começam ainda no diagnóstico, que é prejudicado pela pouca informação que se tem a respeito dessas enfermidades. É com o intuito de gerar diálogos sobre o assunto que o Instituto de Ciências Sociais da UnB (ICS) realizou uma mesa, composta, coincidentemente, apenas por mulheres, sobre como cuidar de crianças com doenças raras. Mães, representantes de associações e pessoas que apresentam alguma condição incomum de saúde discutiram os desafios de lidar com essas doenças nesta sexta-feira (28) no Instituto de Ciências Sociais da UnB. 
 
