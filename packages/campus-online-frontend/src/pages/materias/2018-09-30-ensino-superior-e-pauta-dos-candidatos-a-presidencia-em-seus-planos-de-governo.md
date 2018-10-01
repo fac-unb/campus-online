@@ -25,24 +25,19 @@ headline: >-
   direcionamento de verbas e a privatização das universidades públicas são temas
   recorrentes
 ---
-As propostas dos presidenciáveis para educação são mais direcionadas ao ensino básico, sobretudo com propostas que visam o aumento no número de creches, a ampliação no número de escolas com ensino integral, o desenvolvimento do cidadão desde a infância e a discussão sobre a melhor maneira de ensiná-los. Além disso, alguns dos candidatos divergem em relação à forma ideal de administração do ensino no país, se estatal ou privado.
-O ensino superior e o tratamento dos candidatos com as universidades públicas são pautas de interesse de todos os estudantes. Estar atento ao que cada um diz é tarefa fundamental no momento de escolha do voto e a consequente definição da administração do país.
-Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fala sobre o tema. A disposição dos presidenciáveis foi feita em ordem alfabética:
+As propostas dos presidenciáveis para educação são mais direcionadas ao ensino básico, sobretudo com propostas que visam o aumento no número de creches, a ampliação no número de escolas com ensino integral, o desenvolvimento do cidadão desde a infância e a discussão sobre a melhor maneira de ensiná-los. Além disso, alguns dos candidatos divergem em relação à forma ideal de administração do ensino no país, se estatal ou privado.O ensino superior e o tratamento dos candidatos com as universidades públicas são pautas de interesse de todos os estudantes. Estar atento ao que cada um diz é tarefa fundamental no momento de escolha do voto e a consequente definição da administração do país.Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fala sobre o tema. A disposição dos presidenciáveis foi feita em ordem alfabética:
 
-
-## **Álvaro Dias (PODE)**
+## Álvaro Dias (PODE)
 
 * Parceria com o setor privado;
 * Projeto 200 gênios para Universidades.
 
-
-## **Cabo Daciolo (Patriota)**
+## Cabo Daciolo (Patriota)
 
 * Investimento nas universidades federais;
 * Novas universidades federais e novos _campi_.
 
-
-## **Ciro Gomes (PDT)**
+## Ciro Gomes (PDT)
 
 * As universidades públicas deverão, além de ampliar a oferta de vagas e prosseguir com as políticas de cotas, estreitar seus laços com as políticas e ações no campo da educação básica e ciência, tecnologia e inovação;
 * Manutenção da gratuidade nas universidades e institutos de ensino federais;
@@ -55,13 +50,11 @@ Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fal
 * Manutenção do ingresso da juventude negra em todas as universidades públicas através do sistema de cotas, assegurando via ações afirmativas a sua permanência nas instituições de ensino;
 * Realização de investimentos nas Universidades Públicas Federais para ampliação de programas de ações afirmativas, assistência estudantil e permanência.
 
-
-## **Eymael (DC)**
+## Eymael (DC)
 
 * Ampliação de vagas nos cursos superiores nas Universidades Federais, sobretudo em período noturno.
 
-## 
-**Fernando Haddad (PT)**
+## Fernando Haddad (PT)
 
 * Expandir matrículas no Ensino Superior, técnico e profissional;
 * Investimento em ciência, tecnologia e informação nas universidades, institutos e centros de pesquisa;
@@ -71,13 +64,11 @@ Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fal
 * Interiorização das Universidades;
 * Cultura empreendedora.
 
-## 
-**Geraldo Alckmin (PSDB)**
+## Geraldo Alckmin (PSDB)
 
 * Estimular parcerias entre universidades e empresas.
 
-
-## **Guilherme Boulos (PSOL)**
+## Guilherme Boulos (PSOL)
 
 * Convocar um plebiscito para rever a emenda do teto de gastos;
 * Retomar o crescimento do Ensino Superior, valorizando escolas públicas e Institutos Profissionais;
@@ -89,33 +80,29 @@ Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fal
 * Apoiar, valorizar e viabilizar espaços de aprendizagem dos povos indígenas, quilombolas, camponeses, por meio de universidades populares e interculturais;
 * Construção da primeira universidade indígena no Brasil.
 
-
-## **Henrique Meirelles (MDB)**
+## Henrique Meirelles (MDB)
 
 * Auxílio das universidades para identificação de prioridades nas obras com maior potencial de atraírem recursos privados.
 
-
-## **Jair Bolsonaro (PSL) **
+## Jair Bolsonaro (PSL) 
 
 * Universidade como geradora de avanços técnicos, buscando formas de elevar a produtividade, a riqueza e o bem-estar da população;
 * Universidades como estimuladoras do empreendedorismo;
 * Parceria entre universitários e empresas privadas a fim de transformarem ideias em produtos.
 
-## **João Amoêdo (Novo)**
+## João Amoêdo (Novo)
 
 * Instituir mensalidades em universidades públicas;
 * Melhorar gestão, reduzir a burocracia, introduzir novas fontes de recursos não-estatais e parceria com o setor privado voltado à pesquisa.
 
-
-## **João Goulart Filho (PPL)**
+## João Goulart Filho (PPL)
 
 * Revogar a emenda do teto de gastos;
 * Promover o desenvolvimento das tecnologias nucleares e correlatas, estabelecendo cooperação entre empresas, institutos de pesquisa e universidades brasileiras;
 * Ensino superior prioritariamente público;
 * Elevar a taxa bruta de matrícula na educação superior em 50% até 2022.
 
-
-## **Marina Silva (Rede)**
+## Marina Silva (Rede)
 
 * Ampliação do acesso ao ensino superior, mantendo a política de cotas;
 * Ciência, tecnologia e inovação: universidades devem ser desafiadas a realizar; pesquisas que contribuam para a superação dos problemas sociais, ambientais e econômicos;
@@ -123,9 +110,6 @@ Pensando nisso, a equipe do Campus Online disponibiliza o que cada candidato fal
 * Colaboração universidade-empresa;
 * Auxílio das universidades em projetos de assentamento rural.
 
+## Vera Lucia (PSTU)
 
-## **Vera Lucia (PSTU)**
-
-* Estatização de universidades privadas.
-  Todos os candidatos pautaram a educação em seus planos de governo. Para ter acesso aos documentos na íntegra, basta acessar a plataforma [DivulgaCandContas](http://divulgacandcontas.tse.jus.br/divulga/), disponibilizada pela Justiça Eleitoral.
-  O primeiro turno das eleições gerais de 2018 acontece no próximo domingo (7), das 8h às 17h (horário local de cada estado). Para votar, é necessário levar o título de eleitor acompanhado de um documento oficial com foto, ou baixar, no Google Play ou App Store, o aplicativo e-Título, que substitui esses documentos.
+* Estatização de universidades privadas.  Todos os candidatos pautaram a educação em seus planos de governo. Para ter acesso aos documentos na íntegra, basta acessar a plataforma [DivulgaCandContas](http://divulgacandcontas.tse.jus.br/divulga/), disponibilizada pela Justiça Eleitoral.  O primeiro turno das eleições gerais de 2018 acontece no próximo domingo (7), das 8h às 17h (horário local de cada estado). Para votar, é necessário levar o título de eleitor acompanhado de um documento oficial com foto, ou baixar, no Google Play ou App Store, o aplicativo e-Título, que substitui esses documentos.
