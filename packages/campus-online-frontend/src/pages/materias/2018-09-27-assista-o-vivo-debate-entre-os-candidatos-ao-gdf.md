@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Assista o vivo debate entre os candidatos ao GDF
+title: Assista ao vivo debate entre os candidatos ao GDF
 cover: /uploads/img_20180927_101539.jpg
 date: '2018-09-27'
 editorial:
