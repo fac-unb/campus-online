@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Editorial - A nova missão da Semana Universitária
-cover: /uploads/img_2483.jpg
+cover: /uploads/editorial.jpg
 date: '2018-09-24'
 editorial:
   slug: /editorias/editorial/
