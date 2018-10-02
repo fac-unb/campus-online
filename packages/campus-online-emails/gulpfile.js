@@ -19,10 +19,11 @@ gulp.task('email', function(){
 
 gulp.task('browser-sync', function() {
 	browserSync.init({
+		port: 9001,
 		server: {
-			baseDir: "./public/"
+			baseDir: './public/',
 		},
-		startPath: ''
+		startPath: '',
 	})
 })
 
