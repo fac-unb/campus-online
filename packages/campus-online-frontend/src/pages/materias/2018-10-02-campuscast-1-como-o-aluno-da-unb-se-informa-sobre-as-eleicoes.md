@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: 'Campuscast #1 – Como o aluno da UnB se informa sobre as eleições?'
-cover: /uploads/politica-1-.jpg
+cover: /uploads/whatsapp-image-2018-10-01-at-14.37.00.jpeg
 date: '2018-10-02'
 editorial:
   slug: /editorias/2018-1-tabu/
