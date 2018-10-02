@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Editorial - A partilha do conhecimento
-cover: /uploads/10062009_jardimicc_isabelalyrio.jpg
+cover: /uploads/editorial.jpg
 date: '2018-09-24'
 editorial:
   slug: /editorias/editorial/
