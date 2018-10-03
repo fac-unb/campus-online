@@ -20,6 +20,8 @@ headline: >-
   Levantamento reúne os pontos principais dos programas de governo dos cinco
   candidatos mais bem posicionados e traça o perfil de cada um deles
 ---
+
+
 ![](/uploads/12014489.jpg)
 
 ## **CIRO GOMES (PDT)**
@@ -40,7 +42,7 @@ headline: >-
 
 # Investir na educação e na saúde será uma das principais prioridades de seu governo. Ele planeja aprimorar o Sistema Único de Saúde (SUS) e defende uma política de ciência, tecnologia e inovação para auxiliar setores estratégicos de desenvolvimento. Pretende aumentar a presença do governo federal na segurança, criar políticas de proteção aos animais, manter os programas sociais, estimular a cultura e a igualdade social, combater a corrupção e estatizar os campos de petróleo cedidos às empresas estrangeiras.
 
-# **_/ Por_** _Samantha Rannya_
+# _**/ Por**_ _Samantha Rannya_
 
 ![](/uploads/fernando-haddad-empata-bolsonaro-genial-brasilis.jpg)
 
@@ -78,7 +80,7 @@ _**/ Por **Bruna Teixeira_
 
 # Fora da vida política, Geraldo Alckmin é marido e pai. Casou-se em 1979 com sua atual esposa, Lu Alckmin, com quem teve três filhos: Sophia, Geraldo e Thomaz.
 
-# _**PLANO DE GOVERNO**_
+# **_PLANO DE GOVERNO_**
 
 # Geraldo Alckmin defende uma profunda transformação no país por meio do combate à corrupção e do trabalho em tornar o Estado eficiente, oferecedor de um serviço público de qualidade. Ainda expressa sua intenção de fazer do Brasil um país mais justo, promovendo igualdade de oportunidades por meio de ensino público de qualidade e de programas sociais que assegurem vida digna aos brasileiros mais vulneráveis.
 
@@ -90,8 +92,6 @@ _**/ Por **Bruna Teixeira_
 
 # / _**Por **Clara Matheus_
 
-
-
 ![](/uploads/bolsonaro-4.jpg)
 
 ## **JAIR BOLSONARO (PSL)**
@@ -102,18 +102,42 @@ _**/ Por **Bruna Teixeira_
 
 # Nos quase 30 anos de vida pública, o candidato defendeu posições políticas associadas às ideologias de direita. Temas como o resgate dos valores cristãos, redução da maioridade penal e armamento da população civil, por exemplo, são comumente levantados por ele em seus discursos.
 
-# Em suas atividades parlamentares, Bolsonaro integrou inúmeras comissões na Câmara, como a Comissão de Segurança Pública e Combate ao Crime Organizado. No total, ele propôs 642 projetos legislativos à casa, dos quais quatro foram transformados em norma jurídica. 
-
-
+# Em suas atividades parlamentares, Bolsonaro integrou inúmeras comissões na Câmara, como a Comissão de Segurança Pública e Combate ao Crime Organizado. No total, ele propôs 642 projetos legislativos à casa, dos quais quatro foram transformados em norma jurídica.
 
 # **PLANO DE GOVERNO**
 
-
-
 # O plano de governo de Jair Bolsonaro possui uma linguagem de fácil entendimento para os eleitores. Em contrapartida, as 81 páginas que compõem o projeto apresentam ideias superficiais, sem detalhar ações concretas para solucionar os problemas que aponta.
 
-# No documento, o presidenciável afirma que a educação e a saúde no Brasil estão “à beira de um colapso”. Para ele, uma maneira de sanar as questões da saúde seria a criação do programa Médicos de Estado, em que os profissionais envolvidos atenderiam moradores de regiões carentes e remotas. Já para a educação, Bolsonaro propõe um maior investimento em inovação, ciência e tecnologia como forma de melhorar os indicadores do país no setor. 
+# No documento, o presidenciável afirma que a educação e a saúde no Brasil estão “à beira de um colapso”. Para ele, uma maneira de sanar as questões da saúde seria a criação do programa Médicos de Estado, em que os profissionais envolvidos atenderiam moradores de regiões carentes e remotas. Já para a educação, Bolsonaro propõe um maior investimento em inovação, ciência e tecnologia como forma de melhorar os indicadores do país no setor.
 
-# Em linhas gerais, o texto replica o discurso comumente defendido por Bolsonaro em suas aparições na mídia ou postagens em páginas da internet. O plano reitera que o candidato assumirá uma postura econômica liberal, com foco na criação de empregos, redução de tributos e diminuição da taxa de inflação. Na área da segurança, a promessa de Bolsonaro é aplicar uma política de “tolerância zero” contra o crime. Bolsonaro também reforça seu compromisso com o combate à corrupção e aos privilégios. 
+# Em linhas gerais, o texto replica o discurso comumente defendido por Bolsonaro em suas aparições na mídia ou postagens em páginas da internet. O plano reitera que o candidato assumirá uma postura econômica liberal, com foco na criação de empregos, redução de tributos e diminuição da taxa de inflação. Na área da segurança, a promessa de Bolsonaro é aplicar uma política de “tolerância zero” contra o crime. Bolsonaro também reforça seu compromisso com o combate à corrupção e aos privilégios.
 
 _**/ Por **Emmeline Portela_
+
+![](/uploads/marina-rede-0101-868x644.jpg)
+
+**Força acreana**
+
+# Maria Osmarina Silva Vaz de Lima, ou Marina Silva, nasceu em 1958 na comunidade de Breu Velho, a mais de 50 km de Rio Branco, Acre. Marina foi alfabetizada aos 16 anos e cursou História pela Universidade Federal do Acre.
+
+# 	Marina Silva elegeu-se vereadora de Rio Branco, deputada estadual e duas vezes senadora no seu estado de origem, pelo PT. Em 2003 foi ministra do Meio Ambiente, cargo que exerceu até 2008. No ano de 2010, já pelo Partido Verde, concorreu pela primeira vez como candidata à Presidência e conquistou o terceiro lugar.
+
+# 	Nas eleições seguintes, participou como candidata a vice-presidente em chapa com Eduardo Campos, do PSB. Em agosto, Eduardo morreu em um acidente aéreo. Ela assumiu a candidatura e recebeu 21,32% dos votos, mas permaneceu em terceiro lugar. Em 2015 criou a Rede, partido pelo qual candidata a presidente da República. 
+
+
+
+**Plano de governo** 
+
+
+
+# 		No programa de Marina Silva, a reforma política ampliará a transparência na aplicação de recursos a fim de diminuir a corrupção, com fim da reeleição em cargos executivos, revisão de financiamento de campanhas e obras e a aplicação do sistema distrital misto.
+
+# 		Na economia, os pressupostos básicos são o superávit primário, o regime de metas para inflação e o câmbio flutuante. A reforma da Previdência é incontornável, eliminará os privilégios e promoverá um sistema misto de contribuição e capitalização. O programa prevê uma reforma tributária para reduzir a complexidade e a insegurança jurídicas, com a implantação do Imposto sobre Bens e Serviços. 
+
+# 	Na segurança pública, o compromisso central é com a redução de crimes violentos, em especial os homicídios, e o combate ao crime organizado. Implementará o Sistema Único de Segurança Pública, trabalhando no combate ao tráfico de drogas e pessoas e o controle de armas. 
+
+# 	Quanto à educação, o governo promoverá o Plano Nacional de Educação, para reduzir o analfabetismo e a evasão escolar, investindo em infraestrutura e educação integral. A educação formal terá como objetivo o desenvolvimento completo e as relações entre o indivíduo, a universidade e o mercado de trabalho.
+
+# 	Para a saúde pública, reformulará a gestão do SUS, ampliando a oferta de equipamentos adequados e medicamentos. 
+
+_**/ Por **Jônatas Moreira_
