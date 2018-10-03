@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: Conheça a biografia e os planos de governo dos presidenciáveis
+cover: /uploads/perfis.jpg
 date: '2018-10-03'
 editorial:
   slug: /editorias/politica/
