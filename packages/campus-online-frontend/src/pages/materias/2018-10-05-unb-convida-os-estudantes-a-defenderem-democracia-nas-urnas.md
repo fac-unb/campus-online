@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: UnB convida os estudantes a defenderem democracia nas urnas
+title: UnB convida estudantes a defenderem democracia nas urnas
 cover: /uploads/unb.jpg
 date: '2018-10-05'
 editorial:
