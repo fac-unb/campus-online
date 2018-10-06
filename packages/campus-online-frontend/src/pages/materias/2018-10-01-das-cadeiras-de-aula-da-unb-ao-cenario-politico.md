@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Das cadeiras nas salas de aula da UnB ao cenário político
+title: Das cadeiras das salas de aula da UnB ao cenário político brasileiro
 date: '2018-10-01'
 editorial:
   slug: /editorias/politica/
@@ -14,26 +14,18 @@ tags:
 featured: false
 headline: Candidatos formados pela instituição disputam vagas nas eleições de 2018
 ---
-Nem só de copa do mundo o Brasil é feito. O que mais se tem ouvido falar após o campeonato mundial é sobre as eleições de 2018. O assunto é um tema muito importante, que definirá como serão os próximos 4 anos do povo brasileiro. Os eleitores farão suas escolhas no dia 7 de outubro, mas as dúvidas em torno de que candidato escolher ainda pairam sobre quem vai decidir o futuro do país.
+O período de campanha eleitoral para o primeiro turno das eleições deste ano, já está quase no fim. Quem for eleito será responsável por elaborar e executar as leis que interferem diretamente na vida de todos. Conhecer quem conduzirá a política brasileira é algo crucial para ter um voto consciente. Não tem como confiar em quem nunca se ouviu falar.
 
-A política é responsabilidade de todos os cidadãos. Quem for eleito será responsável por elaborar e executar as leis que interferem diretamente na vida de todos. Conhecer quem conduzirá a política brasileira é algo crucial para ter um voto consciente. Não tem como confiar em quem nunca se ouviu falar.
+O número de candidatos que estudam ou estudaram na tradicional Universidade de Brasília é grande. Saber a formação deles pode ser útil na hora de decidir o voto. Nomes muito conhecidos e outros nem tanto, podem acabar representando a população brasiliense no cenário político. 
 
-O número de concorrentes que estudam ou estudaram na tradicional Universidade de Brasília é grande. Saber a formação deles pode ser útil na hora de decidir o voto. Nomes muito conhecidos e outros nem tanto, podem acabar representando a população brasiliense no cenário político. 
+Leandro Grass, ex-aluno da instituição, resolveu se candidatar nas eleições de 2018. Professor graduado em sociologia leciona há 13 anos e entrou na universidade em 2003. Ele conta que a UnB foi algo muito importante na vida. “A UnB foi importante para minha trajetória. Eu quando optei pela sociologia já tinha como objetivo, não apenas ser professor, mas me envolver no campo da educação, podendo impactar e interferir.”
 
- Conheça alguns dos nomes concorrentes aos diversos cargos: 
+Envolvido em vários projetos na universidade, como pesquisas e Empresa Júnior, pôde expandir os pensamentos sobre a visão que tinha sobre o mundo. “Toda a realidade do ensino, da pesquisa e extensão, de fato abriram muito meus horizontes. Eu aprendi muito ali dentro, disse ele.”
 
-Eliana Pedrosa (Candidata ao governo do DF): Nasceu em Bicas, Minas Gerais. Natural do Rio de Janeiro.. Estudou em escola pública e formou-se em química pela Universidade de Brasília (UnB). Hoje é mãe de três filhos e avó de seis netos.
+Perguntado sobre a importância da UnB na política, Leandro disse que a instituição é um celeiro de prática política. “A gente faz política na UnB o tempo todo, desde a organização do movimento estudantil até as empresas juniores, mas também no dia a dia.  UnB é um espaço plural, espaço da diversidade, e essa convivência com pessoas tão distintas e visões de mundo diferentes, também foi muito importante para que eu entendesse o que é democracia, a importância do pluralismo na sociedade. Eu sou muito grato a Universidade de Brasília, a UnB foi decisiva para que eu me aproximasse das políticas públicas”, ressaltou ele. 
 
-Antônio Guillen (Candidato ao governo do DF): Tem 57 anos, é formado em história e arquivologia pela Universidade de Brasília (UnB), especializado em Culturas Negras no Atlântico (UnB) e professor da rede pública do DF há 29 anos.
+Outro candidato ao cargo distrital, Pedro Ivo, também ex-aluno da instituição, formou-se em engenharia civil. Participou de Empresa Júnior,das eleições do Diretório Central dos Estudantes (DCE), em 2012 coordenou uma campanha para eleições da reitoria e atualmente é o presidente da Alumni (Associação dos ex-alunos da UnB).
 
-Renan Rosa (Candidato ao governo do DF): O candidato tem 53 anos e é bancário desde 1987. Graduado em letras pela Universidade de Brasília (UnB), ele é analista de TI no Banco do Brasil. 
+Pedro contou sobre como ingressou na política fora da universidade. “Foram as oportunidades que eu tive dentro da UnB, que me levaram por esse caminho. Por participar por essa série de atividades, eu conheci na época o deputado federal José Reguffe, hoje senador. Em 2013 ele me convidou para ser candidato. Em 2014 me candidatei, ainda aluno de engenharia civil, com 22 anos. Não tranquei o semestre. Não fui eleito, mas fui bem representativo”, disse ele. 
 
-Rodrigo Rollemberg (Candidato ao governo do DF): Tem 59 anos, é casado, tem 3 filhos e dois netos. Formou-se em História pela Universidade de Brasília. Atual governador do DF. 
-
-Chico Leite (Candidato ao senado pelo DF): Nascido no Ceará, Chico formou-se em direito e jornalismo pelos Universidade de Brasília.
-
-Chico Sant’Anna ( Candidato ao senado pelo DF): Formou-se em Jornalismo e em Produção de Cinema, Rádio, TV e conclui Mestrado em Comunicação, com pesquisa no campo de Imprensa e Integração Latino- americana, na Faculdade de Comunicação da UnB. Tem 60 anos. 
-
-Leandro Grass (Candidato a deputado distrital): Brasiliense, com 32 anos, formou-se em Sociologia pela Universidade de Brasília.
-
-Pedro Ivo (Candidato a deputado distrital): Ex-presidente do Diretório Central dos Estudantes (DCE) da Universidade de Brasília (UnB), formou-se em Engenharia Civil pela instituição, é brasiliense e tem 26 anos.
+Segundo Pedro, candidato às eleições deste ano, ele conta com o apoio de professores e pesquisadores da UnB.
