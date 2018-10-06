@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: UnB se posiciona sobre agressão sofrida por servidora no ICC Norte
+title: UnB se posiciona sobre agressão sofrida por servidora no subsolo do ICC Norte
 cover: /uploads/sem-ti-tulo-10.jpg
 date: '2018-10-06'
 editorial:
