@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: 'Panfletos e santinhos são espalhados na porta das sessões e geram acidentes '
+cover: /uploads/images-1.jpg
 date: '2018-10-07'
 editorial:
   slug: /editorias/politica/
