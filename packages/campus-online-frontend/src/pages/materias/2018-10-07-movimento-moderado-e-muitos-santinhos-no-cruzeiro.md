@@ -13,7 +13,7 @@ semester: 2018/2
 tags:
   - eleições
   - política
-featured: false
+featured: true
 headline: Expectativa é de dia tranquilo e combate da polícia a crimes eleitorais
 ---
 Pouco depois do abertura do horário oficial de votação, às 8h, o movimento nas zonas eleitorais do Cruzeiro é moderado e santinhos começam a tomar conta das ruas. O patrulhamento policial na região ocorrerá durante todo o dia.
