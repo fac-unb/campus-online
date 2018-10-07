@@ -23,6 +23,4 @@ Em 2015, Erika aprovou, junto com Paulo Teixeira (PT/SP) e Jean Wyllys (PSOL/RJ)
 
 Entre os deputados que se elegeram em 2014 e não têm planos de continuar na Câmara dos Deputados, há os candidatos ao governo do Distrito Federal Alberto Fraga (DEM) e Rogério Rosso (PSD). Izalci Lucas (PSDB) é candidato ao Senado Federal. Além deles, estão fora das eleições de 2018 o pastor Ronaldo Fonseca (Pode), atual ministro da Secretaria-Geral da Presidência da República, e Rôney Nemer (PP), que sofre ação de improbidade administrativa e está inelegível. 
 
-
-
 ![Elaboração: Mariana Santos.](/uploads/sem-titulo-1.jpg)
