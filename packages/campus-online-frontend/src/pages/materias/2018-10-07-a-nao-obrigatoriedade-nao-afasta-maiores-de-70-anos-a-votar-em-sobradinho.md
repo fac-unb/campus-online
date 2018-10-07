@@ -7,8 +7,8 @@ editorial:
   slug: /editorias/politica/
   title: Política
 author:
-  slug: /reporteres/2018-2-gabriel-ponte/
-  title: Gabriel Ponte
+  slug: /reporteres/2018-2-ana-luisa-santos/
+  title: Ana Luísa Santos
 semester: 2018/2
 tags:
   - Política
