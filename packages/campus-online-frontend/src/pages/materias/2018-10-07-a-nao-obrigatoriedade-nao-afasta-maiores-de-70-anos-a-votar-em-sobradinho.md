@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: 'A não obrigatoriedade não afasta maiores de 70 anos à votar em Sobradinho '
+title: 'A não obrigatoriedade não afasta maiores de 70 anos a votar em Sobradinho '
 cover: /uploads/20181007_075815.jpg
 date: '2018-10-07'
 editorial:
@@ -15,8 +15,6 @@ tags:
 featured: false
 headline: Filas grandes também marcaram o início das votações.
 ---
-Filas grandes também marcaram o início das votações.
-
 Texto: Ana Luísa Santos 
 
 No Centro Educacional 02 em Sobradinho I tinham grandes filas nas seções eleitorais entre 8h e 9h. Esse cenário se repetiu em outros pontos de votação em Sobradinho I e II. Em uma dessas filas estavam o casal Raimundo Arruda e Maria de Nazaré Gomes, ambos maiores de 70 anos.
