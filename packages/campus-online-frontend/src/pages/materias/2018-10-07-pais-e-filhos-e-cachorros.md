@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: 'Pais e filhos... E cachorros '
-cover: /uploads/cachorro-amigo-animal-de-estimacao-1481035901139_615x300.jpg
+cover: /uploads/eleitores-com-cachorro.jpeg
 date: '2018-10-07'
 editorial:
   slug: /editorias/politica/
