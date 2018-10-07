@@ -9,9 +9,12 @@ editorial:
   slug: /editorias/politica/
   title: Política
 author:
-  slug: /reporteres/2018-2-gabriel-ponte/
-  title: Gabriel Ponte
+  slug: /reporteres/2018-2-ana-lidia/
+  title: Ana Lídia
 semester: 2018/2
+tags:
+  - política
+  - votação
 featured: false
 ---
 O domingo costuma representar um dia de descanso para muitos brasileiros, mas este é diferente. É dia de decisão. A eleição de 2018 tem gerado grande expectativa. A ansiedade chegou cedo a muitos eleitores, que antes mesmo de os portões de suas zonas se abrirem já aguardam a sua vez de votar. Antes das 8h da manhã, cerca de 70 pessoas esperavam para votar na zona 019, na Escola Bilíngue de Taguatinga.
