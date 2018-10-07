@@ -12,11 +12,12 @@ author:
 semester: 2018/2
 tags:
   - Política
+  - fila
+  - voto
+  - Sobradinho
 featured: false
-headline: Filas grandes também marcaram o início das votações.
+headline: Filas grandes também marcaram o início das votações
 ---
-Texto: Ana Luísa Santos 
-
 No Centro Educacional 02 em Sobradinho I tinham grandes filas nas seções eleitorais entre 8h e 9h. Esse cenário se repetiu em outros pontos de votação em Sobradinho I e II. Em uma dessas filas estavam o casal Raimundo Arruda e Maria de Nazaré Gomes, ambos maiores de 70 anos.
 
 Maria de Nazaré Gomes (71) defendeu a importância de votar mesmo não sendo mais obrigatório para ela. "A diferença de um voto, de repente, pode causar uma mudança", afirma, "eu fico mais tranquila de saber que eu participei da votação do que ficar só sabendo do resultado depois".
