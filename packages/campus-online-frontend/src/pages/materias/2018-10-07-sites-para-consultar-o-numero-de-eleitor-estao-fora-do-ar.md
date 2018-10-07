@@ -7,8 +7,8 @@ editorial:
   slug: /editorias/politica/
   title: Política
 author:
-  slug: /reporteres/2018-2-gabriel-ponte/
-  title: Gabriel Ponte
+  slug: /reporteres/2018-2-millena-campello/
+  title: Millena Campello
 semester: 2018/2
 tags:
   - Eleições2018
@@ -18,9 +18,7 @@ headline: >-
   site do TRE-DF e do TSE. Agora, a única solução é ligar para o telefone do
   Cate, que está congestionado
 ---
-Millena Campello
-
-Por muitos acessos nos últimos minutos, o site do TRE-DF (www.tre-df.jus.br) e do TSE (www.tse.jus.br) suspenderam a opção de consulta ao número de eleitor. A medida foi tomada por segurança, para evitar que ataques cibernéticos possam burlar o sistema.
+Por muitos acessos nos últimos minutos, o site do TRE-DF ([www.tre-df.jus.br](http://www.tre-df.jus.br/)) e do TSE ([www.tse.jus.br](http://www.tse.jus.br/)) suspenderam a opção de consulta ao número de eleitor. A medida foi tomada por segurança, para evitar que ataques cibernéticos possam burlar o sistema.
 
 Há a opção de ligar para a Central de Atendimento Telefônico ao Eleitor (Cate) pelo telefone (61) 3048-4000. Contudo, a agente de Informação Cristina Sandria, que está trabalhando para a Justiça Eleitoral no Sudoeste, alerta: "A linha telefônica está congestionada. Os sites estão dando problema. É muita gente que vem sem o número e tenta ligar ou entrar no site aqui".
 
