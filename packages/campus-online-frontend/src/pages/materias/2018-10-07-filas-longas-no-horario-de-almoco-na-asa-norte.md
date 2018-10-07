@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: Filas longas no horário de almoço na Asa Norte
+cover: /uploads/img_2653.jpg
 date: '2018-10-07'
 editorial:
   slug: /editorias/politica/
