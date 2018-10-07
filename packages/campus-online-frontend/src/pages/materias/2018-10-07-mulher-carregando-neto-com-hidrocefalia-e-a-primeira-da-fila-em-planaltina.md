@@ -7,8 +7,8 @@ editorial:
   slug: /editorias/politica/
   title: Política
 author:
-  slug: /reporteres/2018-2-gabriel-ponte/
-  title: Gabriel Ponte
+  slug: /reporteres/2018-2-marcella-do-nascimento-rodrigues/
+  title: Marcella do Nascimento Rodrigues
 semester: 2018/2
 tags:
   - Eleições2018
