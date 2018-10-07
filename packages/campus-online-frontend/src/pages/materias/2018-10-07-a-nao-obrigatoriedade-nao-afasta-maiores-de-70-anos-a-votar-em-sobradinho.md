@@ -1,6 +1,8 @@
 ---
 template: blog-post
-title: 'A não obrigatoriedade não afasta maiores de 70 anos a votar em Sobradinho '
+title: >-
+  Eleitores com mais de 70 anos comparecem às urnas em Sobradinho mesmo com a
+  não obrigatoriedade
 cover: /uploads/20181007_075815.jpg
 date: '2018-10-07'
 editorial:
