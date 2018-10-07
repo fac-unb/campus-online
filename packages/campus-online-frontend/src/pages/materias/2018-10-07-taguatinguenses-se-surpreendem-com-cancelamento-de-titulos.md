@@ -7,8 +7,8 @@ editorial:
   slug: /editorias/politica/
   title: Política
 author:
-  slug: /reporteres/2018-2-millena-campello/
-  title: Millena Campello
+  slug: /reporteres/2018-2-millena-sousa/
+  title: Millena Sousa
 semester: 2018/2
 tags:
   - Taguatinga
