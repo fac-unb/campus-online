@@ -22,8 +22,6 @@ O movimento de eleitores é intenso no Colégio COC do Lago Norte. As filas se e
 
 De um lado, eleitores que não têm mais a obrigação de votar, mas desejam exercer seu direito de cidadão, e, do outro, uma parcela que ainda é muito nova para ter noção do que é ou o que está em jogo em uma eleição, mas é obrigado a acompanhar o responsável. Seja no carrinho, no colo ou servindo de apoio para o corpo frágil mais velho, não se escuta choro Até os filhos peludos, os cachorros, fazem parte desse evento, entrando serenamente na escola, puxados pelos donos. Não fazem sujeira nem barulho, se portando tão bem quanto as crianças. E paira a dúvida no ar: Em quem eles votariam?
 
-
-
 ![](/uploads/eleitores-com-cachorro.jpeg)
 
 ![]()
