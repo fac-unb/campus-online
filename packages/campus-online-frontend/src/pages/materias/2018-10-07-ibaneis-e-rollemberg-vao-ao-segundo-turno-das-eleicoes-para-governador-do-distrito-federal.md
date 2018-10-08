@@ -21,7 +21,7 @@ tags:
 featured: true
 headline: >-
   Candidato do PSB contraria pesquisas eleitorais prévias e disputará o governo
-  com Ibaneis no dia 27 de outubro
+  com Ibaneis no dia 28 de outubro
 ---
 Segundo turno das eleições para o governo do Distrito Federal será entre Ibaneis e Rodrigo Rollemberg. Após apuração das urnas, candidatos do Movimento Democrático Brasileiro (MDB) e Partido Socialista Brasileiro (PSB) totalizaram aproximadamente 55% dos votos dos brasilienses.
 
@@ -29,4 +29,4 @@ Confirmando as pesquisas eleitorais, o candidato Ibaneis Rocha, do MDB, liderou 
 
 A grande surpresa do resultado ao GDF foi a candidata do Partido Republicano da Ordem Social (PROS), Eliana Pedrosa, que chegou a liderar as pesquisas de Ibope e Datafolha, e terminou apenas na quinta posição da corrida governamental, sendo ultrapassada por Ibaneis e Rollemberg, além do candidato Rogério Rosso, do Partido Social Democrático (PSD), e General Paulo Chagas, do Partido Republicano Progressista (PRP).
 
-No segundo turno, enquanto Ibaneis tenta confirmar o favoritismo, Rollemberg busca uma reviravolta para a reeleição. A segunda etapa das eleições gerais de 2018 acontecem no dia 27 de outubro.
+No segundo turno, enquanto Ibaneis tenta confirmar o favoritismo, Rollemberg busca uma reviravolta para a reeleição. A segunda etapa das eleições gerais de 2018 acontece no dia 28 de outubro.
