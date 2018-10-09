@@ -3,23 +3,28 @@ script:
 - npm run lint && npm run run:travis
 env:
   REACT_APP_NETLIFY_CLIENT_ID: 07b77d90049181febc5fd7b52d9a873700248ee99bdb1ba594f7853b878e3c3e
+  global:
+  - secure: ZLZMF39kqoVbAQFMTu4oqXtWN/CbNZ+egYGty7VzYWlsh04J+680Co7LeEvCphQiKXha3iMoTnK8uXHavWs+WRIW0XZXRALpUKJhQPlhWD0oR8j22DIXMFlYu5ADN4/NdaZXZ+mzRC+p9QPfYLzMhG/F00mTXiLi0NHQrXMGwfZ6bHkV3Q8SLRBIjBFzElA6zKKcVIJApxqnIIHTYFIeqp3sQzTSB7uNjBOxyJWxbIIP5DyZ+e9iH9BDCtLAuqYl9VP6BbJb5hhY2Aok0gBeSLOFOh+kP+wgJIoSEBslIhwp3o8PudHWw1/sU3DSn0PuvsG0TTtgtkYbokst4WbFCqLWoQI76aJkctRzLNaM68u4EM4NiUh6ltO2HC7RbRzfs7j0O7UhjIu8yGpexKt54+V0d87JHf/88QZ4W1/oImyyUTXLrFrylKk6tkxMXReJGZo9NEo3ZGTjTsXnhOhzrCYXvn1P0bJN4Dx6z2/wHk7q5z6PQN+PwbjAOAy0LN46rUPNTnbMuwcXnSX5gFGK5bjdjhiWDyUpjPP4oDMLmS7EXTpB75qV0KBU4cxXlIesgx8iJegk7di4xmwZSZs49Yr7sSNuTBdkdYG7UyHwD/H769ortrL272Mk63IXwJDJXYmNztM7SeTrKuvpuhBMZujeTkoc819jgpV6XSyqnpw=
 cache:
   yarn: true
   directories:
-    - node_modules
-    - packages/campus-enrollment-frontend/node_modules
-    - packages/campus-enrollment-functions/node_modules
-    - packages/campus-online-frontend/node_modules
-    - packages/campus-online-functions/node_modules
+  - node_modules
+  - packages/campus-enrollment-frontend/node_modules
+  - packages/campus-enrollment-functions/node_modules
+  - packages/campus-online-frontend/node_modules
+  - packages/campus-online-functions/node_modules
 git:
   depth: 1
 deploy:
-  skip_cleanup: true
-  provider: firebase
-  on:
-   repo: fac-unb/campus-online
-   branch: master
-  token:
-    secure: yEtFydA10rarEtDAO3NoMaHZswm1MM3/NWEcUztU/LFe0Lp1g/vOZPCf34wqm4hhFYqIxnzyYLaR6eCCN9fWA+FZS2k0P3grA9CClQmDId/KZn3zbI5/PRDOfzThDyoRQxLVpuQnX29hjxpRogpVpBd/3BEetCWoM79ZHsWD2v3kNs63vdFpAaKqBKXICt8gD144zR8RIhBz1kIAKq7q5FGkQn5kneXb1C5o9Ld8UwxemdSh6koBI4gto0JyfHRQC4qBpcC+SM99szvOzB6Cylbk2knGGpBz9Q+oTgZge9KfDoGHE+Zquok7wlEDbxmh7JknJOhuDckr5H7sBCnQi2tXRawYioYa+tdxUbkoaEEqBlEbytzEYI+fFoZv/OiXxutlPT7e0Sk+NAu6eOq3dFvkL2VNzG9kscEY56cdY3QTmxakG7ZIoWuLGZFxeMSZ7BK7sBV3dlOlvara1G1IpwH+c324J1BNiEy0EKYiBrOkVZENv/iz9nrY5oA5zpVjWCIdwLtHKcELlK9nk8VoVkealHhroNDJskhpVZ2F7MsQZ8RLLUU8ocwhTVKlJoOyHL1QKaLlAYHTnjdL355W7ga9xYnTeJmW+HVphZkqN1kYCFK2typa46IXfsPMNH3MUnNZ6SG093pYdI+KthvMmjbqQqCXk+mCu3rE/LOHtNo=
+  - provider: firebase
+    skip_cleanup: true
+    on:
+      repo: fac-unb/campus-online
+      branch: master
+  - provider: script
+    script: npx https://gist.github.com/leonardodino/3da17301bb4f3866f2cd23ebb4d49b5e campus-unb
+    on:
+      repo: fac-unb/campus-online
+      branch: master
 notifications:
   email: false
