@@ -19,8 +19,8 @@ tags:
   - Brasil
 featured: false
 headline: >-
-  Após acidente com rompimento de cabos de sustentação e inicial risco de
-  desabamento, Defesa Civil interditou área
+  Após rompimento de cabos de sustentação e inicial risco de desabamento, Defesa
+  Civil interditou área comprometida
 ---
 Parte da Rodoviária do Plano Piloto foi interditada na tarde desta quarta-feira (10/10) após um suposto risco de desabamento. A medida foi tomada após cabos de aço de uma das vigas se romperem enquanto funcionários de uma empresa terceirizada prestavam serviço para a companhia de telecomunicações Vivo. No momento do incidente os funcionários instalavam cabos de fibra ótica no forro, entre o teto e uma das pilastras, para conectar três antenas de internet sem fio. 
 
