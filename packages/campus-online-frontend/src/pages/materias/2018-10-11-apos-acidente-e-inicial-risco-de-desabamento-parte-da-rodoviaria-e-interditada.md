@@ -1,6 +1,8 @@
 ---
 template: blog-post
-title: Após acidente e inicial risco de desabamento parte da Rodoviária é interditada
+title: >-
+  Interdição de parte da Rodoviária não afeta linha 110, que faz ligação com a
+  UnB
 cover: /uploads/2018-10-11-01.21.27-1.jpg
 date: '2018-10-11'
 editorial:
@@ -17,8 +19,8 @@ tags:
   - Brasil
 featured: false
 headline: >-
-  A Novacap descartou os riscos de desabamento, porém, como medida de segurança,
-  a área afetada permanecerá isolada por cinco dias
+  Após acidente com rompimento de cabos de sustentação e inicial risco de
+  desabamento, Defesa Civil interditou área
 ---
 Parte da Rodoviária do Plano Piloto foi interditada na tarde desta quarta-feira (10/10) após um suposto risco de desabamento. A medida foi tomada após cabos de aço de uma das vigas se romperem enquanto funcionários de uma empresa terceirizada prestavam serviço para a companhia de telecomunicações Vivo. No momento do incidente os funcionários instalavam cabos de fibra ótica no forro, entre o teto e uma das pilastras, para conectar três antenas de internet sem fio. 
 
