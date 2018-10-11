@@ -20,7 +20,7 @@ headline: >-
   A Novacap descartou os riscos de desabamento, porém, como medida de segurança,
   a área afetada permanecerá isolada por cinco dias
 ---
-Parte da Rodoviária do Plano Piloto foi interditada na tarde desta quarta-feira(10/10) após um suposto risco de desabamento. A medida foi tomada após cabos de aço de uma das vigas se romperem enquanto funcionários de uma empresa terceirizada prestavam serviço para a companhia de telecomunicações Vivo. No momento do incidente os funcionários instalavam cabos de fibra ótica no forro, entre o teto e uma das pilastras, para conectar três antenas de internet sem fio. 
+Parte da Rodoviária do Plano Piloto foi interditada na tarde desta quarta-feira (10/10) após um suposto risco de desabamento. A medida foi tomada após cabos de aço de uma das vigas se romperem enquanto funcionários de uma empresa terceirizada prestavam serviço para a companhia de telecomunicações Vivo. No momento do incidente os funcionários instalavam cabos de fibra ótica no forro, entre o teto e uma das pilastras, para conectar três antenas de internet sem fio. 
 
 De acordo com a Companhia Urbanizadora da Nova Capital do Brasil (Novacap), o acidente foi causado no momento em que um dos prestadores do serviço usou uma furadeira de forma negligente. Cada viga na rodoviária é sustentada por 60 cabos de protensão, no acidente foram rompidos 10. 
 
@@ -32,7 +32,7 @@ A vendedora ambulante Vanessa Braga, 36 anos, estava trabalhando na rodoviária 
 
 Agentes da Defesa Civil, Novacap, Corpo de Bombeiros e Polícia Militar garantiram a segurança do local e fizeram as primeiras análises técnicas. Em um primeiro comunicado afirmaram que a parte afetada representa 15% da sustentação da viga e que isto ainda está dentro da margem de segurança. Uma nova avaliação ainda será feita para que medidas possam ser tomadas.
 
-![(Crédito: Sarah Paes)](/uploads/2018-10-11-01.21.26-1.jpg)
+![(Foto: Sarah Paes)](/uploads/2018-10-11-01.21.26-1.jpg)
 
 Ainda segundo a Novacap, o acidente de hoje não tem relação com as reformas que estão sendo feitas na rodoviária e a empresa responsável pelo dano terá que arcar com os custos dos prejuízos. A empresa Vivo foi comunicada e em nota informou que já “está em contato com os órgãos competentes para fornecer todas as informações necessárias e tomar as medidas cabíveis”.
 
@@ -45,4 +45,4 @@ Enquanto parte da estação de embarque estiver interditada quatro linhas de ôn
 
 \- 2302, Gama, e 2202, Santa Maria: os passageiros das linhas paradoras do BRT embarcarão no Eixinho W (entre o Conjunto Nacional e o Conic).
 
-![(Crédito: Sarah Paes)](/uploads/2018-10-11-01.21.23-1.jpg)
+![(Foto: Sarah Paes)](/uploads/2018-10-11-01.21.23-1.jpg)
