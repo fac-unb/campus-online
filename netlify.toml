@@ -11,3 +11,15 @@
   for = "/assets/fonts/*"
   [headers.value]
     Cache-Control = "public, max-age=86400"
+
+[[redirects]]
+  from = "http://campus.kunst.cloud/*"
+  to = "https://campus.fac.unb.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://campus.kunst.cloud/*"
+  to = "https://campus.fac.unb.br/:splat"
+  status = 301
+  force = true
