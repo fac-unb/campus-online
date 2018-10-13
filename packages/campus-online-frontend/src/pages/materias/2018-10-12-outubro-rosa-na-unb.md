@@ -23,7 +23,7 @@ Neste mês de outubro, a Liga de Combate ao Câncer da Faculdade de Saúde da Un
 
 No último dia 9, a Liga deu início ao ciclo de palestras realizadas em conjunto com a Sociedade Brasileira de Mastologia, e que visa conscientização e debate acerca do tema. As palestras serão feitas todas as terças-feiras do mês de outubro na Faculdade de Saúde (FS). 
 
-A equipe do projeto também promoveu o Dia da Beleza, em 8 de outubro, no Centro de Alta Complexidade em Oncologia (Cacon) do Hospital Universitário de Brasília (HUB). Perucas e lenços foram doados para as pacientes que estão em tratamento. Além disso, houve oficinas de maquiagem e de dança. Para Larissa Corrêa, presidente do projeto e aluna de enfermagem, essa ação ajuda a elevar a autoestima das mulheres e dá uma força para continuarem lutando. Esse evento contou com pacientes em tratamento e as que já terminaram. Esse serviço do Cacon é ambulatorial e funciona de segunda a sexta. 
+A equipe do projeto também promoveu o Dia da Beleza, em 8 de outubro, no Centro de Alta Complexidade em Oncologia (Ucacon) do Hospital Universitário de Brasília (HUB). Perucas e lenços foram doados para as pacientes que estão em tratamento. Além disso, houve oficinas de maquiagem e de dança. Para Larissa Corrêa, presidente do projeto e aluna de enfermagem, essa ação ajuda a elevar a autoestima das mulheres e dá uma força para continuarem lutando. Esse evento contou com pacientes em tratamento e as que já terminaram. Esse serviço do Cacon é ambulatorial e funciona de segunda a sexta. 
 
 Confira a entrevista com a Larissa Corrêa, voluntária da Liga de Combate ao Câncer:
 
@@ -39,7 +39,7 @@ E fora da UnB, no Hospital de Base funciona a ONG Recomeçar. Fundada pela Joana
 
 Nos meses de outubro dos últimos anos, monumentos, como o Congresso Nacional e as fontes da Torre de TV, recebem iluminação rosa. Esse movimento simboliza a campanha de combate ao Câncer de Mama realizado sempre em outubro aqui no Brasil, mas que teve início em 1990, na Corrida pela Cura, realizada em Nova York. 
 
-Mesmo com a campanha, os dados ainda não são bons. Segundo o Instituto Nacional de Câncer José Alencar Gomes da Silva (Inca), a estimativa em 2018 foram 58.700 novos casos de câncer de mama. Por isso, prevenção é a palavra-chave e é preciso estimular a população a participar e a ser ativista contra essa doença.
+Mesmo com a campanha, os dados ainda não são bons. Segundo o Instituto Nacional de Câncer José Alencar Gomes da Silva (Inca), a estimativa em 2018 é de 58.700 novos casos de câncer de mama. Por isso, prevenção é a palavra-chave e é preciso estimular a população a participar e a ser ativista contra essa doença.
 
 E o mais importante: não deixe de realizar exames periódicos. O cuidado é essencial. 
 
