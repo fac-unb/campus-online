@@ -2,7 +2,7 @@
 template: blog-post
 title: Das cadeiras das salas de aula da UnB aos gabinetes parlamentares
 cover: /uploads/whatsapp-image-2018-10-13-at-16.14.21.jpeg
-date: '2018-10-11'
+date: '2018-10-14'
 editorial:
   slug: /editorias/politica/
   title: Política
