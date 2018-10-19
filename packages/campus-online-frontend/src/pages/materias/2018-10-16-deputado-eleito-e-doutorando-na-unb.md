@@ -1,6 +1,8 @@
 ---
 template: blog-post
-title: Deputado eleito é doutorando na UnB
+title: >-
+  Primeiro gay assumido eleito para a Câmara Legislativa, Fábio Felix é
+  doutorando na UnB
 cover: /uploads/fabio_felix_guiagaybrasilia.jpg
 date: '2018-10-16'
 author:
