@@ -49,6 +49,8 @@ Garantir que a diversidade de raça, gênero e orientação sexual sejam respeit
 **5 - Qual o sentimento de ser o primeiro gay assumido a conquistar vaga na CLDF em um mundo político reconhecidamente intolerante?
 **É um sentimento de orgulho e conquista. Lutei muito para que esse sonho se tornasse real, para que pudéssemos ocupar esse espaço de poder essencial para a garantia dos nossos direitos. Estive sempre ao lado de pessoas que há um bom tempo acreditam neste projeto e lutam por um mundo mais justo e igualitário. Essa vitória é coletiva e a mobilização não é de hoje. Estou muito empolgado e motivado a encarar essa luta!
 
+![(Arte: Marina Julião)](/uploads/fabiofelix.jpg)
+
 **6 - Qual será seu maior desafio como deputado distrital?
 **Acredito que enfrentarei vários. Não sabemos ao certo o que nos espera, tanto na conjuntura do DF quanto na conjuntura nacional, mas estou pronto para encarar esses desafios com sabedoria e diálogo, com o apoio das eleitoras e eleitores que confiaram a mim seus votos e de uma equipe guerreira e cheia de coragem.
 
