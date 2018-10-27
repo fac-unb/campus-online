@@ -2,7 +2,9 @@
 template: blog-post
 title: Editorial - Bolsonaro e o futuro tenebroso das universidades federais
 date: '2018-10-27'
-author: ''
+author:
+  slug: /reporteres/2018-2-karina-amaral/
+  title: Karina Amaral
 semester: 2018/2
 featured: false
 ---
