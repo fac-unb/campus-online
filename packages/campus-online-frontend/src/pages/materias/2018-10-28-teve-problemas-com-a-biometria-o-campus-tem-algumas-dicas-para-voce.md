@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: Teve problemas com a Biometria? O Campus tem algumas dicas para você
+cover: /uploads/whatsapp-image-2018-10-28-at-15.11.35.jpeg
 date: '2018-10-28'
 editorial:
   slug: /editorias/politica/
