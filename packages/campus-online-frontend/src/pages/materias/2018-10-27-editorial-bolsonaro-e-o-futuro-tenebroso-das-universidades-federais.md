@@ -16,7 +16,7 @@ tags:
   - presidente
 featured: true
 ---
-Para infelicidade de alguns, que justificam temer pela derrota da democracia, ou alegria de outros, que dizem querer a mudança de partido no Poder Executivo, foi eleito em segundo turno o candidato pelo partido Partido Social Liberal (PSL), Jair Messias Bolsonaro, com 55,13% dos votos. Ele derrotou o candidato Fernando Haddad (PT), que obteve 44,87% dos votos. 
+Para infelicidade de alguns, que justificam temer pela derrota da democracia, ou alegria de outros, que dizem querer a mudança de partido no Poder Executivo, o candidato Jair Messias Bolsonaro (PSL) foi eleito neste domingo (28) presidente da República, com 55,13% dos votos. Em votação de segundo turno, ele derrotou o candidato Fernando Haddad (PT), que obteve 44,87% dos votos. 
 
 Tendo recebido mais de 57 milhões de votos, o militar deve trazer grandes transformações, no sentido mais radical possível, para a Universidade de Brasília (UnB) em particular e para as universidades públicas em geral, conforme o plano de governo apresentado e declarações dadas em entrevistas e redes sociais.
 
