@@ -12,6 +12,8 @@ author:
 semester: 2018/2
 tags:
   - Eleições  2018
+  - asbtenção
+  - voto
 featured: true
 headline: >-
   Apesar da população ir, novamente, às urnas neste domingo, há quem não
