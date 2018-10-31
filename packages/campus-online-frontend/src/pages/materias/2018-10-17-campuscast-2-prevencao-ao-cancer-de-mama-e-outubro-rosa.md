@@ -7,8 +7,8 @@ editorial:
   slug: /editorias/2018-1-tabu/
   title: CampusCast
 author:
-  slug: /reporteres/2018-2-marina-juliao/
-  title: Marina Julião
+  slug: /reporteres/2018-2-mariah-aquino/
+  title: Mariah Aquino
 semester: 2018/2
 tags:
   - podcast
@@ -27,3 +27,11 @@ A conversa teve informações sobre autoexame, tabus, autoestima e a importânci
 Conheça a ONG Vencedoras Unidas:\
 **Facebook:** https://www.facebook.com/pg/vencedorasunidas\
 **Telefone:** (61) 99325-1873
+
+## Ficha técnica:
+
+**Locução:** Mariah Aquino e Marina Julião
+
+**Produção:** Mariah Aquino e Marina Julião
+
+**Trabalhos técnicos: **Glauber Oliveira
