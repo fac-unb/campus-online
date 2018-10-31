@@ -7,8 +7,8 @@ editorial:
   slug: /editorias/2018-1-tabu/
   title: CampusCast
 author:
-  slug: /reporteres/2018-2-marina-juliao/
-  title: Marina Julião
+  slug: /reporteres/2018-2-mariah-aquino/
+  title: Mariah Aquino
 semester: 2018/2
 tags:
   - CampusCast
@@ -23,3 +23,11 @@ As repórteres Marina Julião e Mariah Aquino conversaram com a professora Eduar
 Confira!
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520553757&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+## Ficha técnica:
+
+**Locução:** Mariah Aquino e Marina Julião
+
+**Produção:** Mariah Aquino e Marina Julião
+
+**Trabalhos técnicos: **Glauber Oliveira
