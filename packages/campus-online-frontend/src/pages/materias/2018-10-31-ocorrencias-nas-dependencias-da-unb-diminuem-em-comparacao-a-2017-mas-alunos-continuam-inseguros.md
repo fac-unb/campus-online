@@ -20,13 +20,13 @@ headline: >-
   Número de ocorrências diminuiu de 190 para 126, se comparados os primeiros
   semestres de 2017 e 2018
 ---
-Apesar das medidas implementadas pela UnB a fim de melhorar a segurança, relatada na matéria do _**Campus Online**_ [UnB melhora a segurança mesmo sem aumento nos recursos](https://campus.fac.unb.br/materias/2018-10-31-unb-melhora-a-seguranca-mesmo-sem-aumento-nos-recursos/), a pauta da segurança continua sendo uma constante entre os alunos da instituição de ensino. Pegar aulas à noite e estacionar carro ou bicicleta são tarefas que ainda despertam receio em meio à comunidade acadêmica.
+Apesar das medidas implementadas pela UnB a fim de melhorar a segurança, relatada na matéria do **_Campus Online_** [UnB melhora a segurança mesmo sem aumento nos recursos](https://campus.fac.unb.br/materias/2018-10-31-unb-melhora-a-seguranca-mesmo-sem-aumento-nos-recursos/), a pauta da segurança continua sendo uma constante entre os alunos da instituição de ensino. Pegar aulas à noite e estacionar carro ou bicicleta são tarefas que ainda despertam receio em meio à comunidade acadêmica.
 
 De acordo com a Diretoria de Segurança da UnB (Diseg), apenas no primeiro semestre de 2018 mais de 60 ocorrências foram feitas por arrombamento e furto de veículos nas dependências da universidade. Apesar de grande, o número é menor que os registros do primeiro semestre do ano passado.
 
 Os dados fornecidos pela Diseg sugerem diminuição de registro em todas as ocorrências, mas ainda longe do ideal, o que mantém a insegurança dos alunos.
 
-![](/uploads/campus.jpg)
+![(Arte: Isabela Castilho)](/uploads/unnamed.jpg)
 
 Questionada sobre os locais de maior ocorrência dentro do Campus Darcy Ribeiro, a Assessoria de Comunicação da UnB informou que a metodologia da coleta de dados por parte da diretoria de segurança não foi constante ao longo dos anos e, portanto, não era possível afirmar precisamente o local mais perigoso da universidade.
 
