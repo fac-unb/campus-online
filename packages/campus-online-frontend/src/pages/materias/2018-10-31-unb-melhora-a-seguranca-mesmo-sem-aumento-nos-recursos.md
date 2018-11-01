@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: 'UnB melhora a segurança mesmo sem aumento nos recursos '
-cover: /uploads/10082018_campanhaseguranaselo_lgprado3.jpg
+cover: /uploads/whatsapp-image-2018-11-01-at-10.20.35.jpeg
 date: '2018-10-31'
 editorial:
   slug: /editorias/2018-1-universidade/
@@ -42,7 +42,7 @@ As medidas, entretanto, estão quase inteiramente restritas ao campus Darcy Ribe
 
 Layza Dutra e Maria Aparecida são duas vigilantes que ficam nas cadeiras elevadas do ICC Norte. Apesar do corte dos gastos no último ano, as duas já trabalham na UnB há cinco anos, das sete da manhã às 16h. Elas contam que a mudança foi benéfica, que nunca presenciaram nenhuma ocorrência esse semestre nos estacionamentos, mas que algumas mudanças ainda poderiam ser feitas para melhorar as condições de trabalho. “Uma coisa que faz falta é uma cabine, por exemplo, no lugar dessa cadeira”, relata Dutra.
 
-![As cadeiras elevadas foram uma novidade do segundo semestre de 2018, cujo intuito é melhorar a vigilância nos maiores estacionamentos do Campus Darcy Ribeiro. (Foto: Luis Gustavo Prado/Secom UnB)](/uploads/10082018_campanhaseguranaselo_lgprado3.jpg)
+![As cadeiras elevadas foram uma novidade do segundo semestre de 2018, cujo intuito é melhorar a vigilância nos maiores estacionamentos do Campus Darcy Ribeiro. (Foto: Natália Fechine)](/uploads/whatsapp-image-2018-11-01-at-10.20.35.jpeg)
 
 Escute uma parte da entrevista com a segurança Layza Dutra:
 
@@ -54,7 +54,4 @@ A funcionária conta ainda que costuma fazer uma ronda a pé no estacionamento e
 
 A Coordenadoria Proteção ao Patrimônio (CoPP) está diretamente ligada à prefeitura, mas a é a parte que coordena e executa tarefas relativas à vigilância do Campus. Eles também estão ligados ao registro das ocorrências de desvios, furtos, roubos e invasões. E se precisar, o telefone da Central de Segurança é (61) 3107 6222 ou dos achados e perdidos (61) 3107-5855. 
 
-_Por Isabela Castilho e Natália Fechine
-_
-
-__
+_Por Isabela Castilho e Natália Fechine_
