@@ -44,10 +44,13 @@ Escute uma parte da entrevista com a segurança Layza Dutra:
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523019199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
+![Visão ampliada do estacionamento conferida às vigilantes a partir das cadeiras elevadas. (Foto: Natália Fechine)](/uploads/whatsapp-image-2018-11-01-at-00.33.27.jpeg)
+
 A funcionária conta ainda que costuma fazer uma ronda a pé no estacionamento e percebe que sempre tem alguém que esquece a janela aberta. Ela já achou até uma chave. “Quando encontro esses pertences, eles ficam um tempo comigo porque a pessoa pode lembrar e me procurar, mas se não, eu tenho que fazer uma ocorrência e levar para a CoPP”, conta Layza Dutra.
 
 A Coordenadoria Proteção ao Patrimônio (CoPP) está diretamente ligada à prefeitura, mas a é a parte que coordena e executa tarefas relativas à vigilância do Campus. Eles também estão ligados ao registro das ocorrências de desvios, furtos, roubos e invasões. E se precisar, o telefone da Central de Segurança é (61) 3107 6222 ou dos achados e perdidos (61) 3107-5855. 
 
-_Por Isabela Castilho e Natália Fechine_
+_Por Isabela Castilho e Natália Fechine
+_
 
 __
