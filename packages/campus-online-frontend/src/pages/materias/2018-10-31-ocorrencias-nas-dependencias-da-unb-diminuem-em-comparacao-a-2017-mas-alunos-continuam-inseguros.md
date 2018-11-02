@@ -20,7 +20,7 @@ headline: >-
   Número de ocorrências diminuiu de 190 para 126, se comparados os primeiros
   semestres de 2017 e 2018
 ---
-Apesar das medidas implementadas pela UnB a fim de melhorar a segurança, relatada na matéria "UnB melhora a segurança mesmo sem aumento nos recursos", a pauta da segurança continua sendo uma constante entre os alunos da instituição de ensino. Pegar aulas à noite e estacionar carro ou bicicleta são tarefas que ainda despertam receio em meio à comunidade acadêmica.
+Apesar das medidas implementadas pela UnB a fim de melhorar a segurança, relatada na matéria do _**Campus Online**_ [UnB melhora a segurança mesmo sem aumento nos recursos](https://campus.fac.unb.br/materias/2018-10-31-unb-melhora-a-seguranca-mesmo-sem-aumento-nos-recursos/), a pauta da segurança continua sendo uma constante entre os alunos da instituição de ensino. Pegar aulas à noite e estacionar carro ou bicicleta são tarefas que ainda despertam receio em meio à comunidade acadêmica.
 
 De acordo com a Diretoria de Segurança da UnB (Diseg), apenas no primeiro semestre de 2018 mais de 60 ocorrências foram feitas por arrombamento e furto de veículos nas dependências da universidade. Apesar de grande, o número é menor que os registros do primeiro semestre do ano passado.
 
@@ -44,7 +44,7 @@ Já no caso da Rayanne Marzagão, que estuda ciências ambientais, as câmeras n
 
 ## Ações para melhoria da segurança
 
-O Campus Darcy Ribeiro continua a buscar alternativas para a diminuição ainda maior da violência e crimes no campus. Neste semestre, conforme noticiado pela matéria "UnB melhora a segurança mesmo sem aumento nos recursos", foram instaladas cadeiras elevadas nos estacionamentos e mais câmeras ao redor dos prédios do campus. 
+O Campus Darcy Ribeiro continua a buscar alternativas para a diminuição ainda maior da violência e crimes no campus. Neste semestre, conforme noticiado pela matéria [UnB melhora a segurança mesmo sem aumento nos recursos](https://campus.fac.unb.br/materias/2018-10-31-unb-melhora-a-seguranca-mesmo-sem-aumento-nos-recursos/), foram instaladas cadeiras elevadas nos estacionamentos e mais câmeras ao redor dos prédios do campus. 
 
 Além disso, o Departamento da Ciência da Computação, liderado pelo professor Marcelo Ladeira, desenvolveu um aplicativo chamado UnB Alerta, com o objetivo de facilitar a notificação e o registro de ocorrência nos campi da Universidade. Ele permite que qualquer pessoa que circule pela instituição faça alertas georreferenciados em tempo real. Em 2017, a Administração Superior "adotou" o UnB Alerta como ferramenta auxiliar para a melhoria da segurança da comunidade acadêmica. 
 
