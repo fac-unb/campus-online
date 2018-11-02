@@ -11,8 +11,12 @@ author:
   title: Natália Fechine
 semester: 2018/2
 featured: false
+headline: >-
+  Comitê de Segurança instalado no final de 2017 levou a ações de reforço na
+  vigilância de estacionamentos, instalação de novas câmeras e mudanças nas
+  rondas
 ---
-Quem anda pelos corredores e estacionamentos da Universidade de Brasília, especialmente no campus Darcy Ribeiro, percebeu algumas mudanças em relação à segurança neste semestre. A primeira delas é possível notar logo que se chega: cadeiras elevadas foram postas nos estacionamentos para que os vigilantes da Life – empresa que fornece segurança privada para a UnB – possam ter uma visão completa do que ocorre nos locais. Corredores de segurança, a mudança das rondas e instalação de novas câmeras são as outras medidas que podem ser destacadas.
+Quem anda pelos corredores e estacionamentos da Universidade de Brasília, especialmente no campus Darcy Ribeiro, percebeu algumas mudanças em relação à segurança neste semestre. A primeira delas é possível notar logo que se chega: cadeiras elevadas foram instaladas nos estacionamentos para que os vigilantes da Life – empresa que fornece segurança privada para a UnB – possam ter uma visão completa do que ocorre nos locais. Corredores de segurança, a mudança das rondas e instalação de novas câmeras são as outras medidas que podem ser destacadas.
 
 Todas essas modificações foram recomendadas pelo **Comitê de Segurança** instituído pela reitoria da universidade no final de 2017. As determinações seguiram os resultados de uma pesquisa encomendada pela UnB e elaborada pela Secretaria de Segurança Pública do Distrito Federal (SSP/DF), que investiga a sensação de insegurança dos alunos, professores e funcionários. O levantamento, realizado em abril deste ano, apontou que quase 50% das pessoas se sentem extremamente inseguras dentro da universidade.
 
@@ -44,9 +48,9 @@ Escute uma parte da entrevista com a segurança Layza Dutra:
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523019199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
-![Visão ampliada do estacionamento conferida às vigilantes a partir das cadeiras elevadas. (Foto: Natália Fechine)](/uploads/whatsapp-image-2018-11-01-at-00.33.27.jpeg)
-
 A funcionária conta ainda que costuma fazer uma ronda a pé no estacionamento e percebe que sempre tem alguém que esquece a janela aberta. Ela já achou até uma chave. “Quando encontro esses pertences, eles ficam um tempo comigo porque a pessoa pode lembrar e me procurar, mas se não, eu tenho que fazer uma ocorrência e levar para a CoPP”, conta Layza Dutra.
+
+![Visão ampliada do estacionamento conferida pelas cadeiras elevadas. (Foto: Natália Fechine)](/uploads/whatsapp-image-2018-11-01-at-00.33.27.jpeg)
 
 A Coordenadoria Proteção ao Patrimônio (CoPP) está diretamente ligada à prefeitura, mas a é a parte que coordena e executa tarefas relativas à vigilância do Campus. Eles também estão ligados ao registro das ocorrências de desvios, furtos, roubos e invasões. E se precisar, o telefone da Central de Segurança é (61) 3107 6222 ou dos achados e perdidos (61) 3107-5855. 
 
