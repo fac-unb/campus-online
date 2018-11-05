@@ -37,4 +37,6 @@ Em 2018, os órgãos de trânsito do DF promoveram atividades educativas no camp
 
 ## Mortes por acidentes de trânsito
 
-Mais de 1,2 milhão de pessoas morrem por ano, no mundo, em acidentes de trânsito, segundo a Organização Mundial da Saúde (OMS). Nessa estatística, a embriaguez ao volante é uma das principais causas das fatalidades nas estradas do Brasil. De agosto a outubro de 2018, 9.196 motoristas foram flagrados sob efeito de álcool nas rodovias do Distrito Federal, de acordo com dados do Departamento de Estradas de Rodagem (DER). A L4, por exemplo, que dá acesso à Universidade de Brasília (UnB), é considerada uma rodovia (Rodovia DF-004 km 13).
+Mais de 1,2 milhão de pessoas morrem por ano, no mundo, em acidentes de trânsito, segundo a Organização Mundial da Saúde (OMS). Nessa estatística, a embriaguez ao volante é uma das principais causas das fatalidades nas estradas do Brasil. De agosto a outubro de 2018, 9.196 motoristas foram flagrados sob efeito de álcool nas rodovias do Distrito Federal, de acordo com dados do Departamento de Estradas de Rodagem (DER). A L4, por exemplo, uma das principais vias de acesso à Universidade de Brasília (UnB), é considerada uma rodovia (Rodovia DF-004 km 13).
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5048.532554020609!2d-47.87484718888544!3d-15.75402503837121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1541432142563" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
