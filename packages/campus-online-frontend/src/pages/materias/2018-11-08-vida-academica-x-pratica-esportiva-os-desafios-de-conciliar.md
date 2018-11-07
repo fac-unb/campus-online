@@ -49,6 +49,6 @@ Horário deixou de ser uma desculpa: vários centros de treinamento, visando a c
 
 Se você quer ter um contato maior consigo mesmo, treinos individuais estão para isso. No entanto, se o seu interesse for fazer novas amizades, descontrair, e ter contato com diferentes personalidades, os esportes coletivos são ministrados em diferentes academias da cidade, com horários flexíveis também; 
 
-Muitas pessoas falham em cumprir com o calendário de treinamentos por encararem como sacrifício. A mentalidade deve ser mudada. O exercício físico deve ser encarado como algo já presente na rotina, assim como às idas às aulas, claramente com um grau de prioridade menor. 
+Muitas pessoas falham em cumprir com o calendário de treinamentos por encararem como sacrifício. A mentalidade deve ser mudada. O exercício físico deve ser encarado como algo já presente na rotina, assim como às idas às aulas, claramente com um grau de prioridade maior. 
 
 Não tenha receio em experimentar novos esportes. A maioria das academias e modalidades oferecem aulas experimentais e, assim como você, diariamente novos iniciantes estão conhecendo treinamentos.
