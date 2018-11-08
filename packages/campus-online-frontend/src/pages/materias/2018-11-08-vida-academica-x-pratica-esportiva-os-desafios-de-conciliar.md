@@ -1,25 +1,27 @@
 ---
 template: blog-post
-title: 'Vida acadêmica x Prática esportiva: os desafios de conciliar'
+title: Os desafios para conciliação da vida acadêmica com a prática esportiva
 cover: /uploads/img_6355.jpg
 date: '2018-11-08'
-editorial: ''
+editorial:
+  slug: /editorias/2018-1-universidade/
+  title: Comportamento
 author:
   slug: /reporteres/2018-2-gabriel-ponte/
   title: Gabriel Ponte
 semester: 2018/2
 tags:
-  - Vida Esportiva
+  - esportes
+  - universidade
+  - ''
 featured: true
 headline: >-
   Estudantes da UnB contam ao Campus a rotina diária prezando pelo bem-estar
   físico e mental
 ---
-\*GABRIEL PONTE
-
 Novembro é, tradicionalmente, um mês de conscientização da saúde na população masculina. Apesar do foco estar na identificação e controle de prevenção do câncer de próstata, a campanha, como um todo, aborda a ideia de segurança e práticas saudáveis no dia a dia, com o objetivo de evitar males maiores na saúde dos homens. Em razão da data, o Campus conversou com jovens universitários da Universidade de Brasília (UnB) para entender a importância da atividade física na rotina deles como forma de prevenção e controle de doenças, além do contato com outro ambiente que não as salas de aula.
 
-Mesclar, diariamente, uma intensa rotina de estudos com a prática de exercícios físicos, sejam eles individuais ou coletivos, não é fácil. Além de perseverança, o aluno deve buscar o equilíbrio, como forma de não se desviar dos compromissos firmados anteriormente. De acordo com especialistas, semanalmente, o indicado é intercalar  atividades físicas com aeróbicas. As primeiras podem ser feitas, por quem começa a treinar, duas vezes na semana, enquanto que as aeróbicas podem ocorrer nos demais dias por, pelo menos, 30 minutos. Diante do quadro, o ideal é mesclar os diferentes treinos, sempre variando, até como forma de não sobrecarregar o corpo e respeitá-lo em momentos de maiores intensidades.
+Mesclar, diariamente, uma intensa rotina de estudos com a prática de exercícios físicos, sejam eles individuais ou coletivos, não é fácil. Além de perseverança, o aluno deve buscar o equilíbrio, como forma de não se desviar dos compromissos firmados anteriormente. De acordo com especialistas, semanalmente, o indicado é intercalar atividades físicas com aeróbicas. As primeiras podem ser feitas, por quem começa a treinar, duas vezes na semana, enquanto que as aeróbicas podem ocorrer nos demais dias por, pelo menos, 30 minutos. Diante do quadro, o ideal é mesclar os diferentes treinos, sempre variando, até como forma de não sobrecarregar o corpo e respeitá-lo em momentos de maiores intensidades.
 
 É o caso de André Freire, estudante de Engenharia Florestal, 20 anos, que intercala as aulas de boxe que pratica no Centro Olímpico da universidade com as sessões de treino de Crossfit, método que envolve atividades de alta intensidade. “Todo semestre pego por volta de 28 créditos. Isso dá, mais ou menos, 4 horas de aula por dia. E procuro, todo dia, fazer um esporte físico. Faço boxe terça-feira, quarta-feira e quinta-feira. O treino dura, normalmente, 1h30. A atividade me dá um suporte muito bom, me desestressa bastante, além de que eu faço na hora do almoço. Ou seja, depois do treino, tomo banho e aí volto para a aula até mais esperto”, relata. 
 
@@ -41,7 +43,7 @@ Quem ministra o treino de ambos é Oswaldo Navarro, faixa rajada da modalidade, 
 
 ![Oswaldo Navarro (à esquerda) ministra os treinamentos para os jovens Iago Camargo (ao lado de Oswaldo) e Lucas Reis (na extrema direita). O sensei é acompanhado por Fabiano Vianna (no centro), auxiliar do professor. Ambiente descontraído e que prega o respeito à filosofia japonesa da arte marcial conquista adeptos ](/uploads/img_6352.jpg)
 
-Dicas do Campus
+## Dicas do Campus
 
 Pra quem nunca se propôs, começar, do zero, uma atividade física pode não ser fácil. O ideal é iniciar por treinos leves, duas vezes por semana;
 
