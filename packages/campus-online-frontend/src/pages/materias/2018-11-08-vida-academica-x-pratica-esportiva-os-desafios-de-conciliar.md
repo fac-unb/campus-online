@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Os desafios para conciliação da vida acadêmica com a prática esportiva
+title: Os desafios de conciliar a vida acadêmica com a prática esportiva
 cover: /uploads/img_6355.jpg
 date: '2018-11-08'
 editorial:
