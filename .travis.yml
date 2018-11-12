@@ -15,16 +15,5 @@ cache:
   - packages/campus-online-functions/node_modules
 git:
   depth: 1
-deploy:
-  - provider: firebase
-    skip_cleanup: true
-    on:
-      repo: fac-unb/campus-online
-      branch: master
-  - provider: script
-    script: npx https://gist.github.com/leonardodino/3da17301bb4f3866f2cd23ebb4d49b5e campus-unb
-    on:
-      repo: fac-unb/campus-online
-      branch: master
 notifications:
   email: false
