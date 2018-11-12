@@ -16,10 +16,6 @@ tags:
   - política
 featured: false
 ---
-
-
-
-
 ![Cartaz da campanha #EleNão afixado em pilastra da região norte do Instituto Central de Ciências (ICC). O #EleNão é uma campanha nacional deflagrada como oposição ao presidente eleito Jair Bolsonaro ainda durante o período eleitoral. (Foto: Jamile Vasconcelos)](/uploads/whatsapp-image-2018-11-04-at-21.18.49.jpeg)
 
 ![Pichações da campanha #EleNão em pilastras da região sul do Instituto Central de Ciências (ICC). O #EleNão é uma campanha nacional deflagrada como oposição ao presidente eleito Jair Bolsonaro ainda durante o período eleitoral. (Foto: Jamile Vasconcelos)](/uploads/whatsapp-image-2018-11-04-at-21.18.53.jpeg)
