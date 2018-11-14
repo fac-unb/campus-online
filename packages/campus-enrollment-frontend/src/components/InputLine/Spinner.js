@@ -44,7 +44,7 @@ const Spinner = ({size = 14, strokeWidth = 1}) => {
 	const radius = center - strokeWidth
 	return (
 		<SvgWrapperElement width={dimension} height={dimension} viewBox={viewBox}>
-			 <Circle cx={center} cy={center} r={radius} strokeWidth={strokeWidth}/>
+			<Circle cx={center} cy={center} r={radius} strokeWidth={strokeWidth}/>
 		</SvgWrapperElement>
 	)
 }

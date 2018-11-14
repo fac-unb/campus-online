@@ -21,7 +21,7 @@ const Home = () => (
 		<Navbar/>
 		<Container style={{display: 'flex', flexDirection: 'column', flex: 1}}>
 			<AuthState>
-				{({isLoggedIn, isLoading, error, action, user}) => {
+				{({isLoggedIn, isLoading, error, action}) => {
 					if(error) return <div>{error.message || error}</div>
 					if(isLoggedIn && !isLoading) return <Main/>
 					const buttonLoading = !action || isLoading

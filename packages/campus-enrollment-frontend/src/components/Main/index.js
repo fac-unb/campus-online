@@ -60,7 +60,7 @@ const Main = ({
 )
 
 const mapStateToProps = ({students: {allIds, byId, ...students}, netlify}) => ({
-	isLoading: netlify.isLoading || students.isFetching || console.log(students),
+	isLoading: netlify.isLoading || students.isFetching,
 	hasEnrolledStudents: !!allIds.find(id => byId[id].status === 'enrolled'),
 })
 
