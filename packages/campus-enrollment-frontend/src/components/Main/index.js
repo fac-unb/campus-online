@@ -31,6 +31,8 @@ const TableWrapper = styled.div`
 	flex: 1;
 	padding-bottom: 4.5rem;
 	margin: 0 -1rem;
+	display: flex;
+	flex-direction: column;
 	${above.md`
 		margin: 0;
 		border-top-left-radius: 0.25rem;
@@ -38,9 +40,17 @@ const TableWrapper = styled.div`
 	`}
 `
 
-const Loading = () => (
-	<div>loading...</div>
-)
+const LoadingText = styled.div`
+	color: ${colors.base22};
+	text-align: center;
+	flex: 1;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 3rem;
+`
+
+const Loading = () => <LoadingText>Carregando Alunos&hellip;</LoadingText>
 
 const Main = ({
 	hasEnrolledStudents, isLoading, isModalVisible, toggleModal,
