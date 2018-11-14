@@ -853,9 +853,21 @@
   dependencies:
     "@emotion/memoize" "^0.6.5"
 
+"@emotion/is-prop-valid@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.6.8.tgz#68ad02831da41213a2089d2cab4e8ac8b30cbd85"
+  integrity sha512-IMSL7ekYhmFlILXcouA6ket3vV7u9BqStlXzbKOF9HBtpUPMMlHU+bBxrLOa2NvleVwNIxeq/zL8LafLbeUXcA==
+  dependencies:
+    "@emotion/memoize" "^0.6.6"
+
 "@emotion/memoize@^0.6.1", "@emotion/memoize@^0.6.5":
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.5.tgz#f868c314b889e7c3d84868a1d1cc323fbb40ca86"
+
+"@emotion/memoize@^0.6.6":
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
+  integrity sha512-h4t4jFjtm1YV7UirAFuSuFGyLa+NNxjdkq6DpFLANNQY5rHueFZHVY+8Cu1HYVP6DrheB0kv4m5xPjo7eKT7yQ==
 
 "@emotion/serialize@^0.9.0":
   version "0.9.0"
@@ -877,6 +889,11 @@
 "@emotion/unitless@^0.6.2", "@emotion/unitless@^0.6.6":
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.6.6.tgz#988957ecd0a9be00ee9de27172f8c56d41595a93"
+
+"@emotion/unitless@^0.7.0":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.2.tgz#b180097bb44a40c3b59efea9cf28df2fe542d518"
+  integrity sha512-mK4SHgIiJiwRZyenDXlaLUdR7vm8xUvJ4VYmpWNTDtF3ykEbI1XNVcbhAZwt07xjtCvLenoJMP8Eqx1FXvoWDQ==
 
 "@emotion/utils@^0.8.1":
   version "0.8.1"
@@ -2659,6 +2676,14 @@ babel-plugin-named-asset-import@^0.2.3:
 babel-plugin-remove-graphql-queries@^2.0.2-rc.3:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.5.0.tgz#975e8bc9452133984e44eee99743b6599dafce25"
+
+"babel-plugin-styled-components@>= 1":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.8.0.tgz#9dd054c8e86825203449a852a5746f29f2dab857"
+  integrity sha512-PcrdbXFO/9Plo9JURIj8G0Dsz+Ct8r+NvjoLh6qPt8Y/3EIAj1gHGW1ocPY1IkQbXZLBEZZSRBAxJem1KFdBXg==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    lodash "^4.17.10"
 
 babel-plugin-styled-components@^1.7.1:
   version "1.7.1"
@@ -4681,6 +4706,15 @@ css-selector-tokenizer@^0.7.0:
 css-to-react-native@^2.0.3:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.2.1.tgz#7f3f4c95de65501b8720c87bf0caf1f39073b88e"
+  dependencies:
+    css-color-keywords "^1.0.0"
+    fbjs "^0.8.5"
+    postcss-value-parser "^3.3.0"
+
+css-to-react-native@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.2.2.tgz#c077d0f7bf3e6c915a539e7325821c9dd01f9965"
+  integrity sha512-w99Fzop1FO8XKm0VpbQp3y5mnTnaS+rtCvS+ylSEOK76YXO5zoHQx/QMB1N54Cp+Ya9jB9922EHrh14ld4xmmw==
   dependencies:
     css-color-keywords "^1.0.0"
     fbjs "^0.8.5"
@@ -11468,6 +11502,11 @@ mem@^4.0.0:
     mimic-fn "^1.0.0"
     p-is-promise "^1.1.0"
 
+memoize-one@^4.0.0:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.0.3.tgz#cdfdd942853f1a1b4c71c5336b8c49da0bf0273c"
+  integrity sha512-QmpUu4KqDmX0plH4u+tf0riMc1KHE1+lw95cMrLlXQAFOx/xnBtwhZ52XJxd9X2O6kwKBqX32kmhbhlobD0cuw==
+
 memoizee@^0.4.14:
   version "0.4.14"
   resolved "https://registry.yarnpkg.com/memoizee/-/memoizee-0.4.14.tgz#07a00f204699f9a95c2d9e77218271c7cd610d57"
@@ -17139,20 +17178,6 @@ style-loader@^0.21.0:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-styled-components@^3.4.1:
-  version "3.4.9"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.4.9.tgz#519abeb351b37be5b7de6a15ff9e4efeb9d772da"
-  dependencies:
-    buffer "^5.0.3"
-    css-to-react-native "^2.0.3"
-    fbjs "^0.8.16"
-    hoist-non-react-statics "^2.5.0"
-    prop-types "^15.5.4"
-    react-is "^16.3.1"
-    stylis "^3.5.0"
-    stylis-rule-sheet "^0.0.10"
-    supports-color "^3.2.3"
-
 styled-components@^3.4.8:
   version "3.4.8"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.4.8.tgz#7004ae2c895c1a8a3f51b8754178a31079071468"
@@ -17166,6 +17191,22 @@ styled-components@^3.4.8:
     stylis "^3.5.0"
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
+
+styled-components@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.1.1.tgz#943922048fae556e286bcbfdd29da4f1399446bc"
+  integrity sha512-UzT/qyoOyKpYooeLdwKrPHZ85R8KWl8i0fbyH9I3z6B2WT9uGDCV7J4kbfKsBeSWFD9EytBriEODOkybcUFD/Q==
+  dependencies:
+    "@emotion/is-prop-valid" "^0.6.8"
+    "@emotion/unitless" "^0.7.0"
+    babel-plugin-styled-components ">= 1"
+    css-to-react-native "^2.2.2"
+    memoize-one "^4.0.0"
+    prop-types "^15.5.4"
+    react-is "^16.6.0"
+    stylis "^3.5.0"
+    stylis-rule-sheet "^0.0.10"
+    supports-color "^5.5.0"
 
 stylehacks@^4.0.0:
   version "4.0.0"

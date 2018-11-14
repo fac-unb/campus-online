@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 // [TODO]: styling
 // https://codepen.io/kenchen/pen/iCEeA

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {canonicalURL} from '../../constants'
 import {above} from '../../utils/responsive'
 import Container from '../Container'

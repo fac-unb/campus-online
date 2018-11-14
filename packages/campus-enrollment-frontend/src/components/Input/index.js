@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {colors, fonts} from '../../constants'
 
 const Input = styled.input`

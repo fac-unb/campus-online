@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {connect} from 'react-redux'
 import {compose, withStateHandlers} from 'recompose'
 import {above} from '../../utils/responsive'
