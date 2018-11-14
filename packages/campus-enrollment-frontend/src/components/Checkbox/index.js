@@ -11,9 +11,11 @@ const Wrapper = styled.label`
 
 const Input = styled.input``
 
+const noop = () => {}
+
 const Checkbox = ({style, className, ...props}) => (
 	<Wrapper style={style} className={className}>
-		<Input type='checkbox' {...props}/>
+		<Input type='checkbox' {...props} onChange={props.onChange || noop}/>
 	</Wrapper>
 )
 
