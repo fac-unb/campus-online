@@ -9,6 +9,7 @@
     "build-emails": "cd packages/campus-online-emails && npm run build",
     "run:netlify": "wsrun build campus-online-frontend campus-online-functions && npm run build-emails && ./scripts/copy-emails",
     "run:travis": "wsrun build campus-enrollment-frontend",
+    "purge": "npx https://gist.github.com/leonardodino/3da17301bb4f3866f2cd23ebb4d49b5e campus-unb",
     "deploy": "wsrun build 'campus-enrollment-frontend' && firebase deploy"
   },
   "private": true,
