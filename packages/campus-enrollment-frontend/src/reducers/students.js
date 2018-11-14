@@ -64,7 +64,7 @@ const reducer = handleActions({
 		const byId = {...state.byId, ...students}
 		const allIds = getSortedByDateArray(byId)
 		const selectedIds = state.selectedIds.filter(isSelectable({byId, allIds}))
-		return {...state, byId, allIds, selectedIds}
+		return {...state, isFetching: false, byId, allIds, selectedIds}
 	},
 	[loading]: (state, {payload: {email, name, date}}) => {
 		const byId = {...state.byId, [email]: {email, name, date, loading: true}}
@@ -126,6 +126,7 @@ export const middleware = store => {
 	// [TODO]: handle firebase user tasks
 	return next => async action => {
 		next(action)
+		// if(store.getState().students.isFetching) console.log(action)
 		if(action.type !== String(netlify.replace)) return
 		const {
 			netlify: {siteId, identityId},
@@ -133,6 +134,7 @@ export const middleware = store => {
 			students: {isWaiting, isFetching},
 		} = store.getState()
 		if(!isWaiting || isFetching || !siteId || !token) return
+		store.dispatch(fetching())
 		const students = await api.getEnrolledStudents({siteId, identityId, token})
 		store.dispatch(receive(students))
 	}

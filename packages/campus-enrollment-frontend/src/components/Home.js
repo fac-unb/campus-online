@@ -3,6 +3,8 @@ import styled from 'styled-components/macro'
 import {colors} from '../constants'
 import Navbar from './Navbar'
 import Container from './Container'
+import AuthState from './AuthState'
+import LoginButton from './LoginButton'
 import Main from './Main'
 
 const Wrapper = styled.div`
@@ -18,7 +20,14 @@ const Home = () => (
 	<Wrapper>
 		<Navbar/>
 		<Container style={{display: 'flex', flexDirection: 'column', flex: 1}}>
-			<Main/>
+			<AuthState>
+				{({isLoggedIn, isLoading, error, action, user}) => {
+					if(error) return <div>{error.message || error}</div>
+					if(isLoggedIn && !isLoading) return <Main/>
+					const buttonLoading = !action || isLoading
+					return <LoginButton isLoading={buttonLoading} onClick={action}/>
+				}}
+			</AuthState>
 		</Container>
 	</Wrapper>
 )

@@ -38,22 +38,29 @@ const TableWrapper = styled.div`
 	`}
 `
 
-const Main = ({hasEnrolledStudents, isModalVisible, toggleModal}) => (
+const Loading = () => (
+	<div>loading...</div>
+)
+
+const Main = ({
+	hasEnrolledStudents, isLoading, isModalVisible, toggleModal,
+}) => (
 	<Wrapper>
 		<TitleBar>
 			<Heading color={colors.base88} size={5} weight={700}>Alunos</Heading>
 			<Counter/>
 		</TitleBar>
 		<TableWrapper>
-			<InputLine/>
-			{hasEnrolledStudents ? <Table/> : <EmptyState/>}
+			<InputLine isLoading={isLoading}/>
+			{isLoading ? <Loading/> : hasEnrolledStudents ? <Table/> : <EmptyState/>}
 		</TableWrapper>
 		<BottomBar onClickButton={toggleModal}/>
 		<DeleteModal isVisible={isModalVisible} onChangeVisibility={toggleModal}/>
 	</Wrapper>
 )
 
-const mapStateToProps = ({students: {allIds, byId}}) => ({
+const mapStateToProps = ({students: {allIds, byId, ...students}, netlify}) => ({
+	isLoading: netlify.isLoading || students.isFetching || console.log(students),
 	hasEnrolledStudents: !!allIds.find(id => byId[id].status === 'enrolled'),
 })
 

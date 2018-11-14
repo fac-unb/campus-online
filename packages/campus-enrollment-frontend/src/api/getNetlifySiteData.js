@@ -2,8 +2,23 @@ import invariant from 'invariant'
 import firebase from '../firebase'
 import {netlifyApi as http} from './http'
 
+const database = firebase.database()
+
+const getUserLoggedInState = () => new Promise((resolve, reject) => {
+	if(firebase.auth().currentUser) return resolve()
+	let retries = 0
+	const intervalId = setInterval(() => {
+		retries += 1
+		if(retries > 10){
+			clearInterval(intervalId)
+			return reject(new Error('firebase: login timeout'))
+		}
+		if(firebase.auth().currentUser) return resolve()
+	}, 500)
+})
+
 const getNetlifySubdomainFromFirebase = async () => {
-	const database = firebase.database()
+	await getUserLoggedInState()
 	const snapshot = await database.ref('netlify-subdomain').once('value')
 	const subdomain = snapshot.val()
 	if(typeof subdomain !== 'string'){
