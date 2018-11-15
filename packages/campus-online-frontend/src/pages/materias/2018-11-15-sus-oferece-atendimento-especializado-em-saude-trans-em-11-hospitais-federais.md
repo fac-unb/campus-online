@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: SUS oferece atendimento especializado em saúde trans em 11 hospitais federais
+cover: /uploads/bandeira-trans.jpg
 date: '2018-11-15'
 author: ''
 semester: 2018/2
@@ -17,13 +18,15 @@ Para ter acesso ao processo, pacientes a partir de 18 anos precisam passar por a
 
 A tabela a seguir mostra quais hospitais oferecem os procedimentos no Brasil.
 
+![](/uploads/tabela-de-hospitais-federais.png)
+
 Dois grupos de crianças e adolescentes também podem receber assistência. A faixa etária de um grupo vai de 12 a 17 anos, e do outro, de 17 a 21 anos. O foco não é em procedimentos cirúrgicos, mas em intervenções psicossociais, como estratégias de relacionamento em uma sociedade preconceituosa e conscientização de direitos sociais.
 
-Sobre o acesso a procedimentos pelo SUS, o Ministério da Saúde afirma que “a inclusão de pacientes na lista de espera é feita por gestores \[de Secretarias de Saúde] locais”.
+Sobre o acesso a procedimentos pelo SUS, o Ministério da Saúde afirma que “a inclusão de pacientes na lista de espera é feita por gestores \[de secretarias de saúde] locais”.
 
 **Diversidade afetiva**
 
-Em seu livro Sociologia, o britânico Anthony Giddens chama a atenção para o uso incorreto do termo ‘opção sexual’ no lugar de ‘orientação sexual’. Porque “‘orientação sexual’ diz respeito à direção da atração sexual ou romântica da pessoa. O termo ‘opção sexual’ é enganoso e deve ser evitado, pois implica que a atração sexual ou romântica da pessoa é totalmente questão de escolha pessoal”.
+Em seu livro Sociologia, o britânico Anthony Giddens chama a atenção para o uso do termo ‘opção sexual’ no lugar de ‘orientação sexual’. Porque “‘orientação sexual’ diz respeito à direção da atração sexual ou romântica da pessoa. O termo ‘opção sexual’ é enganoso e deve ser evitado, pois implica que a atração sexual ou romântica da pessoa é totalmente questão de escolha pessoal”.
 
 Em [publicação](http://www.anis.org.br/biblioteca/2014-12/homofobia_e_educacaopdf.pdf) na revista Anis – Instituto de Bioética, sua fundadora e professora da Universidade de Brasília Débora Diniz diz que “falar em diversidade sexual requer situar questões relativas a gênero e sexualidade no terreno da ética democrática e dos direitos humanos, apelando para a necessidade de se reconhecerem como legítimas as múltiplas e dinâmicas formas de expressão das subjetividades, dos corpos e das práticas sexuais”.
 
@@ -31,9 +34,13 @@ Mesmo com a [Política Nacional de Saúde LGBT](http://bvsms.saude.gov.br/bvs/pu
 
 O cientista político trans Marcelo Caetano, formado pela Universidade de Brasília, esclarece que existem diversas alternativas biomédicas e intervenções cirúrgicas que podem deixar as pessoas mais confortáveis com o próprio corpo, e não só pessoas trans. “Todos devem ter autonomia sobre o próprio corpo para decidir, mas vale pensar também no quanto essas intervenções acontecem realmente porque a pessoa vive em grande sofrimento sem elas, e se há alguma régua da cisgeneridade operando aí”, indica Caetano.
 
+![](/uploads/marcelo-caetano.png)
+
 Educador social na região da Estrutural, no Distrito Federal, ele ainda avalia o nível de informação da população brasileira sobre a comunidade T. “Com a grande massificação da internet nesta última década, muita coisa mudou: novos canais de voz e fala se abriram para pessoas trans e a questão chegou em muitos lugares, na grande mídia, na academia. Alguns direitos foram garantidos. Pessoas trans estão resistindo há décadas. E, hoje, essa se tornou uma questão que chega a muitos lugares do mundo.”
 
 Caetano também se identifica como poeta. Veja na íntegra um de seus trabalhos.
+
+\-
 
 MEU CORPO É UM CAMPO DE BATALHA
 
@@ -45,6 +52,8 @@ minha carne, uma couraça;
 
 meu sangue, combustível.
 
+\-
+
 Meu corpo é um campo de batalha.
 
 Fiz do coração minha morada;
@@ -53,11 +62,15 @@ de minha pele, uma muralha.
 
 Nas mãos, revolução.
 
+\-
+
 Fiz de mim metaforia.
 
 Para que as palavras dissessem menos
 
 e os olhos gritassem mais.
+
+\-
 
 Meu corpo é um campo de batalha.
 
@@ -67,6 +80,8 @@ De minha existência fiz moinho,
 
 pulsei sem permissão.
 
+\-
+
 De mim mesmo fiz destino.
 
 Para todos, rejeição.
@@ -74,6 +89,8 @@ Para todos, rejeição.
 Do querer fiz passarinho,
 
 os que não me querem, eles também morrerão.
+
+\-
 
 Meu corpo é um campo de batalha.
 
