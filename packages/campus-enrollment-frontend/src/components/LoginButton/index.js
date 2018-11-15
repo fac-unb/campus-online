@@ -19,7 +19,9 @@ const Background = styled.div`
 `
 
 const Button = styled(ButtonImage)`
-	max-width: 100%;
+	max-width: 50vw;
+	height: auto;
+	display: block;
 	opacity: ${p => p.disabled ? '0.88' : '1'};
 	cursor: ${p => p.disabled ? 'default' : 'pointer'};
 	filter: ${p => p.disabled ? 'grayscale(1)' : 'none'};
