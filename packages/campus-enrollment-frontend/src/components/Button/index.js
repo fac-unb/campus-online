@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {colors} from '../../constants'
 import Icon from '../Icon'
 
@@ -10,6 +10,7 @@ const Wrapper = styled.button`
 	margin: 0;
 	padding: 0.5rem 0.625rem;
 	align-items: center;
+	justify-content: space-between;
 	background: ${colors.white};
 	color: ${colors.blue};
 	border: 1px solid ${colors.blue};

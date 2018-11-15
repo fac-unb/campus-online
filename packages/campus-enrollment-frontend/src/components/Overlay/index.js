@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components'
+import styled, {keyframes} from 'styled-components/macro'
 import {rgba} from 'polished'
 import {colors} from '../../constants'
 

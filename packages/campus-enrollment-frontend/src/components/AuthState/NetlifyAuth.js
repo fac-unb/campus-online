@@ -7,7 +7,7 @@ const config = {
 	client: process.env.REACT_APP_NETLIFY_CLIENT_ID,
 	redirect: window.location.href,
 	width: 512, // Width, in pixels, of popup window. Optional, default: 400
-	height: 400 // Height, in pixels, of popup window. Optional, default: 400
+	height: 420 // Height, in pixels, of popup window. Optional, default: 400
 }
 
 

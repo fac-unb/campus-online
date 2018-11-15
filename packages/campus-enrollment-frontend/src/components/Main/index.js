@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {connect} from 'react-redux'
 import {compose, withStateHandlers} from 'recompose'
 import {above} from '../../utils/responsive'
@@ -31,6 +31,8 @@ const TableWrapper = styled.div`
 	flex: 1;
 	padding-bottom: 4.5rem;
 	margin: 0 -1rem;
+	display: flex;
+	flex-direction: column;
 	${above.md`
 		margin: 0;
 		border-top-left-radius: 0.25rem;
@@ -38,22 +40,37 @@ const TableWrapper = styled.div`
 	`}
 `
 
-const Main = ({hasEnrolledStudents, isModalVisible, toggleModal}) => (
+const LoadingText = styled.div`
+	color: ${colors.base22};
+	text-align: center;
+	flex: 1;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 3rem;
+`
+
+const Loading = () => <LoadingText>Carregando Alunos&hellip;</LoadingText>
+
+const Main = ({
+	hasEnrolledStudents, isLoading, isModalVisible, toggleModal,
+}) => (
 	<Wrapper>
 		<TitleBar>
 			<Heading color={colors.base88} size={5} weight={700}>Alunos</Heading>
 			<Counter/>
 		</TitleBar>
 		<TableWrapper>
-			<InputLine/>
-			{hasEnrolledStudents ? <Table/> : <EmptyState/>}
+			<InputLine isLoading={isLoading}/>
+			{isLoading ? <Loading/> : hasEnrolledStudents ? <Table/> : <EmptyState/>}
 		</TableWrapper>
 		<BottomBar onClickButton={toggleModal}/>
 		<DeleteModal isVisible={isModalVisible} onChangeVisibility={toggleModal}/>
 	</Wrapper>
 )
 
-const mapStateToProps = ({students: {allIds, byId}}) => ({
+const mapStateToProps = ({students: {allIds, byId, ...students}, netlify}) => ({
+	isLoading: netlify.isLoading || students.isFetching,
 	hasEnrolledStudents: !!allIds.find(id => byId[id].status === 'enrolled'),
 })
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {keyframes} from 'styled-components'
+import styled, {keyframes} from 'styled-components/macro'
 import {withState, branch} from 'recompose'
 import {above} from '../../utils/responsive'
 import {colors} from '../../constants'
