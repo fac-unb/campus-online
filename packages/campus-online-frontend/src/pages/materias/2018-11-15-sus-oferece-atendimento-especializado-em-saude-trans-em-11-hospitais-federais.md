@@ -23,6 +23,8 @@ Para ter acesso ao processo, pacientes a partir de 18 anos precisam passar por a
 
 A tabela a seguir mostra quais hospitais federais oferecem os procedimentos.
 
+![](/uploads/tabela-de-hospitais-federais.png)
+
 Dois grupos de crianças e adolescentes também podem receber assistência. A faixa etária de um grupo vai de 12 a 17 anos, e do outro, de 17 a 21 anos. O foco não é em procedimentos cirúrgicos, mas em intervenções psicossociais, como estratégias de relacionamento em sociedade preconceituosa e conscientização de direitos sociais.
 
 Sobre o acesso a procedimentos pelo SUS, o Ministério da Saúde afirma que “a inclusão de pacientes na lista de espera é feita por gestores \[de secretarias de saúde] locais”.
