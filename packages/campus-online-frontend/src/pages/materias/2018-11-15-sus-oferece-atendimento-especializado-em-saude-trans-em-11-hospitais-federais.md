@@ -42,60 +42,60 @@ Caetano também se identifica como poeta. Veja na íntegra um de seus trabalhos.
 
 \-
 
-**Meu corpo é um campo de batalha**
+_**Meu corpo é um campo de batalha**_
 
-Meu corpo é um campo de batalha.
+_Meu corpo é um campo de batalha._
 
-Meu peito, minha arma;
+_Meu peito, minha arma;_
 
-minha carne, uma couraça;
+_minha carne, uma couraça;_
 
-meu sangue, combustível.
+_meu sangue, combustível._
 
-\-
+_\-_
 
-Meu corpo é um campo de batalha.
+_Meu corpo é um campo de batalha._
 
-Fiz do coração minha morada;
+_Fiz do coração minha morada;_
 
-de minha pele, uma muralha.
+_de minha pele, uma muralha._
 
-Nas mãos, revolução.
+_Nas mãos, revolução._
 
-\-
+_\-_
 
-Fiz de mim metaforia.
+_Fiz de mim metaforia._
 
-Para que as palavras dissessem menos
+_Para que as palavras dissessem menos_
 
-e os olhos gritassem mais.
+_e os olhos gritassem mais._
 
-\-
+_\-_
 
-Meu corpo é um campo de batalha.
+_Meu corpo é um campo de batalha._
 
-Minha respiração, transgressão.
+_Minha respiração, transgressão._
 
-De minha existência fiz moinho,
+_De minha existência fiz moinho,_
 
-pulsei sem permissão.
+_pulsei sem permissão._
 
-\-
+_\-_
 
-De mim mesmo fiz destino.
+_De mim mesmo fiz destino._
 
-Para todos, rejeição.
+_Para todos, rejeição._
 
-Do querer fiz passarinho,
+_Do querer fiz passarinho,_
 
-os que não me querem, eles também morrerão.
+_os que não me querem, eles também morrerão._
 
-\-
+_\-_
 
-Meu corpo é um campo de batalha.
+_Meu corpo é um campo de batalha._
 
-Minha carne, insistência.
+_Minha carne, insistência._
 
-De minha pele fiz cicatriz.
+_De minha pele fiz cicatriz._
 
-De minha alma, resistência.
+_De minha alma, resistência._
