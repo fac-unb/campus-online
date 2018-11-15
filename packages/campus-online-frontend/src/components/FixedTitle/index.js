@@ -57,11 +57,11 @@ const Anchor = styled(Link)`
 	`};
 `
 
-const StoriesTitle = ({title, label, url, dark, style}) => (
+const FixedTitle = ({title, label, url, dark, style}) => (
 	<Wrapper dark={dark} style={style}>
 		<Title>{title}</Title>
 		{url && <Anchor to={url}>{label}</Anchor>}
 	</Wrapper>
 )
 
-export default StoriesTitle
+export default FixedTitle

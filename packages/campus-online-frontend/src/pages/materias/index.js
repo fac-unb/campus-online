@@ -13,7 +13,7 @@ import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
 import {CardRow} from '../../components/CardGrid'
 import Navbar from '../../components/Navbar'
-import StoriesTitle from '../../components/StoriesTitle'
+import FixedTitle from '../../components/FixedTitle'
 import PostCard from '../../components/PostCard'
 import Editorials from '../../components/Editorials'
 import ScrollList from '../../components/ScrollList'
@@ -49,7 +49,7 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 					<ScrollList title="Tags" url="/tags" list={tags.map(enhanceTag)} />
 				</section>
 				<section>
-					<StoriesTitle dark title="Todas as publicações" />
+					<FixedTitle dark title="Todas as publicações" />
 					<LayoutGrid>
 						<Cell xs={12} lg={8} xg={8}>
 							<CardRow>
