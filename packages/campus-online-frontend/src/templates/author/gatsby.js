@@ -5,9 +5,15 @@ import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
 import flattenAuthorInfo from '../../fragments/AuthorInfo'
 import AuthorPage from '.'
 
+const getNode = edge => edge.node
+const getNodes = posts => {
+	if(!posts || !posts.edges) return []
+	return (posts.edges || []).map(getNode)
+}
+
 const enhance = mapProps(({data: {author, posts}}) => ({
 	...flattenAuthorInfo(author),
-	posts: map(flattenBlogPostInfo, posts.edges.map(a => a.node)),
+	posts: map(flattenBlogPostInfo, getNodes(posts)),
 	content: author.content,
 	excerpt: author.excerpt,
 }))
