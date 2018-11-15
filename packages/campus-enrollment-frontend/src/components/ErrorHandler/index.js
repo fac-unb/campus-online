@@ -4,7 +4,7 @@ import {logout} from '../../reducers/auth'
 
 const formatMessage = (message = 'unknown error') => [
 	`Ocorreu um erro de autênticação:\n${message}\n`,
-	'faça login novamente.'
+	'faça login novamente.',
 ].join('\n')
 
 class ErrorHandler extends React.Component {
@@ -22,7 +22,7 @@ class ErrorHandler extends React.Component {
 	}
 }
 
-const mapStateToProps = ({netlify, auth, students}) => ({
+const mapStateToProps = ({netlify, auth}) => ({
 	authError: netlify.error || auth.error,
 	isLoggedIn: auth.isLoggedIn,
 })
