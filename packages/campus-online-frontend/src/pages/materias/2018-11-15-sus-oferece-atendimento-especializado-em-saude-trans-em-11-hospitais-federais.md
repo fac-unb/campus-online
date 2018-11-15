@@ -42,7 +42,7 @@ Caetano também se identifica como poeta. Veja na íntegra um de seus trabalhos.
 
 \-
 
-MEU CORPO É UM CAMPO DE BATALHA
+**Meu corpo é um campo de batalha**
 
 Meu corpo é um campo de batalha.
 
