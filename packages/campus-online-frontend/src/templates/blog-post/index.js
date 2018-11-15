@@ -79,7 +79,7 @@ const BlogPost = ({
 							)}
 							{isPlainObject(author) && (
 								<Fragment>
-									<SideSection title="Autor" to="/reporteres" />
+									<SideSection title="Repórter" to="/reporteres" />
 									<AuthorCard {...author} size='small' />
 								</Fragment>
 							)}
