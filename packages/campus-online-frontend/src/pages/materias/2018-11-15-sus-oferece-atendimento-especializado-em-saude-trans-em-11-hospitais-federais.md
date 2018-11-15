@@ -1,6 +1,8 @@
 ---
 template: blog-post
-title: SUS oferece atendimento especializado em saúde trans em 11 hospitais federais
+title: >-
+  Cerca de 288 pessoas esperavam por atendimento especializado em saúde trans no
+  SUS ate agosto
 cover: /uploads/bandeira-trans.jpg
 date: '2018-11-15'
 author:
