@@ -3,7 +3,9 @@ template: blog-post
 title: SUS oferece atendimento especializado em saúde trans em 11 hospitais federais
 cover: /uploads/bandeira-trans.jpg
 date: '2018-11-15'
-author: ''
+author:
+  slug: /reporteres/2018-2-atila-lima/
+  title: Atila Lima
 semester: 2018/2
 featured: false
 headline: São 476 operações e mais de 18 mil atendimentos desde 2008
