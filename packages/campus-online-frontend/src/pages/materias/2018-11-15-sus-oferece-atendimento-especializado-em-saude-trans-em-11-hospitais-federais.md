@@ -36,11 +36,9 @@ O cientista político trans Marcelo Caetano, formado pela Universidade de Brasí
 
 ![](/uploads/marcelo-caetano.png)
 
-Educador social na região da Estrutural, no Distrito Federal, ele ainda avalia o nível de informação da população brasileira sobre a comunidade T. “Com a grande massificação da internet nesta última década, muita coisa mudou: novos canais de voz e fala se abriram para pessoas trans e a questão chegou em muitos lugares, na grande mídia, na academia. Alguns direitos foram garantidos. Pessoas trans estão resistindo há décadas e, hoje, essa se tornou uma questão que chega a muitos lugares do mundo.”
+Educador social na região da Estrutural, no Distrito Federal, ele ainda avalia o nível de informação da população brasileira sobre a comunidade T. “Com a grande massificação da internet nesta última década, muita coisa mudou: novos canais de voz e fala se abriram para pessoas trans e a questão chegou em muitos lugares: na grande mídia, na academia. Alguns direitos foram garantidos. Pessoas trans estão resistindo há décadas e, hoje, essa se tornou uma questão que chega a muitos lugares do mundo.”
 
 Caetano também se identifica como poeta. Veja na íntegra um de seus trabalhos.
-
-\-
 
 _**Meu corpo é um campo de batalha**_
 
