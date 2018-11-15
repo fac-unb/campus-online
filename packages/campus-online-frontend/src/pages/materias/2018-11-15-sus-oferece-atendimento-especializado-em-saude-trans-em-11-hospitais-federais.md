@@ -5,12 +5,16 @@ title: >-
   pelo SUS até agosto
 cover: /uploads/bandeira-trans.jpg
 date: '2018-11-15'
-editorial: ''
+editorial:
+  slug: /editorias/2018-1-universidade/
+  title: Comportamento
 author:
   slug: /reporteres/2018-2-atila-lima/
   title: Atila Lima
 semester: 2018/2
-featured: false
+tags:
+  - transênero
+featured: true
 headline: São 476 operações e mais de 18 mil atendimentos desde 2008
 ---
 Cerca de 288 pessoas estavam na lista de espera por intervenções de redesignação sexual pelo Sistema Único de Saúde (SUS) até agosto. Segundo o Ministério da Saúde, são 11 os hospitais federais habilitados para oferecer serviços especializados à população trans no país, sendo cinco para operações e seis para ações ambulatoriais. 
@@ -29,6 +33,8 @@ Dois grupos de crianças e adolescentes também podem receber assistência. A fa
 
 Sobre o acesso a procedimentos pelo SUS, o Ministério da Saúde afirma que “a inclusão de pacientes na lista de espera é feita por gestores \[de secretarias de saúde] locais”.
 
+![A bandeira do orgulho transgênero foi criada em agosto de 1999, por Monica Helms e tem cinco listras horizontais. São duas listras azuis, cor tradicionalmente ligada aos meninos, duas listras cor-de-rosa, cor tradicionalmente ligada às meninas, e uma faixa central branca, para aqueles que estão entre os dois sexos, em transição de um para o outro ou consideram ter um gênero neutro ou indefinido. (Foto: reprodução)](/uploads/cropped-bandeira_trans.jpg)
+
 **Diversidade afetiva**
 
 Em seu livro Sociologia, o britânico Anthony Giddens chama a atenção para o uso do termo ‘opção sexual’ no lugar de ‘orientação sexual’. Porque “‘orientação sexual’ diz respeito à direção da atração sexual ou romântica da pessoa. O termo ‘opção sexual’ é enganoso e deve ser evitado, pois implica que a atração sexual ou romântica da pessoa é totalmente questão de escolha pessoal”.
@@ -39,13 +45,13 @@ Mesmo com a [Política Nacional de Saúde LGBT](http://bvsms.saude.gov.br/bvs/pu
 
 O cientista político trans Marcelo Caetano, de 29 anos, formado pela Universidade de Brasília, esclarece que existem diversas alternativas biomédicas e intervenções cirúrgicas que podem deixar as pessoas mais confortáveis com o próprio corpo, e não só pessoas trans. “Todos devem ter autonomia sobre o próprio corpo para decidir, mas vale pensar também no quanto essas intervenções acontecem realmente porque a pessoa vive em grande sofrimento sem elas, e se há alguma régua da cisgeneridade operando aí”, indica Caetano.
 
-![](/uploads/marcelo-caetano.png)
+![O cientista político Marcelo Caetano. (Foto: reprodução de rede social)](/uploads/marcelo-caetano.png)
 
 Educador social na região da Estrutural, no Distrito Federal, ele avalia o nível de informação da população brasileira sobre a comunidade T. “Com a grande massificação da internet nesta última década, muita coisa mudou: novos canais de voz e fala se abriram para pessoas trans e a questão chegou em muitos lugares: na grande mídia, na academia. Alguns direitos foram garantidos. Pessoas trans estão resistindo há décadas e, hoje, essa se tornou uma questão que chega a muitos lugares do mundo.”
 
 Caetano também se identifica como poeta. Veja na íntegra um de seus trabalhos.
 
-**_Meu corpo é um campo de batalha_**
+_**Meu corpo é um campo de batalha**_
 
 _Meu corpo é um campo de batalha._
 
