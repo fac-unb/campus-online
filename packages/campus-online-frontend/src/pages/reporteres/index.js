@@ -6,6 +6,7 @@ import flattenAuthorInfo from '../../fragments/AuthorInfo'
 import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
+import {Row, Cell} from '../../components/Grid'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import AuthorCard from '../../components/AuthorCard'
@@ -17,13 +18,15 @@ const AuthorsPage = ({authors}) => (
 		<Container>
 			<MetaTags title="Repórteres" />
 			<section style={{padding: '6rem 0 8rem', overflow: 'hidden'}}>
-				<div style={{display: 'flex', flexWrap: 'wrap', margin: '0 -2rem'}}>
+				<Row>
 					{authors.map(author => (
-						<div key={author.url} style={{padding: '1rem 2rem'}}>
-							<AuthorCard {...author} />
-						</div>
+						<Cell key={author.url} xs={12} sm={6} md={4} lg={3}>
+							<div style={{padding: '1rem 0'}}>
+								<AuthorCard {...author} />
+							</div>
+						</Cell>
 					))}
-				</div>
+				</Row>
 			</section>
 		</Container>
 	</React.Fragment>
