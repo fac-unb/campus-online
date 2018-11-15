@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Container from './Container'
 import AuthState from './AuthState'
 import LoginButton from './LoginButton'
+import ErrorHandler from './ErrorHandler'
 import Main from './Main'
 
 const Wrapper = styled.div`
@@ -21,14 +22,14 @@ const Home = () => (
 		<Navbar/>
 		<Container style={{display: 'flex', flexDirection: 'column', flex: 1}}>
 			<AuthState>
-				{({isLoggedIn, isLoading, error, action}) => {
-					if(error) return <div>{error.message || error}</div>
+				{({isLoggedIn, isLoading, action}) => {
 					if(isLoggedIn && !isLoading) return <Main/>
 					const buttonLoading = !action || isLoading
 					return <LoginButton isLoading={buttonLoading} onClick={action}/>
 				}}
 			</AuthState>
 		</Container>
+		<ErrorHandler/>
 	</Wrapper>
 )
 
