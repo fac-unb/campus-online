@@ -1,10 +1,11 @@
 ---
 template: blog-post
 title: >-
-  Cerca de 288 pessoas esperavam por atendimento especializado em saúde trans no
-  SUS até agosto
+  Cerca de 288 pessoas esperavam por atendimento especializado em saúde trans
+  pelo SUS até agosto
 cover: /uploads/bandeira-trans.jpg
 date: '2018-11-15'
+editorial: ''
 author:
   slug: /reporteres/2018-2-atila-lima/
   title: Atila Lima
