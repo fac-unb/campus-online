@@ -63,29 +63,23 @@ const Text = styled.div`
 	}
 `
 
-
-
-const Button = ({icon, text, onClick, props}) => (
-	<Wrapper {...props} onClick={onClick}>
-		<Text>{text}</Text>
-		<Inner>
-			<Icon size={18} icon={icon} strokeWidth={2.125}/>
-		</Inner>
+const Button = ({icon, children, ...props}) => (
+	<Wrapper {...props}>
+		<Text>{children}</Text>
+		<Inner><Icon size={18} icon={icon} strokeWidth={2.125}/></Inner>
 	</Wrapper>
 )
 
-const External = ({render, children = render}) => (
-	<AuthState
-		render={({isLoggedIn, action}) => children({
-			icon: isLoggedIn ? 'log-out' : 'log-in',
-			text: isLoggedIn ? 'Log out' : 'Log in',
-			onClick: action, disabled: !action,
-		})}
-	/>
+const LogoutButton = ({action}) => (
+	<Button icon='log-out' onClick={action} disabled={!action}>Sair</Button>
 )
 
 const AuthButton = () => (
-	<External render={props => <Button color='white' {...props}/>}
-/>)
+	<AuthState>
+		{({isLoggedIn, action}) => (
+			isLoggedIn ? <LogoutButton action={action}/> : null
+		)}
+	</AuthState>
+)
 
 export default AuthButton
