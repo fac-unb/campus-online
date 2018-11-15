@@ -21,9 +21,7 @@ Atualmente, os procedimentos que fazem parte do processo são: cirurgias de rede
 
 Para ter acesso ao processo, pacientes a partir de 18 anos precisam passar por acompanhamentos mensais durante 2 anos antes de qualquer operação. A idade mínima para a realização de todas é de 21 anos.
 
-A tabela a seguir mostra quais hospitais oferecem os procedimentos no Brasil.
-
-![](/uploads/tabela-de-hospitais-federais.png)
+A tabela a seguir mostra quais hospitais federais oferecem os procedimentos.
 
 Dois grupos de crianças e adolescentes também podem receber assistência. A faixa etária de um grupo vai de 12 a 17 anos, e do outro, de 17 a 21 anos. O foco não é em procedimentos cirúrgicos, mas em intervenções psicossociais, como estratégias de relacionamento em sociedade preconceituosa e conscientização de direitos sociais.
 
@@ -45,7 +43,7 @@ Educador social na região da Estrutural, no Distrito Federal, ele ainda avalia 
 
 Caetano também se identifica como poeta. Veja na íntegra um de seus trabalhos.
 
-_**Meu corpo é um campo de batalha**_
+**_Meu corpo é um campo de batalha_**
 
 _Meu corpo é um campo de batalha._
 
