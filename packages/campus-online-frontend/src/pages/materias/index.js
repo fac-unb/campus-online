@@ -1,9 +1,10 @@
 import {graphql} from 'gatsby'
-import React from 'react'
+import React, {Fragment} from 'react'
 import {mapProps, compose} from 'recompose'
-import {get, kebabCase} from 'lodash/fp'
+import {get, kebabCase, uniq} from 'lodash/fp'
 import styled from 'styled-components'
 import {colors} from '../../constants'
+import {above} from '../../utils/responsive'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
 import flattenAuthorInfo from '../../fragments/AuthorInfo'
 import flattenEditorialInfo from '../../fragments/EditorialInfo'
@@ -22,6 +23,36 @@ const LayoutGrid = styled(Row)`
 	justify-content: space-between;
 `
 
+const DateWrapper = styled.div`
+	display: none;
+	position: absolute;
+	text-align: right;
+	width: 100%;
+	${above.lg`
+		display: block;
+	`}
+`
+
+const DateInner = styled.div`
+	border-top: 1px solid ${colors.base88};
+	display: inline-block;
+	font-size: 0.875rem;
+	margin-top: 0.25rem;
+	padding: 0.125rem 0 0.125rem 2.5rem;
+	line-height: 1.25rem;
+	letter-spacing: 0.05rem;
+	font-weight: 500;
+	color: ${colors.base22};
+`
+
+const DateMarker = ({children, ...props}) => (
+	<DateWrapper {...props}>
+		<DateInner>
+			{children}
+		</DateInner>
+	</DateWrapper>
+)
+
 const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
 
@@ -38,7 +69,6 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 3}} dark={true} />
 		<main style={{padding: '8rem 0'}}>
 			<Container>
-				{/* [TODO]: sort tags and authors*/}
 				<section style={{marginBottom: '6rem'}}>
 					<Editorials editorials={editorials} style={{marginBottom: '2rem'}} />
 					<ScrollList
@@ -50,21 +80,29 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 				</section>
 				<section>
 					<FixedTitle dark title="Todas as publicações" />
-					<LayoutGrid>
-						<Cell xs={12} lg={8} xg={8}>
-							<CardRow>
-								{posts.map(post => (
-									<PostCard
-										key={post.url}
-										{...post}
-										dark={!post.featured}
-										alt={true}
-										compact={true}
-									/>
-								))}
-							</CardRow>
-						</Cell>
-					</LayoutGrid>
+						{uniq(posts.map(x => x.date)).map((date, index) => (
+							<div style={{position: 'relative'}} key={date}>
+								{/* [TODO]: Moment.js like dates */}
+								<DateMarker>{new Date(date).toLocaleDateString()}</DateMarker>
+								<LayoutGrid>
+									<Cell xs={12} lg={8} xg={8}>
+										<div style={{width: '100%'}}>
+											<CardRow>
+												{posts.filter(x => x.date === date).map(post => (
+													<PostCard
+														key={post.url}
+														{...post}
+														dark={!post.featured}
+														alt={true}
+														compact={true}
+													/>
+												))}
+											</CardRow>
+										</div>
+									</Cell>
+								</LayoutGrid>
+							</div>
+						))}
 				</section>
 			</Container>
 		</main>
