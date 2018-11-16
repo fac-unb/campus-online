@@ -1,8 +1,9 @@
 import {graphql} from 'gatsby'
 import React from 'react'
-import {mapProps, compose} from 'recompose'
-import {get, kebabCase, uniq} from 'lodash/fp'
+import {mapProps, compose, withState, lifecycle} from 'recompose'
+import {get, kebabCase, uniq, groupBy} from 'lodash/fp'
 import styled from 'styled-components'
+import {formatDistance} from 'date-fns/fp'
 import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
@@ -60,7 +61,7 @@ const DateMarker = ({children, ...props}) => (
 const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
 
-const PageComponent = ({posts, tags, authors, editorials}) => (
+const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 	<div
 		style={{
 			background: colors.base,
@@ -72,6 +73,18 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 		<MetaTags title="Todos as matérias" />
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 3}} dark={true} />
 		<main style={{padding: '8rem 0'}}>
+			{currentDate && (
+				<pre>{JSON.stringify(
+
+					groupBy(x => x.distance,
+						posts.map(props => ({
+							distance: formatDistance(new Date(props.date), currentDate),
+							...props,
+						}))
+					)
+
+				,null, 2)}</pre>)
+			}
 			<Container>
 				<section style={{marginBottom: '6rem'}}>
 					<Editorials editorials={editorials} style={{marginBottom: '2rem'}} />
@@ -87,7 +100,9 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 						{uniq(posts.map(x => x.date)).map(date => (
 							<div style={{position: 'relative'}} key={date}>
 								{/* [TODO]: Moment.js like dates */}
-								<DateMarker>{new Date(date).toLocaleDateString()}</DateMarker>
+								<DateMarker>
+									{formatDistance(new Date(date), currentDate)}
+								</DateMarker>
 								<LayoutGrid>
 									<Cell xs={12} lg={8} xg={8}>
 										<div style={{width: '100%'}}>
@@ -129,6 +144,13 @@ const enhance = compose(
 			posts: posts.map(get('post')).map(flattenBlogPostInfo),
 		}),
 	),
+	withState('currentDate', 'setCurrentDate', new Date),
+	lifecycle({
+		componentDidMount(){
+			const {setCurrentDate} = this.props
+			setCurrentDate(new Date())
+		},
+	}),
 )
 
 const BlogPage = enhance(PageComponent)
