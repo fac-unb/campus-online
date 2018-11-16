@@ -1,5 +1,5 @@
 import {graphql} from 'gatsby'
-import React, {Fragment} from 'react'
+import React from 'react'
 import {mapProps, compose} from 'recompose'
 import {get, kebabCase, uniq} from 'lodash/fp'
 import styled from 'styled-components'
@@ -28,6 +28,9 @@ const DateWrapper = styled.div`
 	position: absolute;
 	text-align: right;
 	width: 100%;
+	position: sticky;
+	top: 7rem;
+	height: 0;
 	${above.lg`
 		display: block;
 	`}
@@ -35,6 +38,7 @@ const DateWrapper = styled.div`
 
 const DateInner = styled.div`
 	border-top: 1px solid ${colors.base88};
+	background: ${colors.base};
 	display: inline-block;
 	font-size: 0.875rem;
 	margin-top: 0.25rem;
@@ -80,7 +84,7 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 				</section>
 				<section>
 					<FixedTitle dark title="Todas as publicações" />
-						{uniq(posts.map(x => x.date)).map((date, index) => (
+						{uniq(posts.map(x => x.date)).map(date => (
 							<div style={{position: 'relative'}} key={date}>
 								{/* [TODO]: Moment.js like dates */}
 								<DateMarker>{new Date(date).toLocaleDateString()}</DateMarker>
