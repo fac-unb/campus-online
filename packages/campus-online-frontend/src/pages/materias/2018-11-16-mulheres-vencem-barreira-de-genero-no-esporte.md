@@ -12,9 +12,7 @@ semester: 2018/2
 tags:
   - Mulheres Esporte
 featured: true
-headline: >-
-  Estudantes da UnB contam ao Campus a quebra de paradigmas na prática
-  esportiva
+headline: Estudantes da UnB contam ao Campus a quebra de paradigmas na prática esportiva
 ---
 Mulheres vencem barreira de gênero no esporte
 
