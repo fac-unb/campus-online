@@ -1,7 +1,7 @@
 import {graphql} from 'gatsby'
 import React from 'react'
 import {mapProps, compose, withState, lifecycle} from 'recompose'
-import {get, kebabCase, uniq, groupBy} from 'lodash/fp'
+import {get, kebabCase, groupBy} from 'lodash/fp'
 import styled from 'styled-components'
 import {formatDistance} from 'date-fns/fp'
 import {colors} from '../../constants'
@@ -58,8 +58,25 @@ const DateMarker = ({children, ...props}) => (
 	</DateWrapper>
 )
 
+const timeDistances = ({posts, currentDate}) => (
+	Object.keys(
+		groupBy(x => x.distance,
+			posts.map(({date}) => ({
+				distance: formatDistance(new Date(date), currentDate),
+			}))
+		)
+	)
+)
+
 const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
+
+const enhancePosts = ({posts, currentDate}) => (
+	posts.map(({date, ...props}) => ({
+		distance: formatDistance(new Date(date), currentDate),
+		...props,
+	}))
+)
 
 const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 	<div
@@ -73,18 +90,6 @@ const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 		<MetaTags title="Todos as matérias" />
 		<Navbar style={{position: 'fixed', top: 0, zIndex: 3}} dark={true} />
 		<main style={{padding: '8rem 0'}}>
-			{currentDate && (
-				<pre>{JSON.stringify(
-
-					groupBy(x => x.distance,
-						posts.map(props => ({
-							distance: formatDistance(new Date(props.date), currentDate),
-							...props,
-						}))
-					)
-
-				,null, 2)}</pre>)
-			}
 			<Container>
 				<section style={{marginBottom: '6rem'}}>
 					<Editorials editorials={editorials} style={{marginBottom: '2rem'}} />
@@ -97,31 +102,32 @@ const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 				</section>
 				<section>
 					<FixedTitle dark title="Todas as publicações" />
-						{uniq(posts.map(x => x.date)).map(date => (
-							<div style={{position: 'relative'}} key={date}>
-								{/* [TODO]: Moment.js like dates */}
+						{currentDate && timeDistances({posts, currentDate}).map(distance => (
+							<div style={{position: 'relative'}} key={distance}>
 								<DateMarker>
-									{formatDistance(new Date(date), currentDate)}
+									{distance}
 								</DateMarker>
 								<LayoutGrid>
 									<Cell xs={12} lg={8} xg={8}>
 										<div style={{width: '100%'}}>
 											<CardRow>
-												{posts.filter(x => x.date === date).map(post => (
-													<PostCard
-														key={post.url}
-														{...post}
-														dark={!post.featured}
-														alt={true}
-														compact={true}
-													/>
-												))}
+												{enhancePosts({posts, currentDate})
+													.filter(x => x.distance === distance)
+													.map(post => (
+														<PostCard
+															key={post.url}
+															{...post}
+															dark={!post.featured}
+															alt={true}
+															compact={true}
+														/>
+													))}
 											</CardRow>
 										</div>
 									</Cell>
 								</LayoutGrid>
 							</div>
-						))}
+					))}
 				</section>
 			</Container>
 		</main>
