@@ -1,6 +1,7 @@
 ---
 template: blog-post
 title: Mulheres vencem barreira de gênero no esporte
+cover: /uploads/whatsapp-image-2018-11-14-at-13.26.46.jpeg
 date: '2018-11-16'
 editorial:
   slug: /editorias/2018-1-universidade/
@@ -14,8 +15,6 @@ tags:
 featured: true
 headline: Estudantes da UnB contam ao Campus a quebra de paradigmas na prática esportiva
 ---
-Mulheres vencem barreira de gênero no esporte
-
 Ao longo do tempo, as mulheres vêm quebrando estereótipos impostos por uma cultura ocidental padrão já estabelecidos por anos em uma sociedade patriarcal. São os mínimos exemplos que já chamam a atenção. No caso dos esportes, estudantes da Universidade de Brasília tentam conquistar seu espaço de participação nas modalidades, competindo de igual para igual com os homens, enxergando com naturalidade os desafios e barreiras a serem transpostas.
 
 É o caso da estudante de Educação Física Cataryne Fonseca, de 19 anos, que luta judô, arte marcial japonesa, esporte praticado majoritariamente por homens. Cataryne já se sagrou campeã brasileira do seu peso, chegando a integrar a seleção brasileira da modalidade. “Eu faço judô desde os quatro anos. Quando comecei, era a única menina na turma. As outras mães ou não deixavam as filhas praticarem a modalidade, ou as próprias meninas não gostavam. Com o decorrer do tempo, fui praticando e gostei. Tornei-me faixa preta e ganhei títulos. Fiquei muito feliz. Uma mulher, no esporte, é algo muito diferente. As pessoas não conseguem ver como algo normal, mas, ultimamente, é a coisa mais normal do mundo”, disse.
