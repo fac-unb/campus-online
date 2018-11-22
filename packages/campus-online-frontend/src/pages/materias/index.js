@@ -1,13 +1,14 @@
 import {graphql} from 'gatsby'
 import React from 'react'
-import {mapProps, compose} from 'recompose'
-import {get, kebabCase, uniq} from 'lodash/fp'
+import {mapProps, compose, withState, lifecycle} from 'recompose'
+import {get, kebabCase, groupBy} from 'lodash/fp'
 import styled from 'styled-components'
 import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
 import flattenAuthorInfo from '../../fragments/AuthorInfo'
 import flattenEditorialInfo from '../../fragments/EditorialInfo'
+import timesince from '../../utils/timesince'
 import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
@@ -59,8 +60,11 @@ const DateMarker = ({children, ...props}) => (
 
 const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
+const groupByDate = currentDate => (
+	groupBy(({date}) => timesince(currentDate)(new Date(date)))
+)
 
-const PageComponent = ({posts, tags, authors, editorials}) => (
+const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 	<div
 		style={{
 			background: colors.base,
@@ -84,29 +88,31 @@ const PageComponent = ({posts, tags, authors, editorials}) => (
 				</section>
 				<section>
 					<FixedTitle dark title="Todas as publicações" />
-						{uniq(posts.map(x => x.date)).map(date => (
-							<div style={{position: 'relative'}} key={date}>
-								{/* [TODO]: Moment.js like dates */}
-								<DateMarker>{new Date(date).toLocaleDateString()}</DateMarker>
+						{Object.entries(groupByDate(currentDate)(posts)).map(([distance, posts]) => (
+							<div style={{position: 'relative'}} key={distance}>
+								<DateMarker>
+									{distance}
+								</DateMarker>
 								<LayoutGrid>
 									<Cell xs={12} lg={8} xg={8}>
 										<div style={{width: '100%'}}>
 											<CardRow>
-												{posts.filter(x => x.date === date).map(post => (
-													<PostCard
-														key={post.url}
-														{...post}
-														dark={!post.featured}
-														alt={true}
-														compact={true}
-													/>
-												))}
+												{posts
+													.map(post => (
+														<PostCard
+															key={post.url}
+															{...post}
+															dark={!post.featured}
+															alt={true}
+															compact={true}
+														/>
+													))}
 											</CardRow>
 										</div>
 									</Cell>
 								</LayoutGrid>
 							</div>
-						))}
+					))}
 				</section>
 			</Container>
 		</main>
@@ -129,6 +135,13 @@ const enhance = compose(
 			posts: posts.map(get('post')).map(flattenBlogPostInfo),
 		}),
 	),
+	withState('currentDate', 'setCurrentDate', new Date),
+	lifecycle({
+		componentDidMount(){
+			const {setCurrentDate} = this.props
+			setCurrentDate(new Date())
+		},
+	}),
 )
 
 const BlogPage = enhance(PageComponent)
