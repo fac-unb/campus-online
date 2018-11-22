@@ -3,12 +3,12 @@ import React from 'react'
 import {mapProps, compose, withState, lifecycle} from 'recompose'
 import {get, kebabCase, groupBy} from 'lodash/fp'
 import styled from 'styled-components'
-import {formatDistance} from 'date-fns/fp'
 import {colors} from '../../constants'
 import {above} from '../../utils/responsive'
 import flattenBlogPostInfo from '../../fragments/BlogPostInfo'
 import flattenAuthorInfo from '../../fragments/AuthorInfo'
 import flattenEditorialInfo from '../../fragments/EditorialInfo'
+import timesince from '../../utils/timesince'
 import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Container from '../../components/Container'
@@ -61,7 +61,7 @@ const DateMarker = ({children, ...props}) => (
 const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
 const groupByDate = currentDate => (
-	groupBy(({date}) => formatDistance(new Date(date), currentDate))
+	groupBy(({date}) => timesince(currentDate)(new Date(date)))
 )
 
 const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
