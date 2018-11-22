@@ -18,9 +18,7 @@ const Wrapper = styled.nav`
 	width: 100%;
 	transition: 0.2s all;
 	z-index: 3;
-	${p =>
-		p.shadow &&
-		`
+	${p => p.shadow && `
 		position: fixed;
 		top: 0;
 		background: none;
@@ -39,18 +37,17 @@ const Wrapper = styled.nav`
 			content:'';
 		}
 	`};
-	${p =>
-		p.dark &&
-		`
+	${p => p.dark && `
 		background: ${colors.base};
 		color: ${colors.white};
 	`};
-	${p => p.background && `background: ${p.background};`};
-	${p =>
-		p.isMenuOpen &&
-		`
+	${p => p.background && `
+		background: ${p.background};
+	`};
+	${p => p.isMenuOpen && `
 		color: ${colors.base};
 		background: linear-gradient(180deg, white 0%, white 100%);
+		position: relative;
 		&:before{
 			opacity: 0;
 		}
@@ -78,18 +75,22 @@ const Links = styled.ul`
 	width: 100%;
 	left: 0;
 	top: 100%;
-	transform: translateY(-200%);
+	opacity: 0;
+	transform: translateY(-1rem);
+	pointer-events: none;
 	transform-origin: 0 0;
 	z-index: -1;
 	color: white;
-	transition: 0.3s all;
+	transition: 0.25s all;
 	padding-bottom: 1rem;
-	${p =>
-		p.isMenuOpen &&
-		`
+	${p => p.isMenuOpen && `
 		transform: none;
+		pointer-events: auto;
 		color: black;
-	`} ${above.md`
+		opacity: 1;
+	`}
+	${above.md`
+		pointer-events: auto;
 		color: inherit;
 		padding-bottom: 0;
 		opacity: 1;
@@ -138,15 +139,11 @@ const Anchor = styled(Link)`
 			transparent 37.5%,
 			${colors.base06} 0
 		);
-		${p =>
-			p.shadow &&
-			`
+		${p => p.shadow && `
 			pointer-events: auto;
 			background-image: linear-gradient(180deg, transparent 37.5%, ${colors.base} 0);
 		`};
-		${p =>
-			p.dark &&
-			`
+		${p => p.dark && `
 			background-image: linear-gradient(180deg, transparent 37.5%, ${
 				colors.base88
 			} 0);
@@ -241,6 +238,8 @@ const Navbar = ({
 Navbar.defaultProps = {
 	links: [
 		{href: '/materias', label: 'Matérias'},
+		{href: '/reporteres', label: 'Repórteres'},
+		{href: '/editorias', label: 'Editorias'},
 		{href: '/sobre', label: 'Sobre'},
 	],
 }
