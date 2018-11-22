@@ -1,7 +1,7 @@
 import {graphql} from 'gatsby'
 import React from 'react'
 import {mapProps, compose, withState, lifecycle} from 'recompose'
-import {get, kebabCase, groupBy} from 'lodash/fp'
+import {get, kebabCase, groupBy, map} from 'lodash/fp'
 import styled from 'styled-components'
 import {formatDistance} from 'date-fns/fp'
 import {colors} from '../../constants'
@@ -71,7 +71,7 @@ const timeDistances = ({posts, currentDate}) => (
 const enhanceAuthor = ({name, url}) => ({url, label: name})
 const enhanceTag = tag => ({url: `/tags/${kebabCase(tag)}/`, label: tag})
 
-const enhancePosts = ({posts, currentDate}) => (
+	const enhancePosts = ({posts, currentDate}) => (
 	posts.map(({date, ...props}) => ({
 		distance: formatDistance(new Date(date), currentDate),
 		...props,
@@ -100,9 +100,12 @@ const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 					/>
 					<ScrollList title="Tags" url="/tags" list={tags.map(enhanceTag)} />
 				</section>
+				<pre>{JSON.stringify(
+					groupBy(x => x.distance, enhancePosts({posts, currentDate}))
+				, null, 2)}</pre>
 				<section>
 					<FixedTitle dark title="Todas as publicações" />
-						{currentDate && timeDistances({posts, currentDate}).map(distance => (
+						{/* {currentDate && timeDistances({posts, currentDate}).map(distance => (
 							<div style={{position: 'relative'}} key={distance}>
 								<DateMarker>
 									{distance}
@@ -127,7 +130,7 @@ const PageComponent = ({posts, tags, authors, editorials, currentDate}) => (
 									</Cell>
 								</LayoutGrid>
 							</div>
-					))}
+					))} */}
 				</section>
 			</Container>
 		</main>
