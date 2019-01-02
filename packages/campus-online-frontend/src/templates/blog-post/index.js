@@ -1,13 +1,12 @@
 import React, {Fragment} from 'react'
 import {get} from 'lodash/fp'
-import {colors} from '../../constants'
 import {withLayout} from '../../components/Layout'
 import MetaTags from '../../components/MetaTags'
 import Content from '../../components/Content'
 import Container from '../../components/Container'
 import {Row, Cell} from '../../components/Grid'
 import Navbar from '../../components/Navbar'
-import HomeHero from '../../components/HomeHero'
+import ArticleHero from '../../components/ArticleHero'
 import Text from '../../components/Text'
 import Tags from '../../components/Tags'
 import AuthorCard from '../../components/AuthorCard'
@@ -53,18 +52,17 @@ const BlogPost = ({
 				image={getCoverImageSrc(cover)}
 			/>
 			<Navbar style={{position: 'fixed', top: 0, zIndex: 2}} />
-			<HomeHero title={title} date={date} cover={cover} editorial={editorial} />
+			<ArticleHero
+				headline={headline}
+				title={title}
+				date={date}
+				cover={cover}
+				editorial={editorial}
+			/>
 			<Container style={{paddingBottom: '8rem'}}>
 				<Row>
 					<Cell xs={12} lg={8}>
 						<Text>
-							{headline && (
-								<h2
-									style={{marginTop: 0, color: colors.base88, fontWeight: 600}}
-								>
-									{headline}
-								</h2>
-							)}
 							<Content>{content}</Content>
 						</Text>
 					</Cell>
@@ -79,7 +77,7 @@ const BlogPost = ({
 							)}
 							{isPlainObject(author) && (
 								<Fragment>
-									<SideSection title="Autor" to="/reporteres" />
+									<SideSection title="Repórter" to="/reporteres" />
 									<AuthorCard {...author} size='small' />
 								</Fragment>
 							)}

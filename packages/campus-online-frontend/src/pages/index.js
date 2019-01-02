@@ -7,7 +7,7 @@ import MetaTags from '../components/MetaTags'
 import Container from '../components/Container'
 import {CardRow} from '../components/CardGrid'
 import Navbar from '../components/Navbar'
-import StoriesTitle from '../components/StoriesTitle'
+import FixedTitle from '../components/FixedTitle'
 import HomeHero from '../components/HomeHero'
 import PostCard from '../components/PostCard'
 
@@ -18,7 +18,7 @@ const PageComponent = ({posts: [hero, ...posts]}) => (
 		<main style={{paddingBottom: '8rem'}}>
 			{hero && <HomeHero {...hero} />}
 			<Container>
-				<StoriesTitle
+				<FixedTitle
 					title="Publicações recentes"
 					label="Ver todas"
 					url="/materias"

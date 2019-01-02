@@ -15,13 +15,13 @@ const Wrapper = styled.div`
 	z-index: 2;
 	background: ${colors.base03};
 	color: ${colors.base88};
-	box-shadow: -2rem 0 0 ${colors.base03}, 2rem 0 0 ${colors.base03};
+	box-shadow: -6rem 0 0 ${colors.base03}, 6rem 0 0 ${colors.base03};
 	${p =>
 		p.dark &&
 		`
 		background: ${colors.base};
 		color: ${colors.white};
-		box-shadow: -2rem 0 0 ${colors.base}, 2rem 0 0 ${colors.base};
+		box-shadow: -6rem 0 0 ${colors.base}, 6rem 0 0 ${colors.base};
 	`} ${above.md`
 		top: 4rem;
 		margin-bottom: 1rem;
@@ -57,11 +57,11 @@ const Anchor = styled(Link)`
 	`};
 `
 
-const StoriesTitle = ({title, label, url, dark, style}) => (
+const FixedTitle = ({title, label, url, dark, style}) => (
 	<Wrapper dark={dark} style={style}>
 		<Title>{title}</Title>
 		{url && <Anchor to={url}>{label}</Anchor>}
 	</Wrapper>
 )
 
-export default StoriesTitle
+export default FixedTitle
