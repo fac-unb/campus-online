@@ -1,3 +1,5 @@
+logo_url: https://campus.fac.unb.br/assets/images/logo.png
+
 backend:
   name: git-gateway
   branch: master
