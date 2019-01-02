@@ -1,22 +1,17 @@
 {
   "name": "campus-mail",
   "version": "0.0.0",
-  "description": "pug + mjml workflow to export campus-online mails",
+  "private": true,
+  "description": "mjml workflow to export campus-online mails",
   "author": "Vitor Dino <vitor@kunstdesign.com.br>",
-  "main": "gulpfile.js",
   "scripts": {
-    "dev": "gulp default",
-    "build": "gulp email"
+    "dev": "concurrently -rk 'mjml -w \"src/*\" -o public' 'browser-sync start --config bs-config.js'",
+    "lint": "mjml -v './src/*'",
+    "build": "mjml \"src/*\" -o public --c.beautify false --c.minify true"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-inline-source": "^3.1.0",
-    "gulp-mjml": "3.0.0",
-    "gulp-pug": "^3.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "mjml": "4.1.2"
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.1.0",
+    "mjml": "^4.2.1"
   }
 }
