@@ -126,7 +126,6 @@ export const middleware = store => {
 	// [TODO]: handle firebase user tasks
 	return next => async action => {
 		next(action)
-		// if(store.getState().students.isFetching) console.log(action)
 		if(action.type !== String(netlify.replace)) return
 		const {
 			netlify: {siteId, identityId},
