@@ -1,7 +1,7 @@
 ---
 template: author
 title: Zanei Barcellos
-semester: 2010/1
+semester: 2019/1
 image: /uploads/img_2439-2.jpg
 ---
 Zanei é o professor/jornalista responsável pelo Campus Online - MTb  01182. 
