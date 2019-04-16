@@ -1,13 +1,13 @@
 ---
 template: blog-post
-title: Faltou papel e sabão?
+title: Banheiros na UnB
 date: '2019-04-16'
 editorial:
   slug: /editorias/2018-1-cidade/
   title: Cidade
 author:
-  slug: /reporteres/2018-2-zanei-barcellos/
-  title: Zanei Barcellos
+  slug: /reporteres/2019-1-giovanna-lobato/
+  title: Giovanna Lobato
 semester: 2019/1
 tags:
   - serviço
