@@ -10,7 +10,7 @@ author:
   title: Zanei Barcellos
 semester: 2019/1
 tags:
-  - divulgação
+  - serviço
 featured: true
 headline: Descubra os melhores banheiros da UnB
 ---
