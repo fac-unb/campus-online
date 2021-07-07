@@ -104,3 +104,15 @@ collections:
           - {label: "Template", name: template, widget: hidden, default: "about-page"}
           - {label: "Título da página", name: title, widget: string, required: true}
           - {label: "Corpo de texto", name: body, widget: markdown, required: false}
+
+      - name: contact
+        label: "Contato"
+        file: "packages/campus-online-frontend/src/pages/contato/index.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Endereço: Primeira linha", name: firstLine, widget: string, required: true}
+          - {label: "Endereço: Segunda linha", name: secondLine, widget: string, required: true}
+          - {label: "Endereço: CEP", name: zip, widget: string, required: true}
+          - {label: "Mapa: Latitude", name: lat, widget: number, valueType: float, required: true}
+          - {label: "Mapa: Longitude", name: long, widget: number, valueType: float, required: true}
